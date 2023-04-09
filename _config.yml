@@ -1,0 +1,24 @@
+title: Buggy Racing
+description: A Python programming project
+theme: just-the-docs
+color_scheme: buggy
+url: https://www.example.com
+aux_links:
+#  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+
+callouts_level: loud # quiet or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
