@@ -8,4 +8,12 @@ parent: Day-to-day running
 
 # Setup summary
 
- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+{: .highlight}
+Go to **Admin** → **Config** → **Summary**
+
+The setup summary gives a breakdown of the main choices you've made when
+configuring the server and how you are running the project.
+
+It shows the main settings and also provides links if you want to change them.
+
+

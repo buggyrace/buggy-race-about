@@ -22,3 +22,8 @@ callouts:
   warning:
     title: Warning
     color: red
+
+nav_external_links:
+  - title: Race server repo
+    url: https://github.com/buggyrace/buggy-race-server
+    hide_icon: false

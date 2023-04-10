@@ -12,13 +12,13 @@ Frequently asked questions for administering the race server.
 
 ## Can I delete a user?
 
-You can't delete them, but you can mark them as _inactive_, which is effectively the same. Go to **Admin** → **Users**, pick the user and **Edit**. For _Is active?_ select `No`. This hides the user and also prevents them logging in. When you download buggies CSV, only buggies belonging to active users are included.
+You can't delete a user, but you can mark them as _inactive_, which is effectively the same. Go to **Admin** → **Users**, pick the user and **Edit**. For **Is active?**, select `No`. This hides the user and also prevents them logging in. When you download buggies CSV, only buggies belonging to active users are included.
 
 
 ## I've forgotten the authorisation code
 
 You can reset this by [setting it as an environment variable](customising/env)
-and resetting the race server. You should then remove the environment declaration (because it's now saved in the database).
+and resetting the race server. You should then remove the environment declaration (because the value you've just set is now saved in the database).
 
 
 ## I've forgotten my password and can't log in

@@ -8,4 +8,21 @@ parent: Day-to-day running
 
 # User management
 
- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+{: .highlight}
+Go to **Admin** → **Users**
+
+There are three types of user:
+
+* **Student**  
+  Enrolled students
+
+* **Teachiung Assistants**  
+  Teaching Assistants (TAs) are staff users with mostly read-only access.  
+  TAs may be able to set (i.e., change) students' passwords if the config
+  setting `IS_TA_PASSWORD_CHANGE_ENABLED` is `Yes`.
+
+* **Administrations**  
+  Admins are staff users with full access to the admin features.
+  Some admin changes require the admin user to also know the site's
+  _authorisation code_.
+

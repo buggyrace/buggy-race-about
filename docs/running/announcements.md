@@ -8,4 +8,33 @@ parent: Day-to-day running
 
 # Announcements
 
- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+{: .highlight}
+Go to **Admin** → **Announcements**
+
+You can publish (and hide) announcements that appear on the race server pages.
+
+There are two types of announcement:
+
+* **On every page**  
+  Standard announcments are displayed at the top of every page (except the tech notes). You can choose from a set of preset styles that change the colour of
+  the announcement.
+
+* **On specific pages**  
+  These announcements allow you to place messages in specific locations:
+    * **Login**  
+      The login announcement is displayed above the login form. Use this if
+      you need to clarify to your students how/where you have supplied them
+      with their login criteria
+    * **Tagline**  
+      The tagline is displayed on the race server's home page, underneath
+      the main title.
+
+## Editing announcements
+
+You can choose to enable HTML in any announcement (set **Allow HTML** to `Yes`).
+This allows you to use markup like `<strong>bold</strong>`. But be careful!
+It is possible to break layout on pages if you do not close every tag that you
+open.
+
+When you change an announcement it will _always_ revert to being hidden. You
+must explicitly **publish** them after changing them.

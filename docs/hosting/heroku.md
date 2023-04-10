@@ -8,4 +8,13 @@ parent: Installation & Hosting
 
 # Heroku
 
- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The [race server repo](https://github.com/buggyrace/buggy-race-server) is suitable for running as an app on cloud-hosting server 
+[Heroku](http://heroku.com).
+
+You'll need to also configure a database.
+
+For normal use (such as running the classes over a term), Heroku fees for the web app ("Basic dyno") are $7 per month, with Postgres database ("Mini") at $5. 
+
+{: .warning}
+These prices might be out of date!
+Check the Heroku website for the latest fees.
