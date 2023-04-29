@@ -8,8 +8,8 @@ parent: Day-to-day running
 
 # Setup summary
 
-{: .highlight}
-Go to **Admin** → **Config** → **Summary**
+{: .directions}
+**Admin** → **Config** → **Summary**
 
 The setup summary gives a breakdown of the main choices you've made when
 configuring the server and how you are running the project.

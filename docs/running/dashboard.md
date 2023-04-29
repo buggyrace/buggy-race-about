@@ -8,7 +8,7 @@ parent: Day-to-day running
 
 # The admin dashboard
 
-{: .highlight}
-Go to **Admin**
+{: .directions}
+**Admin**
 
 The admin dashboard shows a summary of activity including user activity.

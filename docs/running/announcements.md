@@ -8,8 +8,8 @@ parent: Day-to-day running
 
 # Announcements
 
-{: .highlight}
-Go to **Admin** → **Announcements**
+{: .directions}
+**Admin** → **Announcements**
 
 You can publish (and hide) announcements that appear on the race server pages.
 
@@ -32,9 +32,14 @@ There are two types of announcement:
 ## Editing announcements
 
 You can choose to enable HTML in any announcement (set **Allow HTML** to `Yes`).
-This allows you to use markup like `<strong>bold</strong>`. But be careful!
-It is possible to break layout on pages if you do not close every tag that you
+This allows you to use markup like `<strong>bold</strong>`.
+
+{: .warning}
+Be careful if you enable HTML in an announcement!  
+It _is_ possible to break layout on pages if you do not close every tag that you
 open.
 
-When you change an announcement it will _always_ revert to being hidden. You
-must explicitly **publish** them after changing them.
+{: .note}
+When you change an announcement it will _always_ revert to being hidden. This
+is effectively an "are you sure?" failsafe. You must always explicitly
+**publish** an announcement after you've changed it.

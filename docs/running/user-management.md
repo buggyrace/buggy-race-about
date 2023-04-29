@@ -8,8 +8,8 @@ parent: Day-to-day running
 
 # User management
 
-{: .highlight}
-Go to **Admin** → **Users**
+{: .directions}
+**Admin** → **Users**
 
 There are three types of user:
 
