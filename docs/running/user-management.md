@@ -8,7 +8,7 @@ parent: Day-to-day running
 
 # User management
 
-{: .directions}
+{: .navigation}
 **Admin** → **Users**
 
 There are three types of user:

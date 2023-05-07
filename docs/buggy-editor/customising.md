@@ -37,7 +37,7 @@ the one you can edit. There are two files that you should change:
 
 ## The server can suggest your custom README
 
-{: .directions}
+{: .navigation}
 **Admin** → **Config** → **Summary** — GitHub section: **Buggy Editor**
 
 The server can recommend a custom README by using the config settings you've
@@ -81,7 +81,7 @@ relationship between our repo and your customisations isn't relevant detail.
 
 If you have forked (and customised) the editor repo, be sure to set the config to point at **your** fork of the repo, and not ours.
 
-{: .directions}
+{: .navigation}
 **Admin** → **Config** → Config:**GitHub**
 
 These are the config settings you should change/check:

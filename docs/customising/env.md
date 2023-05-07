@@ -70,7 +70,7 @@ You can see them by looking on the **System information** page. Many of the
 config settings shown there can be declared as environment variables if you
 really need to.
 
-{: .directions}
+{: .navigation}
 **Admin** → **Dashboard** → **System info**
 
 {: .note}

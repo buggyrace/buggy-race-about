@@ -1,5 +1,5 @@
 ---
-title: Student's reports
+title: Students' reports
 layout: home
 parent: Teaching
 has_children: false

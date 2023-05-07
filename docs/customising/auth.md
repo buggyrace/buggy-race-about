@@ -9,7 +9,7 @@ has_children: false
 
 # Configuring authorisation
 
-{: .directions}
+{: .navigation}
 **Admin** → **Config** → Config:**Auth**
 
 {: .note}

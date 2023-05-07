@@ -8,7 +8,7 @@ parent: Day-to-day running
 
 # Setup summary
 
-{: .directions}
+{: .navigation}
 **Admin** → **Config** → **Summary**
 
 The setup summary gives a breakdown of the main choices you've made when

@@ -8,7 +8,7 @@ parent: Day-to-day running
 
 # Announcements
 
-{: .directions}
+{: .navigation}
 **Admin** → **Announcements**
 
 You can publish (and hide) announcements that appear on the race server pages.

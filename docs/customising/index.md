@@ -25,7 +25,7 @@ you don't rush it).
 
 ## Thereafter: you _can_ change config any time
 
-{: .directions}
+{: .navigation}
 **Admin** → **Config**
 
 Provided you are logged in as an administrator, you can change any of the

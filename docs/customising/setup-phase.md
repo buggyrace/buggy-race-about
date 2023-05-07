@@ -27,7 +27,7 @@ during the setup (for example, you accidentally close your browser before
 you get to the end, oops), you can resume by logging back in with those
 credentials.
 
-{: .directions}
+{: .navigation}
 Click on **log in** in the top-right corner
 
 

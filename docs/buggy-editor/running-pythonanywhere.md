@@ -6,25 +6,25 @@ parent: Buggy editor
 has_children: false
 ---
 
-
 # Running on pythonanywhere.com
 
 [PythonAnywhere](https://www.pythonanywhere.com)
 provides a cloud-hosted very Python-friendly environment that your students
-can use run (and develop) their buggy editors. The great thing about this is
-that the development environment is ready-to-go: no setup needed by the
-students.
+can use run (and develop) their buggy editors.
 
-The basic service — good enough for a student's buggy editor — is free.
+The great thing about using a service like this is that the development
+environment is ready-to-go: no setup needed by the students.
 
-Because it's in the cloud, a student who is only working on pythonanywhere
-must be online to work.
+Because it's in the cloud, a student who is only working on pythonanywhere must
+be online to work.
+
+The basic service described here is free.
 
 {: .note}
 What follows are the **manual** steps for getting the editor running up there,
-with a (basic, free) student account. If you use PythonAnwhere's educational
-service, you could automate this process so accounts are already set up for all
-your students.
+with a (basic, free) student account. PythonAnwhere has an educational tier,
+so it's possible you could automate this process so accounts are already set up
+for all your students.
 
 ## Get the code
 

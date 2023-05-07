@@ -15,7 +15,7 @@ when you were [configuring users](../customising/users). Specifically, you need
 to upload a _comma-separated values_ file continaing such values (you can save
 a CSV file from any spreadsheet program, including Excel).
 
-{: .directions}
+{: .navigation}
 **Admin** → **Users** → **Register new students****
 
 {: .warning}
@@ -47,7 +47,7 @@ Fixme this is a note
 {: .suggest}
 Fixme this is a suggestion
 
-{: .directions}
+{: .navigation}
 **Admin** → **Users** → **Register new students** → **Pre-registration CSV utility**
 
 {: .warning}

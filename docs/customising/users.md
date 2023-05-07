@@ -9,7 +9,7 @@ has_children: false
 
 # Configuring users
 
-{: .directions}
+{: .navigation}
 **Admin** → **Config** → Config:**Users**
 
 You can choose what data is stored with your users. The simplest form is for

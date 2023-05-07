@@ -10,15 +10,15 @@ p.warning{
   background-size:3rem;
   min-height:3.5rem;
 }
-p.directions::before{
+p.navigation::before{
   color: #999933;
-  content:'Directions';
+  content:'Navigation';
   font-weight: bold;
   text-transform: uppercase;
   font-size: .75em;
   display:block;
 }
-p.directions{
+p.navigation{
   background-color: rgba(231, 175, 6, 0.2);
   border-left: 4px solid #d9ca57; /* #ffeb82 */;
   border-radius: 4px;
@@ -88,4 +88,10 @@ p.rhul{
 
 table.config-settings tr td:first-child {
   vertical-align: top;
+}
+
+p.screenshot img{
+  margin:1rem 1rem 1rem 0rem;
+  border:1px solid #999999;
+  box-shadow: 0.25rem 0.25rem 0.25rem 0.1rem rgba(0,0,0,0.25);
 }
