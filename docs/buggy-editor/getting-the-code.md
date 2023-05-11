@@ -134,11 +134,13 @@ Issues can form part of a professional workflow.
 
 The OAuth app requests permission from the student for write access to their
 GitHub account, in order to fork the repo for them (and, if you have chosen it,
-to add the tasks too).
+to inject the tasks too).
 
-You need to create the OAuth app up on GitHub. There's no coding involvedThe name of the GitHub account
-you use will be exposed to your students (which is already the case if you've
-committed your customisations to the editor source code with it).
+You need to create the OAuth app up on GitHub. There's no coding involved
+(because your race server already has the "back-end" code needed for the
+callback): you just have to fill in the online form. The name of the GitHub
+account you use will be exposed to your students (which is already the case if
+you've committed your customisations to the editor source code with it).
 
 > **See the instructions on GitHub for
 [Creating an OAuth App](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app)**
@@ -152,16 +154,20 @@ These are the key points:
   students that this is the right place, such as "XYZ Buggy Racing server for
   the ABC course"
 
-* For _Authorisation callback URL_, use `/oauth/github/callback` on your race
-  server's URL (this must be a full URL, starting with `https://`
+* For _Authorisation callback URL_, this must be a full URL, starting with
+  `https://` followed by your race server's URL with the path
+  `/oauth/github/callback`
 
-Provide a logo — either make your own or reuse/edit our
-[basic stripey square](/docs/img/stripe-square.png).
+* Provide a logo — either make your own or reuse/edit our
+  [basic stripey square](/docs/img/stripe-square.png).
 
 When you've created your OAuth app, GitHub will show you its ID and invite you
 to set a secret. You need to tell your race server both of these values: put
 those into the config settings `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET`.
-Be careful with that secret: treat it as sensitive password.
+Be careful with that secret: treat it as sensitive password. A malicious
+attacker with access to the secret could abuse students' GitHub accounts. (It
+is, by necessity, held in plaintext backstage on the server, which is why you
+must take security on your server seriously too).
 
 This OAuth app is only used when setting up the students' repos — it's not used
 again once all your students have got their editor source code.
