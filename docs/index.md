@@ -1,7 +1,7 @@
 ---
-title: Overview
+title: Introduction
 layout: home
-nav_order: 10
+nav_order: 1
 ---
 
 # Buggy Racing: Python programming project

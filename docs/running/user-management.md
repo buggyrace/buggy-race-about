@@ -95,6 +95,24 @@ Be careful not to revoke administrator status from _all_ the staff users. If
 you do, you'll need to create a new administrator by overriding config settings
 using environment variables.
 
+## Deleting a user's GitHub details
+
+If a user has a GitHub username (or an access token, which is issued to the
+server if it's granted access via the app), you can use the **Delete GitHub
+details** button on their edit page.
+
+This might be useful if they've accidentally linked to the "wrong" GitHub
+account (this sometimes happens if students have more than one GitHub account).
+The server doesn't let you edit these, because they are only set as a consequence
+of the OAuth app allocating them. Similarly, users cannot delete (or change)
+their own GitHub details.
+
+Deleting GitHub details simply removes the data from the database. It will not
+make any changes on GitHub, so if the user has cloned the editor repo, that
+will still be there. The race server will no longer offer the user a link to it,
+of course, because that requires the GitHub username, which you've just deleted.
+
+
 ## Downloading user data
 
 {: .navigation}

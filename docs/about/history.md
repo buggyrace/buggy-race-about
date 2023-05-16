@@ -8,4 +8,25 @@ parent: About
 
 # History of the project
 
- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+{: .rhul}
+
+The buggy racing project was originally created for the 1999–2020 cohort of
+Foundation students at
+[Royal Holloway, department of Computer Science](https://cs.rhul.ac.uk).  
+<br>
+We ran it for three years with the race server on the cloud (in Heroku), and
+the explanatory tech notes published as a GitHub pages site.  
+<br>
+In late 2022 the work began to make the server customisable and "white labelled"
+(so you can run it in/for your own institution).  
+<br>
+In 2023 (term 3 of the 2022–23 academic year) we ran the new server hosted on
+the department's own server (instead of in the cloud) to confirm that it was a
+feasible approach. We also did some user-testing with the RHUL teaching staff.  
+<br>
+In June 2023 we started encouraging other educators to use Buggy Racing with
+their own students.
+
+{: .center}
+![RHUL hamster](/docs/img/rhul-hamster.jpg)
