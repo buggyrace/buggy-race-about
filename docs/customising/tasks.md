@@ -18,6 +18,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
  
 See more about [managing the tech notes](../static-content/tech-notes).
 
+
 ## Config settings ("Tasks")
 
 {: .config-settings}
@@ -30,6 +31,7 @@ See more about [managing the tech notes](../static-content/tech-notes).
 | `TASK_NAME_FOR_API` | The name of the task that require use of the upload API. If set, this is shown as a helpful link in the explanotary text on the student's API settings page. If you set this to be empty, no link is shown. You can provide mulitple task names by separating them with commas. If you haven't customised the task list, you don't need to change this.  <br><br> _Default value:_ `4-API` |
 | `IS_TASK_URL_WITH_ANCHOR` | By default, task URLs go direct to the server (e.g., `/project/tasks/3-multi`) which then redirects to an anchor within the all-tasks page (e.g., `/project/tasks#task-3-multi`). This works fine on this server and makes "nicer" URLs, but if you don't like this behaviour, choose `Yes` to have any generated links go directly to the anchor tag.  <br><br> _Default value:_ `No` |
 | `IS_ISSUES_CSV_CRLF_TERMINATED` | Choose `Yes` if you need Windows newlines at the end of each line of the task issues CSV file (you probably don't need to change this).  <br><br> _Default value:_ `No` |
+
 
  ---
  * Previous: [Project config](project)

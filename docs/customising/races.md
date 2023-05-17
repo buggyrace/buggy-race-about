@@ -17,6 +17,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
  See more about [running races](../running/running-races).
 
 
+
 ## Config settings ("Races")
 
 {: .config-settings}
@@ -26,7 +27,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 | `DEFAULT_RACE_COST_LIMIT` | The default point cost threshold for buggies: you can always override this when you create each race.  <br><br> _Default value:_ `200` |
 | `IS_RACE_VISIBLE_BY_DEFAULT` | Should a race be public as soon as you create it? If you choose `No`, you'll have to remember to publish a race in order for students to see it.  <br><br> _Default value:_ `No` |
 
- 
+
  ---
  * Previous: [Tech notes config](tech-notes)
  * Next: [GitHub config](github)

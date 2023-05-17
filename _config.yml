@@ -29,3 +29,4 @@ nav_external_links:
     hide_icon: false
 
 favicon_ico: "/docs/img/favicon.png"
+exclude: ["src", "utils"]
