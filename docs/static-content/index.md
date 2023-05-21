@@ -19,8 +19,12 @@ change any config.
 In practice, the material isn't expected to change once your project is running
 anyway.
 
+{: .warning}
+Students will get 404 errors if they visit the URLs for static content before
+you have published it.
+
 {: .note}
 You'll see a warning message if the task list or the tech notes have not been
 published. Look in the
 [admin dashboard](../running/dashboard)
-or the [set-up summary](../running/setup-sumary).
+or the [set-up summary](../running/setup-summary).

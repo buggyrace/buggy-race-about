@@ -28,6 +28,9 @@ class ConfigGroupNames(str, Enum):
     TECH_NOTES = "tech_notes"
     USERS = "users"
 
+### skip social because the manual description is better than the automated one
+SKIP_UPDATE = [ConfigGroupNames.SOCIAL]
+
 config_detail_lines = {}
 
 input_fname = input("Filename from /admin/config-docs-helper? ") or DEFAULT_INPUT_FNAME
@@ -55,6 +58,9 @@ with open(input_fname) as input_file:
 print(f"[ ] done: finished reading {input_fname}")
 
 for group_name in config_detail_lines:
+    if group_name in SKIP_UPDATE:
+        print(f"[-] skipping {group_name} because it's in the SKIP_UPDATE list")
+        continue
     group_md_filename = f"docs/customising/{group_name}.md"
     if not path.exists(group_md_filename):
         raise FileNotFoundError(f"can't find {group_md_filename}")

@@ -9,7 +9,7 @@ parent: Overview
 
 ## You are...
 
-...a teacher or Python tutor.
+**...a teacher or Python tutor.**
 
 You are at least moderately confident with Python and Flask (and you know enough
 HTML, CSS and basic SQL to debug any pickles students get into). You've already
@@ -24,16 +24,24 @@ You probably don't have a budget either, so it needs to be free.
 
 ## Your students are...
 
-...familiar with the basics of Python, amd maybe have never written a
-program more complex than a single-file script (or exercises in Jupyter
-notebooks).
+**...familiar with the basics of Python.**  
+But their experience may vary:
 
-Or they _are_ more confident with Python but have never worked on a webserver
-before...
+* Perhaps they have never written a program more complex than a single-file
+  script (or exercises in Jupyter notebooks)
 
-Or, if they are more experienced — maybe they have used Flask before — they can
-be set to use the project to investigate more professional approaches, including
-use of Git (which is otherwise optional) and more sophisticated Python libraries.
+Or...
 
-> See **[about the students](../teaching/students)** in the _Teaching_ section
-> and the [design philosophy](../about/design) behind the project.
+* They _are_ more confident with Python but have never worked on a webserver
+  before...
+
+Or even...
+
+* If they are more experienced — maybe they have competently used Flask before
+  — they can be set to use the project to investigate more professional
+  approaches, including use of Git (which is otherwise optional) and more
+  sophisticated Python libraries.
+
+{: .suggest}
+See **[about the students](../teaching/students)** in the _Teaching_ section
+and the [design philosophy](../about/design) behind the project.

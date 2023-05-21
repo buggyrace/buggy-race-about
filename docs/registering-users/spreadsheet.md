@@ -39,7 +39,7 @@ You cannot register a student with a username that's already been registered
 If you're running the buggy racing project as part of another module, and you're
 already using an online learning platform (like Moodle, Canvas, or Blackboard)
 then it's very likely you've already got a spreadsheet that contains the data
-you need. The server has a utility to help you turn that into a CSV file with
+you need. The server has a utility to help you turn that CSV file into one with
 the precise columns you need.
 
 {: .navigation}
@@ -89,8 +89,8 @@ file, normally the data from the corresponding cell in your source spreadsheet
   * **all but last**
   * **all but first**
 
-The select menues will auto-select the matching column from your source menu,
-if there is one.
+The select menus will auto-select the matching column from your source menu, if
+there is one.
 
 
 ### Example: using first name as a username
@@ -122,18 +122,19 @@ the CSV afterwards — add `1` to `ada` if that's how you want to do it.
 ### Secondary CSV
 
 If you've got a CSV of your enrolled students and you just want to make it
-suitable for registering them, you might not need a secondary CSV. It's for the
-situation where the data for students has come from two, rather than one source.
-In this case, you can add a secondary spreadsheet that provides additional columns
-you'll be able to pick from the drop-down menues when you select columns for
-the CSV. This only works if there is a column in both source and secondary CSVs
-with an identical title, and with matching values for the same student. See the
-case study below for an example that demonstrates how this is useful.
+suitable for registering them, you might not need a secondary CSV. This is for
+the situation where your student data has come from two, rather than one
+source. In this case, you can add a secondary spreadsheet that provides
+additional columns you can pick from the drop-down menus when you select
+columns for the CSV. This only works if there is a column in both source and
+secondary CSVs with an identical title, and with matching values for the same
+student. See the case study below for an example that demonstrates how this is
+useful.
 
 If you upload a secondary CSV but the utility can't find a column to use to
-join it with the main CSV, you'll see a warning message. The common column
-that's being used to join the rows must have the same name in both CSVs. It
-will join the rows where the data in that column, in each CSV
+join it with the main CSV, you'll see a warning when you click **Show options**.
+The common column that's being used to join the rows must have the same name in
+both CSVs.
 
 {: .rhul}
 Our CSV of enrolled students was downloaded from Moodle. But we also needed

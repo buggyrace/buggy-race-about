@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Keyshape -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 64" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" style="white-space: pre; background: rgba(192,192,192,0.00);">
+    <path fill="#999999" stroke="none" d="M0,0L3000,0L3000,56.9135L0,68.1962Z" display="none" transform="translate(318,51.6667) translate(-321.228,-53.5802)"/>
+    <ellipse rx="18.0045" ry="18.0045" fill="#ff5f5f" stroke="none" transform="translate(32.2881,31.063)"/>
+    <ellipse rx="18.0045" ry="18.0045" fill="#ffd87b" stroke="none" transform="translate(84.3921,31.063)"/>
+    <ellipse rx="18.0045" ry="18.0045" fill="#83dc6a" stroke="none" transform="translate(136.496,31.6085)"/>
+</svg>

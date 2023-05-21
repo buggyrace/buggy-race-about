@@ -12,7 +12,15 @@ has_children: false
 {: .navigation}
 **Admin** → **Config** → Config:**GitHub**
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The GitHub settings you need will depend on how you have decided to distribute
+the editor source code to students: see [more about how students get the
+code](../buggy-editor/getting-the-code)
+
+By default, the editor repo is _not_ forked into students' accounts
+automatically. If you've decided that your students will be required to use
+GitHub, this automation can be very helpful — but remember that you'll also
+need to configure the OAuth app on GitHub to make this work.
+
 
 
 ## Config settings ("GitHub")
@@ -30,5 +38,4 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 | `GITHUB_CLIENT_SECRET` | A string that exactly matches the client secret stored on the GitHub app that the server uses tofork the buggy editor repo into a student's own GitHub account.  <br><br> _Default value:_ _none/empty_ |
 
 
-      ---
- * Previous: [Races config](races)
+      

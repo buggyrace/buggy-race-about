@@ -12,6 +12,9 @@ specification of a racing buggy in a local database. They can edit the buggy
 (for example, changing the number of wheels) and output the buggy specification
 as JSON data.
 
+{: .screenshot}
+![Screenshot of buggy-race-editor](/docs/img/screenshots/buggy-editor.png)
+
 Uploading that JSON data to the race server enters the buggy for the next
 race.
 

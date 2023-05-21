@@ -30,7 +30,7 @@ buggy editor repo has contained a `.replit` config file which helps streamline
 replit set-up.
 
 {: .screenshot}
-![Screenshot of Replit running buggy-race-editor](/docs/img/replit-buggy-racing-screenshot.png)
+![Screenshot of Replit running buggy-race-editor](/docs/img/screenshots/replit-buggy-racing.png)
 
 {: .note}
 What follows are the **manual** steps for getting the editor running up there,

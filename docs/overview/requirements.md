@@ -24,8 +24,9 @@ If you want to run a Buggy Racing project, this is what you'll need:
 * **Familiarity with Python, Flask, and basic SQL (and optionally Git)**  
   You and your staff will be guiding, teaching, and encouraring student
   developers — and helping debug them out of the corners they code themselves
-  into. The application they are building is Flask webserver connecting to a
-  SQLite database — so you need to know your way around that.
+  into. The application they are building (a [buggy editor](../buggy-editor))
+  is a Flask webserver connecting to a SQLite database — so you need to know
+  your way around that.
 
 * **Students who know some Python**  
   See [more about the students](../teaching/students).
