@@ -71,6 +71,13 @@ held in the database.
 Remember that any changes you make here **will not be seen** until you publish
 (or re-publish) the task list.
 
+{: .warning}
+Be careful about materially changing any tasks once the project has started:
+**it is not recommended**.  
+Changing the name or phase of a task, changes its URL too — so don't do this if
+any students already have links (this may include in GitHub issues if you're
+automatically injecting those into students' repos).
+
 ## Substituting config settings in the text
 
 Inside the tasks' markdown texts, words like this: `%CONFIG_NAME%` (all-caps
@@ -98,15 +105,16 @@ The most important effect of publishing the task list is that the current tasks,
 _and_ the current values of any config settings they reference, are rendered
 into HTML as the task list. Students work directly from this task list.
 
-However, the process _also_ generates an "issues CSV" which the server will use
-if you've set the config setting `IS_USING_GITHUB_API_TO_INJECT_ISSUES` to
-`Yes`. The issues CSV is effectively a static file "frozen" to be in synch with
-the published task list. It is a headerless CSV file with two columns:
+However, the publishing process _also_ generates an "issues CSV" which the
+server will use if you've set the config setting
+`IS_USING_GITHUB_API_TO_INJECT_ISSUES` to `Yes`. The issues CSV is effectively
+a static file "frozen" to be in synch with the published task list. It is a
+headerless CSV file with two columns:
 
 * name and title
 * problem description and link to the task on the race server (markdown)
 
-The file is made publically available on your race server at
+The file is made publicly available on your race server at
 `/project/tasks/issues.csv`, and there's a button on the admin tasks page so
 you can download it in case this is useful to you.
 

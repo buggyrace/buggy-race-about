@@ -37,7 +37,7 @@ won't be included in any downloads.
 
 A user can be an _enrolled student_. This is used to distinguish students
 who are actively engaged in the project from other users (such as staff —
-although these are not mutually exlusive). In general, the race server decides
+although these are not mutually exclusive). In general, the race server decides
 if a user should be included in the following collections based on their
 _student_ status:
 
@@ -61,7 +61,7 @@ There are two types of staff user:
   Some admin changes require the admin user to also know the site's
   _authorisation code_.
 
-* **Teachiung Assistants**  
+* **Teaching Assistants**  
   Teaching Assistants (TAs) are staff users with mostly read-only access.  
   TAs may be able to set (i.e., change) students' passwords if the config
   setting `IS_TA_PASSWORD_CHANGE_ENABLED` is `Yes`.

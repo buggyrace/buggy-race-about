@@ -1,12 +1,17 @@
 ---
-title: Tasks and the task list
+title: The task list
 layout: home
 nav_order: 10
 parent: Static content
 ---
 
 
-# Managing tasks and the task list
+# The task list
+
+{: .note}
+This page is about the task list (the single HTML page on the race server)
+— for information about how to specify the tasks themselves, including
+editing them, see [creating the tasks](../customising/creating-tasks).
 
 The task list is the page on the race server that defines the **tasks** which
 your students need to attempt. Tasks are grouped into **phases** which must
@@ -60,10 +65,10 @@ By default, the server will generate URLs in the form:
 
     /projects/tasks/1-add
 
-and automatically redirect to the form with the anchor tag. If you don't want
-this behaviour, you can disable it by switching the config setting
-`IS_TASK_URL_WITH_ANCHOR` to `Yes`, which always usings the URL without
-requiring redirection.
+and automatically redirect to the form with the anchor tag. Task redirection is
+also case insensitive. If you don't want this behaviour, you can disable it by
+switching the config setting `IS_TASK_URL_WITH_ANCHOR` to `Yes`, which always
+uses the URL without requiring redirection.
 
 {: .navigation}
 **Admin** → **Config** → Config:**Tasks**

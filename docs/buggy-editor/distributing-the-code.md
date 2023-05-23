@@ -55,7 +55,7 @@ We used the third method: initially, we automatically forked the buggy editor
 into each student's GitHub account, which they then either cloned or downloaded
 by zip. Later (for the third time we ran the project and onwards), we
 semi-automated that last stage by cloning onto our [remote server through
-VSCode]](running-remote).  
+VSCode](running-remote).  
 In effect, we used GitHub as a convenient way to distribute the code — this
 makes it a little easier for us (you), and also exposes students to Git and
 GitHub in the process.  
@@ -76,9 +76,9 @@ click on the green **Code** button, and choose **Download zip**.
 
 Remember to [customise the source code](customising) before zipping it up
 again. Then you can distribute that zip file to your students directly — for
-example by emailing it, or putting somewhere they can download from (if you're
-using a system like Moodle, Canvas or Blackboard, you can put it on the course
-pages as a resource to download).
+example by emailing it, or it putting somewhere they can download from (if
+you're using a system like Moodle, Canvas or Blackboard, you can put it on the
+course pages as a resource to download).
 
 {: .navigation}
 **Admin** → **Config** → Config:**GitHub**
@@ -132,6 +132,12 @@ Issues can form part of a professional workflow.
 
 ### Setting up the GitHub OAuth app
 
+{: .note}
+You only need the GitHub OAuth app if you have set the config setting
+`IS_USING_GITHUB_API_TO_FORK` to `Yes`.  
+If you're not automatically forking the buggy editor source code into students'
+GitHub accounts, you don't need to do this!
+
 The OAuth app requests permission from the student for write access to their
 GitHub account, in order to fork the repo for them (and, if you have chosen it,
 to inject the tasks too).
@@ -154,9 +160,10 @@ These are the key points:
   students that this is the right place, such as "XYZ Buggy Racing server for
   the ABC course"
 
-* For _Authorisation callback URL_, this must be a full URL, starting with
-  `https://` followed by your race server's URL with the path
-  `/oauth/github/callback`
+* For _Authorisation callback URL_, this must be a full URL to your race server,
+  starting with `https://` with the path `/oauth/github/callback`  
+  For example, it should look something like:  
+  `https:www.example.com/oauth/github/callback`
 
 * Provide a logo — either make your own or reuse/edit our
   [basic stripey square](/docs/img/stripe-square.png).
