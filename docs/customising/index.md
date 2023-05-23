@@ -16,7 +16,7 @@ you want to run the project.
 When you have [installed the race server](../hosting), the first time you visit
 the server website it is in [the set-up phase](setup-phase). This takes you
 through the ten steps of configuration setting groups. Most of the settings
-have sensible default values, so this needn't take long.
+have sensible default values, so this is not as arduous as it sounds.
 
 However, we recommend you change config as little as possible once you've
 registered students or started the project. So it's a good idea to go through

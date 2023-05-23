@@ -15,7 +15,7 @@ has_children: false
 The task config settings mostly concern informing the server of any
 customisations you've made to the tasks that your students will be doing. 
  
-See more about [managing the tech notes](../static-content/tech-notes).
+See more about [managing the tasks](../static-content/task-list).
 
 
 

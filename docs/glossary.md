@@ -6,7 +6,7 @@ nav_order: 300
 
 # Glossary
 
-Clarification of terms used in the documentation
+Clarification of terms used in project and its documentation.
 
 ---
 <!--
@@ -19,7 +19,26 @@ Clarification of terms used in the documentation
 <dt>admin pages</dt>
 <dd>
   Pages on the race server that can only be accessed by staff users, and allow
-  access to configuration and student data.
+  access to configuration and student data. Paths in URLs start with
+  <code>/admin</code>. Admin-only links tend to be pale yellow buttons, to
+  distinguish from public links.
+</dd>
+
+<dt>administrator</dt>
+<dd>
+  An administrator is a <strong>staff user</strong> with full access to all the
+  admin capabilities of the race server. Some admin functions also require
+  knowing the <strong>auth code</strong>. There should always be at least one
+  administrator (the username/account is created during the
+  <strong>set-up phase</strong>).
+</dd>
+
+<dt>announcement</dt>
+<dd>
+  Announcements are messages that are displayed either at the top of every
+  page on the race server (except the tech notes), or in specific places
+  (such as the login screen). 
+  <a href="running/announcements">About managing announcements</a>.
 </dd>
 
 <dt>authorisation code<br>(auth code)</dt>
@@ -34,7 +53,7 @@ Clarification of terms used in the documentation
 <dd>
   The basic Python Flask application that each student is given at the start
   of the project, and which they need to develop to add more features and
-  funcationality.
+  functionality.
 </dd>
 
 <dt>Flask</dt>
@@ -59,6 +78,13 @@ Clarification of terms used in the documentation
 <dd>
   A staff user on the race server is an <strong>administrator</strong> or a 
   <strong>Teaching Assistant</strong>. Staff users can access the admin pages.
+</dd>
+
+<dt>Teaching Assistant (TA)</dt>
+<dd>
+  A staff user on the race server who has read-access to student data but
+  limited config/admin access. Depending on config settings, TAs may be able
+  to edit staff comments on users, and reset students' passwords for them.
 </dd>
 
 </dl>

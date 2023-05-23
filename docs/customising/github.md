@@ -38,4 +38,6 @@ need to configure the OAuth app on GitHub to make this work.
 | `GITHUB_CLIENT_SECRET` | A string that exactly matches the client secret stored on the GitHub app that the server uses tofork the buggy editor repo into a student's own GitHub account.  <br><br> _Default value:_ _none/empty_ |
 
 
-      
+ ---
+ * Previous: [Races config](races)
+ * Next: [Creating the tasks](creating-tasks)

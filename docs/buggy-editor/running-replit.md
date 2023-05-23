@@ -1,7 +1,7 @@
 ---
 title: Running on Replit
 layout: home
-nav_order: 60
+nav_order: 50
 parent: Buggy editor
 has_children: false
 ---
@@ -16,18 +16,18 @@ can use to run (and develop) their buggy editors.
 The great thing about using a service like this is that the development
 environment is ready-to-go: no setup needed by the students.
 
-Because it's in the cloud, a student who is only working on pythonanywhere must
+Because it's in the cloud, a student who is only working on Replit must
 be online to work.
 
 The basic service described here is free.
 
 {: .rhul}
 In the first year of running this project (2020), we were in full UK Covid
-lockdown. We used replit as the fall-back for students who did not have hardware
+lockdown. We used Replit as the fall-back for students who did not have hardware
 that supported local installation of a Python environment (although it turned
 out some preferred to work this way anyway). That's why, from the start, the
 buggy editor repo has contained a `.replit` config file which helps streamline
-replit set-up.
+Replit set-up.
 
 {: .screenshot}
 ![Screenshot of Replit running buggy-race-editor](/docs/img/screenshots/replit-buggy-racing.png)
@@ -41,7 +41,7 @@ your students.
 
 ## Set up the repl
 
-Log into your replit account and choose **Create repl**.
+Log into your Replit account and choose **Create repl**.
 
 Choose **Import from GitHub** (instead of the other options which are about
 using a template).
@@ -62,7 +62,7 @@ guide you through the interface.
 
 You _can_ run `app.py` by clicking the green **Run** button at the top of the
 screen. However, we recommend doing it the manual way — using the shell,
-described below — because then you're more in control (and we've seen replit get
+described below — because then you're more in control (and we've seen Replit get
 stuck with its own processes and needing a whole-page refresh to get back).
 
 Replit knows this is a webserver, so it helpfully presents the home page (the
@@ -80,7 +80,7 @@ You can run the webserver like this:
 ~/buggy-race-editor$ python app.py
 ```
 
-You can stop the app running by interrrupting it with Ctl-C (if the shell 
+You can stop the app running by interrupting it with Ctl-C (if the shell 
 doesn't have focus in that web page, clicking on the shell first).
 
 ## Initialising the database
@@ -97,6 +97,6 @@ To initialise the database manually, do this:
 ```
 
 ---
-* Previous: [Running on a remote server](running-remote)
-* Next: [Running on repl.it](running-replit)
+* Previous: [Running on PythonAnywhere](running-pythonanywhere)
+* Next: [Running remotely](running-remote)
 

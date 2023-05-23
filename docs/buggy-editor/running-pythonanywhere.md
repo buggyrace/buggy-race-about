@@ -1,12 +1,12 @@
 ---
-title: On pythonanywhere
+title: On PythonAnywhere
 layout: home
-nav_order: 50
+nav_order: 40
 parent: Buggy editor
 has_children: false
 ---
 
-# Running on pythonanywhere.com
+# Running on PythonAnywhere.com
 
 [PythonAnywhere](https://www.pythonanywhere.com)
 provides a cloud-hosted very Python-friendly environment that your students
@@ -15,16 +15,19 @@ can use run (and develop) their buggy editors.
 The great thing about using a service like this is that the development
 environment is ready-to-go: no setup needed by the students.
 
-Because it's in the cloud, a student who is only working on pythonanywhere must
+Because it's in the cloud, a student who is only working on PythonAnywhere must
 be online to work.
 
 The basic service described here is free.
 
 {: .note}
 What follows are the **manual** steps for getting the editor running up there,
-with a (basic, free) student account. PythonAnwhere has an educational tier,
+with a (basic, free) student account. PythonAnywhere has an educational tier,
 so it's possible you could automate this process so accounts are already set up
 for all your students.
+
+{: .screenshot}
+![Screenshot of PythonAnywhere buggy-race-editor files](/docs/img/screenshots/pythonanywhere.png)
 
 ## Get the code
 
@@ -117,11 +120,11 @@ that is when the app that's _really_ running isn't your `app.py`.
 
 
 {: .warning}
-Remember that pythonanywhere's `www` and `eu` subdomains run entirely separate.
+Remember that PythonAnywhere's `www` and `eu` subdomains run entirely separate.
 Be sure you (and your students) are using the correct one!
 
 
 
 ---
-* Previous: [Running on a remote server](running-remote)
+* Previous: [Running locally](running-local)
 * Next: [Running on repl.it](running-replit)

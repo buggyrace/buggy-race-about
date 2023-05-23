@@ -12,7 +12,7 @@ has_children: false
 To register new students on the race server, you can upload a spreadsheet with
 columns for their username, password, and whatever other fields you chose when
 you were [configuring users](../customising/users). Specifically, you need to
-upload a _comma-separated values_ (CSV) file continaing such values (you can
+upload a _comma-separated values_ (CSV) file containing such values (you can
 save a CSV file from any spreadsheet program, including Excel).
 
 {: .navigation}
@@ -21,10 +21,43 @@ save a CSV file from any spreadsheet program, including Excel).
 {: .warning}
 Bulk registration of students works best if you have JavaScript enabled
 
+
+## Example CSV
+
 The server will ignore any columns in the CSV file that it doesn't need. The
 order of the columns doesn't matter, but they must have names that _exactly_
-match what the server is expecting. The page contains example data (for two
-users, Ada and Charlie) so you can see what the your CSV data should look like.
+match what the server is expecting. The _Register new students_ page contains
+example data (for two users, Ada and Charlie) so you can see what the your CSV
+data should look like: click on **Show example** to see it. The example you
+see on your race server takes into account your User config settings and only
+includes the columns/headings you need.
+
+
+### An example CSV for registering two users:
+
+The columns you need depend on what config settings you've set. For example, if
+users don't have email addresses, the CSV doesn't need to have that column.
+
+| username | password    | email                  | ext_id | ext_username | first_name | last_name |
+|----------|-------------|------------------------|--------|--------------|------------|-----------|
+| ada      | secR3t89o!W | a.lovelace@example.com | 123003 | al003        | Ada        | Lovelace  |
+| chaz     | n-E7jWz*DIg | c.babbage@example.com  | 123013 | cb002        | Charles    | Babbage   |
+
+
+
+### A minimal example for two users
+
+This works for two users on a race server with no extra fields configured for
+users.
+
+| username | password    |
+|----------|-------------|
+| ada      | secR3t89o!W |
+| chaz     | n-E7jWz*DIg |
+
+
+## Upload or copy-and-paste
+
 
 You can upload a CSV file (probably the simplest way) _or_ paste the CSV data
 directly. In either case, make sure your CSV data includes the header row as the
@@ -40,7 +73,7 @@ If you're running the buggy racing project as part of another module, and you're
 already using an online learning platform (like Moodle, Canvas, or Blackboard)
 then it's very likely you've already got a spreadsheet that contains the data
 you need. The server has a utility to help you turn that CSV file into one with
-the precise columns you need.
+the correct columns, ready to upload to the race server.
 
 {: .navigation}
 **Admin** → **Users** → **Register new students** → **Pre-registration CSV utility**
@@ -111,7 +144,7 @@ The username will be the lower case first word from the "full name" column. If
 this would result in identical usernames, numbers are added to make the
 subsequent ones unique. For example, if there are multiple students with the
 first name Ada, the generated CSV will contain `ada`, `ada2`, `ada3` and so on.
-The utitilty reports which names have been "bumped" in this way so you can
+The utility reports which names have been "bumped" in this way so you can
 review, and if necessary edit, the CSV after you've downloaded it.
 
 We don't change `ada` to `ada1` in case this isn't the mechanism you want to
@@ -149,7 +182,35 @@ the drop-down options, and we could choose it for our `ext_username` field
 (which we call College Username).
 
 
+## Why download a CSV to upload?
 
+You may be wondering why you need to create the CSV file — and download it —
+when the only thing you're going to do is upload it back to the race server.
+The issue here isn't the user data, it's _specifically_ the allocation of
+initial passwords. The race server doesn't (yet?) have OAuth integration with
+your institution's login, or third-parties like GitHub, so access is managed by
+username+password. We don't store passwords in plaintext in the database (of
+course), so the downloaded CSV is your record of what the students' racing
+server accounts' _initial_ passwords are, which you'll need in order to notify
+the individual students themselves.
+
+Obviously, you should encourage each of your students to reset their password
+to one of their own choice as soon as they have logged in.
+
+This process may be reviewed when password reset links are implemented, but
+for granting students access to their (empty) accounts, this is a pragmatic
+approach.
+
+{: .rhul}
+We notified each student their race server login credentials (username and
+password) via Moodle's "personalised feedback" feature. There's a utility
+script in `/utils/moodle-login.csv` that notified each student of their login
+credentials for the server by creating a CSV to upload to the Moodle. Each
+student could then access their own message for their race server login
+criteria.
+
+
+ 
 
 
 

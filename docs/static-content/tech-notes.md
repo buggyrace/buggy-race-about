@@ -40,7 +40,7 @@ config settings that appear within the tech notes, you should re-publish them
 (as a rule of thumb: if you change any config settings, re-publish the tech
 notes, just to be sure).
 
-### If you don't publish the tech notes
+### If you don't publish the tech notes — 404!
 
 If you are using the default set-up, with the tech notes being served by the
 race server, but you don't publish them — or your hosting platform (e.g.,

@@ -14,9 +14,11 @@ has_children: false
 
 Project config settings control _how_ you're running the project from an
 academic point of view.
- 
-See more about [managing the task-list](../static-content/task-list).
- 
+
+Config settings for the tasks — which are fundamental to how your project works
+— are in a separate group: see the [task config settings](tasks) instead.
+There's also a separate page about
+[managing the task-list](../static-content/task-list).
 
 
 ## Config settings ("Project")

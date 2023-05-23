@@ -1,7 +1,7 @@
 ---
 title: Distributing the code
 layout: home
-nav_order: 30
+nav_order: 20
 parent: Buggy editor
 has_children: false
 ---
@@ -110,7 +110,7 @@ this if you want to expose your students to Git _even though they don't need
 to use it_.
 
 To enable this, there's a little more set-up required on your part. You need a
-GitHub Oath app that has persmission to fork into their GitHub accounts. You
+GitHub Oath app that has permission to fork into their GitHub accounts. You
 set this up on GitHub, but need to tell the race server the app ID and client
 secret.
 
@@ -175,4 +175,4 @@ again once all your students have got their editor source code.
 
 ---
 * Previous: [Customising the editor](customising)
-* Next: [Running locally](running-locally)
+* Next: [Running locally](running-local)

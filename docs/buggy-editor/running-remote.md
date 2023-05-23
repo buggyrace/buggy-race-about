@@ -1,7 +1,7 @@
 ---
 title: Running remotely
 layout: home
-nav_order: 40
+nav_order: 60
 parent: Buggy editor
 has_children: false
 ---
@@ -15,7 +15,7 @@ This is the most specific way for the students to run their editor app.
 First the editor repo is forked to each student's GitHub repo. Then a VSCode
 workspace file is prepared (once the fork has been done) which can clone _that_
 repo into the student's account on the remote server. The remote server must
-be set up such that each student has an individual port numner assigned. The
+be set up such that each student has an individual port number assigned. The
 remote server uses these port numbers so that the each web app can be accessed
 uniquely.
 
@@ -35,5 +35,4 @@ environment does mean it's possible to check on the actual progress.
 
 
 ---
-* Previous: [Running locally](running-locally)
-* Next: [fixme](fixme)
+* Previous: [Running on Replit](running-replit)

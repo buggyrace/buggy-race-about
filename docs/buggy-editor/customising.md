@@ -15,7 +15,8 @@ This page is about customising the **buggy editor repo** — you should do this
 
 Before you start running the project, you need to prepare the buggy editor
 source code that your students will start with. The recommended way to do this
-is to fork our "plain" buggy editor repo from [github.com/buggyrace/buggy-race-editor](https://github.com/buggyrace/buggy-race-editor).
+is to fork our "plain" buggy editor repo from
+[github.com/buggyrace/buggy-race-editor](https://github.com/buggyrace/buggy-race-editor).
 
 {: .note}
 You don't **need** to customise the buggy editor source code before sharing it
@@ -38,7 +39,7 @@ the one you can edit. There are two files that you should change:
 ## The server can suggest your custom README
 
 {: .navigation}
-**Admin** → **Config** → **Summary** — GitHub section: **Buggy Editor**
+**Admin** → **Config** → **Buggy Editor**
 
 The server can recommend a custom README by using the config settings you've
 made. The server's buggy editor page provides an example `README.md` that you
@@ -50,8 +51,11 @@ students — some things may depend a little on how and where your students will
 be running it.
 
 The details in the README may need to change according to how you anticipate
-your students running their editor apps. For example, the default README directs students to find their running app at `localhost:5000` at Flask's default port 5000. But if you will be encouraging your students to run on
-[pythonanywhere](https://www.pythonanywhere.com) or [repl.it](https://replit.com)] that might be misleading.
+your students running their editor apps. For example, the default README
+directs students to find their running app at `localhost:5000` at Flask's
+default port 5000. But if you will be encouraging your students to run on
+[pythonanywhere](https://www.pythonanywhere.com) or
+[repl.it](https://replit.com)] that might be misleading.
 
 {: .note}
 The README suggestion text incorporates your config settings (including,
@@ -79,7 +83,8 @@ relationship between our repo and your customisations isn't relevant detail.
 
 ## Update the server GitHub config
 
-If you have forked (and customised) the editor repo, be sure to set the config to point at **your** fork of the repo, and not ours.
+If you have forked (and customised) the editor repo, be sure to set the config
+to point at **your** fork of the repo, and not ours.
 
 {: .navigation}
 **Admin** → **Config** → Config:**GitHub**
@@ -94,4 +99,4 @@ Normally, the repo name and the repo owner should also occur within the URL.
 
 
 ---
-* Next: [Running locally](running-locally)
+* Next: [Distributing the code](distributing-the-code)

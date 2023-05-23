@@ -68,5 +68,5 @@ to point them at the [CompSci superbasics](https://superbasics.beholder.uk).
 
 
 ---
-* Previous: [Customising the editor](customising)
-* Next: [fixme](fixme)
+* Previous: [Distributing the code](distributing-the-code)
+* Next: [Running on PythonAnywhere](running-pythonanywhere)
