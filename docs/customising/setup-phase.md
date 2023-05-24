@@ -9,7 +9,7 @@ has_children: false
 
 # The set-up phase
 
-When you visit your newly-installed race server for the first time, it will be in _setup mode_. This takes your through all the config settings, one step at a time. Each step covers a group of related settings. For most of these, you can accept the (sensible) defaults.
+When you visit your newly-installed race server for the first time, it will be in _set-up mode_. This takes your through all the config settings, one step at a time. Each step covers a group of related settings. For most of these, you can accept the (sensible) defaults.
 
 Don't worry if you get any wrong, because once you've finished, you'll be logged in as an administator, and can go back and change anything.
 
@@ -18,3 +18,19 @@ At very first step of the set-up phase, you must set the
 register you as an administrator with that username. If you're not sure,
 use the suggested username `admin` because you can change it later (see
 [user management](../running/user-management)).
+
+## Interrupted set-up?
+
+The very first phase of the set-up creates an admininistrator user for you
+(you've specified both the username and password). If you lose your place
+during the setup (for example, you accidentally close your browser before
+you get to the end, oops), you can resume by logging back in with those
+credentials.
+
+{: .navigation}
+Click on **log in** in the top-right corner
+
+
+---
+
+* Next: [Environment variables](env)

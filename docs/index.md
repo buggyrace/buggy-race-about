@@ -1,25 +1,27 @@
 ---
-title: Overview
+title: Introduction
 layout: home
-nav_order: 10
+nav_order: 1
 ---
 
-# Buggy Racing: Python programming project
+# Buggy Racing: a Python programming project for teachers and tutors
 
 
-The _Buggy Racing_ project consists of the software (the **race server**) and
-supporting material (the **tech notes**) for running a practical Python
-project... for students who are learning Python.
-
-You need to host the race server — either on your institution's own
-infrastructure, or in the cloud. See [Hosting & installation](hosting) for
-details and guidance.
+**Got students learning Python?**  
+_Buggy Racing_ consists of the software (the "race server") and supporting
+material (the "tech notes") for running a practical Python programming
+project.
 
 
-{: .highlight }
-This project was designed to run in the final term of the CompSci Foundation
-course at Royal Holloway, University of London.
-
+{: .rhul  }
+_Buggy Racing_ was originally created in 2020 as the final term project of the
+CompSci Foundation programme at Royal Holloway, University of London. We ran it
+as a 6-week course of weekly lab sessions with students after at least one full
+term of introductory Python.  
+<br>
+Since then we've made it very configurable so you can run it in a way that works
+for your institution or course — university department, FE College, or local
+code club. Available **for free** under the GNU GPL license.
 
 
 ## Features
@@ -32,75 +34,37 @@ course at Royal Holloway, University of London.
   data
 * Can run with or without student GitHub accounts:
     * without: students unzip the source code and get to work
-    * with: server can fork the repo into students' accounts and optionally inject tasks as issues
-* Development can happen on students' own machines, college
-  machines, or online services like
-  [pythonanywhere](https://www.pythonanywhere.com) or
-  [repl.lit](https://repl.it)
-* Students can store notes (task texts) as they go
+    * with: server can fork the repo into students' accounts and optionally
+      inject tasks as issues
+* Development can happen on students' own machines, college machines, or online
+  services like [PythonAnywhere](https://www.pythonanywhere.com) or
+  [Replit](https://repl.it)
+* Students can store notes (task texts) as they go, working towards producing a
+  project report (or not: you configure how the project is run)
 * "Tech notes" supporting material (can be replaced with your own)
-
-## Not included
-
-* Submission and assessment of projects (because how you do that
-  depends enormously on your institution and the course of study
-  it's part of, if any)... although [we have guidance](teaching)
-  on how to handle that too.
 
 
 ## Requirements
 
-* The racing server must be accessbile over HTTPS
-    * host it yourself (e.g., on your college's server)
-    * or in the cloud (e.g., on Heroku)
+See the [full requirements](overview/requirements)). You need to
+[host your own race server](hosting).
 
-* Tech stack:
-    - race server is itself a Python Flask application (but also
-      uses webpack, i.e., node)
-    - ...that needs to connect to a database (e.g.,
-      Postgres or MySQL (but Microsoft SQL Server should also work)
-    - it's wrapped up in a Docker container to ease deployment
-    - for full GitHub integration (automatically forking the
-      editor code into students' own repos) you need an Oauth
-      app running on GitHub
-
-Students need access to the race server, but because the buggy editor
-they are developing is a standalone web app, they can work offline
-on their own machines (or college machines).
-
-Once you've sorted out hosting, we might be able to help with the
-DNS: if you're a college or school, ask us to add you as a
-[subdomain on `buggyrace-net`](hosting/buggyrace-net)
-(this might make SSL easier too)
-
-
-## Components:
+## Components
 
 * "Race server" for students to upload their buggies
   for the races
-* Structured activity of tasks arranged in phases (getting
-  progressively more complex)
-* Support of
-* Explanatory pages ("tech notes") on topics and tasks in the project
+* "Buggy editor" basic app that each student starts with
+* Structured activity of tasks arranged in phases (getting progressively more
+  complex) — you can edit them or write your own
+* Explanatory pages ("tech notes") on topics and tasks within the project
+* Admin backend for managing the project
 
 
+## Not included
 
+{: .warning}
+Submission and assessment of projects is **not included** (because how you do
+that depends enormously on your institution and the course of study it's part
+of, if any)... although [we have guidance](teaching) on how to handle that too.
 
-* Who is it for?
-
-We taught this with a cohort of students, some of whom had only done one
-term Python programming before diving into buggy racing, and others who were
-confident programmers with A-level (high school) experience.
-
-The Buggy Racing project was designed specifically with university
-Foundation students in mind: there's potentially a wide range of experience
-with such a group. Building the buggy editor is a realistic and rewarding
-mission for new students, but a challenging undertaking for more experienced
-programmers who push through to the later tasks.
-
-The phase/task philosophy: each student
-
-  * must complete the phases in order (they are designed to build on each
-    other)
-  * but chooses how _thoroughly_ to implement each task
 

@@ -7,4 +7,34 @@ nav_order: 110
 
 # Technical details
 
- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The Race Server is a Python Flask application.
+
+> GitHub repo: [buggyrace/buggy-race-server](https://github.com/buggyrace/buggy-race-server)
+
+See the server's
+[`requirements.txt`](https://github.com/buggyrace/buggy-race-server/blob/main/requirements.txt)
+for the Python libraries it uses.
+
+There's a [`Dockerfile`](https://github.com/buggyrace/buggy-race-server/blob/main/Dockerfile)
+so you can deploy it with Docker.
+
+It was built on the
+[flask-cookiecutter](https://github.com/cookiecutter-flask/cookiecutter-flask)
+webserver, which comes with [Bootstrap](https://getbootstrap.com) and the
+[JQuery](https://jquery.com) JavaScript utility library. The cookiecutter
+also brought [webpack](https://webpack.js.org) along, which means the server
+needs [node.js](https://nodejs.org/en) (to package up the JavaScript and CSS)
+as well as Python.
+
+Python version 3.8+ is needed (because of copious use of "`f`-strings").
+
+> The Race Server is licensed under the GNU Affero GPL: it is free and open
+> source software.  
+> Some components from other projects may have different licensing.
+
+
+
+
+
+
+
