@@ -182,4 +182,4 @@ again once all your students have got their editor source code.
 
 ---
 * Previous: [Customising the editor](customising)
-* Next: [Running locally](running-local)
+* Next: [Where to run the app?](running-where)

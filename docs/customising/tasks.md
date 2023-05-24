@@ -15,7 +15,8 @@ has_children: false
 The task config settings mostly concern informing the server of any
 customisations you've made to the tasks that your students will be doing. 
  
-See more about [managing the tasks](../static-content/task-list).
+See more about [creating the tasks](creating-tasks), which you can do when you
+have completed set-up phase.
 
 
 

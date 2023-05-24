@@ -12,10 +12,6 @@ _Buggy Racing_ consists of the software (the "race server") and supporting
 material (the "tech notes") for running a practical Python programming
 project.
 
-You need to host the race server — either on your institution's own
-infrastructure, or in the cloud. See the [detailed documentation](overview) for
-details and guidance.
-
 
 {: .rhul  }
 _Buggy Racing_ was originally created in 2020 as the final term project of the
@@ -50,7 +46,8 @@ code club. Available **for free** under the GNU GPL license.
 
 ## Requirements
 
-See the [full requirements](overview/requirements)).
+See the [full requirements](overview/requirements)). You need to
+[host your own race server](hosting).
 
 ## Components
 
