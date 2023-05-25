@@ -11,6 +11,9 @@ parent: About
 These are the humans behind the Buggy Racing project
 
 
+{: .todo}
+This isn't ready yet: the documentation is still being written.
+
 ## Dev team
 
 * Dave Whiteland
