@@ -64,7 +64,7 @@ p.note{
   background-size:3rem;
   min-height:3.5rem;
 }
-p.rhul::before{
+.rhul::before{
   color: #e34d18;
   content:'Case study — RHUL';
   font-weight: bold;
@@ -72,7 +72,7 @@ p.rhul::before{
   font-size: .75em;
   display:block;
 }
-p.rhul{
+.rhul{
   background-color: #e0e0e0;
   background-image:url(/docs/img/rhul-arms.png);
   background-repeat: no-repeat;

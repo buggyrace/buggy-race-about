@@ -24,8 +24,8 @@ revisit this page.
 {: .note}
 In general, only administrators who know the authorisation code can change 
 other users' data.  
-An exception is that Teaching Assistants can be granted the ability to change
-students' passwords.
+Depending on config settings (in the "Users" group), Teaching Assistants may
+be able to add staff comments and reset students' passwords.
 
 ### Active vs. inactive users
 
@@ -64,7 +64,8 @@ There are two types of staff user:
 * **Teaching Assistants**  
   Teaching Assistants (TAs) are staff users with mostly read-only access.  
   TAs may be able to set (i.e., change) students' passwords if the config
-  setting `IS_TA_PASSWORD_CHANGE_ENABLED` is `Yes`.
+  setting `IS_TA_PASSWORD_CHANGE_ENABLED` is `Yes`, and edit staff comments on
+  a user's record if `IS_TA_EDIT_COMMENT_ENABLED` is `Yes`.
 
 The username you nominated as the admin user during the setup-up phase is
 automatically an administrator.
