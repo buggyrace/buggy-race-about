@@ -12,6 +12,8 @@ _Buggy Racing_ consists of the software (the "race server") and supporting
 material (the "tech notes") for running a practical Python programming
 project.
 
+{: .todo}
+This isn't ready yet: the documentation is still being written.
 
 {: .rhul  }
 _Buggy Racing_ was originally created in 2020 as the final term project of the

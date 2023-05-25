@@ -7,7 +7,6 @@ nav_order: 10
 ---
 
 
-
 # About the students
 
 _Buggy Racing_ is a practical Python project for students who are familiar with
