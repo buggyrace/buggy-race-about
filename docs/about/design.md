@@ -150,7 +150,7 @@ first contacts of your engagement with your students.
 
 If there's anything you might need to share with a student, it should be
 linkable (and hence bookmarkable) (that's why every task has its own URL). It
-should be accessible (no LaTeX PDFs to make it look like an paper in a Journal).
+should be accessible (no LaTeX PDFs to make it look like a paper in a Journal).
 Things that you can interact with should look different from things you can't.
 Link text should be meaningful (not "click here"). None of this is [rocket
 surgery](https://sensible.com/rocket-surgery-made-easy/) but our experience of
