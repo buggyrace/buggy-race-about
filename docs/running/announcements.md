@@ -26,10 +26,10 @@ There are two types of announcement:
   Standard announcments are displayed at the top of every page (except the tech
   notes). You can choose from a set of preset styles that change the colour of
   the announcement:  
-  <span class="announce-danger">danger</span>
-  <span class="announce-info">info</span>
-  <span class="announce-special">special</span>
-  <span class="announce-warning">warning</span>
+  <span class="announce-example announce-danger">danger</span>
+  <span class="announce-example announce-info">info</span>
+  <span class="announce-example announce-special">special (has "danger stripes" as well)</span>
+  <span class="announce-example announce-warning">warning</span>
 
 * **On specific pages**  
   These announcements allow you to place messages in specific locations:

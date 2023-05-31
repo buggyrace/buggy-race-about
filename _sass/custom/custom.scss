@@ -140,3 +140,13 @@ p.caption {
 
 .main-content dl dt { font-weight: bold; }
 .main-content dl dd { margin-bottom: 2rem; }
+
+.announce-example {
+  padding:0.25rem 1rem; 
+  display: block;
+  margin:0.25rem 1rem;
+}
+.announce-danger  { background-color: #f8d7da; color :#721c24; }
+.announce-info    { background-color: #d1ecf1; color: #0c5460; }
+.announce-special { background-color: #ffff00; color: #000000; }
+.announce-warning { background-color: #fff3cd; color: #856404; }
