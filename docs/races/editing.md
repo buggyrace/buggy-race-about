@@ -1,12 +1,12 @@
 ---
-title: Running races
+title: Editing races
+nav_order: 90
 layout: home
-nav_order: 30
-parent: Day-to-day running
+parent: Running races
+has_children: false
 ---
 
-
-# Running races
+# Editing races
 
 {: .todo}
 This isn't ready yet: the documentation is still being written.

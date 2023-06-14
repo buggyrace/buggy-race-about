@@ -16,6 +16,9 @@ configuring the server and how you are running the project.
 
 It shows the main settings and also provides links if you want to change them.
 
+You're shown the set-up summary when you have completed the set-up phase, but
+you can also return to it at any time once you've started using the server.
+
 There's also a link to the **System information** page if you need to check
 settings (including which version of the server software is running).
 

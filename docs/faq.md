@@ -70,15 +70,18 @@ admin user with a known password. You'll need the current authentication code.
 If you've lost that too, then set a new one as an environment variable too:
 `AUTHORISATION_CODE`.
 
-Once you've got a new admin user, log in with the new credentials, and remove
-the environment variable declarations (because they're now saved in the
-database). Promote or register the user that was lost — and once you've done
-that, maybe [deactivate the new one](#can-i-delete-a-user).
+Once you've got a new admin user, log in with the new credentials. Go to
+**Admin** → **Config** → **Server** and set `IS_PUBLIC_REGISTRATION_ALLOWED`
+back to `No`. Remove the environment variable setting you used to bypass that
+(do not forget this step: otherwise, you'll have public registration again next
+time you restart). Promote or register the user that was lost — and once you've
+done that, maybe [deactivate the new one](#can-i-delete-a-user).
 
 
 ## Oops! An announcement with bad HTML is breaking every page
 
 Announcements are uniquely dangerous because if you accidentally fail to
-"balance your tags" they can have a destructive affect on page layout. You can
-fix this by editing the announcement to remove the offending HTML. Specifically,
-you can [disable the HTML to get to the edit-announcements pages](running/announcements.html#recovering-from-an-announcement-with-critically-broken-html).
+"balance your tags" they can have a destructive effect on page layout
+(including the pages for fixing it). You can resolve this this by editing the
+announcement to remove the offending HTML. Specifically, you can
+[disable the HTML to get to the edit-announcements pages](running/announcements.html#recovering-from-an-announcement-with-critically-broken-html).

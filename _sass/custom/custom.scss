@@ -105,6 +105,30 @@ p.todo {
   border: 4px dashed #dd0000;
 }
 
+/* Two Minutes to Midnight: Up the Irons! */
+p.note-two-mins-to-midnight::before {
+  color: #dd0000;
+  content:'Two minutes to midnight';
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: .75em;
+  display:block;
+  color:#f77e7e;
+}
+p.note-two-mins-to-midnight {
+  padding: .8rem .8rem .8rem 4em;
+  background-color: rgba(20, 175, 231, 0.2);
+  background-image:url(/docs/img/eddie-powerslave.png);
+  background-repeat: no-repeat;
+  background-position: 0.25rem 0.4rem;
+  background-size:3rem;
+  min-height:3.5rem;
+}
+p.note-two-mins-to-midnight {
+}
+
+
+
 table.config-settings tr td:first-child {
   vertical-align: top;
 }

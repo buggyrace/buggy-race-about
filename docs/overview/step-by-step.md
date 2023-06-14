@@ -95,7 +95,7 @@ and the sort of things you need to think about before you start.
   Winning or losing is fun (and hard to control), but _qualifying for a race_
   is the success the students have control over, and the incentive to fine-tune
   their editors.  
-  → [running races](../running/running-races)  
+  → [running races](../races)  
   
 
 * **Keep an eye on buggy uploads and note-taking**  

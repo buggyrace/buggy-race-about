@@ -103,6 +103,15 @@ Clarification of terms used in project and its documentation.
   via VSCode and they need this to login to that, external, server).
 </dd>
 
+<dt>ext_id</dt>
+<dd>
+  An "external identifier", which is a field you can choose to add to all users.
+  This may be helpful if you need to link students in another system, for example
+  if you're using an online framework like Moodle. The race server doesn't use
+  this — it's just for your information (but might be handy if you need to
+  automate submisison of marks or feedback, for example).
+</dd>
+
 <dt>Flask</dt>
 <dd>The lightweight Python webserver the project uses:
   <a href="https://flask.palletsprojects.com/en/2.3.x/">Flask docs</a>
@@ -127,6 +136,15 @@ Clarification of terms used in project and its documentation.
   as part of the <strong>specs</strong>.
 </dd>
 
+<dt>petrol</dt>
+<dd>
+  Gasoline. Buggy racing was written in British English, but — because CSS is
+  the relevant context here — the "JSON names" (and hence column names) for
+  buggy data require the US spelling of <code>color</code>. Since the table
+  also includes <code>armour</code> (which isn't a CSS keyword), this is a
+  sneaky but perhaps early lesson in close reading. Ouch!
+</dd>
+
 <dt>phase</dt>
 <dd>
   The <strong>tasks</strong> students must do are grouped into phases. All the
@@ -141,6 +159,34 @@ Clarification of terms used in project and its documentation.
   should just use the word "report").
 </dd>
 
+<dt>race event</dt>
+<dd>
+  The details of what happens in a race — running out of fuel, attacking
+  another buggy, moving forward — are recorded as events, which the
+  <strong>race player</strong> replays. Race events are stored in the
+  <strong>race file</strong> (not the database).
+</dd>
+
+<dt>race file</dt>
+<dd>
+  Races are created on the <strong>race server</strong> but are run offline:
+  you download the race file which contains all the data needed to run the
+  race. The results are added to the race file together with the <strong>race
+  events</strong>. You can upload this race file to add (and publish) the
+  results of the race. The <strong>race player</strong> can replay a race
+  if it has access to a race file that contains the race's events.
+  The race file is in JSON format.
+</dd>
+
+<dt>race player</dt>
+<dd>
+  The (JavaScript-powered) web page that replays the events of a race.
+  By default, the race server hosts a race player, but if you make a custom
+  version you can use that instead. The race player takes a <strong>race
+  file</strong> as its input — it doesn't need access to the race server or
+  the server's database.
+</dd>
+
 <dt>race rules</dt>
 <dd>
   The rules that define whether or not a buggy is allowed to take part in a 
@@ -153,6 +199,14 @@ Clarification of terms used in project and its documentation.
   The server running the website that accepts the buggy JSON that students
   upload from their editors in order to enter races. It's a Flask webserver
   that you need to set up to run the project.
+</dd>
+
+<dt>racetrack</dt>
+<dd>
+  The racetrack is (of course) the nominal setting of a race — but on the server
+  it effectively means a background image (typically a JPG) and an SVG file
+  that describes the path the buggies will follow — see
+  <a href="races/racetracks">more about racetracks</a>.
 </dd>
 
 <dt>report</dt>
@@ -217,4 +271,19 @@ Clarification of terms used in project and its documentation.
   to edit staff comments on users, and reset students' passwords for them.
 </dd>
 
+<dt>VS Code<br>Visual Studio Code</dt>
+<dd>
+  <a href="https://code.visualstudio.com">VS Code</a> is a widely-used editor
+  and interactive development environment by Microsoft. One way of running the
+  buggy racing project is to set up students' code on a departmental server and
+  access it through VS Code and a SSH tunnel. The advantage of using VS Code in
+  this way is ease of deployment, including the Python plugins — it's
+  relatively straightforward to install on Windows, Macos and Linux — and that
+  all students are (at least to start with) working in the same editor, which
+  means demos and videos are consistent with what they see on their own screens.
+</dd>
+
 </dl>
+
+---
+

@@ -15,7 +15,7 @@ has_children: false
 The races are the incentive for students to develop good editors. You don't
 _need_ to run races, but we recommend that you do!
  
-See more about [running races](../running/running-races).
+See more about [running races](../races/).
 
 
 ## Config settings ("Races")

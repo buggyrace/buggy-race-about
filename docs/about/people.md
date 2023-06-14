@@ -17,8 +17,12 @@ This isn't ready yet: the documentation is still being written.
 ## Dev team
 
 * Dave Whiteland
+
+Tech specialists:
+
 * Tom Kuipers
 * Jasper Lyons
+
 
 ---
 

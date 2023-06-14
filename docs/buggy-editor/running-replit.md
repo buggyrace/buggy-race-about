@@ -33,10 +33,10 @@ Replit set-up.
 ![Screenshot of Replit running buggy-race-editor](/docs/img/screenshots/replit-buggy-racing.png)
 
 {: .note}
-What follows are the **manual** steps for getting the editor running up there,
-with a (basic, free) student account. Replit has an educational tier, so it's
-possible you could automate this process so accounts are already set up for all
-your students.
+What follows are the **manual** steps for getting the editor running up on
+Replit, with a (basic, free) student account. Replit has an educational tier,
+so it's possible you could automate this process so accounts are already set up
+for all your students.
 
 
 ## Set up the repl

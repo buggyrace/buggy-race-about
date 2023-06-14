@@ -63,12 +63,12 @@ missing. Students visiting the tech notes link will see a 404 error.
 If you want to change, customise, or add to the tech notes — which we
 encourage, of course! — you first have to extract them and host them yourself.
 
-{: .warning}
+{: .todo}
 The tech note extraction feature is not implemented yet!  
 [GitHub issue #135](https://github.com/buggyrace/buggy-race-server/issues/135) 
 
-The default tech notes use Pelican, which is a static site generator written
-in Python.
+The default tech notes use [Pelican](https://getpelican.com), which is a static
+site generator written in Python.
 
 Once you've published them on an external server, you need to change the 
 config settings so that the race server will redirect all requests for tech
@@ -76,10 +76,11 @@ notes to the external site URL. See the [tech note config settings](../customisi
 for details.
 
 {: .note}
-The redirection preserves the page path of the URL, so although you're free
-to change the tech notes as much as you like, some existing links might use
-the default page paths. When you self-host the tech-notes by editing the default
-ones, be sure to check that all the links are still correct.
+The redirection using `TECH_NOTES_EXTERNAL_URL` preserves the page path of the
+URL, so although you're free to change the tech notes as much as you like, some
+existing links might use the default page paths. When you self-host the
+tech-notes by editing the default ones, be sure to check that all the links are
+still correct.
 
 ### Behind the scenes on the race server
 
@@ -96,8 +97,8 @@ server repo here:
     the pages — note the `JINJA_GLOBALS` dictionary which is how the config
     settings are passed into the static site build.
   * `pelicanconflive.py`  
-    Is the "live" version of `pelicanconf.py` that's created dynamically, with
-    the current values of config settings (the [config setting](../customising/tech-notes)
+    The "live" version of `pelicanconf.py` that's created dynamically, with the
+    current values of config settings (the [config setting](../customising/tech-notes)
     `IS_ALL_CONFIG_IN_TECH_NOTES` controls whether _all_ config settings are
     included in that, or just a minimal subset).
   * [`buggyjinja2content`](https://github.com/buggyrace/buggy-race-server/blob/main/tech_notes/plugins/buggyjinja2content/buggyjinja2content.py)  

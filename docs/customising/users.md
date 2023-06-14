@@ -54,8 +54,8 @@ when each student authenticates their GitHub account.
 
 ## Email address
 
-The race server never sends emails, so you only need add this if you think it
-will be helpful to disambiguate students.
+Currently, the race server never sends emails, so you only need add this if you
+think it will be helpful to disambiguate students.
 
 ## First name and last name
 

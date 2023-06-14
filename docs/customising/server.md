@@ -15,9 +15,13 @@ has_children: false
 The server config settings control aspects of the race server itself.
 
 {: .note}
-The `BUGGY_RACE_SERVER_URL` setting is **critically important** because there
-are various places where race server needs to generate absolute URLs. It uses
-this value (and not self-inspection) to determine what they should be.
+You may find that you can accept the default values for most settings!
+<br>
+<br>
+However... the `BUGGY_RACE_SERVER_URL` setting is **critically important**
+because there are various places where race server needs to generate absolute
+URLs. It uses this value (and not self-inspection) to determine what they
+should be.
 
 ## Config settings ("Server")
 

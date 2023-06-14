@@ -21,10 +21,10 @@ be online to work.
 The basic service described here is free.
 
 {: .note}
-What follows are the **manual** steps for getting the editor running up there,
-with a (basic, free) student account. PythonAnywhere has an educational tier,
-so it's possible you could automate this process so accounts are already set up
-for all your students.
+What follows are the **manual** steps for getting the editor running up on
+PythonAnywhere, with a (basic, free) student account. PythonAnywhere has an
+educational tier, so it's possible you could automate this process so accounts
+are already set up for all your students.
 
 {: .screenshot}
 ![Screenshot of PythonAnywhere buggy-race-editor files](/docs/img/screenshots/pythonanywhere.png)
