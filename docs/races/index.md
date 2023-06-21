@@ -5,11 +5,7 @@ nav_order: 55
 has_children: true
 ---
 
-
 # Running races
-
-{: .todo}
-This isn't ready yet: the documentation is still being written.
 
 ## How to run a race
 

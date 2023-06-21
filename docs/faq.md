@@ -85,3 +85,24 @@ Announcements are uniquely dangerous because if you accidentally fail to
 (including the pages for fixing it). You can resolve this this by editing the
 announcement to remove the offending HTML. Specifically, you can
 [disable the HTML to get to the edit-announcements pages](running/announcements.html#recovering-from-an-announcement-with-critically-broken-html).
+
+
+## Why can't I replay this race?
+
+If you are looking at a race on the server and you can't see a **Replay**
+button, it may be because the race hasn't been run yet (no results have been
+uploaded) _or_ the race still has the results hidden from students
+(go to **Admin** → **Races** → Race:**Details** **Edit**, and fix _Are results
+visible?_). If it's neither of those, check that there is a URL for
+`race_file_url` (described as "URL of race file (JSON)"). If there's no race
+file URL to replay, the server won't show the **Replay** button.
+
+If the **Replay** button is there but the problem is that the race won't run
+— if it says there are no events, for example — then maybe you've uploaded the
+wrong race file. It must be a race file with _events_ in it for the replayer
+to show them. See [running races](races/running) for more information.
+
+
+
+
+

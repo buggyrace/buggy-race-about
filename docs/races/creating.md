@@ -49,19 +49,20 @@ not going to be awake then, change this to an earlier time!
   cost limit is disqualified from that race.
 
 * **Racetrack**  
-  In practice, the main effect of the racetrack you choose is to influence the
-  length of each circuit of the track (the _lap length_). This matters because
-  students' buggies can and will run out of fuel (if they've opted for
-  consumable power supplies). But it also serves as a visual identifier, since
-  the racetrack is shown as an aerial view in the race player. The easiest way
-  to add racetracks is to pick them from the collection on the server, although
-  if you know the URLs of more you can enter them manually.
+  In practice, the racetrack you choose influences the length of each circuit
+  of the track (the _lap length_). This matters because students' buggies can
+  and will run out of fuel (if they've opted for consumable power supplies). But
+  it also serves as an important visual identifier, since the racetrack is shown
+  as an aerial view in the race player. 
+  The easiest way to add racetracks is to pick them from the collection on the
+  server, although if you know the URLs of more you can enter them manually.
+  See [more about racetracks](racetracks), including how to make your own.
 
 {: .screenshot}
 ![Screenshot of picking a racetrack](/docs/img/screenshots/pick-a-racetrack.png)
 
 {: .caption}
-The Select-a-racetrack dialogue lets you can pick from a collection of examples
+The Select-a-racetrack dialogue lets you pick from a collection of examples
 that are available by default — or you can create your own.
 
 * **Is visible?**  

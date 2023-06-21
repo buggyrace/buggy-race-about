@@ -11,8 +11,8 @@ has_children: false
 {: .navigation}
 Top menu bar: **Upload**
 
-Students "upload a buggy" (JSON output from their buggy editor) to the race
-server.
+Students "upload a buggy" (JSON output from their
+[buggy editor](../buggy-editor)) to the race server.
 
 > Initially, they simply copy-and-paste the JSON.  
 > Later, they can send it using the API.

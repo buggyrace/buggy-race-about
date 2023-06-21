@@ -8,14 +8,11 @@ has_children: false
 
 # Uploading race results
 
-{: .todo}
-This isn't ready yet: the documentation is still being written.
-
 When you've run a race, the output of the process is a new race file. This
-now contains the results, and an event-by-event log (that the race replaying
-can animate).
+file is the same as before the race, except it now contains the results, and
+an event-by-event log (that the race replayer can animate).
 
-## Uploading the results (and diqualifications)
+## Uploading the results (and disqualifications)
 
 {: .navigation}
 **Admin** → **Races** → Race: **Upload results**  
@@ -24,14 +21,22 @@ or
 
 When you upload the results file, the server will check the contents of that
 file against the details (including students) in the database. If there are
-any discrepancies, you'll see warnings.
+any discrepancies, you'll see warnings. If there are any warnings, then no
+changes will be made on the server unless you choose **Ignore warnings**.
+
+{:. warning}
+When you first upload the results, do _not_ check **Ignore warnings** — it's
+important you see what they are before you proceed. If it was a busy race, there
+may be several things reported. Read the warnings carefully before deciding
+to proceed: if it's OK, upload the file again, this time explicitly ignoring
+warnings.
+
+## Results of a race
+
+When you upload the results of a race, they are stored in the database of the
+race server. Specifically, you'll 
 
 
----
-
-{: .todo}
-Currently you can't publish _race files_ on the race server — you need to
-publish them elsewhere on the web.
 
 {: .warning}
 The _race file_ (which you publish elsewhere) is not protected.  

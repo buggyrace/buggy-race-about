@@ -23,7 +23,7 @@ uses HTML to allow both bold and regular text), the second is `danger` style.
 There are two types of announcement:
 
 * **On every page**  
-  Standard announcments are displayed at the top of every page (except the tech
+  Standard announcements are displayed at the top of every page (except the tech
   notes). You can choose from a set of preset styles that change the colour of
   the announcement:  
   <span class="announce-example announce-danger">danger</span>
