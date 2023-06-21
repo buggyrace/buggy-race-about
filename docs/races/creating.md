@@ -82,3 +82,8 @@ have been run, provided you've marked them visible too).
 
 For more about publishing results, see
 [uploading race results](uploading-results).
+
+---
+
+* Previous: [About races](about)
+* Next: [How students enter](how-students-enter)

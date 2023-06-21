@@ -36,11 +36,11 @@ an entirely different race, using the buggy specs and race file as the input.
 
 {: .suggest}
 The buggy race, with its detailed input and output specifications, coupled with
-a customised replayer, could be an excellent games-dev project for final year
+a customised player, could be an excellent games-dev project for final year
 students.
 
 So the download → process → upload mechanism of race files is a very general
-way of leaving this open. For this reason, the race-replayer (that animates the
+way of leaving this open. For this reason, the race player (that animates the
 events from the race) is also entirely standalone, although the default one is
 included on the race server.
 
@@ -60,3 +60,7 @@ project.
 
 
 
+---
+
+* Previous: [Downloading](downloading)
+* Next: [Uploading race results](uploading-results)

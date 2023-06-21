@@ -64,3 +64,7 @@ capturing a snapshot of it when the race is due to start) happens automatically
 in future releases.  
 See [issue #176](https://github.com/buggyrace/buggy-race-server/issues/176)
 
+---
+
+* Previous: [How students enter](how-students-enter)
+* Next: [Running a race](running)

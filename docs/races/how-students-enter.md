@@ -81,5 +81,7 @@ uploaded.
 The race server does not store a history of all a student's uploads — only the
 most recent one.
 
+---
 
-
+* Previous: [Creating a race](creating)
+* Next: [Downloading](downloading)

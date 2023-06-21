@@ -64,5 +64,6 @@ they are not tabulated. Instead they are embedded in the specs page which
 students can and should interpret for themselves.
 
 
+---
 
-
+* Next: [Creating a race](creating)

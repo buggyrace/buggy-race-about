@@ -99,7 +99,7 @@ file URL to replay, the server won't show the **Replay** button.
 
 If the **Replay** button is there but the problem is that the race won't run
 — if it says there are no events, for example — then maybe you've uploaded the
-wrong race file. It must be a race file with _events_ in it for the replayer
+wrong race file. It must be a race file with _events_ in it for the player
 to show them. See [running races](races/running) for more information.
 
 
