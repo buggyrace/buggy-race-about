@@ -18,8 +18,6 @@ customisations you've made to the tasks that your students will be doing.
 See more about [creating the tasks](creating-tasks), which you can do when you
 have completed set-up phase.
 
-
-
 ## Config settings ("Tasks")
 
 {: .config-settings}

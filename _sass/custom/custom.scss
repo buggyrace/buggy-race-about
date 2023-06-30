@@ -174,3 +174,72 @@ p.caption {
 .announce-info    { background-color: #d1ecf1; color: #0c5460; }
 .announce-special { background-color: #ffff00; color: #000000; }
 .announce-warning { background-color: #fff3cd; color: #856404; }
+
+.card {
+  border:1px solid #aaa;
+  padding:0;
+  margin:1rem 0 3rem 0;
+}
+.card h3 {
+  margin: 0 0 0 0;
+  padding:0 0.6rem 0.6rem 0.6rem;
+  background-color:#dddddd;
+}
+.card h3 span {
+  padding-right:1.5rem;
+  font-size:2rem;
+  color:#ffffff;
+}
+
+.card > div {
+  margin: 0 0 0 0;
+  padding:0.6rem;
+  display:flex;
+  border-bottom:1px solid #dddddd;
+  justify-content: stretch;
+}
+.card > div:last-child {
+  border-bottom:none;
+}
+
+.card > div label {
+  flex-align:center;
+  padding-right:1rem;
+  min-width:6rem;
+}
+.card > div p {
+  flex-align:center;
+  margin:0;
+}
+.card > div > div {
+  flex-grow: 2; /* full column width, matters for alerts */
+}
+.complexity {
+  display:inline-block;
+  background-image:url(/docs/img/cone-blue.png);
+  background-size:contain;
+  width:2rem;
+  min-width:2rem;
+  height:2rem;
+  color:transparent; /* background image instead */
+}
+.complex-2 { width:4rem; min-width:4rem; }
+.complex-3 { width:6rem; min-width:6rem; }
+.complex-4 { width:8rem; min-width:8rem; }
+.complex-5 { width:10rem; min-width:10rem; }
+ul.pros, ul.cons {
+  padding:0;
+  margin:0;
+  list-style-position: outside;
+}
+ul.pros li, ul.cons li { margin-top: 0; }
+
+ul.pros li::before { content: "+"; }
+ul.cons li::before { content: "–"; }
+
+ol.upper-alpha{
+  list-style-type: upper-alpha;
+}
+ol.upper-alpha li::before { content: none; }
+.card .navigation { margin:1rem 0; }
+.card .navigation:first-child { margin-top:0; }

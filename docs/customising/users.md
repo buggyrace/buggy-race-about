@@ -98,9 +98,6 @@ external usermname (if you're using it) with the config settings
 You can also set a custom message that appears on the login page:
 see [how to set announcements](../running/announcements).
 
-
-
-
 ## Config settings ("Users")
 
 {: .config-settings}
@@ -117,6 +114,7 @@ see [how to set announcements](../running/announcements).
 | `EXT_USERNAME_EXAMPLE` | If users have an external username, provide an example format (e.g., `abcd123` or `ada@example.org`). Note that this only serves as a placeholder suggestion when inputting — it's not used to validate or force the format of inputs. This setting is ignored if `USERS_HAVE_EXT_USERENAME` is `No`.  <br><br> _Default value:_ `abcd123` |
 | `EXT_ID_NAME` | If user have an external ID, what is it called? For example: "Student number", "Moodle ID", "Blackboard ID", "Canvas ID". This setting is ignored if `USERS_HAVE_EXT_ID` is `No`.  <br><br> _Default value:_ `External ID` |
 | `EXT_ID_EXAMPLE` | If users have an external ID, provide an example of what it might look like. This setting is ignored if `USERS_HAVE_EXT_ID` is `No`.  <br><br> _Default value:_ `12345` |
+| `IS_TA_EDIT_COMMENT_ENABLED` | Teaching Assistants cannot edit user data. Do you want TAs to be able to add or edit comments left by staff?  <br><br> _Default value:_ `Yes` |
 | `IS_TA_PASSWORD_CHANGE_ENABLED` | Administrators can change other users' passwords. Choose `Yes` if you want Teaching Assistants to also be able to do this. Note that students who forget their passwords cannot reset them, and will need to ask a staff member to do it — so enabling TAs might be helpful. Changing a student's password does not require the auth code, and TAs can only change _students'_ passwords (not other staff passwords).  <br><br> _Default value:_ `Yes` |
 | `USER_ACTVITY_PERIOD_S` | The period (in seconds) over which each logged-in user's activity is logged. Pragmatically, this avoids updating the database on every request, because usually you're only concerned about whether or not a student has logged in recently, not the accuracy of the timestamp. This updates the "last activity" timestamp if the user sends a request this-number-of-seconds since the last recorded activity.  <br><br> _Default value:_ `300` |
 

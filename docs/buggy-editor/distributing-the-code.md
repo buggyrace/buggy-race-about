@@ -1,46 +1,562 @@
 ---
 title: Distributing the code
 layout: home
-nav_order: 20
+nav_order: 10
 parent: Buggy editor
 has_children: false
 ---
 
-
-# How students get their copy of the source code
+# Distributing the source code
+<h2 style="margin: 0 0 1em 0"> or: How students get their copy of the buggy editor</h2>
 
 The project requires each student to have their own copy of the buggy editor
 source code, which they then develop. This page is about how you ensure all your
 students get that code to start with.
 
-This follows on from [customising the editor repo](customising): it assumes you
-have customised the code (possibly in your own forked repo, if you're using
-Git), and made it ready for distribution.
+The source code for the Buggy Editor is available in this GitHub repo:
+<a href="https://github.com/buggyrace/buggy-race-editor">buggyrace/buggy-race-editor</a>.
+However you should [customise the editor repo](customising) before you share it.
+  
+{: .note}
+You must decide how you're going to distribute the code _before_ you set
+up your server, because several config settings (especially in the "GitHub"
+group) implement this decision.
 
-Here are three ways to distribute the code — they are not mutually exclusive,
-although it's probably simpler for both you and your students if everyone is
-doing it the same way.
+Here are several ways to distribute the code — they are not _all_ mutually
+exclusive, although it's probably simpler for both you and your students if
+everyone is doing it the same way.
 
-1. **You zip up your customised source:**  
-  **...then distribute that zip file to your students**  
-  Students don't need any contact with Git or GitHub (in fact, neither do you:
-  see note below).  
-  <br>
-  or...
+<ol class="upper-alpha">
+  <li><a href="#method-a">Students download a zipfile from race server</a> (the default)</li>
+  <li><a href="#method-b">Students get the source code from a custom page you set up elsewhere</a></li>
+  <li><a href="#method-c">Students get the source code from your repo</a></li>
+  <li><a href="#method-d">Students manually fork your repo into their own account</a></li>
+  <li><a href="#method-e">Server forks your repo into students' GitHub accounts</a></li>
+  <li><a href="#method-f">Server forks your repo into students' GitHub accounts and then clones via VSCode</a></li>
+</ol>
 
-2. **You direct students to your customised repo:**  
-  **...then students either `git clone` or download the zip**  
-  Students do not need a GitHub account, and can use Git _if they want_.  
-  <br>
-  or...
+---
 
-3. **Students fork your customised repo into their own account:**  
-  **...then students either `git clone` or download the zip**  
-  Students _must_ have GitHub accounts, and can use Git and GitHub Issues (for
-  tasks) _if they want_, including pushing changes back to their repo. Although
-  this is the most complex of the three methods, we've automated it on the
-  server (see below), so it's straightforward for the students.  
-  <br>
+<div class="card">
+  <h3 id="method-a"><span>A</span> Students download a zipfile from race server</h3>
+  <div>
+    <label>Complexity</label>
+    <p class="complexity">1</p>
+  </div>
+  <div>
+    <label>GitHub?</label>
+    <p>No</p>
+  </div>
+  <div>
+    <label>Link</label>
+    <p>
+      Link on the home page goes directly to the zipfile
+    </p>
+  </div>
+  <div>
+    <label>Details</label>
+    <p>
+      The race server provides the editor source code as a zip file.<br>
+      When you "publish" the zip file, you customise the README online, and the
+      Python is updated to include (hardcoded) the URL of your race server.<br>
+      Git or GitHub isn't used.
+    </p>
+  </div>
+  <div>
+    <label>Pros</label>
+    <ul class="pros">
+       <li>This is what you get if you accept the
+        <strong>default config settings</strong> in the "GitHub" group.        
+      </li>
+      <li>
+        It is the simplest to set up!
+       </li>
+      <li>
+        You can customise the README on the race server, and URL can be
+        automatically added to the Python <code>app.py</code>.
+      </li>
+    </ul>
+  </div>
+  <div>
+    <label>Cons</label>
+    <ul class="cons">
+      <li>
+        The server controls the contents of the zipfile (it's a sensible commit
+        from the
+        <a href="https://github.com/buggyrace/buggy-race-editor">editor repo</a>),
+        but you cannot change this (if you need to, use <a href="#method-b">method
+          B</a> instead).
+      </li>
+    </ul>
+  </div>
+  <div>
+    <label>Set up</label>
+    <div>
+      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>GitHub</strong></p>
+      <p>
+        Set <code>IS_USING_GITHUB</code> to <code>No</code>.
+      </p>
+      <p>
+        <code>IS_STUDENT_USING_GITHUB_REPO</code> should be <code>No</code> too.
+      </p>
+      <p>
+        You can change the zipfile name with <code>BUGGY_EDITOR_ZIPFILE_NAME</code>.
+      </p>
+      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → <strong>Buggy editor</strong> → <strong>Publish editor zipfile</strong></p>
+      <p>
+        You must explicitly publish the zipfile (which gives you an opportunity
+        to customise the README and automatically add the race server URL to
+        the Python code).
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <h3 id="method-b"><span>B</span> Students get the source code from a custom page you set up
+    elsewhere</h3>
+  <div>
+    <label>Complexity</label>
+    <p class="complexity complex-2">2</p>
+  </div>
+  <div>
+    <label>GitHub?</label>
+    <p>No</p>
+  </div>
+  <div>
+    <label>Link</label>
+    <p>
+      Link on the home page goes to the page you've nominated
+    </p>
+  </div>
+  <div>
+    <label>Details</label>
+    <p>
+Do this if you're comfortable distributing the source code to your students
+directly — probably as a zipfile.<br>
+This allows you to fully customise the source code before distributing to the
+students. (You can use the race server's publish mechanism to produce a
+prototype zip, or you can get it yourself from the editor's own repo).
+    </p>
+  </div>
+  <div>
+    <label>Pros</label>
+    <ul class="pros">
+      <li>
+        You can customise the source code completely before you distribute it
+      </li>
+      <li>
+        If you're using an online learning plaftorm (like Moodle or Blackboard)
+        you might prefer to use this mechanism if it allows you to track which
+        students haven't downloaded the source code yet.
+      </li>
+    </ul>
+  </div>
+  <div>
+    <label>Cons</label>
+    <ul class="cons">
+      <li>
+        This is pretty much independent of the race server, so you need to
+        arrange the distribution yourself.
+      </li>
+    </ul>
+  </div>
+  <div>
+    <label>Set up</label>
+    <div>
+      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>GitHub</strong></p>
+      <p>
+        Set <code>IS_USING_GITHUB</code> to <code>No</code> and
+        <code>BUGGY_EDITOR_DOWNLOAD_URL</code> to the URL of the page (maybe
+        your own website, or a page on your educational management system like
+        Moodle or Blackboard).
+      </p>
+      <p>
+        <code>IS_STUDENT_USING_GITHUB_REPO</code> should be <code>No</code> too.
+      </p>
+      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → <strong>Buggy editor</strong></p>
+      <p>
+        You can publish the zip file on the server, and download it (even though
+        students cannot), which might be a convenient way to produce the
+        customised source code.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <h3 id="method-c"><span>C</span> Students get the source code from your repo</h3>
+  <div>
+    <label>Complexity</label>
+    <p class="complexity complex-2">2</p>
+  </div>
+  <div>
+    <label>GitHub?</label>
+    <p>
+      <em>you:</em> GitHub account
+      <br>
+      <em>students:</em> optional
+    </p>
+  </div>
+  <div>
+    <label>Link</label>
+    <p>
+      Link on the home page goes to your GitHub repo
+    </p>
+  </div>
+  <div>
+    <label>Details</label>
+    <p>
+      You fork the editor repo into your own (or your institution's) account,
+      and customise it there. Your students get the code from that repo, using
+      whichever method they prefer: downloading the zip, or forking or cloning
+      it.
+    </p>
+  </div>
+  <div>
+    <label>Pros</label>
+    <ul class="pros">
+      <li>
+        You have complete control over the contents of the repo and hence the
+        source code the students download.
+      </li>
+      <li>
+        This is common practice for how GitHub is used to distribute source
+        code.
+      </li>
+      <li>
+        Students can use Git <em>if they want to</em> (by forking or
+        <code>git clone</code>), but if not can just download the zipfile
+      </li>
+    </ul>
+  </div>
+  <div>
+    <label>Cons</label>
+    <ul class="cons">
+      <li>
+        Students need to be able to download source code from GitHub, which
+        isn't straightforward if they are new to git or file systems
+      </li>
+    </ul>
+  </div>
+  <div>
+    <label>Set up</label>
+    <div>
+      <p>
+        You must fork the editor repo into your own account and customise
+        it.
+      </p>
+      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>GitHub</strong></p>
+      <p>
+        Set <code>IS_USING_GITHUB</code> to <code>Yes</code>.
+      </p>
+      <p>
+        Set <code>BUGGY_EDITOR_GITHUB_URL</code> to the URL of your repo on
+        GitHub — and change <code>BUGGY_EDITOR_REPO_NAME</code> and
+        <code>BUGGY_EDITOR_REPO_OWNER</code> to match it.
+      </p>
+      <p>
+        Keep <code>IS_STUDENT_USING_GITHUB_REPO</code> to <code>No</code>
+        (if it's not optional, you want <a href="#method-d">method
+          D</a>))
+      </p>
+      <p>
+        Keep <code>IS_USING_GITHUB_API_TO_FORK</code> set to <code>No</code>
+        (unless you want to automate this — which is <a href="#method-e">method
+        E</a>).
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <h3 id="method-d"><span>D</span> Students manually fork your repo into their own account</h3>
+  <div>
+    <label>Complexity</label>
+    <p class="complexity complex-3">3</p>
+  </div>
+  <div>
+    <label>GitHub?</label>
+    <p>required</p>
+  </div>
+  <div>
+    <label>Link</label>
+    <p>
+      Link on the home page goes to your GitHub repo
+    </p>
+  </div>
+  <div>
+    <label>Details</label>
+    <p>
+      You need to fork and customise the editor repo, and then the students
+      fork that repo into their own accounts. Then they download the source
+      code <strong>from their own</strong> repo, ideally using <code>git
+      clone</code>.
+    </p>
+  </div>
+  <div>
+    <label>Pros</label>
+    <ul class="pros">
+      <li>
+        Exposes students to GitHub and Git practice — because they can
+        <code>push</code> back up to their own upstream (GitHub) repo.
+      </li>
+    </ul>
+  </div>
+  <div>
+    <label>Cons</label>
+    <ul class="cons">
+      <li>
+        Students need GitHub accounts.
+      </li>
+      <li>
+        If students aren't going to push commits back up to their repo, there's
+        no real need to fork — instead could just <code>git clone</code> from
+        your repo.
+      </li>
+    </ul>
+  </div>
+  <div>
+    <label>Set up</label>
+    <div>
+      <p>
+        You must fork the editor repo into your own account and customise
+        it.
+      </p>
+      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>GitHub</strong></p>
+      <p>
+        Set <code>IS_USING_GITHUB</code> to <code>Yes</code>.
+      </p>
+      <p>
+        Set <code>BUGGY_EDITOR_GITHUB_URL</code> to the URL of your repo on
+        GitHub — and change <code>BUGGY_EDITOR_REPO_NAME</code> and
+        <code>BUGGY_EDITOR_REPO_OWNER</code> to match it.
+      </p>
+      <p>
+        Keep <code>IS_STUDENT_USING_GITHUB_REPO</code> to <code>Yes</code>.
+      </p>
+      <p>
+        Keep <code>IS_USING_GITHUB_API_TO_FORK</code> set to <code>No</code>
+        (if you do want to automate this, see <a href="#method-e">method E</a>).
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <h3 id="method-e"><span>E</span> Server forks your repo into students' GitHub accounts</h3>
+  <div>
+    <label>Complexity</label>
+    <p class="complexity complex-4">4</p>
+  </div>
+  <div>
+    <label>GitHub?</label>
+    <p>required</p>
+  </div>
+  <div>
+    <label>Link</label>
+    <p>
+      Link on the home page goes to your GitHub repo (but students don't need
+      to go there)
+    </p>
+  </div>
+  <div>
+    <label>Details</label>
+    <p>
+      You need to fork and customise the editor repo, and then the students
+      fork that repo into their own accounts. Then they download the source
+      code <strong>from their own</strong> repo, ideally using <code>git
+      clone</code>.
+    </p>
+  </div>
+  <div>
+    <label>Pros</label>
+    <ul class="pros">
+      <li>
+        Exposes students to GitHub and Git practice — because they can
+        <code>push</code> back up to their own upstream (GitHub) repo.
+      </li>
+      <li>
+        Server can automatically inject the tasks as GitHub issues into each
+        student's forked repo: if you're teaching Git/GitHub workflow then this
+        is a very useful feature!
+      </li>
+    </ul>
+  </div>
+  <div>
+    <label>Cons</label>
+    <ul class="cons">
+      <li>
+        You need to set up a GitHub OAuth app that students grant permission to
+        operator on their GitHub account.
+      </li>
+      <li>
+        You'll be storing a GitHub access token for each student on the race
+        server: be responsible with security.
+      </li>
+      <li>
+        This is overkill if students aren't going to push commits back up to
+        their repo, there's no real need to fork — instead use a simpler 
+        mnechanism.
+      </li>
+    </ul>
+  </div>
+  <div>
+    <label>Set up</label>
+    <div>
+      <p>
+        You must fork the editor repo into your own account and customise
+        it.
+      </p>
+      <p>
+        You must also create a GitHub OAuth app.
+      </p>
+      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>GitHub</strong></p>
+      <p>
+        Set <code>IS_USING_GITHUB</code> to <code>Yes</code>.
+      </p>
+      <p>
+        Set <code>BUGGY_EDITOR_GITHUB_URL</code> to the URL of your repo on
+        GitHub — and change <code>BUGGY_EDITOR_REPO_NAME</code> and
+        <code>BUGGY_EDITOR_REPO_OWNER</code> to match it.
+      </p>
+      <p>
+        Set <code>IS_STUDENT_USING_GITHUB_REPO</code> and
+        <code>IS_USING_GITHUB_API_TO_FORK</code> to <code>Yes</code>.
+      </p>
+      <p>
+        Optionally — but we recommend it — set
+        <code>IS_USING_GITHUB_API_TO_INJECT_ISSUES</code> to <code>Yes</code>
+        too.
+      </p>
+      <p>
+        Add the credentials from your OAuth app to <code>GITHUB_CLIENT_ID</code>
+        and <code>GITHUB_CLIENT_ID</code>.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <h3 id="method-f"><span>F</span> Server forks your repo into students' GitHub accounts
+    and then clones via VSCode</h3>
+  <div>
+    <label>Complexity</label>
+    <p class="complexity complex-5">5</p>
+  </div>
+  <div>
+    <label>GitHub?</label>
+    <p>required</p>
+  </div>
+  <div>
+    <label>Link</label>
+    <p>
+      Link on the home page goes to your GitHub repo (but students don't need
+      to go there)
+    </p>
+  </div>
+  <div>
+    <label>Details</label>
+    <p>
+      This is the same as the previous one, except students use a VCSCode
+      workfile that clones their repo into an external account (such as a Unix
+      server), which they then access through a SSH tunnel through VSCode.
+      <br>
+      You'll also need to set up port number mappings so students can access
+      their own buggy editor as "localhost" despite the app running on a 
+      remote server.
+    </p>
+  </div>
+  <div>
+    <label>Pros</label>
+    <ul class="pros">
+      <li>
+        This might be useful if your institution has a "teaching server" you
+        can run all student's accounts on: development happens on the remote
+        server.
+      </li>
+      <li>
+        Forces all students to be using identical, but sophisiticated, dev
+        environment with no provisioning required
+      </li>
+    </ul>
+  </div>
+  <div>
+    <label>Cons</label>
+    <ul class="cons">
+      <li>
+        Requires staff tech expertise (on the remote server) to set up.
+      </li>
+      <li>
+        The VSCode tunnel can be counterintuitive to use.
+      </li>
+      <li>
+        Discourages students from working on their own devices (because the
+        repo has been explicitly cloned onto the external server),
+      </li>
+      <li>
+        This can be opaque or confusing for students who are unfamiliar with
+        remote servers.
+      </li>
+    </ul>
+  </div>
+  <div>
+    <label>Set up</label>
+    <div>
+      <p>
+        You must fork the editor repo into your own account and customise
+        it.
+      </p>
+      <p>
+        You must also create a GitHub OAuth app.
+      </p>
+      <p>
+        On the remote server, set up mappings on the remote server that apply a
+        unique port number for each student. Also make sure the required Python
+        environment is set up for the students.
+      </p>
+      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>GitHub</strong></p>
+      <p>
+        Set <code>IS_USING_GITHUB</code> to <code>Yes</code>.
+      </p>
+      <p>
+        Set <code>BUGGY_EDITOR_GITHUB_URL</code> to the URL of your repo on
+        GitHub — and change <code>BUGGY_EDITOR_REPO_NAME</code> and
+        <code>BUGGY_EDITOR_REPO_OWNER</code> to match it.
+      </p>
+      <p>
+        Set <code>IS_STUDENT_USING_GITHUB_REPO</code> and
+        <code>IS_USING_GITHUB_API_TO_FORK</code> to <code>Yes</code>.
+      </p>
+      <p>
+        Optionally — but we recommend it — set
+        <code>IS_USING_GITHUB_API_TO_INJECT_ISSUES</code> to <code>Yes</code>
+        too.
+      </p>
+      <p>
+        Add the credentials from your OAuth app to <code>GITHUB_CLIENT_ID</code>
+        and <code>GITHUB_CLIENT_ID</code>.
+      </p>
+      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>Project</strong></p>
+      <p>
+        Set <code>IS_USING_REMOTE_VS_WORKSPACE</code> to <code>Yes</code> and
+        provide values for <code>PROJECT_REMOTE_SERVER_ADDRESS</code>, 
+        <code>PROJECT_REMOTE_SERVER_NAME</code> and 
+        <code>PROJECT_REMOTE_SERVER_APP_URL</code>.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+---
+
+
+{: .todo}
+This isn't ready yet: the documentation below is still being written.
+
+## Details
 
 You need to decide on this before the project starts, because it may affect
 some of the config settings you should choose. The third option is the most 
@@ -67,7 +583,8 @@ to play with it _properly_.
 ## Working entirely without Git
 
 {: .note}
-If you want to just use a zip file, students don't need to use Git or GitHub.
+If you want to just use a zip file, or set up studsents accounts in some way that
+allows you to pre-load the files, then students don't need to use Git or GitHub.
 In fact, neither do you: you can download the code, and customise it in place.
 
 To get the zip file containing the source code for the editor, go to the

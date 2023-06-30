@@ -1,7 +1,7 @@
 ---
 title: Buggy editor
 layout: home
-nav_order: 60
+nav_order: 16
 has_children: true
 ---
 

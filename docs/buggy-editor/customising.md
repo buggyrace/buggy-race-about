@@ -1,7 +1,7 @@
 ---
 title: Customising the editor
 layout: home
-nav_order: 10
+nav_order: 20
 parent: Buggy editor
 has_children: false
 ---

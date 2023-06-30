@@ -21,13 +21,14 @@ automatically. If you've decided that your students will be required to use
 GitHub, this automation can be very helpful — but remember that you'll also
 need to configure the OAuth app on GitHub to make this work.
 
-
-
 ## Config settings ("GitHub")
 
 {: .config-settings}
 | Setting  | Description   |
 |----------|---------------|
+| `IS_USING_GITHUB` | Are you using GitHub to distribute the source code for the buggy editor to students? If you choose `Yes` there is still quite a lot of flexibility as to how it's implemented (from simply downloading from GitHub to automatically forking it into their GitHub account). If you choose `No`, the students can download a zip file from this server (or you can override this with your own copy).  <br><br> _Default value:_ `No` |
+| `BUGGY_EDITOR_DOWNLOAD_URL` | If you are **not** using GitHub (`IS_USING_GITHUB` is `No`), your students can download the buggy editor zipfile from this server. If you prefer to provide your own copy instead, provide a URL to your own instructions or zipfile instead. This setting is ignored if `IS_USING_GITHUB` is `Yes`.   <br><br> _Default value:_ _none/empty_ |
+| `BUGGY_EDITOR_ZIPFILE_NAME` | If you are **not** using GitHub (`IS_USING_GITHUB` is `No`), and want to use the default buggy editor source code served from this server, what is the name of the zip file?  <br><br> _Default value:_ `buggy-race-editor.zip` |
 | `BUGGY_EDITOR_GITHUB_URL` | URL to the 'buggy editor' code the students need to start the project. This is a public repo and unless you've forked it to make a custom one, you probably don't need to change this.  <br><br> _Default value:_ `https://github.com/buggyrace/buggy-race-editor` |
 | `BUGGY_EDITOR_REPO_NAME` | This should match the name in the `BUGGY_EDITOR_GITHUB_URL` and is used in some of the GitHub API calls: if you haven't changed the repo URL then you won't need to change this.  <br><br> _Default value:_ `buggy-race-editor` |
 | `BUGGY_EDITOR_REPO_OWNER` | The `BUGGY_EDITOR_GITHUB_URL` is public and owned by `buggyrace`. You don't need to change this unless you've forked your own custom version of the repo.  <br><br> _Default value:_ `buggyrace` |
