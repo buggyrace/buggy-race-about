@@ -51,6 +51,9 @@ was fine). But those who did — because we'd injected the issues too — were f
 to play with it _properly_.
 
 
+{: .note}
+There are some [additional notes](#things-to-consider-when-distributing-the-code)
+below that apply generally to distributing the code.
 
 ---
 
