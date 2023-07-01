@@ -38,12 +38,15 @@ of the buggy editor.
 
 {: .suggest}
 A useful discussion to have with students who realise that the editor is merely
-facilitating the production of their buggy JSON is: is _What is the shortest
-JSON string you can upload to create a buggy?_ This can lead into thinking
-about text files and parsing, and similarities and differences between
-programming languages and data formats. What can't be serialised trivially in
-JSON? Why not? What does the core Python library `json` do? How does the
-`/json` route in their buggy editor work?
+facilitating the production of their buggy JSON is: _What is the shortest JSON
+string you can upload to create a buggy?_ This can lead into thinking about
+text files¹ and parsing, and similarities and differences between programming
+languages and data formats. What can't be serialised trivially in JSON? Why
+not? What does the core Python library `json` do? How does the `/json` route in
+their buggy editor work?  
+<br>
+¹ For new programmers, here's the [superbasics on text
+files](https://superbasics.beholder.uk/text-files/contents/).
 
 ## Feedback from the upload
 

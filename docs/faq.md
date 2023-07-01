@@ -103,6 +103,11 @@ wrong race file. It must be a race file with _events_ in it for the player
 to show them. See [running races](races/running) for more information.
 
 
+## How can I find out what version I'm running?
+
+Go to **Admin** → **Dashboard** → **System info** where it's at the top of the
+page.  
+Or look under the hamster on the <code>/about</code> page.
 
 
 

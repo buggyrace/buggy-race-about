@@ -28,6 +28,9 @@ obviously everything makes more sense if there are also races being run.
 {: .screenshot}
 ![Screenshot showing a replay of a race](/docs/img/screenshots/race-replay.jpg)
 
+{: .caption}
+The race player replaying a race.
+
 ## What the races show
 
 It's important to remember that the objective of the project is not to _win_

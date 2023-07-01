@@ -20,8 +20,8 @@ have sensible default values, so this is not as arduous as it sounds.
 
 However, we recommend you change config as little as possible once you've
 registered students or started the project. So it's a good idea to go through
-the set-up phase carefully (we recommend you get a cup of tea and a biscuit so
-you don't rush it).
+the set-up phase carefully. We recommend you get a cup of tea and a biscuit so
+you don't rush it.
 
 ## Thereafter: you _can_ change config any time
 

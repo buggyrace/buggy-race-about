@@ -25,6 +25,14 @@ If _Are results visible?_ is `No` for this race, students won't be able to
 replay the race (the button won't be there) — but staff can use the admin
 **Races** page to access it instead.
 
+{: .screenshot}
+![Screenshot showing a replay of a race](/docs/img/screenshots/race-replay.jpg)
+
+{: .caption}
+The race player replaying a race. Specifically, a race file has been loaded
+(via an Ajax call) and the events within it are being animated over an image
+of the racetrack.
+
 ## The default ("built-in") player
 
 The player that runs on the server will automatically "track" the current
@@ -38,7 +46,7 @@ happen if there are lots of punctures).
 ## Standalone player
 
 {: .navigation}
-**Admin** → **Races** → **Replay race**
+**Admin** → **Races** → **Replay race** + URL
 
 As staff, you can test a race file in the player _before_ you've uploaded it to
 the server using the "standalone" player. That is, if you have a race file you

@@ -48,7 +48,7 @@ code club. Available **for free** under the GNU GPL license.
 
 ## Requirements
 
-See the [full requirements](overview/requirements)). You need to
+See the [full requirements](overview/requirements). You need to
 [host your own race server](hosting).
 
 ## Components

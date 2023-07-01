@@ -31,9 +31,13 @@ expected before publishing them to the students.
 ## Changing races after results have been uploaded
 
 You can usefully change the visibility of races (or fix typos). Otherwise,
-changing some details about the race after you've uploaded the results may be
-unhelpful. It won't change the results, and it won't effect what is shown in
+changing some details about the race after you've uploaded the results may not
+be helpful. It won't change the results, and it won't affect what is shown in
 the race player either (because that gets its data entirely from the race file).
+If you mean to change these things, upload a new race file.
+
+If you upload a race file _after_ you've already done so, the existing results 
+**will be deleted** before being replaced with the new ones.
 
 ## Deleting a race
 

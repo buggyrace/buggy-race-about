@@ -35,6 +35,23 @@ everyone is doing it the same way.
   <li><a href="#method-f">Server forks your repo into students' GitHub accounts and then clones via VSCode</a></li>
 </ol>
 
+{: .rhul}
+We used [method E](#method-e): initially, we automatically forked the buggy
+editor into each student's GitHub account, which they then either cloned or
+downloaded by zip. Later (for the third time we ran the project and onwards),
+we semi-automated that last stage by cloning onto our [remote server through
+VSCode](running-remote) — that's [method F](#method-f). In effect, we used
+GitHub as a convenient way to distribute the code — this makes it a little
+easier for us (you), and also exposes students to Git and GitHub in the
+process.  
+<br>
+Once students had the code, we explicitly made it clear that using Git or
+GitHub was entirely optional within the project, and most never used it (which
+was fine). But those who did — because we'd injected the issues too — were free
+to play with it _properly_.
+
+
+
 ---
 
 <div class="card">
@@ -437,7 +454,6 @@ prototype zip, or you can get it yourself from the editor's own repo).
   </div>
 </div>
 
-
 <div class="card">
   <h3 id="method-f"><span>F</span> Server forks your repo into students' GitHub accounts
     and then clones via VSCode</h3>
@@ -553,54 +569,23 @@ prototype zip, or you can get it yourself from the editor's own repo).
 ---
 
 
-{: .todo}
-This isn't ready yet: the documentation below is still being written.
+## Things to consider when distributing the code
 
-## Details
+Here are some additional notes that apply to some of the methods above.
 
-You need to decide on this before the project starts, because it may affect
-some of the config settings you should choose. The third option is the most 
-complex, but the server automates the process.
+---
 
-Check that the documentation reflects what you want your students to do — that
-might be in the editor's (customised) README, as well as the phase 0 tasks
-and the tech notes.
+### Check the documentation matches what you're telling your students to do
 
-{: .rhul}
-We used the third method: initially, we automatically forked the buggy editor
-into each student's GitHub account, which they then either cloned or downloaded
-by zip. Later (for the third time we ran the project and onwards), we
-semi-automated that last stage by cloning onto our [remote server through
-VSCode](running-remote).  
-In effect, we used GitHub as a convenient way to distribute the code — this
-makes it a little easier for us (you), and also exposes students to Git and
-GitHub in the process.  
-Once students had the code, we explicitly made it clear that using Git or
-GitHub was entirely optional within the project, and most never used it (which
-was fine). But those who did — because we'd injected the issues too — were free
-to play with it _properly_.
+When you have finished your set up, check that the documentation reflects what
+you want your students to do — that might be in the editor's (customised)
+README, as well as the phase 0 tasks and the tech notes.
 
-## Working entirely without Git
 
-{: .note}
-If you want to just use a zip file, or set up studsents accounts in some way that
-allows you to pre-load the files, then students don't need to use Git or GitHub.
-In fact, neither do you: you can download the code, and customise it in place.
+### Unzipping is not straightforward for everyone
 
-To get the zip file containing the source code for the editor, go to the
-[editor repo on GitHub](https://github.com/buggyrace/buggy-race-editor),
-click on the green **Code** button, and choose **Download zip**. 
-
-Remember to [customise the source code](customising) before zipping it up
-again. Then you can distribute that zip file to your students directly — for
-example by emailing it, or it putting somewhere they can download from (if
-you're using a system like Moodle, Canvas or Blackboard, you can put it on the
-course pages as a resource to download).
-
-{: .navigation}
-**Admin** → **Config** → Config:**GitHub**
-
-Set `IS_STUDENT_USING_GITHUB_REPO` to `No`.
+If you use a distribution method that results in your students downloading a
+zipfile, remember that extracing files from a zip can be confusing.
 
 {: .note}
 Make sure your students know how to extract files from a zip. It will matter
@@ -609,17 +594,27 @@ they create an enclosing folder when they unzip it. The current Windows user
 interface makes this surprisingly confusing, because it encourages opening the
 zip file without explicitly extracting it.
 
-## If students will be using GitHub
+It's increasingly common to encounter students who do not have any experience
+navigating file systems, and unzipping the editor files can be especially
+bewildering to them. The
+[superbasics on file systems](https://superbasics.beholder.uk/file-system/)
+is a helpful resource for students who are new to these concepts.
 
-{: .navigation}
-**Admin** → **Config** → Config:**GitHub**
 
-Set `IS_STUDENT_USING_GITHUB_REPO` to `Yes`.
+### How to download a zip from a GitHub repo
 
-This setting only affects how some of the information on the server is
-presented. We recommend you also enable automatic forking (see next section).
+If you're distributing the editor code via your forked GitHub repo, but don't
+require students to use Git, be aware that it's not obvious to newcomers how
+to get the zipfile.
 
-## Enable automatic forking
+{: .screenshot}
+![Screenshot of downloading zipfile from GitHub](/docs/img/screenshots/download-zip-from-github-repo.png)
+
+{: .caption}
+To download a zipfile containing the editor source files, click on the green
+**Code** button (1) and then **Download ZIP** (2)
+
+### Enabling automatic forking (methods E & F)
 
 The server can automatically fork the repo into each student's GitHub account
 (and, optionally, inject GitHub issues too — one for each task). We recommend
@@ -633,11 +628,6 @@ secret.
 
 {: .navigation}
 **Admin** → **Config** → Config:**GitHub**
-
-Set `IS_STUDENT_USING_GITHUB_REPO` to `Yes`.  
-Set `IS_USING_GITHUB_API_TO_FORK` to `Yes` too. 
-See the notes on setting up the OAuth app, below, because you need to add
-`GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET` values to enable it.
 
 Set `IS_USING_GITHUB_API_TO_INJECT_ISSUES` to `Yes` if you want that feature
 too. Depending on the level you're teaching at, use of Git (including feature

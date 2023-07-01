@@ -117,6 +117,13 @@ Clarification of terms used in project and its documentation.
   <a href="https://flask.palletsprojects.com/en/2.3.x/">Flask docs</a>
 </dd>
 
+<dt>Greensock<br>(GSAP)</dt>
+<dd>A widely-used JavaScript library for managing animation on web pages,
+  used by the <strong>race player</strong> to <strong>replay</strong> the
+  races. See the
+  <a href="https://greensock.com/gsap">GSAP website</a>.
+</dd>
+
 <dt>hamster</dt>
 <dd>
   A small rodent (<em>Mesocricetus roadentus</em>) that is used as a form of
@@ -207,6 +214,14 @@ Clarification of terms used in project and its documentation.
   it effectively means a background image (typically a JPG) and an SVG file
   that describes the path the buggies will follow — see
   <a href="races/racetracks">more about racetracks</a>.
+</dd>
+
+<dt>replay</dt>
+<dd>
+  Once a race has been run, replaying it means animating the events of the race
+  in the <strong>race player</strong>. It's a bit like replaying a video of the
+  race, but instead of video it's a JavaScript-powered reconstruction of the
+  events recorded in the <strong>race file</strong>.
 </dd>
 
 <dt>report</dt>
