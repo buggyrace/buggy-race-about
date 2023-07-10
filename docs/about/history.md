@@ -28,7 +28,7 @@ In late 2022 the work began to make the server customisable and "white labelled"
 <p>
 In 2023 (term 3 of the 2022–23 academic year) we ran the new server hosted on
 the department's own network (using 
-<a href="../hosting/self-hosting">Docker in a VM</a>, instead of
+<a href="../hosting/docker">Docker in a VM</a>, instead of
 <a href="../hosting/heroku">in the cloud</a>) to confirm that it was a feasible
 approach . We also did some user-testing of the admin with the RHUL teaching
 staff.

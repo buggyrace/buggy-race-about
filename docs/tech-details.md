@@ -20,7 +20,7 @@ See the server's
 for the Python libraries it uses.
 
 There's a [`Dockerfile`](https://github.com/buggyrace/buggy-race-server/blob/main/Dockerfile)
-so you can [deploy it with Docker](../hosting/self-hosting).
+so you can [deploy it with Docker](../hosting/docker).
 
 It was built on the
 [flask-cookiecutter](https://github.com/cookiecutter-flask/cookiecutter-flask)

@@ -6,7 +6,7 @@ has_children: true
 ---
 
 
-# Installation and Hosting
+# Installation and hosting
 
 To run the project, you need to be running the **race server** that provides the
 web site that is both the main source of information for students and

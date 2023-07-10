@@ -1,7 +1,7 @@
 ---
 title: On Heroku
 layout: home
-nav_order: 20
+nav_order: 10
 parent: Installation and Hosting
 ---
 
@@ -56,9 +56,19 @@ into your own GitHub account.
 
 * [github.com/buggyrace/buggy-race-server](https://github.com/buggyrace/buggy-race-server)
  
+{: .screenshot}
+![Forking the repo](/docs/img/screenshots/github-fork-server-repo.png)
+
+{: .caption}
+Click on the **Fork** button on the server repo to fork a copy into your own
+GitHub account.
+
 There's a **Fork** button on the repo — click on that to get your own copy (your
-"forked repo"), which you can use to deploy onto Heroku. You'll see it appear
-at:
+"forked repo"), which you can use to deploy onto Heroku. Normally, you only
+need to include the `main` branch when you make your fork.
+
+
+You'll see it appear at:
 
 `https://github.com/YOUR-USERNAME/buggy-race-server`
 
@@ -113,7 +123,9 @@ your GitHub one. When you've selected it, click **Connect**.
 
 {: .caption}
 Connect your Heroku app to your own GitHub account's fork of the buggy race
-server. You do not need any "pipelines".
+server by using GitHub (1), finding the repo you just forked (2) and clicking
+**Connect** (3). The owner of the repo will be you (and not buggyrace),
+because you're connecting to your own fork.
 
 {: .note}
 Don't deploy yet, you're not quite ready!
