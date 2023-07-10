@@ -2,7 +2,7 @@
 title: Self-hosting
 layout: home
 nav_order: 10
-parent: Installation & Hosting
+parent: Installation and Hosting
 ---
 
 

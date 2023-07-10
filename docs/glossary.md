@@ -6,13 +6,7 @@ nav_order: 300
 
 # Glossary
 
-Clarification of terms used in project and its documentation.
-
----
-<!--
-<dt></dt>
-<dd></dd>
--->
+Clarification of terms used in the project and its documentation.
 
 <dl>
 
@@ -21,14 +15,16 @@ Clarification of terms used in project and its documentation.
   The <em>Acme School of Buggy Programming</em>, a fictitious institution and
   the default value for the "Org" (Organisation) config settings, which you use
   to customise the buggy server to match your own institution.
+  <br>→ <a href="customising/org">"Org" config settings</a>
 </dd>
 
 <dt>admin pages</dt>
 <dd>
   Pages on the race server that can only be accessed by staff users, and allow
-  access to configuration and student data. Paths in URLs start with
+  access to configuration and student data. Paths in URLs generally start with
   <code>/admin</code>. Admin-only links tend to be pale yellow buttons, to
   distinguish from public links.
+  <br>→ <a href="running/dashboard">the admin dashboard</a>
 </dd>
 
 <dt>administrator</dt>
@@ -38,6 +34,7 @@ Clarification of terms used in project and its documentation.
   knowing the <strong>auth code</strong>. There should always be at least one
   administrator (the username/account is created during the
   <strong>set-up phase</strong>).
+  <br>→ <a href="running/user-management">user management</a>
 </dd>
 
 <dt>announcement</dt>
@@ -45,15 +42,16 @@ Clarification of terms used in project and its documentation.
   Announcements are messages that are displayed either at the top of every
   page on the race server (except the tech notes), or in specific places
   (such as the login screen). 
-  <a href="running/announcements">About managing announcements</a>.
+  <br>→ <a href="running/announcements">managing announcements</a>
 </dd>
 
-<dt>authorisation code<br>(auth code)</dt>
+<dt>authorisation code,<br>auth code</dt>
 <dd>
   A code that an administrator needs to present in order to perform some
   admin functions, including changing config settings, user data, and some
   other "risky" behaviour. Depending on how big your team is, it's feasible
   for not all admin users to know the auth code.
+  <br>→ <a href="customising/auth">configuring authorisation</a>
 </dd>
 
 <dt>buggy</dt>
@@ -68,6 +66,7 @@ Clarification of terms used in project and its documentation.
   The basic Python Flask application that each student is given at the start
   of the project, and which they need to develop to add more features and
   functionality.
+  <br>→ <a href="buggy-editor">about the buggy editor</a>
 </dd>
 
 <dt>config setting</dt>
@@ -78,12 +77,14 @@ Clarification of terms used in project and its documentation.
   variables if you have access to the server itself. For convenience, config
   settings are grouped thematically (for example, all the config settings
   affecting races are in the group "Races").
+  <br>→ <a href="customising">customising (with config settings)</a>
 </dd>
 
 <dt>comments</dt>
 <dd>
   Comments on a user are only visible to staff users (depending on config
   settings, all staff may be able to edit them, or just administrators).
+  <br>→ <a href="running/user-management#commenting-on-a-user">commenting on users</a>
 </dd>
 
 <dt>cost</dt>
@@ -101,6 +102,7 @@ Clarification of terms used in project and its documentation.
   This may be useful if you identify students by their college username, for
   example (or if your students are running the buggy editor on a remote server
   via VSCode and they need this to login to that, external, server).
+  <br>→ <a href="customising/users">"Users" config settings</a>
 </dd>
 
 <dt>ext_id</dt>
@@ -109,19 +111,20 @@ Clarification of terms used in project and its documentation.
   This may be helpful if you need to link students in another system, for example
   if you're using an online framework like Moodle. The race server doesn't use
   this — it's just for your information (but might be handy if you need to
-  automate submisison of marks or feedback, for example).
+  automate submission of marks or feedback, for example).
+  <br>→ <a href="customising/users">"Users" config settings</a>
 </dd>
 
 <dt>Flask</dt>
-<dd>The lightweight Python webserver the project uses:
-  <a href="https://flask.palletsprojects.com/en/2.3.x/">Flask docs</a>
+<dd>The lightweight Python webserver the project uses.
+  <br>→ <a href="https://flask.palletsprojects.com/en/2.3.x/">Flask docs</a>
 </dd>
 
 <dt>Greensock<br>(GSAP)</dt>
 <dd>A widely-used JavaScript library for managing animation on web pages,
   used by the <strong>race player</strong> to <strong>replay</strong> the
-  races. See the
-  <a href="https://greensock.com/gsap">GSAP website</a>.
+  races.
+  <br>→ <a href="https://greensock.com/gsap">GSAP website</a>
 </dd>
 
 <dt>hamster</dt>
@@ -133,7 +136,8 @@ Clarification of terms used in project and its documentation.
 <dt>Jinja templates</dt>
 <dd>
   The templating system used inside Flask (for example, for specifying HTML
-  pages): <a href="https://pypi.org/project/Jinja2/">Jinja2</a>
+  pages).
+  <br>→ <a href="htthttps://pypi.org/project/Jinja2">Jinja2 docs</a>
 </dd>
 
 <dt>mass</dt>
@@ -157,6 +161,7 @@ Clarification of terms used in project and its documentation.
   The <strong>tasks</strong> students must do are grouped into phases. All the
   tasks in a phase should be completed before the student can move onto the
   next phase.
+  <br>→ <a href="teaching/tasks-and-phases">tasks and phases</a>
 </dd>
 
 <dt>poster</dt>
@@ -164,6 +169,7 @@ Clarification of terms used in project and its documentation.
   "Poster" is an alternative name for the students' <strong>report</strong>
   (it's an anomaly from the RHUL marking scheme that we needed to use — you
   should just use the word "report").
+  <br>→ <a href="teaching/the-report">students' posters (i.e., reports)</a>
 </dd>
 
 <dt>race event</dt>
@@ -172,6 +178,7 @@ Clarification of terms used in project and its documentation.
   another buggy, moving forward — are recorded as events, which the
   <strong>race player</strong> replays. Race events are stored in the
   <strong>race file</strong> (not the database).
+  <br>→ <a href="races/replaying">replaying races</a>
 </dd>
 
 <dt>race file</dt>
@@ -183,6 +190,7 @@ Clarification of terms used in project and its documentation.
   results of the race. The <strong>race player</strong> can replay a race
   if it has access to a race file that contains the race's events.
   The race file is in JSON format.
+  <br>→ <a href="races/uploading-results">uploading race results</a>
 </dd>
 
 <dt>race player</dt>
@@ -192,6 +200,7 @@ Clarification of terms used in project and its documentation.
   version you can use that instead. The race player takes a <strong>race
   file</strong> as its input — it doesn't need access to the race server or
   the server's database.
+  <br>→ <a href="races/replaying">replaying races</a>
 </dd>
 
 <dt>race rules</dt>
@@ -206,14 +215,15 @@ Clarification of terms used in project and its documentation.
   The server running the website that accepts the buggy JSON that students
   upload from their editors in order to enter races. It's a Flask webserver
   that you need to set up to run the project.
+  <br>→ <a href="hosting">installing and hosting the race server</a>
 </dd>
 
 <dt>racetrack</dt>
 <dd>
   The racetrack is (of course) the nominal setting of a race — but on the server
   it effectively means a background image (typically a JPG) and an SVG file
-  that describes the path the buggies will follow — see
-  <a href="races/racetracks">more about racetracks</a>.
+  that describes the path the buggies will follow.
+  <br>→ <a href="races/racetracks">managing and customising racetracks</a>
 </dd>
 
 <dt>replay</dt>
@@ -222,6 +232,7 @@ Clarification of terms used in project and its documentation.
   in the <strong>race player</strong>. It's a bit like replaying a video of the
   race, but instead of video it's a JavaScript-powered reconstruction of the
   events recorded in the <strong>race file</strong>.
+  <br>→ <a href="races/replaying">replaying races</a>
 </dd>
 
 <dt>report</dt>
@@ -229,6 +240,7 @@ Clarification of terms used in project and its documentation.
   You can choose to require your students to submit a report as part of their
   project submission. Each student's report takes the form of a webpage (at
   <code>/report</code>) within their buggy editor.
+  <br>→ <a href="teaching/the-report">students' reports</a>
 </dd>
 
 <dt>RHUL</dt>
@@ -251,6 +263,20 @@ Clarification of terms used in project and its documentation.
 <dd>
   A staff user on the race server is an <strong>administrator</strong> or a 
   <strong>Teaching Assistant</strong>. Staff users can access the admin pages.
+  <br>→ <a href="running/user-management">user management</a>
+</dd>
+
+<dt>static content</dt>
+<dd>
+  Static content on the race server refers mainly to pages that need to be
+  <em>published</em> before they can be accessed. There are three such
+  components: the <strong>task list</strong>, the <strong>tech notes</strong>,
+  and the buggy editor <strong>zipfile</strong> (that last one is optional,
+  depending on how you're distributing the buggy editor source code).
+  <br>
+  There's a page in the tech notes about the more general business of creating
+  and using <em>static content</em> on the web.
+  <br>→ <a href="static-content">static content</a> (on the race server)
 </dd>
 
 <dt>task</dt>
@@ -260,6 +286,7 @@ Clarification of terms used in project and its documentation.
   experience of the student).
   Tasks are grouped into phases.
   The phase is indicated by the digit at the start of the task's mnemonic name.
+  <br>→ <a href="teaching/tasks-and-phases">tasks and phases</a>
 </dd>
 
 <dt>task list</dt>
@@ -268,6 +295,7 @@ Clarification of terms used in project and its documentation.
   for students to do. It includes details and hints for each task, as well
   as buttons that allow students to enter <strong>task texts</strong> as they
   attempt them.
+  <br>→ <a href="static-content/task-list">the task list</a>
 </dd>
 
 <dt>task text</dt>
@@ -277,25 +305,30 @@ Clarification of terms used in project and its documentation.
   texts (possibly as rendered markdown inside HTML) to be added to their
   <strong>report</strong> before the project is submitted (if your students are
   required to submit a report).
+  <br>→ <a href="static-content/task-list">tracking progress</a> (texts help
+  you with this)
 </dd>
 
-<dt>Teaching Assistant (TA)</dt>
+<dt>Teaching Assistant<br>(TA)</dt>
 <dd>
   A staff user on the race server who has read-access to student data but
   limited config/admin access. Depending on config settings, TAs may be able
   to edit staff comments on users, and reset students' passwords for them.
+  <br>→ <a href="running/user-management">user management</a>
 </dd>
 
-<dt>VS Code<br>Visual Studio Code</dt>
+<dt>VS Code,<br>Visual Studio Code</dt>
 <dd>
   <a href="https://code.visualstudio.com">VS Code</a> is a widely-used editor
   and interactive development environment by Microsoft. One way of running the
   buggy racing project is to set up students' code on a departmental server and
   access it through VS Code and a SSH tunnel. The advantage of using VS Code in
   this way is ease of deployment, including the Python plugins — it's
-  relatively straightforward to install on Windows, Macos and Linux — and that
+  relatively straightforward to install on Windows, MacOS and Linux — and that
   all students are (at least to start with) working in the same editor, which
   means demos and videos are consistent with what they see on their own screens.
+  <br>→ <a href="customising/project">"Project" config settings</a>
+  (see <code>IS_USING_REMOTE_VS_WORKSPACE</code>)
 </dd>
 
 </dl>

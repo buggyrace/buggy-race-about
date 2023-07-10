@@ -4,9 +4,16 @@ layout: home
 nav_order: 28
 parent: Day-to-day running
 ---
-
-
 # User management
+
+<details close markdown="block">
+  <summary>
+    Contents of this page:
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
 
 {: .navigation}
 **Admin** → **Users**
@@ -78,6 +85,36 @@ displays the last-uploaded JSON.
 
 You can click on the username to inspect the user's settings and task texts
 in detail.
+
+## Commenting on a user
+
+Staff users can leave comments on a user that are only displayed to other staff
+users on the server (that is, students do not see these comments). By default
+Teaching Assistants can edit comments as well as read them (although you can
+disable this by setting `IS_TA_EDIT_COMMENT_ENABLED` to `No`). You'll see
+comments (if any) when you inspect a user, but there's also a button (marked
+<code>✱</code>) for quick inspection when you're listing all users (**Admin** →
+**Users**).
+
+## Changing passwords
+
+{: .navigation}
+Top menu bar: **Settings** → **Change password**
+
+Any user can change their own password while logged in.
+
+If you're an admin user — or a Teaching Assistant and the server has enabled
+this — you can change _any other user's password_ (but if _they_ are an admin,
+you'll need the auth code too).
+
+If you forget your password and you're not logged in, you _cannot_ reset your
+password from outside (the server doesn't send emails, so can't send you a
+reminder). You need a staff member to reset it for you. 
+
+Here's the
+[emergency procedure](faq#ive-accidentally-demoteddeactivated-the-only-admin-account)
+for when no staff members can log in (try not to let this happen ;-) ).
+
 
 ## Edit a user
 

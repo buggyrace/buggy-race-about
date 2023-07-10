@@ -8,6 +8,16 @@ nav_order: 200
 
 Frequently asked questions for administering the race server.
 
+
+<details open markdown="block">
+  <summary>
+    Questions:
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
 ---
 
 ## My server is running but pages are unstyled
@@ -18,6 +28,7 @@ depends on node.js, and is a pre-processor that bundles all the static assets
 (stylesheets)). If you have access to the command line where your server is
 running, try running `npm run build` and look for diagnostic/error messages.
 
+---
 
 ## Server responds to every request with unknown key error (and code 500)
 
@@ -29,6 +40,13 @@ getting its own configuration. Check that your database server is running and
 that the `DATABASE_URL` you've specified for it works for you if you try
 connecting directly.
 
+The first thing to investigate is whether you've specified the connection
+details correctly. This is the environment variable `DATABASE_URL`: see this
+[information about `DATABASE_URL`](../customising/env.html#database_url)
+and the other env variables that can affect it.
+
+
+---
 
 ## Can I delete a user?
 
@@ -38,6 +56,7 @@ For **Is active?**, select `No`. This hides the user and also prevents them
 logging in. When you download buggies CSV, only buggies belonging to active
 users are included.
 
+---
 
 ## I've forgotten the authorisation code
 
@@ -45,6 +64,7 @@ You can reset this by [setting it as an environment variable](customising/env)
 and restarting the race server. You should then remove the environment
 declaration (because the value you've just set is now saved in the database).
 
+---
 
 ## I've forgotten my password and can't log in
 
@@ -61,6 +81,7 @@ _[I’ve accidentally demoted/deactivated the only admin account](#ive-accidenta
 
 Change passwords by going to **Admin** → **Users** → **Change passwords**.
 
+---
 
 ## I've accidentally demoted/deactivated the only admin account
 
@@ -77,6 +98,7 @@ back to `No`. Remove the environment variable setting you used to bypass that
 time you restart). Promote or register the user that was lost — and once you've
 done that, maybe [deactivate the new one](#can-i-delete-a-user).
 
+---
 
 ## Oops! An announcement with bad HTML is breaking every page
 
@@ -86,6 +108,7 @@ Announcements are uniquely dangerous because if you accidentally fail to
 announcement to remove the offending HTML. Specifically, you can
 [disable the HTML to get to the edit-announcements pages](running/announcements.html#recovering-from-an-announcement-with-critically-broken-html).
 
+---
 
 ## Why can't I replay this race?
 
@@ -102,6 +125,7 @@ If the **Replay** button is there but the problem is that the race won't run
 wrong race file. It must be a race file with _events_ in it for the player
 to show them. See [running races](races/running) for more information.
 
+---
 
 ## How can I find out what version I'm running?
 
@@ -109,5 +133,6 @@ Go to **Admin** → **Dashboard** → **System info** where it's at the top of t
 page.  
 Or look under the hamster on the <code>/about</code> page.
 
+---
 
 

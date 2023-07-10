@@ -6,7 +6,17 @@ parent: Buggy editor
 has_children: false
 ---
 
+<details close markdown="block">
+  <summary>
+    Contents of this page:
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
 # Distributing the source code
+
 <h2 style="margin: 0 0 1em 0"> or: How students get their copy of the buggy editor</h2>
 
 The project requires each student to have their own copy of the buggy editor
@@ -26,24 +36,25 @@ Here are several ways to distribute the code — they are not _all_ mutually
 exclusive, although it's probably simpler for both you and your students if
 everyone is doing it the same way.
 
-<ol class="upper-alpha">
-  <li><a href="#method-a">Students download a zipfile from race server</a> (the default)</li>
-  <li><a href="#method-b">Students get the source code from a custom page you set up elsewhere</a></li>
-  <li><a href="#method-c">Students get the source code from your repo</a></li>
-  <li><a href="#method-d">Students manually fork your repo into their own account</a></li>
-  <li><a href="#method-e">Server forks your repo into students' GitHub accounts</a></li>
-  <li><a href="#method-f">Server forks your repo into students' GitHub accounts and then clones via VSCode</a></li>
-</ol>
+## Different methods to choose from
+
+- [Students download a zipfile from race server](#method-zip) (the default)
+- [Students get the source code from a custom page you set up elsewhere](#method-page)
+- [Students get the source code from your repo](#method-repo)
+- [Students manually fork your repo into their own account](#method-fork)
+- [Server forks your repo into students' GitHub accounts](#method-autofork)
+- [Server forks your repo into students' GitHub accounts and then clones via VSCode](#method-vsremote)
+
 
 {: .rhul}
-We used [method E](#method-e): initially, we automatically forked the buggy
-editor into each student's GitHub account, which they then either cloned or
-downloaded by zip. Later (for the third time we ran the project and onwards),
-we semi-automated that last stage by cloning onto our [remote server through
-VSCode](running-remote) — that's [method F](#method-f). In effect, we used
-GitHub as a convenient way to distribute the code — this makes it a little
-easier for us (you), and also exposes students to Git and GitHub in the
-process.  
+We used [the auto-forking method](#method-autofork): initially, we
+automatically forked the buggy editor into each student's GitHub account, which
+they then either cloned or downloaded by zip. Later (for the third time we ran
+the project and onwards), we semi-automated that last stage by cloning onto our
+[remote server through VSCode](running-remote) — that's the
+[VScode tunnel method](#method-vsremote). In effect, we used GitHub as a
+convenient way to distribute the code — this makes it a little easier for us
+(you), and also exposes students to Git and GitHub in the process.
 <br>
 Once students had the code, we explicitly made it clear that using Git or
 GitHub was entirely optional within the project, and most never used it (which
@@ -58,7 +69,7 @@ below that apply generally to distributing the code.
 ---
 
 <div class="card">
-  <h3 id="method-a"><span>A</span> Students download a zipfile from race server</h3>
+  <h3 id="method-zip"><span>zip</span> Students download a zipfile from race server</h3>
   <div>
     <label>Complexity</label>
     <p class="complexity">1</p>
@@ -133,7 +144,7 @@ below that apply generally to distributing the code.
 </div>
 
 <div class="card">
-  <h3 id="method-b"><span>B</span> Students get the source code from a custom page you set up
+  <h3 id="method-page"><span>page</span> Students get the source code from a custom page you set up
     elsewhere</h3>
   <div>
     <label>Complexity</label>
@@ -205,7 +216,7 @@ prototype zip, or you can get it yourself from the editor's own repo).
 </div>
 
 <div class="card">
-  <h3 id="method-c"><span>C</span> Students get the source code from your repo</h3>
+  <h3 id="method-repo"><span>repo</span> Students get the source code from your repo</h3>
   <div>
     <label>Complexity</label>
     <p class="complexity complex-2">2</p>
@@ -290,7 +301,7 @@ prototype zip, or you can get it yourself from the editor's own repo).
 </div>
 
 <div class="card">
-  <h3 id="method-d"><span>D</span> Students manually fork your repo into their own account</h3>
+  <h3 id="method-fork"><span>fork</span> Students manually fork your repo into their own account</h3>
   <div>
     <label>Complexity</label>
     <p class="complexity complex-3">3</p>
@@ -364,7 +375,7 @@ prototype zip, or you can get it yourself from the editor's own repo).
 </div>
 
 <div class="card">
-  <h3 id="method-e"><span>E</span> Server forks your repo into students' GitHub accounts</h3>
+  <h3 id="method-autofork"><span>autofork</span> Server forks your repo into students' GitHub accounts</h3>
   <div>
     <label>Complexity</label>
     <p class="complexity complex-4">4</p>
@@ -458,7 +469,7 @@ prototype zip, or you can get it yourself from the editor's own repo).
 </div>
 
 <div class="card">
-  <h3 id="method-f"><span>F</span> Server forks your repo into students' GitHub accounts
+  <h3 id="method-vsremote"><span>vsremote</span> Server forks your repo into students' GitHub accounts
     and then clones via VSCode</h3>
   <div>
     <label>Complexity</label>

@@ -8,6 +8,15 @@ has_children: false
 
 # Running on PythonAnywhere.com
 
+<details close markdown="block">
+  <summary>
+    Contents of this page:
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
 [PythonAnywhere](https://www.pythonanywhere.com)
 provides a cloud-hosted very Python-friendly environment that your students
 can use run (and develop) their buggy editors.

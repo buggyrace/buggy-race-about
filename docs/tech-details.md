@@ -30,7 +30,7 @@ also brought [webpack](https://webpack.js.org) along, which means the server
 needs [node.js](https://nodejs.org/en) (to package up the JavaScript and CSS)
 as well as Python.
 
-Python version 3.8+ is needed (because of copious use of "`f`-strings").
+Python version 3.9+ is required.
 
 {: .note}
 The Race Server is licensed under the GNU Affero GPL: it is **free and open

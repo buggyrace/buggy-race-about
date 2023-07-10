@@ -6,6 +6,15 @@ parent: Buggy editor
 has_children: false
 ---
 
+<details close markdown="block">
+  <summary>
+    Contents of this page:
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
 
 # Customising the Buggy Editor
 

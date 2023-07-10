@@ -6,8 +6,16 @@ parent: Buggy editor
 has_children: false
 ---
 
-
 # Running on Replit
+
+<details close markdown="block">
+  <summary>
+    Contents of this page:
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
 
 [Replit](https://replit.com)
 provides a cloud-hosted integrated development environment that your students

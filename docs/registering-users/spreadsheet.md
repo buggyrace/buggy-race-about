@@ -6,6 +6,14 @@ parent: Registering users
 has_children: false
 ---
 
+<details close markdown="block">
+  <summary>
+    Contents of this page:
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
 
 # Adding new students from a spreadsheet (CSV)
 

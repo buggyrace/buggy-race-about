@@ -8,6 +8,15 @@ has_children: false
 
 # Replaying races
 
+<details close markdown="block">
+  <summary>
+    Contents of this page:
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
 {: .navigation}
 Top menu bar: **Races** → Race: **Replay**  
 or  
@@ -106,8 +115,8 @@ server, be aware that there may be
 (CORS) restrictions on whether the player can access them. Specifically, CORS
 may apply to the JSON race files and SVG path files.
 
-JSON served from GitHub pages sites do set the `Access-Control-Allow-Origin`
-header to `*` so can be used to host race files.
+Files served from GitHub pages sites (including JSON files) do set the
+`Access-Control-Allow-Origin` header to `*` so can be used to host race files.
 
 See [customising Races (config settings)](../customising/races) for more
 details, including `BUGGY_RACE_PLAYER_URL` and `BUGGY_RACE_PLAYER_ANCHOR`.

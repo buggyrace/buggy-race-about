@@ -6,6 +6,14 @@ parent: Customising
 has_children: false
 ---
 
+<details close markdown="block">
+  <summary>
+    Contents of this page:
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
 
 # Creating the tasks
 
@@ -15,19 +23,31 @@ has_children: false
 When the set-up phase is complete — all the config settings have been defined
 — you can create the tasks your students are going to attempt.
 
-Each task includes hints and descriptions, so is quite verbose. That's why the
-tasks are defined in a single "task list" markdown document, which you upload.
-The race server parses this file and creates the individual tasks in the
-database. The format of that document is straightforward — if you want to
-create you own, you can edit the example that is already on the race server
-(see below).
+Each task includes hints and descriptions, so is quite verbose. The default
+tasks are the ones that come built-in with the server, and you might not need
+to change them. But if you want to, because they are so verbose, they are
+available in a single markdown file which you can download and edit conveniently
+offline: see the instructions below.
+
+
+{: .note}
+If you use the _default tasks_ that come pre-built on the race server, the first
+two tasks of phase 0 (getting and running the code) **will be customised** to
+match your config settings (especially in the "GitHub" group, i.e,, 
+[how the buggy editor code is distributed](../buggy-editor/distributing-the-code)).  
+<br>
+Specifically, tasks `0-GET` and `0-RUN` may differ based on which distribution
+method you are using.
+
 
 {: .screenshot}
 ![Screenshot of upload tasks dialogue](/docs/img/screenshots/upload-tasks.png)
 
 {: .caption}
 The upload tasks dialogue — if you don't provide a file to upload, the race
-server will use the default tasks.
+server will use the default tasks (but the first two tasks of phase 0 assume
+your students are downloading the buggy editor as a zip file from your race
+server).
 
 Creating the tasks is potentially destructive (it will delete any existing
 tasks), so you need the [authorisation code](auth) to do it.
@@ -41,9 +61,16 @@ this once the project has started!
 
 The simplest way to create the tasks is to accept the default tasks delivered
 with the project. To do this, don't upload anything. Choose `Yes` to the
-_Are you sure?_ prompt, and press the red upload button.
+_Are you sure?_ prompt, select the distribution method that matches how your
+students get the buggy editor source code, and press the red upload button.
 
 This will populate the database with the default 27 tasks in 7 phases.
+
+{: .warning}
+Make sure the distribution method you choose matches the decisions you made
+in your configuration settings! See more about
+[how the buggy editor code is distributed](../buggy-editor/distributing-the-code),
+which includes the _specific_ settings needed for each method.
 
 
 ## Or upload a customised markdown file

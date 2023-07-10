@@ -40,4 +40,3 @@ will get 404 errors when they follow links to download it. You must re-publish
 the zipfile manually. The [admin dashboard](../running/dashboard) and [set-up
 summary](../running/setup-summary) both show warnings if the zipfile is missing.
 
-

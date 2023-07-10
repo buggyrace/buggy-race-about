@@ -20,9 +20,10 @@ There are two ways to register new users:
   staff accounts or late-joining students.
 
 * **[Load students from a spreadsheet](spreadsheet)**  
-  If you've already got a list of enrolled students — especially if you're using
-  a system like Moodle, Canvas, or Blackboard already — you can upload a CSV
-  file.
+  Create a spreadsheet of enrolled students — if you're using a system like
+  Moodle, Canvas, or Blackboard can extract something suitable from that — save
+  it as a CSV file, and upload it. You'll need to make sure you have the right
+  columns, but the race server has a utility to help you with that.
 
 Once users are registered, you can change their details or suspend them: see
 [user management](../running/user-management).
