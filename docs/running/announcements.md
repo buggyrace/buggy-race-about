@@ -33,6 +33,10 @@ There are two types of announcement:
 
 * **On specific pages**  
   These announcements allow you to place messages in specific locations:
+    * `about`  
+      The about announcement is shown on the race server's about page (linked
+      from the top menu bar). You can use this to add additional credits or
+      information about your own buggy racing staff team.
     * `get-editor`  
       The get-editor announcment is shown on the settings page when the student
       has forked their editor repo. This lets you add instruction/encouragement
