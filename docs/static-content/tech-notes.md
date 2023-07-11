@@ -11,11 +11,17 @@ parent: Static content
 The **tech notes** provide supporting and explanatory material about some of
 the technology and tasks.
 
+{: .demo}
+See the [tech notes]({{site.content.demo_url}}/tech-notes) that are published
+as supporting material on your race server.
+
+
 {: .note}
 **You cannot edit the tech notes** because they are produced as static content
-(HTML pages) from files in the source code repo. If you want to change or
-customise them, you can extract them and host them yourself (for example, as
-GitHub Pages).
+(HTML pages) from files in the source code repo.  
+If you want to change or customise them, you can extract them and host them
+yourself (for example, as GitHub Pages). The config setting
+`TECH_NOTES_EXTERNAL_URL` lets you specify where they are.
 
  
 {: .screenshot}

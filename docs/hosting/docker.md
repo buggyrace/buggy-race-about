@@ -5,6 +5,14 @@ nav_order: 20
 parent: Installation and Hosting
 ---
 
+<details open markdown="block">
+  <summary>
+    Contents of this page:
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
 
 # Self-hosting with Docker
 

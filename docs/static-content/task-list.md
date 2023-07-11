@@ -13,6 +13,9 @@ This page is about the task list (the single HTML page on the race server)
 — for information about how to specify the tasks themselves, including
 editing them, see [creating the tasks](../customising/creating-tasks).
 
+{: .demo}
+See the [default task list]({{site.content.demo_url}}/project/tasks).
+
 The task list is the page on the race server that defines the **tasks** which
 your students need to attempt. Tasks are grouped into **phases** which must
 be tackled in order: don't allow your students to start a phase until they've

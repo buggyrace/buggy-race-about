@@ -30,3 +30,6 @@ nav_external_links:
 
 favicon_ico: "/docs/img/favicon.png"
 exclude: ["src", "utils"]
+
+content:
+  demo_url: https://demo.buggyrace.net
