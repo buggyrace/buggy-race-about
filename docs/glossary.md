@@ -96,6 +96,14 @@ Clarification of terms used in the project and its documentation.
   <strong>race violation</strong> and can't participate in that race.
 </dd>
 
+<dt>Docker</dt>
+<dd>
+    Docker is a software tool that wraps applications in "containers" that
+    work in different environments in isolation. The race server is "dockerised"
+    so it can be installed using Docker.
+    <br>→ <a href="https://www.docker.com">Docker website</a>
+</dd>
+
 <dt>ext_username</dt>
 <dd>
   An "external username", which is a field you can choose to add to all users.
@@ -131,6 +139,14 @@ Clarification of terms used in the project and its documentation.
 <dd>
   A small rodent (<em>Mesocricetus roadentus</em>) that is used as a form of
   motive power in some racing buggies.
+</dd>
+
+<dt>Heroku</dt>
+<dd>
+  A cloud-based service that hosts websites — see the instructions for
+  <a href="hosting/heroku">installing the race server on Heroku</a>
+  (there is a fee for hosting sites)
+  <br>→ <a href="http://heroku.com/">Heroku website</a>
 </dd>
 
 <dt>Jinja templates</dt>
@@ -331,6 +347,13 @@ Clarification of terms used in the project and its documentation.
   (see <code>IS_USING_REMOTE_VS_WORKSPACE</code>)
 </dd>
 
+<dt>webpack</dt>
+<dd>
+  A software tool that bundles up assets like JavaScript, style sheets, and
+  graphics for a webserver. The race server uses webpack, which itself
+  depends on node.js.
+  <br>→ <a href="https://webpack.js.org">webpack docs</a>
+</dd>
 </dl>
 
 ---
