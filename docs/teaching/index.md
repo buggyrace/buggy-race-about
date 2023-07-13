@@ -9,5 +9,5 @@ nav_order: 40
 # Teaching
 
 {: .todo}
-This isn't ready yet: the documentation is still being written.
+Some pages are not quite ready: the documentation is still being written! _(July 2023)_.
 

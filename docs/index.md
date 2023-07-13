@@ -12,8 +12,9 @@ _Buggy Racing_ consists of the software (the "race server") and supporting
 material (the "tech notes") for running a practical Python programming
 project.
 
-{: .todo}
-This isn't ready yet: the documentation is still being written.
+
+{: .demo}
+See the demo race server at [demo.buggyrace.net]({{site.content.demo_url}}).
 
 {: .rhul  }
 _Buggy Racing_ was originally created in 2020 as the final term project of the
@@ -25,6 +26,8 @@ Since then we've made it very configurable so you can run it in a way that works
 for your institution or course — university department, FE College, or local
 code club. Available **for free** under the GNU GPL license.
 
+{: .todo}
+Some pages are not quite ready: the documentation is still being written! (July 2023).
 
 ## Features
 

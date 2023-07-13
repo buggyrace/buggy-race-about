@@ -9,7 +9,7 @@ nav_order: 12
 # Tasks and phases
 
 {: .todo}
-This isn't ready yet: the documentation is still being written.
+Some pages are not quite ready: the documentation is still being written! _(July 2023)_.
 
 
 {: .demo}
@@ -38,9 +38,22 @@ to `3` but will vary depending on the nature of your students (are they
 mostly beginners, or do they already have experience in web development?). If
 you set it to `0` then no recommendation will be shown.
 
+
 {: .rhul}
 This fluid approach — letting students decide how thouroughly to address each
 task — worked well with the range of students. Inevitably, some students do
 the mimimum. But most engaged students did a lot more. It's also common — and
 a good indicator of a growing strategy of approaching software development —
-to see students revisit tasks to add more coverage to them.
+to see students revisit tasks to add more coverage to them once they've
+worked out a way to implement a solution.
+
+## The growing complexity of the buggy
+
+The [buggy editor](../buggy-editor) that the students stat with is deliberately
+basic: it lets the student change the _number of wheels_. And that's it.
+
+But the database it includes _also_ has three columns for the 
+
+
+
+

@@ -11,12 +11,14 @@ nav_order: 50
 # Students' reports
 
 {: .todo}
-This isn't ready yet: the documentation is still being written.
+Some pages are not quite ready: the documentation is still being written! _(July 2023)_.
 
 
 {: .demo}
 See the [report page]({{site.content.demo_url}}/project/report). This is
 customised by the server's config settings.
+The instructions describe to students how to add the report to their editor
+app.
 
 The config settings that control the report are in the "Project" group of
 config settings: [configuring the project](../customising/project).
@@ -32,10 +34,6 @@ Students already have to [submit their buggy editor app](submission) at the end
 of the project — so the report needs to be presented as a page within the app.
 
 Specifically, it's a route to `/poster` on the editor app.
-
-{: .demo}
-The instructions on the [report page]({{site.content.demo_url}}/project/report)
-on the demo server describe to students how to add the report.
 
 ## Using task texts
 
