@@ -83,7 +83,7 @@ backup_filename="buggy_race_bk_$(date +\%Y\%m\%d).sql.gz"
 
 If you have a backup of the database, you don't _need_ to maintain a backup of
 the static content (which you can find in the `published` directory on your
-server) because you can regenerate all of those files if the database. The
+server) because you can regenerate all of those files from the database. The
 database backup will include all your config settings, except the
 `DATABASE_URL` setting that's [set as an environment
 variable](../customising/env).
