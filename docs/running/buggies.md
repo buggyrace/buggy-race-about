@@ -54,8 +54,8 @@ they have a plain white pennant, four wheels, and a single unit of petrol.
 {: .demo}
 See the [buggy specifications]({{site.content.demo_url}}/specs/).
 
-In general, you'd expect to see more settings in more buggies deviate from the
-default settings as students develop their editors.
+In general, up on the server you'd expect to see more settings in more buggies
+deviate from the default settings as students develop their editors.
 
 
 ## What is the `id2` field?

@@ -11,7 +11,16 @@ parent: Day-to-day running
 {: .navigation}
 **Admin**
 
-The admin dashboard shows a summary of activity including user activity.
+The admin dashboard shows a summary of activity including user activity. If you
+haven't published [static content](../static-content) yet, you'll see warnings
+here too.
+
+{: .screenshot}
+![Screenshot of the admin dashboard](/docs/img/screenshots/admin-dashboard.png)
+
+{: .caption}
+The admin dashboard summaries recent login and task-text activity.
+
 
 ### Purging unexpected settings
 

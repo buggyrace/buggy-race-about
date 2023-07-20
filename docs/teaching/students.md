@@ -9,9 +9,6 @@ nav_order: 10
 
 # About the students
 
-{: .todo}
-Some pages are not quite ready: the documentation is still being written! _(July 2023)_.
-
 We designed this project so it would be suitable for students who are at least
 familiar with the core concepts of Python. But we don't expect them to have
 used a webserver like Flask before, or made calls (in this case SQL) to an

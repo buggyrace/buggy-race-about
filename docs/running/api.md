@@ -32,8 +32,8 @@ the "Tasks" group.
 | `key`          | String for this user (set by staff, lasts until staff changes it) |
 | `secret`       | String for this user (set by user, times out, and potentially only used once) |
 
-These "Server" [config settings](../customising/server) control how the API
-criteria behave:
+These [config settings](../customising/server) in the "Server" group control
+how the API criteria behave:
 
 | Config setting               | Effect                                                         |
 |------------------------------|----------------------------------------------------------------|
@@ -42,10 +42,10 @@ criteria behave:
 | `IS_STUDENT_API_OTP_ALLOWED` | If the secret is not a one-time password, can a student override their own so that it is? |
 
 The API is an introduction to the usefulness of APIs: it's replacing a manual
-process (copying and pasting the buggy JSON into the upload form) with a
-programmatic one. The mechanism of using a key and a secret (and potentially
-that secret being a one-time token) is an example of how transactions like
-payments work on the web.
+process that the students have been using (copying and pasting the buggy JSON
+into the upload form) with a programmatic one. The mechanism of using a key and
+a secret (and potentially that secret being a one-time token) is an example of
+how transactions like payments work on the web.
 
 
 ## Setting API keys
@@ -59,6 +59,9 @@ keys**. The server will randomise a separate key for each user you selected.
 
 Similarly, you can revoke a key by clicking **Clear API keys**.
 
+We suggest that you do not grant API keys until individual students as for one.
+It's a simple way to check with their progress and an opportunity to see how
+much they've understood about how the API works.
 
 ## Setting the API secret
 
