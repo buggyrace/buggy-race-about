@@ -53,6 +53,7 @@
 }
 .item-card p {
   padding:0rem 1rem 0.5rem 1rem;
+  margin:0.25rem 0 0.5rem 0;
 }
 .item-card h3 {
   margin:0 0 0.5rem 0;
@@ -87,6 +88,16 @@
 .item-card .item-footer{
   margin:-1rem 0 0 0;
   text-align:right;
+}
+.item-card p.item-img {
+  text-align:center;
+  margin:0;
+}
+.item-card p.item-img img {
+  margin:0;
+  display:inline-block;
+  float:none;
+  border:1px solid #666;
 }
 p.warning::before {
   color:#f77e7e;
@@ -244,13 +255,7 @@ table.config-settings tr td:first-child {
   vertical-align: top;
 }
 
-/*
-p.screenshot img{
-  margin:1rem 1rem 1rem 0rem;
-  border:1px solid #999999;
-  box-shadow: 0.25rem 0.25rem 0.25rem 0.1rem rgba(0,0,0,0.25);
-}
-*/
+
 p.screenshot {
   display: inline-block;
   margin:1rem 1rem;

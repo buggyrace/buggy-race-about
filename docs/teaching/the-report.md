@@ -41,6 +41,14 @@ If you enable task texts — and we recommend that you do, if you require a
 report — then students can save notes on how they tackled each task _as they
 do them_.
 
+{: .screenshot}
+![Screenshot of student task texts](/docs/img/screenshots/student-task-texts.png)
+
+{: .caption}
+The task text "matrix" shows students' notes, which is handy for keeping an eye
+on progress: see [more about task texts](progress#task-texts-for-the-report).
+
+
 The server provides buttons so a logged-in student can download their
 accumulated task texts as a single file suitable for dropping into the
 `report.html` template that they are pressumably adding to their buggy editor.
