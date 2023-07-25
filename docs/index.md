@@ -49,7 +49,7 @@ See the demo race server at [demo.buggyrace.net]({{site.content.demo_url}}).
       task-based texts as-they-go (or not: you configure how the project is run)
     </p>
     <p class="item-footer">
-      <a href="teaching/tasks-and-phases.html">&rarr;&nbsp;tasks&nbsp;&amp;&nbsp;phases</a>
+      <a href="teaching/the-report.html">&rarr;&nbsp;the&nbsp;report</a>
     </p>
   </div>
   <div class="item-card">
@@ -57,6 +57,9 @@ See the demo race server at [demo.buggyrace.net]({{site.content.demo_url}}).
     <p>
       “<strong>Tech notes</strong>” supporting material on key technical
       concepts encountered in the project (can be replaced with your own)
+    </p>
+    <p class="item-footer">
+      <a href="static-content/tech-notes">&rarr;&nbsp;the&nbsp;tech&nbsp;notes</a>
     </p>
   </div>
   <div class="item-card">
