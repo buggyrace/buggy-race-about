@@ -85,5 +85,5 @@ used in a few places, including some tech notes).
 
 
 ---
-* Previous: [Distributing the code](distributing-the-code)
+* Previous: [Where to work?](running-where)
 * Next: [Running on PythonAnywhere](running-pythonanywhere)

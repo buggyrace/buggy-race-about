@@ -108,5 +108,5 @@ Normally, the repo name and the repo owner should also occur within the URL.
 
 
 ---
-* Previous: [What is the buggy editor?](the-editor)
-* Next: [Distributing the code](distributing-the-code)
+* Previous: [Distributing the code](distributing-the-code)
+* Next: [Where to work?](running-where)

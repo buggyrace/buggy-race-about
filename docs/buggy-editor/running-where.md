@@ -52,5 +52,5 @@ There are three main options:
   _Con:_ more complex set-up; students cannot easily work offline.  
 
 ---
-* Previous: [Distributing the code](distributing-the-code)
+* Previous: [Customising the editor](customising)
 * Next: [Running locally](running-local)

@@ -70,8 +70,11 @@ If you want to change, customise, or add to the tech notes — which we
 encourage, of course! — you first have to extract them and host them yourself.
 
 {: .todo}
-The tech note extraction feature is not implemented yet!  
-[GitHub issue #135](https://github.com/buggyrace/buggy-race-server/issues/135) 
+The tech note extraction feature (producing files suitable for Jekyll) is not
+implemented yet!  
+[GitHub issue #135](https://github.com/buggyrace/buggy-race-server/issues/135)  
+However, you _can_ still extract them manually using Pelican (see notes below),
+and publish the rendered site (the HTML files it produces) on GitHub Pages.
 
 The default tech notes use [Pelican](https://getpelican.com), which is a static
 site generator written in Python.

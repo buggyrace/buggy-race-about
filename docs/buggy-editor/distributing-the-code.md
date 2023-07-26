@@ -702,5 +702,5 @@ again once all your students have got their editor source code.
 
 
 ---
-* Previous: [Customising the editor](customising)
-* Next: [Where to run the app?](running-where)
+* Previous: [What is it?](the-editor)
+* Next: [Customising the editor](customising)

@@ -37,6 +37,12 @@ the editor only accepts the number of wheels.
 define. See the [full race specs]({{ site.content.demo_url }}/specs) for all
 the others!
 
+{: .note}
+The GitHub repo containing the buggy editor source code is at  
+[github.com/buggyrace/buggy-race-editor](https://github.com/buggyrace/buggy-race-editor)  
+...but — because you should customise it before sharing with your students —
+we recommend that you do not share that directly (see following section).
+
 ## Staff and the editor
 
 From the staff point of view, you need to decide the best way for your students
@@ -47,4 +53,4 @@ in detail.
 
 
 ---
-* Next: [Customising the Buggy Editor](customising)
+* Next: [Distributing the code](distributing-the-code)
