@@ -10,7 +10,8 @@ parent: Overview
 Each student develops a small Python Flask webserver that stores the
 specification of a racing buggy in a local database. They can edit the buggy
 (for example, changing the number of wheels) and output the buggy specification
-as JSON data.
+as JSON data. This app is the students'
+[buggy editor](../buggy-editor/the-editor).
 
 > The students' buggies take part in races that you run on the **race server**:
 > See more about [installing and hosting](../hosting) the server and the
