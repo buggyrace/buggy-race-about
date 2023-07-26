@@ -70,14 +70,20 @@ See the demo race server at [demo.buggyrace.net]({{site.content.demo_url}}).
       issues (or use GitHub without automation, or just Git... or no
       Git at all — download zip and go!)
     </p>
+    <p class="item-footer">
+      <a href="buggy-editor/distributing-the-code">&rarr;&nbsp;distributing&nbsp;the&nbsp;code</a>
+    </p>
   </div>
   <div class="item-card">
     <img class="decal" src="/docs/img/feature-work.png" />
     <p>
       Students do their development work <strong>where you want</strong>:
       own machines, college machines, or online
-services like <a href="https://www.pythonanywhere.com">PythonAnywhere</a> or
-<a href="https://repl.it">Replit</a>
+services like <a href="buggy-editor/running-pythonanywhere">PythonAnywhere</a> or
+<a href="buggy-editor/running-replit">Replit</a>.
+    </p>
+    <p class="item-footer">
+      <a href="buggy-editor/running-where">&rarr;&nbsp;where&nbsp;to&nbsp;work</a>
     </p>
   </div>
 </div>

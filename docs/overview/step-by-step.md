@@ -42,7 +42,7 @@ and the sort of things you need to think about before you start.
 ### Decide how you want your students to work
 
 >  On their own machines, on hosted microservers like Pythonanywhere or repl.it,
-> or on your college or institutions's own server?  
+> or on your college or institution's own server?  
 > → [where to work?](../buggy-editor/running-where)
 
 ### Get the server running
@@ -65,7 +65,7 @@ and the sort of things you need to think about before you start.
 
 > The config settings not only control how the server runs, but also aspects of
 > the project tasks you'll be giving to the students, and the supporting
-> material. Once you've done the set-up and editted the task list (if you need
+> material. Once you've done the set-up and edited the task list (if you need
 > to), publish them (you can publish tech notes externally if you want to
 > write or host your own).  
 > → [creating the task list](../customising/tasks)  

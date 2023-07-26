@@ -14,7 +14,7 @@ has_children: false
 
 The GitHub settings you need will depend on how you have decided to distribute
 the editor source code to students: see [more about how students get the
-code](../buggy-editor/getting-the-code).
+code](../buggy-editor/distributing-the-code).
 
 {: .note}
 The default settings do not use Git or GitHub at all — the students download a

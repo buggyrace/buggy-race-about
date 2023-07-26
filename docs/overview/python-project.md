@@ -12,6 +12,10 @@ specification of a racing buggy in a local database. They can edit the buggy
 (for example, changing the number of wheels) and output the buggy specification
 as JSON data.
 
+> The students' buggies take part in races that you run on the **race server**:
+> See more about [installing and hosting](../hosting) the server and the
+> [day-to-day running](../running) of it.
+
 {: .screenshot}
 ![Screenshot of buggy-race-editor](/docs/img/screenshots/buggy-editor.png)
 
@@ -25,6 +29,9 @@ as their level allows.
 The complexity of the tasks generally increases as the student works through
 the phases.
 
+See more about the [tasks and phases](../teaching/tasks-and-phases). You can
+customise any and all of them.
+
 ## Flask serving on localhost
 
 The project uses Flask, a lightweight webserver, which students hit in their
@@ -32,4 +39,5 @@ browser using `localhost`.
 
 The project can support students working on their own machines, college
 machines, or in the cloud using services like PythonAnywhere or Replit.
+See more about [where students can work](../buggy-editor/running-where).
 

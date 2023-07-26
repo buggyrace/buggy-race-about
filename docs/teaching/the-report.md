@@ -33,7 +33,16 @@ set `PROJECT_REPORT_TYPE` to `none`.
 Students already have to [submit their buggy editor app](submission) at the end
 of the project — so the report needs to be presented as a page within the app.
 
-Specifically, it's a route to `/poster` on the editor app.
+Specifically, it's a route to `/report` in each student's own buggy editor app.
+
+{: .note}
+In fact — for historic reasons — originally this was `/poster` (which is still
+a configurable alternative... but we think `/report` makes more sense). There
+is still a promotional part of the report ("tell us why we should use your
+editor") that has the feel of a poster to it. We might make that optional in
+the future, but in the meantime it's an invitation for the students to think
+about what they've done to make the features of their app attractive to users.
+
 
 ## Using task texts
 
@@ -51,7 +60,7 @@ on progress: see [more about task texts](progress#task-texts-for-the-report).
 
 The server provides buttons so a logged-in student can download their
 accumulated task texts as a single file suitable for dropping into the
-`report.html` template that they are pressumably adding to their buggy editor.
+`report.html` template that they are presumably adding to their buggy editor.
 This can also do markdown to HTML conversion.
 
 
