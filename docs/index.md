@@ -184,6 +184,9 @@ See the [full requirements](overview/requirements). You need to
   </div>
   <div class="item-card component-docs">
     <h3>Documentation</h3>
+    <p class="item-img">
+      <img src="/docs/img/screenshots/thumb-about.png">
+    </p>
     <p>
       This site :-)
     </p>
