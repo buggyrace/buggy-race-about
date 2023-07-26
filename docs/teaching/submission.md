@@ -27,7 +27,7 @@ using GitHub, you might not require explicit submissions from the students. Or
 you might be snapshot-cloning them at the cutoff date. Or you might require
 students to make a _release_.
 
-In general, we anticipate the students' work — if it u=is submitted at all — to
+In general, we anticipate the students' work — if it is submitted at all — to
 take the form of the directory (or Git repo) they have been working in.
 
 

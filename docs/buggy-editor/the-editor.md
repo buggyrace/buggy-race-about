@@ -32,14 +32,18 @@ one.
 The "make buggy" form of the editor. Until the student adds more capability,
 the editor only accepts the number of wheels.
 
+{: .demo}
+"Number of wheels" is just one aspect of a racing buggy that students can
+define. See the [full race specs]({{ site.content.demo_url }}/specs) for all
+the others!
 
 ## Staff and the editor
 
 From the staff point of view, you need to decide the best way for your students
 to start with with editor code (either as a directory of files, or a Git repo
 depending on how you want to do it), and the environment in which you want them
-to do the work. The rest of this section goes into these things in detail.
-
+to do the work. The rest of this _Buggy editor_ section goes into these things
+in detail.
 
 
 ---

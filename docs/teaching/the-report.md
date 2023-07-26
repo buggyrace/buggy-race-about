@@ -6,13 +6,7 @@ has_children: false
 nav_order: 50
 ---
 
-
-
 # Students' reports
-
-{: .todo}
-Some pages are not quite ready: the documentation is still being written! _(July 2023)_.
-
 
 {: .demo}
 See the [report page]({{site.content.demo_url}}/project/report). This is

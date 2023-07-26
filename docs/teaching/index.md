@@ -8,6 +8,5 @@ nav_order: 40
 
 # Teaching
 
-{: .todo}
-Some pages are not quite ready: the documentation is still being written! _(July 2023)_.
-
+This section covers aspects of the project — both its design and how to run it
+— from a teaching point of view.

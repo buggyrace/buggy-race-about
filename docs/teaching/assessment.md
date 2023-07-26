@@ -11,12 +11,11 @@ nav_order: 20
 # Assessment
 
 {: .todo}
-Some pages are not quite ready: the documentation is still being written! _(July 2023)_.
+This page is not quite ready: the documentation is still being written! _(July 2023)_.
 
-Placeholder: the race server does **not** perform any assessment. There's
-a lot of variation on how a development project like this _could_ be
-assessed. There's also scope for a lot of opinion as to how a dev project
-liek this _should_ be assessed.
+The race server does **not** perform any assessment. There's a lot of variation
+on how a development project like this _could_ be assessed. There's also scope
+for a lot of opinion as to how a dev project like this _should_ be assessed.
 
 {: rhul}
 We will be adding some notes based on our general observations about how
