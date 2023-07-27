@@ -207,11 +207,30 @@ of, if any)... although [we have guidance](teaching) on how to handle that too.
 
 {: .rhul  }
 _Buggy Racing_ was originally created in 2020 as the final term project of the
-CompSci Foundation programme at Royal Holloway, University of London (RHUL). We
-ran it as a 6-week course of weekly lab sessions with students after at least
+CompSci Foundation programme at Royal Holloway, University of London (RHUL). It
+ran as a 6-week course of weekly lab sessions with students who'd done at least
 one full term of introductory Python.  
 <br>
 Since then we've made it very configurable so you can run it in a way that works
 for your institution or course — university department, FE College, or local
 code club. Available **for free** under the GNU GPL license.
+
+## License: free and open source software
+
+The race server and buggy editor is made available under the
+the **GNU Affero General Public License**: a free, copyleft license
+(see [gnu.org for details](http://www.gnu.org/licenses/)).
+
+In practice this means: you and your institution don't have to pay to use it
+— there's nothing to buy, because the whole thing is made freely, explicitly
+available for you — and you can modify it and even improve it (but if you
+do, you should make those improvements available to other people too).
+
+See the [race server's LICENSE.txt](https://github.com/buggyrace/buggy-race-server/LICENSE.txt)
+
+> "Free as in speech, free as in beer"
+
+Remember to teach your students about Open Source software :-)
+
+![Buggy racing mascot: Mesocricetus roadentus](/docs/img/rene-hamster-1.png)
 
