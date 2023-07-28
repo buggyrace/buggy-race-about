@@ -24,6 +24,11 @@ This page is about customising the **buggy editor repo** — you should do this
 
 Before you start running the project, you need to prepare the buggy editor
 source code that your students will start with. The recommended way to do this
+depends on how you're distributing the code:
+
+* if the students will download the source code from the race server (as a
+  zipfile), you can customise it _when you create the zip_
+  
 is to fork our "plain" buggy editor repo from
 [github.com/buggyrace/buggy-race-editor](https://github.com/buggyrace/buggy-race-editor).
 

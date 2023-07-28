@@ -39,3 +39,4 @@ introductory classes, through to competent web developers, possibly with
 industrial experience, who might be on the course because they don't have
 A-level maths. The project accomodates this range of ability by letting the
 students themselves decide how _thoroughly_ they implement each task.
+
