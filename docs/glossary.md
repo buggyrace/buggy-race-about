@@ -8,6 +8,10 @@ nav_order: 300
 
 Clarification of terms used in the project and its documentation.
 
+<!-- If you edit this file, run utils/tidy-glossary.py to  -->
+<!-- make a copy with the index auto-generated for you :-) -->
+
+
 <!-- glossary index start -->
 <ul class="glossary-index">
 <li><a href="#asbp">ASBP</a></li>
@@ -54,11 +58,13 @@ Clarification of terms used in the project and its documentation.
 <li><a href="#violation">violation</a></li>
 <li><a href="#vs-code">VS&nbsp;Code</a></li>
 <li><a href="#webpack">webpack</a></li>
+<li><a href="#zipfile">zipfile</a></li>
 </ul>
 <!-- glossary index end -->
+
 ---
 
-<dl>
+<dl class="glossary">
 
 <dt id="asbp">ASBP</dt>
 <dd>
@@ -347,8 +353,8 @@ Clarification of terms used in the project and its documentation.
 
 <dt id="staff-user">staff user</dt>
 <dd>
-  A staff user on the race server is an <a href="#admin">administrator</a> or a
-  <a href="#teaching-asssistant">Teaching Assistant</a>. Staff users can
+  A staff user on the race server is an <a href="#administrator">administrator</a> or a
+  <a href="#teaching-assistant">Teaching Assistant</a>. Staff users can
   access the admin pages.
   <br>→ <a href="running/user-management">user management</a>
 </dd>
@@ -358,9 +364,9 @@ Clarification of terms used in the project and its documentation.
   Static content on the race server refers mainly to pages that need to be
   <em>published</em> before they can be accessed. There are three such
   components: the <a href="#task-list">task list</a>, the <a
-  href="#tech-notes">tech notes</a>, and the buggy editor
-  <strong>zipfile</strong> (that last one is optional, depending on how you're
-  distributing the buggy editor source code).
+  href="#tech-notes">tech notes</a>, and the buggy editor <a
+  href="#zipfile">zipfile</a> (that last one is optional, depending on how
+  you're distributing the buggy editor source code).
   <br>
   There's a page in the tech notes about the more general business of creating
   and using <em>static content</em> on the web (<a
@@ -423,10 +429,10 @@ Clarification of terms used in the project and its documentation.
   A racing buggy only qualifies for a race if it satisfies all the <a
   href="#race-rules">race rules</a>. When you run a race, the rules are checked
   (technically, this could be called "scrutineering") and each rule that fails
-  is a <strong>violation</strong>. When the race results are published, the
-  violations for each non-runner are shown. This is significant because a key
-  incentive for a student to build a good <a href="#buggy-editor">buggy
-  editor</a> is to detect and prevent violations.
+  is a <em>violation</em>. When the race results are published, the violations
+  for each non-runner are shown. This is significant because a key incentive
+  for a student to build a good <a href="#buggy-editor">buggy editor</a> is to
+  detect and prevent violations.
   <br>→ <a href="races/">running races</a>
 </dd>
 
@@ -451,6 +457,19 @@ Clarification of terms used in the project and its documentation.
   depends on node.js.
   <br>→ <a href="https://webpack.js.org">webpack docs</a>
 </dd>
+
+<dt id="zipfile">zipfile</dt>
+<dd>
+  On the race server, there's a special case of the <a
+  href="#buggy-editor">buggy editor</a> source code being made available as a
+  zipped archive. This is the (default) way that it's distributed to students,
+  but isn't needed if you're using GitHub. The contents of the zipfile are
+  typically customised before being created, so this is one of the items of <a
+  href="#static-content">static content</a> on the race server that you may
+  need to publish.
+  <br>→ <a href="buggy-editor/distributing-the-code">distributing the code</a>
+</dd>
+
 </dl>
 
 ---

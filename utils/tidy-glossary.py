@@ -46,6 +46,7 @@ with open(output_filename, "w") as new_glossary_md:
           new_glossary_md.write("\n".join(index_entries))
           new_glossary_md.write('\n</ul>\n')
           new_glossary_md.write(GLOSSARY_INDEX_END)
+          new_glossary_md.write('\n')
     
 print(f"[ ] total lines: {len(new_lines)}")
 
