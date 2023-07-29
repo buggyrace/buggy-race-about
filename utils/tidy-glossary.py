@@ -50,4 +50,10 @@ with open(output_filename, "w") as new_glossary_md:
     
 print(f"[ ] total lines: {len(new_lines)}")
 
-#print(index_entries)
+slugs = [ slug for (slug, _) in glossary_entries]
+sorted_slugs = sorted(slugs)
+for i in range(len(slugs)):
+    if slugs[i] != sorted_slugs[i]:
+        print(f"[!] sort order might be wrong at {slugs[i]}? (expected {sorted_slugs[i]})")
+  
+

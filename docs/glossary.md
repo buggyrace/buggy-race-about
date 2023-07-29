@@ -66,14 +66,6 @@ Clarification of terms used in the project and its documentation.
 
 <dl class="glossary">
 
-<dt id="asbp">ASBP</dt>
-<dd>
-  The <em>Acme School of Buggy Programming</em>, a fictitious institution and
-  the default value for the "Org" (Organisation) config settings, which you use
-  to customise the buggy server to match your own institution.
-  <br>→ <a href="customising/org">"Org" config settings</a>
-</dd>
-
 <dt id="admin-pages">admin pages</dt>
 <dd>
   Pages on the race server that can only be accessed by staff users, and allow
@@ -101,6 +93,14 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="running/announcements">managing announcements</a>
 </dd>
 
+<dt id="asbp">ASBP</dt>
+<dd>
+  The <em>Acme School of Buggy Programming</em>, a fictitious institution and
+  the default value for the "Org" (Organisation) config settings, which you use
+  to customise the buggy server to match your own institution.
+  <br>→ <a href="customising/org">"Org" config settings</a>
+</dd>
+
 <dt id="authorisation-code">authorisation code,<br>auth code</dt>
 <dd>
   A code that an administrator needs to present in order to perform some
@@ -125,6 +125,13 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="buggy-editor">about the buggy editor</a>
 </dd>
 
+<dt id="comments">comments</dt>
+<dd>
+  Comments on a user are only visible to staff users (depending on config
+  settings, all staff may be able to edit them, or just administrators).
+  <br>→ <a href="running/user-management#commenting-on-a-user">commenting on users</a>
+</dd>
+
 <dt id="config-setting">config setting</dt>
 <dd>
   The config settings control the behaviour and customisation of the race
@@ -134,13 +141,6 @@ Clarification of terms used in the project and its documentation.
   convenience, config settings are grouped thematically (for example, all the
   config settings affecting races are in the group "Races").
   <br>→ <a href="customising">customising (with config settings)</a>
-</dd>
-
-<dt id="comments">comments</dt>
-<dd>
-  Comments on a user are only visible to staff users (depending on config
-  settings, all staff may be able to edit them, or just administrators).
-  <br>→ <a href="running/user-management#commenting-on-a-user">commenting on users</a>
 </dd>
 
 <dt id="cost">cost</dt>
@@ -169,15 +169,6 @@ Clarification of terms used in the project and its documentation.
     <br>→ <a href="https://www.docker.com">Docker website</a>
 </dd>
 
-<dt id="ext_username">ext_username</dt>
-<dd>
-  An "external username", which is a field you can choose to add to all users.
-  This may be useful if you identify students by their college username, for
-  example (or if your students are running the buggy editor on a remote server
-  via VSCode and they need this to login to that, external, server).
-  <br>→ <a href="customising/users">"Users" config settings</a>
-</dd>
-
 <dt id="ext_id">ext_id</dt>
 <dd>
   An "external identifier", which is a field you can choose to add to all
@@ -185,6 +176,15 @@ Clarification of terms used in the project and its documentation.
   for example if you're using an online framework like Moodle. The race server
   doesn't use this — it's just for your information (but might be handy if you
   need to automate submission of marks or feedback, for example).
+  <br>→ <a href="customising/users">"Users" config settings</a>
+</dd>
+
+<dt id="ext_username">ext_username</dt>
+<dd>
+  An "external username", which is a field you can choose to add to all users.
+  This may be useful if you identify students by their college username, for
+  example (or if your students are running the buggy editor on a remote server
+  via VSCode and they need this to login to that, external, server).
   <br>→ <a href="customising/users">"Users" config settings</a>
 </dd>
 
