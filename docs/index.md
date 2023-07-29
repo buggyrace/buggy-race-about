@@ -8,8 +8,8 @@ nav_order: 1
 
 
 **Got students learning Python?**  
-_Buggy Racing_ is a project (fully documented software + material) for running
-a practical Python programming project:
+_Buggy Racing_ is the software, documentation and supporting material for
+running a practical Python programming project:
 [see the overview](overview).
 
 
