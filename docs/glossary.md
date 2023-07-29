@@ -9,13 +9,58 @@ nav_order: 300
 Clarification of terms used in the project and its documentation.
 
 <!-- glossary index start -->
+<ul class="glossary-index">
+<li><a href="#asbp">ASBP</a></li>
+<li><a href="#admin-pages">admin&nbsp;pages</a></li>
+<li><a href="#administrator">administrator</a></li>
+<li><a href="#announcement">announcement</a></li>
+<li><a href="#authorisation-code">authorisation&nbsp;code</a></li>
+<li><a href="#buggy">buggy</a></li>
+<li><a href="#buggy-editor">buggy&nbsp;editor</a></li>
+<li><a href="#config-setting">config&nbsp;setting</a></li>
+<li><a href="#comments">comments</a></li>
+<li><a href="#cost">cost</a></li>
+<li><a href="#demo-site">demo&nbsp;site</a></li>
+<li><a href="#docker">Docker</a></li>
+<li><a href="#ext_username">ext_username</a></li>
+<li><a href="#ext_id">ext_id</a></li>
+<li><a href="#flask">Flask</a></li>
+<li><a href="#greensock">Greensock</a></li>
+<li><a href="#hamster">hamster</a></li>
+<li><a href="#heroku">Heroku</a></li>
+<li><a href="#jinja-templates">Jinja&nbsp;templates</a></li>
+<li><a href="#mass">mass</a></li>
+<li><a href="#petrol">petrol</a></li>
+<li><a href="#phase">phase</a></li>
+<li><a href="#poster">poster</a></li>
+<li><a href="#race-event">race&nbsp;event</a></li>
+<li><a href="#race-file">race&nbsp;file</a></li>
+<li><a href="#race-player">race&nbsp;player</a></li>
+<li><a href="#race-rules">race&nbsp;rules</a></li>
+<li><a href="#race-server">race&nbsp;server</a></li>
+<li><a href="#racetrack">racetrack</a></li>
+<li><a href="#replay">replay</a></li>
+<li><a href="#report">report</a></li>
+<li><a href="#rhul">RHUL</a></li>
+<li><a href="#set-up-phase">set-up&nbsp;phase</a></li>
+<li><a href="#specs">specs</a></li>
+<li><a href="#staff-user">staff&nbsp;user</a></li>
+<li><a href="#static-content">static&nbsp;content</a></li>
+<li><a href="#task">task</a></li>
+<li><a href="#task-list">task&nbsp;list</a></li>
+<li><a href="#task-text">task&nbsp;text</a></li>
+<li><a href="#teaching-assistant">Teaching&nbsp;Assistant</a></li>
+<li><a href="#tech-notes">tech&nbsp;notes</a></li>
+<li><a href="#violation">violation</a></li>
+<li><a href="#vs-code">VS&nbsp;Code</a></li>
+<li><a href="#webpack">webpack</a></li>
+</ul>
 <!-- glossary index end -->
-
 ---
 
 <dl>
 
-<dt>ASBP</dt>
+<dt id="asbp">ASBP</dt>
 <dd>
   The <em>Acme School of Buggy Programming</em>, a fictitious institution and
   the default value for the "Org" (Organisation) config settings, which you use
@@ -23,7 +68,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="customising/org">"Org" config settings</a>
 </dd>
 
-<dt>admin pages</dt>
+<dt id="admin-pages">admin pages</dt>
 <dd>
   Pages on the race server that can only be accessed by staff users, and allow
   access to configuration and student data. Paths in URLs generally start with
@@ -32,7 +77,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="running/dashboard">the admin dashboard</a>
 </dd>
 
-<dt>administrator</dt>
+<dt id="administrator">administrator</dt>
 <dd>
   An administrator is a <a href="#staff-user">staff user</a> with full access
   to all the admin capabilities of the race server. Some admin functions also
@@ -42,7 +87,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="running/user-management">user management</a>
 </dd>
 
-<dt>announcement</dt>
+<dt id="announcement">announcement</dt>
 <dd>
   Announcements are messages that are displayed either at the top of every
   page on the race server (except the tech notes), or in specific places
@@ -50,7 +95,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="running/announcements">managing announcements</a>
 </dd>
 
-<dt>authorisation code,<br>auth code</dt>
+<dt id="authorisation-code">authorisation code,<br>auth code</dt>
 <dd>
   A code that an administrator needs to present in order to perform some
   admin functions, including changing config settings, user data, and some
@@ -59,14 +104,14 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="customising/auth">configuring authorisation</a>
 </dd>
 
-<dt>buggy</dt>
+<dt id="buggy">buggy</dt>
 <dd>
   A racing buggy. In the project, the student develops an app for editing
   the specification of a buggy, which is expressed as JSON data.
 </dd>
 
 
-<dt>buggy editor</dt>
+<dt id="buggy-editor">buggy editor</dt>
 <dd>
   The basic Python Flask application that each student is given at the start
   of the project, and which they need to develop to add more features and
@@ -74,7 +119,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="buggy-editor">about the buggy editor</a>
 </dd>
 
-<dt>config setting</dt>
+<dt id="config-setting">config setting</dt>
 <dd>
   The config settings control the behaviour and customisation of the race
   server. You can edit them in the config <a href="#admin-pages">admin
@@ -85,14 +130,14 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="customising">customising (with config settings)</a>
 </dd>
 
-<dt>comments</dt>
+<dt id="comments">comments</dt>
 <dd>
   Comments on a user are only visible to staff users (depending on config
   settings, all staff may be able to edit them, or just administrators).
   <br>→ <a href="running/user-management#commenting-on-a-user">commenting on users</a>
 </dd>
 
-<dt>cost</dt>
+<dt id="cost">cost</dt>
 <dd>
   Most components of a racing buggy have a cost. The total cost of a buggy is
   the sum of the costs of all its components. Cost matters because one of the
@@ -102,7 +147,7 @@ Clarification of terms used in the project and its documentation.
   race.
 </dd>
 
-<dt>demo site</dt>
+<dt id="demo-site">demo site</dt>
 <dd>
   We run a demonstration server at 
   <a href="{{ site.content.demo_url }}">{{ site.content.demo_url }}</a> so you
@@ -110,7 +155,7 @@ Clarification of terms used in the project and its documentation.
   login to have a poke around backstage.
 </dd>
 
-<dt>Docker</dt>
+<dt id="docker">Docker</dt>
 <dd>
     Docker is a software tool that wraps applications in "containers" that
     work in different environments in isolation. The race server is "dockerised"
@@ -118,7 +163,7 @@ Clarification of terms used in the project and its documentation.
     <br>→ <a href="https://www.docker.com">Docker website</a>
 </dd>
 
-<dt>ext_username</dt>
+<dt id="ext_username">ext_username</dt>
 <dd>
   An "external username", which is a field you can choose to add to all users.
   This may be useful if you identify students by their college username, for
@@ -127,7 +172,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="customising/users">"Users" config settings</a>
 </dd>
 
-<dt>ext_id</dt>
+<dt id="ext_id">ext_id</dt>
 <dd>
   An "external identifier", which is a field you can choose to add to all
   users. This may be helpful if you need to link students in another system,
@@ -137,12 +182,12 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="customising/users">"Users" config settings</a>
 </dd>
 
-<dt>Flask</dt>
+<dt id="flask">Flask</dt>
 <dd>The lightweight Python webserver the project uses.
   <br>→ <a href="https://flask.palletsprojects.com/en/2.3.x/">Flask docs</a>
 </dd>
 
-<dt>Greensock<br>(GSAP)</dt>
+<dt id="greensock">Greensock<br>(GSAP)</dt>
 <dd>
   A widely-used JavaScript library for managing animation on web pages, used by
   the <a href="#race-player">race player</a> to <a href="#replay">replay</a>
@@ -150,13 +195,13 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="https://greensock.com/gsap">GSAP website</a>
 </dd>
 
-<dt>hamster</dt>
+<dt id="hamster">hamster</dt>
 <dd>
   A small rodent (<em>Mesocricetus roadentus</em>) that is used as a form of
   motive power in some racing buggies.
 </dd>
 
-<dt>Heroku</dt>
+<dt id="heroku">Heroku</dt>
 <dd>
   A cloud-based service that hosts websites — see the instructions for
   <a href="hosting/heroku">installing the race server on Heroku</a>
@@ -164,21 +209,21 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="http://heroku.com/">Heroku website</a>
 </dd>
 
-<dt>Jinja templates</dt>
+<dt id="jinja-templates">Jinja templates</dt>
 <dd>
   The templating system used inside Flask (for example, for specifying HTML
   pages).
   <br>→ <a href="htthttps://pypi.org/project/Jinja2">Jinja2 docs</a>
 </dd>
 
-<dt>mass</dt>
+<dt id="mass">mass</dt>
 <dd>
   Most components of a racing buggy have a mass. The total mass of a buggy may
   be a factor of its performance during the race. The mass values are available
   as part of the <a href="#specs">specs</a>.
 </dd>
 
-<dt>petrol</dt>
+<dt id="petrol">petrol</dt>
 <dd>
   Gasoline. Buggy racing was written in British English, but — because CSS is
   the relevant context here — the "JSON names" (and hence column names) for
@@ -187,7 +232,7 @@ Clarification of terms used in the project and its documentation.
   sneaky but perhaps early lesson in close reading. Ouch!
 </dd>
 
-<dt>phase</dt>
+<dt id="phase">phase</dt>
 <dd>
   The <a href="#task">tasks</a> students must do are grouped into phases. All
   the tasks in a phase should be completed before the student can move onto the
@@ -195,7 +240,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="teaching/tasks-and-phases">tasks and phases</a>
 </dd>
 
-<dt>poster</dt>
+<dt id="poster">poster</dt>
 <dd>
   "Poster" is an alternative name for the students' <a
   href="#report">report</a> (it's an anomaly from the RHUL marking scheme that
@@ -203,7 +248,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="teaching/the-report">students' posters (i.e., reports)</a>
 </dd>
 
-<dt>race event</dt>
+<dt id="race-event">race event</dt>
 <dd>
   The details of what happens in a race — running out of fuel, attacking
   another buggy, moving forward — are recorded as events, which the
@@ -212,7 +257,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="races/replaying">replaying races</a>
 </dd>
 
-<dt>race file</dt>
+<dt id="race-file">race file</dt>
 <dd>
   Races are created on the <a href="#race-server">race server</a> but are run
   offline: you download the race file which contains all the data needed to run
@@ -224,7 +269,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="races/uploading-results">uploading race results</a>
 </dd>
 
-<dt>race player</dt>
+<dt id="race-player">race player</dt>
 <dd>
   The (JavaScript-powered) web page that replays the events of a race. By
   default, the race server hosts a race player, but if you make a custom
@@ -234,14 +279,14 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="races/replaying">replaying races</a>
 </dd>
 
-<dt>race rules</dt>
+<dt id="race-rules">race rules</dt>
 <dd>
   The rules that define whether or not a buggy is allowed to take part in a 
   given race. One of the rules is that a buggy must have an even number of 
   wheels. The rules are embedded in the <a href="#specs">specs</a>.
 </dd>
 
-<dt>race server</dt>
+<dt id="race-server">race server</dt>
 <dd>
   The server running the website that accepts the buggy JSON that students
   upload from their editors in order to enter races. It's a Flask webserver
@@ -249,7 +294,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="hosting">installing and hosting the race server</a>
 </dd>
 
-<dt>racetrack</dt>
+<dt id="racetrack">racetrack</dt>
 <dd>
   The racetrack is (of course) the nominal setting of a race — but on the
   server it effectively means a background image (typically a JPG) and an SVG
@@ -257,7 +302,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="races/racetracks">managing and customising racetracks</a>
 </dd>
 
-<dt>replay</dt>
+<dt id="replay">replay</dt>
 <dd>
   Once a race has been run, replaying it means animating the events of the race
   in the <a href="#race-player">race player</a>. It's a bit like replaying a
@@ -266,7 +311,7 @@ Clarification of terms used in the project and its documentation.
   file</a>. <br>→ <a href="races/replaying">replaying races</a>
 </dd>
 
-<dt>report</dt>
+<dt id="report">report</dt>
 <dd>
   You can choose to require your students to submit a report as part of their
   project submission. Each student's report takes the form of a webpage (at
@@ -274,13 +319,13 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="teaching/the-report">students' reports</a>
 </dd>
 
-<dt>RHUL</dt>
+<dt id="rhul">RHUL</dt>
 <dd>
   Royal Holloway, University of London — where this Buggy Racing project was
   conceived and originally implemented.
 </dd>
 
-<dt>set-up phase</dt>
+<dt id="set-up-phase">set-up phase</dt>
 <dd>
   When the race server is first started, you <em>must</em> change or confirm
   all the <a href="#config-setting">config settings</a>. Until you've done
@@ -289,7 +334,7 @@ Clarification of terms used in the project and its documentation.
   the browser session while you're in this phase).
 </dd>
 
-<dt>specs,<br>specifications</dt>
+<dt id="specs">specs,<br>specifications</dt>
 <dd>
   The specs define the acceptable values for racing buggies, including the name
   of each component, its type, the range of acceptable values it can have, a
@@ -300,7 +345,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="{{ site.content.demo_url }}/specs">specs on the demo site</a>
 </dd>
 
-<dt>staff user</dt>
+<dt id="staff-user">staff user</dt>
 <dd>
   A staff user on the race server is an <a href="#admin">administrator</a> or a
   <a href="#teaching-asssistant">Teaching Assistant</a>. Staff users can
@@ -308,7 +353,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="running/user-management">user management</a>
 </dd>
 
-<dt>static content</dt>
+<dt id="static-content">static content</dt>
 <dd>
   Static content on the race server refers mainly to pages that need to be
   <em>published</em> before they can be accessed. There are three such
@@ -324,7 +369,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="static-content">static content</a> (on the race server)
 </dd>
 
-<dt>task</dt>
+<dt id="task">task</dt>
 <dd>
   A task is a unit of work for a student to do. Almost every task can be
   implemented more or less thoroughly (ideally depending on the ability and
@@ -334,7 +379,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="teaching/tasks-and-phases">tasks and phases</a>
 </dd>
 
-<dt>task list</dt>
+<dt id="task-list">task list</dt>
 <dd>
   The task list is the page on the race server that contains all of the tasks
   for students to do. It includes details and hints for each task, as well as
@@ -343,7 +388,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="static-content/task-list">the task list</a>
 </dd>
 
-<dt>task text</dt>
+<dt id="task-text">task text</dt>
 <dd>
   A task text is short text a student saves on the race server describing how
   they approached or completed a task. The student can download their task
@@ -354,7 +399,7 @@ Clarification of terms used in the project and its documentation.
   you with this)
 </dd>
 
-<dt>Teaching Assistant<br>(TA)</dt>
+<dt id="teaching-assistant">Teaching Assistant<br>(TA)</dt>
 <dd>
   A staff user on the race server who has read-access to student data but
   limited config/admin access. Depending on config settings, TAs may be able
@@ -362,7 +407,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="running/user-management">user management</a>
 </dd>
 
-<dt>tech notes</dt>
+<dt id="tech-notes">tech notes</dt>
 <dd>
   This race server includes a set of static web pages that provide supporting
   material about some of the technical aspects of the project — for example, on
@@ -373,7 +418,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="static-content/tech-notes">tech notes</a>
 </dd>
 
-<dt>violation</dt>
+<dt id="violation">violation</dt>
 <dd>
   A racing buggy only qualifies for a race if it satisfies all the <a
   href="#race-rules">race rules</a>. When you run a race, the rules are checked
@@ -385,7 +430,7 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="races/">running races</a>
 </dd>
 
-<dt>VS Code,<br>Visual Studio Code</dt>
+<dt id="vs-code">VS Code,<br>Visual Studio Code</dt>
 <dd>
   <a href="https://code.visualstudio.com">VS Code</a> is a widely-used editor
   and interactive development environment by Microsoft. One way of running the
@@ -399,7 +444,7 @@ Clarification of terms used in the project and its documentation.
   (see <code>IS_USING_REMOTE_VS_WORKSPACE</code>)
 </dd>
 
-<dt>webpack</dt>
+<dt id="webpack">webpack</dt>
 <dd>
   A software tool that bundles up assets like JavaScript, style sheets, and
   graphics for a webserver. The race server uses webpack, which itself
