@@ -8,6 +8,11 @@ nav_order: 300
 
 Clarification of terms used in the project and its documentation.
 
+<!-- glossary index start -->
+<!-- glossary index end -->
+
+---
+
 <dl>
 
 <dt>ASBP</dt>
@@ -29,11 +34,11 @@ Clarification of terms used in the project and its documentation.
 
 <dt>administrator</dt>
 <dd>
-  An administrator is a <strong>staff user</strong> with full access to all the
-  admin capabilities of the race server. Some admin functions also require
-  knowing the <strong>auth code</strong>. There should always be at least one
-  administrator (the username/account is created during the
-  <strong>set-up phase</strong>).
+  An administrator is a <a href="#staff-user">staff user</a> with full access
+  to all the admin capabilities of the race server. Some admin functions also
+  require knowing the <a href="#authorisation-code">authorisation code</a>.
+  There should always be at least one administrator (the username/account is
+  created during the <a href="#set-up-phase">set-up phase</a>).
   <br>→ <a href="running/user-management">user management</a>
 </dd>
 
@@ -72,11 +77,11 @@ Clarification of terms used in the project and its documentation.
 <dt>config setting</dt>
 <dd>
   The config settings control the behaviour and customisation of the race
-  server. You can edit them in the config <strong>admin pages</strong> (that
-  is, through the web interface), but they can also be set use environment
-  variables if you have access to the server itself. For convenience, config
-  settings are grouped thematically (for example, all the config settings
-  affecting races are in the group "Races").
+  server. You can edit them in the config <a href="#admin-pages">admin
+  pages</a> (that is, through the web interface), but they can also be set use
+  environment variables if you have access to the server itself. For
+  convenience, config settings are grouped thematically (for example, all the
+  config settings affecting races are in the group "Races").
   <br>→ <a href="customising">customising (with config settings)</a>
 </dd>
 
@@ -91,9 +96,18 @@ Clarification of terms used in the project and its documentation.
 <dd>
   Most components of a racing buggy have a cost. The total cost of a buggy is
   the sum of the costs of all its components. Cost matters because one of the
-  <strong>race rules</strong> is that a buggy's total cost must be equal or less
-  than the cost threshold of the race: if it's not, the buggy has a
-  <strong>race violation</strong> and can't participate in that race.
+  <a href="#race-rules">race rules</a> is that a buggy's total cost must be
+  equal or less than the cost threshold of the race: if it's not, the buggy has
+  a race <a href="#violation">violation</a> and can't participate in that
+  race.
+</dd>
+
+<dt>demo site</dt>
+<dd>
+  We run a demonstration server at 
+  <a href="{{ site.content.demo_url }}">{{ site.content.demo_url }}</a> so you
+  can see what your might server will look like. Contact us and ask for an admin
+  login to have a poke around backstage.
 </dd>
 
 <dt>Docker</dt>
@@ -115,11 +129,11 @@ Clarification of terms used in the project and its documentation.
 
 <dt>ext_id</dt>
 <dd>
-  An "external identifier", which is a field you can choose to add to all users.
-  This may be helpful if you need to link students in another system, for example
-  if you're using an online framework like Moodle. The race server doesn't use
-  this — it's just for your information (but might be handy if you need to
-  automate submission of marks or feedback, for example).
+  An "external identifier", which is a field you can choose to add to all
+  users. This may be helpful if you need to link students in another system,
+  for example if you're using an online framework like Moodle. The race server
+  doesn't use this — it's just for your information (but might be handy if you
+  need to automate submission of marks or feedback, for example).
   <br>→ <a href="customising/users">"Users" config settings</a>
 </dd>
 
@@ -129,9 +143,10 @@ Clarification of terms used in the project and its documentation.
 </dd>
 
 <dt>Greensock<br>(GSAP)</dt>
-<dd>A widely-used JavaScript library for managing animation on web pages,
-  used by the <strong>race player</strong> to <strong>replay</strong> the
-  races.
+<dd>
+  A widely-used JavaScript library for managing animation on web pages, used by
+  the <a href="#race-player">race player</a> to <a href="#replay">replay</a>
+  the races.
   <br>→ <a href="https://greensock.com/gsap">GSAP website</a>
 </dd>
 
@@ -160,7 +175,7 @@ Clarification of terms used in the project and its documentation.
 <dd>
   Most components of a racing buggy have a mass. The total mass of a buggy may
   be a factor of its performance during the race. The mass values are available
-  as part of the <strong>specs</strong>.
+  as part of the <a href="#specs">specs</a>.
 </dd>
 
 <dt>petrol</dt>
@@ -174,17 +189,17 @@ Clarification of terms used in the project and its documentation.
 
 <dt>phase</dt>
 <dd>
-  The <strong>tasks</strong> students must do are grouped into phases. All the
-  tasks in a phase should be completed before the student can move onto the
+  The <a href="#task">tasks</a> students must do are grouped into phases. All
+  the tasks in a phase should be completed before the student can move onto the
   next phase.
   <br>→ <a href="teaching/tasks-and-phases">tasks and phases</a>
 </dd>
 
 <dt>poster</dt>
 <dd>
-  "Poster" is an alternative name for the students' <strong>report</strong>
-  (it's an anomaly from the RHUL marking scheme that we needed to use — you
-  should just use the word "report").
+  "Poster" is an alternative name for the students' <a
+  href="#report">report</a> (it's an anomaly from the RHUL marking scheme that
+  we needed to use — you should just use the word "report").
   <br>→ <a href="teaching/the-report">students' posters (i.e., reports)</a>
 </dd>
 
@@ -192,30 +207,30 @@ Clarification of terms used in the project and its documentation.
 <dd>
   The details of what happens in a race — running out of fuel, attacking
   another buggy, moving forward — are recorded as events, which the
-  <strong>race player</strong> replays. Race events are stored in the
-  <strong>race file</strong> (not the database).
+  <a href="#race-player">race player</a> replays. Race events are stored in the
+  <a href="#race-file">race file</a> (not the database).
   <br>→ <a href="races/replaying">replaying races</a>
 </dd>
 
 <dt>race file</dt>
 <dd>
-  Races are created on the <strong>race server</strong> but are run offline:
-  you download the race file which contains all the data needed to run the
-  race. The results are added to the race file together with the <strong>race
-  events</strong>. You can upload this race file to add (and publish) the
-  results of the race. The <strong>race player</strong> can replay a race
-  if it has access to a race file that contains the race's events.
-  The race file is in JSON format.
+  Races are created on the <a href="#race-server">race server</a> but are run
+  offline: you download the race file which contains all the data needed to run
+  the race. The results are added to the race file together with the <a
+  href="#race-event">race events</a>. You can upload this race file to add (and
+  publish) the results of the race. The <a href="#race-player">race player</a>
+  can replay a race if it has access to a race file that contains the race's
+  events. The race file is in JSON format.
   <br>→ <a href="races/uploading-results">uploading race results</a>
 </dd>
 
 <dt>race player</dt>
 <dd>
-  The (JavaScript-powered) web page that replays the events of a race.
-  By default, the race server hosts a race player, but if you make a custom
-  version you can use that instead. The race player takes a <strong>race
-  file</strong> as its input — it doesn't need access to the race server or
-  the server's database.
+  The (JavaScript-powered) web page that replays the events of a race. By
+  default, the race server hosts a race player, but if you make a custom
+  version you can use that instead. The race player takes a <a
+  href="#race-file">race file</a> as its input — it doesn't need access to the
+  race server or the server's database.
   <br>→ <a href="races/replaying">replaying races</a>
 </dd>
 
@@ -223,7 +238,7 @@ Clarification of terms used in the project and its documentation.
 <dd>
   The rules that define whether or not a buggy is allowed to take part in a 
   given race. One of the rules is that a buggy must have an even number of 
-  wheels. The rules are embedded in the <strong>specs</strong>.
+  wheels. The rules are embedded in the <a href="#specs">specs</a>.
 </dd>
 
 <dt>race server</dt>
@@ -236,19 +251,19 @@ Clarification of terms used in the project and its documentation.
 
 <dt>racetrack</dt>
 <dd>
-  The racetrack is (of course) the nominal setting of a race — but on the server
-  it effectively means a background image (typically a JPG) and an SVG file
-  that describes the path the buggies will follow.
+  The racetrack is (of course) the nominal setting of a race — but on the
+  server it effectively means a background image (typically a JPG) and an SVG
+  file that describes the path the buggies will follow.
   <br>→ <a href="races/racetracks">managing and customising racetracks</a>
 </dd>
 
 <dt>replay</dt>
 <dd>
   Once a race has been run, replaying it means animating the events of the race
-  in the <strong>race player</strong>. It's a bit like replaying a video of the
-  race, but instead of video it's a JavaScript-powered reconstruction of the
-  events recorded in the <strong>race file</strong>.
-  <br>→ <a href="races/replaying">replaying races</a>
+  in the <a href="#race-player">race player</a>. It's a bit like replaying a
+  video of the race, but instead of video it's a JavaScript-powered
+  reconstruction of the events recorded in the <a href="#race-file">race
+  file</a>. <br>→ <a href="races/replaying">replaying races</a>
 </dd>
 
 <dt>report</dt>
@@ -265,20 +280,31 @@ Clarification of terms used in the project and its documentation.
   conceived and originally implemented.
 </dd>
 
-<dt>specs, specifications</dt>
+<dt>set-up phase</dt>
 <dd>
-  The specs define the acceptable values for racing buggies, including the
-  name of each component, its type, the range of acceptable values it can have,
-  a description of its role, and, where applicable, its cost and mass. The specs
+  When the race server is first started, you <em>must</em> change or confirm
+  all the <a href="#config-setting">config settings</a>. Until you've done
+  this, the server is in the <a href="#set-up-phase">set-up phase</a> and will
+  not let you access any other pages (except the login, in case you interrupt
+  the browser session while you're in this phase).
+</dd>
+
+<dt>specs,<br>specifications</dt>
+<dd>
+  The specs define the acceptable values for racing buggies, including the name
+  of each component, its type, the range of acceptable values it can have, a
+  description of its role, and, where applicable, its cost and mass. The specs
   also include race rules. The specs are available on the webserver both as
   human-readable web page and as tabulated data, which may (or may not) be
   useful to students building their buggy editors.
+  <br>→ <a href="{{ site.content.demo_url }}/specs">specs on the demo site</a>
 </dd>
 
 <dt>staff user</dt>
 <dd>
-  A staff user on the race server is an <strong>administrator</strong> or a 
-  <strong>Teaching Assistant</strong>. Staff users can access the admin pages.
+  A staff user on the race server is an <a href="#admin">administrator</a> or a
+  <a href="#teaching-asssistant">Teaching Assistant</a>. Staff users can
+  access the admin pages.
   <br>→ <a href="running/user-management">user management</a>
 </dd>
 
@@ -286,12 +312,15 @@ Clarification of terms used in the project and its documentation.
 <dd>
   Static content on the race server refers mainly to pages that need to be
   <em>published</em> before they can be accessed. There are three such
-  components: the <strong>task list</strong>, the <strong>tech notes</strong>,
-  and the buggy editor <strong>zipfile</strong> (that last one is optional,
-  depending on how you're distributing the buggy editor source code).
+  components: the <a href="#task-list">task list</a>, the <a
+  href="#tech-notes">tech notes</a>, and the buggy editor
+  <strong>zipfile</strong> (that last one is optional, depending on how you're
+  distributing the buggy editor source code).
   <br>
   There's a page in the tech notes about the more general business of creating
-  and using <em>static content</em> on the web.
+  and using <em>static content</em> on the web (<a
+  href="{{site.content.demo_url}}/tech-notes/static-vs-dynamic">see it on the
+  demo server</a>).
   <br>→ <a href="static-content">static content</a> (on the race server)
 </dd>
 
@@ -308,9 +337,9 @@ Clarification of terms used in the project and its documentation.
 <dt>task list</dt>
 <dd>
   The task list is the page on the race server that contains all of the tasks
-  for students to do. It includes details and hints for each task, as well
-  as buttons that allow students to enter <strong>task texts</strong> as they
-  attempt them.
+  for students to do. It includes details and hints for each task, as well as
+  buttons that allow students to enter <a href="#task-text">task texts</a> as
+  they attempt them.
   <br>→ <a href="static-content/task-list">the task list</a>
 </dd>
 
@@ -319,7 +348,7 @@ Clarification of terms used in the project and its documentation.
   A task text is short text a student saves on the race server describing how
   they approached or completed a task. The student can download their task
   texts (possibly as rendered markdown inside HTML) to be added to their
-  <strong>report</strong> before the project is submitted (if your students are
+  <a href="#report">report</a> before the project is submitted (if your students are
   required to submit a report).
   <br>→ <a href="static-content/task-list">tracking progress</a> (texts help
   you with this)
@@ -331,6 +360,29 @@ Clarification of terms used in the project and its documentation.
   limited config/admin access. Depending on config settings, TAs may be able
   to edit staff comments on users, and reset students' passwords for them.
   <br>→ <a href="running/user-management">user management</a>
+</dd>
+
+<dt>tech notes</dt>
+<dd>
+  This race server includes a set of static web pages that provide supporting
+  material about some of the technical aspects of the project — for example, on
+  the demo server see <a href="{{ site.content.demo_url
+  }}/tech-notes/flask-webserver">how Flask works as a webserver</a>. The tech
+  notes can't be edited in place, but you can make and host your own copy and
+  link to those instead.
+  <br>→ <a href="static-content/tech-notes">tech notes</a>
+</dd>
+
+<dt>violation</dt>
+<dd>
+  A racing buggy only qualifies for a race if it satisfies all the <a
+  href="#race-rules">race rules</a>. When you run a race, the rules are checked
+  (technically, this could be called "scrutineering") and each rule that fails
+  is a <strong>violation</strong>. When the race results are published, the
+  violations for each non-runner are shown. This is significant because a key
+  incentive for a student to build a good <a href="#buggy-editor">buggy
+  editor</a> is to detect and prevent violations.
+  <br>→ <a href="races/">running races</a>
 </dd>
 
 <dt>VS Code,<br>Visual Studio Code</dt>
