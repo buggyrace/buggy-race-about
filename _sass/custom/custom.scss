@@ -359,3 +359,21 @@ ol.upper-alpha{
 ol.upper-alpha li::before { content: none; }
 .card .navigation { margin:1rem 0; }
 .card .navigation:first-child { margin-top:0; }
+
+ul.glossary-index {
+  list-style:none;
+  text-align:center;
+  margin:2rem auto 3rem auto;
+  li {
+    display:inline-block;
+    padding:0.1rem 0.5rem;
+    border:1px solid #aaaaaa;
+    border-radius: 4px;
+    &:hover {
+      background-color:#eeeeee; 
+    }
+  }
+  li:before {
+    content:none;
+  }
+}

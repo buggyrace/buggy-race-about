@@ -35,7 +35,8 @@ Python version 3.9+ is required.
 {: .note}
 The Race Server is licensed under the GNU Affero GPL: it is **free and open
 source software**.  
-Some components from other projects may have different licensing.
+Some components from other projects may have different licensing:
+see [more about the licensing](about/software).
 
 ---
 > See the [about pages](about/software) for more about the software behind

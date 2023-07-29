@@ -1,13 +1,33 @@
 ---
-title: Software
+title: Software & licensing
 layout: home
 nav_order: 25
 parent: About
 ---
 
+# Software & licensing
+
+## License: GNU Affero GPL
 
 
-# Software shout-out
+{: .callout}
+The race server and buggy editor are both made available under the
+the **GNU Affero General Public License**: a free, copyleft license
+(see [gnu.org for details](http://www.gnu.org/licenses/)).
+
+In practice this means: you and your institution don't have to pay to use it
+— there's nothing to buy, because the whole thing is made freely, explicitly
+available for you — and you can modify it and even improve it (but if you
+do, you should make those improvements available to other people too).
+
+See the [race server's LICENSE.txt](https://github.com/buggyrace/buggy-race-server/LICENSE.txt)
+
+> This is free and open source software:  
+> "Free as in speech, free as in beer"
+
+Remember to teach your students about Open Source software :-)
+
+## Software shout-out
 
 This is a [Python](https://www.python.org) project.
 
