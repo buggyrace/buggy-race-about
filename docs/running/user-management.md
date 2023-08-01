@@ -151,6 +151,19 @@ will still be there. The race server will no longer offer the user a link to it,
 of course, because that requires the GitHub username, which you've just deleted.
 
 
+## Deleting a user
+
+You can delete a user record. Go to edit them, and click on **Show delete
+form**. The delete form requires confirmation and the authorisation code.
+
+When you delete a user, their buggy and task texts (if any) will also be
+deleted. You can't get them back; there is no undo. For this reason, consider
+marking them as _inactive_ (set **Is active?** to `No`), which effectively
+suspends them without destroying any data.
+
+An user who has been marked as not active cannot log in.
+
+
 ## Downloading user data
 
 {: .navigation}

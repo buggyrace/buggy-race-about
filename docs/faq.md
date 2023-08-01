@@ -50,11 +50,16 @@ and the other env variables that can affect it.
 
 ## Can I delete a user?
 
-You can't delete a user, but you can mark them as _inactive_, which is
-effectively the same. Go to **Admin** → **Users**, pick the user and **Edit**.
-For **Is active?**, select `No`. This hides the user and also prevents them
-logging in. When you download buggies CSV, only buggies belonging to active
-users are included.
+Yes, and if you delete a user their buggy and and task texts will be deleted
+too. If you delete a user, you can't get them back, so only do it if you're
+sure you don't want their data (for example, if they were added by mistake).
+
+If you want to _suspend_ a user, you can mark them as _inactive_, which is
+like deletion without destroying the data. Go to **Admin** → **Users**, pick
+the user and **Edit**. For **Is active?**, select `No`. This hides the user
+and also prevents them logging in. Inactive users' buggies are excluded from
+race files: when you download a race file for a race, only buggies belonging to
+active users are included.
 
 ---
 
@@ -96,7 +101,7 @@ Once you've got a new admin user, log in with the new credentials. Go to
 back to `No`. Remove the environment variable setting you used to bypass that
 (do not forget this step: otherwise, you'll have public registration again next
 time you restart). Promote or register the user that was lost — and once you've
-done that, maybe [deactivate the new one](#can-i-delete-a-user).
+done that, maybe [deactivate or delete the new one](#can-i-delete-a-user).
 
 ---
 
