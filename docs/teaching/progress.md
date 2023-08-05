@@ -26,7 +26,7 @@ There are three or four things the race server records that can help you spot
 when a student is not participating or perhaps falling behind:
 
 * Login activity
-* Git repo forks (if enabaled)
+* Git repo forks (if enabled)
 * Task texts (for the report)
 * Buggy JSON uploads
 
@@ -122,7 +122,7 @@ functioning 3-COST task: the student is using the editor they build to edit
 their buggy to a numerical criteria.
 
 
-## What activity is _not_ visisble on the server
+## What activity is _not_ visible on the server
 
 Remember that the students are _not_ doing their development on the server.
 So there's no analysis or access here to the work they are doing: that is, 
