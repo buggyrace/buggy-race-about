@@ -46,7 +46,7 @@ been applied, any changes you make to it in the admin interface will not persist
 beyond the next restart.
 
 {: .note}
-The config setting `DATABASE_URL` is, by necessity, one that must be declated
+The config setting `DATABASE_URL` is, by necessity, one that must be declared
 in an environment variable (since the application uses it to connect to the
 database).
 
@@ -67,7 +67,7 @@ remove them so that you can — if you ever need to — subsequently change them
 through the web interface.
 
 {: .note}
-The `.env` file is a hidden file on Unix (beause its name starts with a `.`),
+The `.env` file is a hidden file on Unix (because its name starts with a `.`),
 so if you're using the command line on Unix, you'll need to do `ls -al` to see
 it.
 
@@ -103,7 +103,7 @@ $env:DATABASE_URL=postgresql://hamster:sque4k@localhost:5432/buggy
 
 ### On Heroku
 
-If you're using Heroku, you can do this through a convenient web intterface. Go
+If you're using Heroku, you can do this through a convenient web interface. Go
 to the race-server app, find **Settings** and click **Reveal config settings**.
 
 
@@ -136,7 +136,7 @@ default is an SQLite database which is _not suitable for production_):
     <label>Heroku<br>note</label>
     <div>
       <p>
-        If you are hosting your serer on Heroku, this setting will be created
+        If you are hosting your server on Heroku, this setting will be created
         for you automatically when you connect the (Postgres) database to your
         app in the Heroku admin interface. In fact, on Heroku you
         <strong>cannot</strong> edit this, which is why you might need to use
@@ -155,10 +155,10 @@ default is an SQLite database which is _not suitable for production_):
     <label>Example<br>values</label>
     <ul>
       <li>
-        <code>postgresql://username:password@hostname:5432/databasename</code>
+        <code>postgresql://username:password@hostname:5432/buggy</code>
       </li>
       <li>
-        <code>mysql+mysqlconnector://username:password@localhost:3306/racing_buggy</code>
+        <code>mysql+mysqlconnector://username:password@localhost:3306/buggy</code>
       </li>
     </ul>
   </div>
@@ -313,9 +313,9 @@ variable you've provided. Do not try to set it explicitly!
 
 {: .note}
 Remember that _every one_ of the config settings you can change in the web
-interface (**Admin** → **Config** → **Auth**) can be set (forced) by
-declarating it as an environment variable (or in the `.env` file). Be sure
-to use _exactly_ the same uppper-case name when you declare it.
+interface (**Admin** → **Config** → **Auth**) can be set (forced) by declaring
+it as an environment variable (or in the `.env` file). Be sure to use _exactly_
+the same uppercase name when you declare it.
 
 ## Environment settings are saved to the database
 

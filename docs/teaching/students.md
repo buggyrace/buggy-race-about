@@ -37,6 +37,6 @@ the Computer Science department. This invites an especially wide range of
 experience — ranging from students with no programming exposure outside
 introductory classes, through to competent web developers, possibly with
 industrial experience, who might be on the course because they don't have
-A-level maths. The project accomodates this range of ability by letting the
+A-level maths. The project accommodates this range of ability by letting the
 students themselves decide how _thoroughly_ they implement each task.
 
