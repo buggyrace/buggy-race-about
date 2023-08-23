@@ -353,6 +353,35 @@ careful changing these settings: you can break things!_
 Unlike changes made through the web interface, any changes you make to
 environment variables won't get noticed until you restart the race server.
 
+## Saving a config snapshot (for `.env`)
+
+{: .navigation}
+**Admin** → **Dashboard** → **System info** → **Download config snapshot**
+
+You can save a snapshot of the current config settings as a text file, in
+a format suitable for use as a `.env` file (although some editing will be
+required, because some sensitive data is redacted or excluded).
+
+This may be handy at the end of a term to archive your settings if you
+anticipate running the project again the following (academic?) year... because
+by then you won't remember all the things you did to get it working this time
+;-) You can use it to help make a new installation based on this existing one
+by using this text file as the basis for the `.env` file. This is probably more
+useful than a dump of the current database, because that includes a lot of
+project information (students and texts, for example) that you won't want to
+carry forward into a new class, and also because there are some config settings
+that aren't in the database.
+
+{: .warning}
+The config snapshot is a convenience utility that helps you archive a working
+config now — it's not an alternative to proper set-up. Remember that you _must_
+edit the file before deploying it as a `.env` file. For example, passwords are
+redacted (database connections using passwords will fail), and timestamps
+should probably be removed. Removing declarations from the `.env` file is
+usually safe because missing entries will fall back to sensible default values
+(which may be "nothing").
+
+
 ---
 * Previous: [Set-up phase](setup-phase)
 * Next: [Authorisation config](auth)
