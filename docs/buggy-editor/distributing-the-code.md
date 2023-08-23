@@ -135,9 +135,9 @@ below that apply generally to distributing the code.
       </p>
       <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → <strong>Buggy editor</strong> → <strong>Publish editor zipfile</strong></p>
       <p>
-        You must explicitly publish the zipfile (which gives you an opportunity
-        to customise the README and automatically add the race server URL to
-        the Python code).
+        You must explicitly <a href="../static-content/zipfile">publish the zipfile</a>
+        (which gives you an opportunity to customise the README and
+        automatically add the race server URL to the Python code).
       </p>
     </div>
   </div>
@@ -163,11 +163,12 @@ below that apply generally to distributing the code.
   <div>
     <label>Details</label>
     <p>
-Do this if you're comfortable distributing the source code to your students
-directly — probably as a zipfile.<br>
-This allows you to fully customise the source code before distributing to the
-students. (You can use the race server's publish mechanism to produce a
-prototype zip, or you can get it yourself from the editor's own repo).
+      Do this if you're comfortable distributing the source code to your
+      students directly — probably as a zipfile.
+      <br>
+      This allows you to fully customise the source code before distributing to
+      the students. (You can use the race server's publish mechanism to produce
+      a prototype zip, or you can get it yourself from the editor's own repo).
     </p>
   </div>
   <div>

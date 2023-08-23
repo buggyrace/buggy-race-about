@@ -26,17 +26,33 @@ Before you start running the project, you need to prepare the buggy editor
 source code that your students will start with. The recommended way to do this
 depends on how you're distributing the code:
 
-* if the students will download the source code from the race server (as a
-  zipfile), you can customise it _when you create the zip_
+* If the students will download the source code from the race server (as a
+  zipfile), you can customise it _when you create the zip_ on the race server.
   
-is to fork our "plain" buggy editor repo from
-[github.com/buggyrace/buggy-race-editor](https://github.com/buggyrace/buggy-race-editor).
+* Otherwise you probably need to fork our "plain" buggy editor repo from
+  [github.com/buggyrace/buggy-race-editor](https://github.com/buggyrace/buggy-race-editor)
+  and customise that (see below).
 
 {: .note}
 You don't **need** to customise the buggy editor source code before sharing it
 with your students, but if you don't it means the students' apps won't link
 helpfully back to your race server... which can be confusing.  
 We strongly recommend you customise the editor!
+
+
+## Customise the zipfile on the server
+
+If you're distributing the buggy editor to your students
+[as a zipfile on the server](distributing-the-code.html#method-zip), then
+customising the `README` is part of the process of publishing it.
+Once you've done that, you're good to go.
+See [publishing the zipfile](../static-content/zipfile) for details.
+
+## Customise the repo manually
+
+If you're not publishing the zipfile on the race server, then you'll need to
+customise the buggy editor repo manually. To do that, you first need a copy of
+it you can edit (and probably the simplest way is to fork it).
 
 To fork the repo, log into your own GitHub account, then go to the
 [buggy editor repo](github.com/buggyrace/buggy-race-editor) and click **Fork**

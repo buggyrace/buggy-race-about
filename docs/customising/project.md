@@ -20,6 +20,11 @@ Config settings for the tasks — which are fundamental to how your project work
 There's also a separate page about
 [managing the task-list](../static-content/task-list).
 
+You can choose whether or not you require students to create a report as part
+of the project: see [the students' report](../teaching/the-report) for details.
+If you're setting the `PROJECT_REPORT_TYPE` manually, the only recognised
+values are nothing (empty string), `report` or `poster`.
+
 
 ## Config settings ("Project")
 

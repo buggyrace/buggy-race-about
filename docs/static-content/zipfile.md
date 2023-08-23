@@ -13,10 +13,10 @@ The **buggy editor zipfile** contains the source code for the
 on and develops.
 
 {: .note}
-You **only** need this if you have chosen to distribute the source to the students
-on the race server (this is
-"[method A](../buggy-editor/distributing-the-code#method-a)", which is the
-default and simplest method you can choose).  
+You **only** need this if you have chosen to distribute the source to the
+students on the race server (this is
+"[method zip](../buggy-editor/distributing-the-code#method-zip)" — which is the
+simplest method you can choose, _and also the default_).  
 <br>
 For example, if you're distributing the code via GitHub, **you do not need to
 publish the zipfile**. 
@@ -29,7 +29,12 @@ publish the zipfile**.
 
 This is the default behaviour: you customise the README, and add the URL for
 this race server to the Python (<code>app.py</code>) when you publish the 
-zipfile.
+zipfile. The race server will suggest the customised README for you — the text
+it invites you to submit already uses some of your config settings.
+
+If you choose not to publish the zipfile (because you're using a different
+distribution method), there are instructions on
+[customising the buggy editor](../buggy-editor/customising) manually.
 
 ### If you don't publish the zipfile — 404!
 

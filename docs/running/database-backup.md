@@ -88,3 +88,10 @@ database backup will include all your config settings, except the
 `DATABASE_URL` setting that's [set as an environment
 variable](../customising/env).
 
+## Configuration snapshot
+
+You can save a snapshot of the current configuration settings (in the form of
+a text file which can be reused as a `.env` file) — see
+[saving a config snapshot](../customising/env#saving-a-config-snapshot-for-env).
+
+
