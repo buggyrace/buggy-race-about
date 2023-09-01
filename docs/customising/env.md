@@ -323,7 +323,7 @@ If you launch (or restart) the race server with any config set by environment
 variables, those values will be saved in the database. That is, they _will_
 persist in subsequent runs (until you edit them via **Admin** → **Config**).
 
-When you go to edit config entries in the web interface, you'll be warned if it
+When you go to edit a config entry in the web interface, you'll be warned if it
 was set via an environment variable.
 
 {: .warning}
