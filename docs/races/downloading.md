@@ -2,7 +2,7 @@
 title: Downloading
 nav_order: 40
 layout: home
-parent: Running races
+parent: Racing
 has_children: false
 ---
 

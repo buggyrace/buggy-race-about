@@ -2,7 +2,7 @@
 title: Creating a race
 nav_order: 20
 layout: home
-parent: Running races
+parent: Racing
 has_children: false
 ---
 

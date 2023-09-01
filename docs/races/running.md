@@ -1,12 +1,13 @@
 ---
-title: Running a race
+title: Running races
 nav_order: 50
 layout: home
-parent: Running races
-has_children: false
+parent: Racing
+has_children: true
+
 ---
 
-# Running a race
+# Running races
 
 To run a race, run
 
@@ -34,6 +35,8 @@ are run by a Python script, we anticipated races could be implemented in a
 variety of ways. You can customise or rewrite the Python script, or develop
 an entirely different race, using the buggy specs and race file as the input.
 
+* about [building your own race-runner](custom-runner/)
+
 {: .suggest}
 The buggy race, with its detailed input and output specifications, coupled with
 a customised player, could be an excellent games-dev project for final year
@@ -51,6 +54,8 @@ and uploaded.
 For more about the context of races as an incentive for students — specifically
 _qualification for races_ — see
 [about races: What the races show](../races/about#what-the-races-show).
+
+## Building a custom race-runner
 
 ## Made a race-runner? Let us know!
 

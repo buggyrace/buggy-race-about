@@ -1,11 +1,11 @@
 ---
-title: Running races
+title: Racing
 layout: home
 nav_order: 55
 has_children: true
 ---
 
-# Running races
+# Racing the students' buggies
 
 ## How to run a race
 

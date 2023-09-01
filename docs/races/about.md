@@ -2,7 +2,7 @@
 title: About races
 nav_order: 10
 layout: home
-parent: Running races
+parent: Racing
 has_children: false
 ---
 

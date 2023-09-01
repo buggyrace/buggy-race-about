@@ -2,7 +2,7 @@
 title: Uploading race results
 nav_order: 60
 layout: home
-parent: Running races
+parent: Racing
 has_children: false
 ---
 

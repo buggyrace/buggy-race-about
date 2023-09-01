@@ -115,8 +115,8 @@ below that apply generally to distributing the code.
         The server controls the contents of the zipfile (it's a sensible commit
         from the
         <a href="https://github.com/buggyrace/buggy-race-editor">editor repo</a>),
-        but you cannot change this (if you need to, use <a href="#method-b">method
-          B</a> instead).
+        but you cannot change this (if you need to, use <a href="#method-page">the
+          page method</a> instead).
       </li>
     </ul>
   </div>
@@ -289,13 +289,11 @@ below that apply generally to distributing the code.
       </p>
       <p>
         Keep <code>IS_STUDENT_USING_GITHUB_REPO</code> to <code>No</code>
-        (if it's not optional, you want <a href="#method-d">method
-          D</a>))
+        (if it's not optional, you want <a href="#method-fork">the forking method</a>))
       </p>
       <p>
         Keep <code>IS_USING_GITHUB_API_TO_FORK</code> set to <code>No</code>
-        (unless you want to automate this — which is <a href="#method-e">method
-        E</a>).
+        (unless you want to automate this — which is <a href="#method-autofork">the auto-forking method</a>).
       </p>
     </div>
   </div>
@@ -369,7 +367,7 @@ below that apply generally to distributing the code.
       </p>
       <p>
         Keep <code>IS_USING_GITHUB_API_TO_FORK</code> set to <code>No</code>
-        (if you do want to automate this, see <a href="#method-e">method E</a>).
+        (if you do want to automate this, see <a href="#method-autofork">the auto-forking method</a>).
       </p>
     </div>
   </div>

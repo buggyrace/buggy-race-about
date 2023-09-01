@@ -2,7 +2,7 @@
 title: How students enter
 nav_order: 30
 layout: home
-parent: Running races
+parent: Racing
 has_children: false
 ---
 

@@ -2,8 +2,8 @@
 title: Replaying races
 nav_order: 70
 layout: home
-parent: Running races
-has_children: false
+parent: Racing
+has_children: true
 ---
 
 # Replaying races
@@ -133,6 +133,13 @@ that browsers implement are to some extent performing a similar service — but
 be aware that, if presented with acceptable CORS headers, your standalone race
 player is capable of replaying "unofficial" races too.
 
+## Building your own
+
+It's entirely feasible to create a custom race-player. This lets you add more
+sophisticated features than the somewhat basic version than is currently part
+of the race server.
+
+* about [building your own race-player](custom-player/)
 
 ---
 
