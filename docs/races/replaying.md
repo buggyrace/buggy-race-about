@@ -25,6 +25,9 @@ or
 The race player **replays the races** by animating the events which are
 described by the "race file" (the JSON file produced when you run a race).
 
+{: .demo}
+See this in action by [replaying a race]({{site.content.demo_url}}/races/{{site.content.demo_race_id}}/replay#replay).
+
 This presupposes that the race file is available online — by default, if you've
 uploaded it to the race server, it will be there, although you can override
 this if you've set the config setting `IS_STORING_RACE_FILES_IN_DB` to `No`.
@@ -91,13 +94,13 @@ server's headers and footers. Here are the files you'll need:
   get it from GSAP's CDN)
 
 {: .note}
-This allows you to customise your race player, just as you might customise the
-program that runs the races. For example, if you add new types of events to
-your races, you can also update the JavaScript code of the race player to
-handle them. After all, that's what we did :-).
+This allows you to [customise your race-player](custom-player) (just as you
+might [customise the race-runner](custom-runner)). For example, if you add new
+types of events to your races, you can also update the JavaScript code of the
+race player to handle them. After all, that's what we did :-).
 <br>
 If you do develop the race player, please consider sharing your work back with
-us so other people can benefit from it too.
+us so other people can benefit from it too.  
 
 {: .suggest}
 If you have students with JavaScript/front-end skills who are looking for

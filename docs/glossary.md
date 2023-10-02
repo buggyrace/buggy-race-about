@@ -14,20 +14,21 @@ Clarification of terms used in the project and its documentation.
 
 <!-- glossary index start -->
 <ul class="glossary-index">
-<li><a href="#asbp">ASBP</a></li>
 <li><a href="#admin-pages">admin&nbsp;pages</a></li>
 <li><a href="#administrator">administrator</a></li>
 <li><a href="#announcement">announcement</a></li>
+<li><a href="#asbp">ASBP</a></li>
 <li><a href="#authorisation-code">authorisation&nbsp;code</a></li>
 <li><a href="#buggy">buggy</a></li>
 <li><a href="#buggy-editor">buggy&nbsp;editor</a></li>
-<li><a href="#config-setting">config&nbsp;setting</a></li>
 <li><a href="#comments">comments</a></li>
+<li><a href="#config-setting">config&nbsp;setting</a></li>
 <li><a href="#cost">cost</a></li>
 <li><a href="#demo-site">demo&nbsp;site</a></li>
+<li><a href="#demo-user">demo&nbsp;user</a></li>
 <li><a href="#docker">Docker</a></li>
-<li><a href="#ext_username">ext_username</a></li>
 <li><a href="#ext_id">ext_id</a></li>
+<li><a href="#ext_username">ext_username</a></li>
 <li><a href="#flask">Flask</a></li>
 <li><a href="#greensock">Greensock</a></li>
 <li><a href="#hamster">hamster</a></li>
@@ -159,6 +160,15 @@ Clarification of terms used in the project and its documentation.
   <a href="{{ site.content.demo_url }}">{{ site.content.demo_url }}</a> so you
   can see what your might server will look like. Contact us and ask for an admin
   login to have a poke around backstage.
+  <br>→ <a href="{{ site.content.demo_url }}">go to the demo site</a>
+</dd>
+
+<dt id="demo-user">demo user</dt>
+<dd>
+  This is a special flag we set on admin users on the <a href="#demo-site">demo
+  site</a> so they can't accidentally lock other admins (us) out of the demo
+  site. If you spot this at all it will only be on our demo site — you won't
+  see this on your own site because yours isn't a demo!
 </dd>
 
 <dt id="docker">Docker</dt>
@@ -329,6 +339,7 @@ Clarification of terms used in the project and its documentation.
 <dd>
   Royal Holloway, University of London — where this Buggy Racing project was
   conceived and originally implemented.
+  <br>→ <a href="https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/computer-science/">RHUL Computer Science</a>
 </dd>
 
 <dt id="set-up-phase">set-up phase</dt>
@@ -338,6 +349,7 @@ Clarification of terms used in the project and its documentation.
   this, the server is in the <a href="#set-up-phase">set-up phase</a> and will
   not let you access any other pages (except the login, in case you interrupt
   the browser session while you're in this phase).
+  <br>→ <a href="customising/setup-phase">the set-up phase</a>
 </dd>
 
 <dt id="specs">specs,<br>specifications</dt>

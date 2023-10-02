@@ -15,7 +15,7 @@ If you want to run a Buggy Racing project, this is what you'll need:
   order to access the race server.
 
 * **Ability to host the race server**  
-  You need to run the race sever (it's the website you and your students
+  You need to run the race server (it's the website you and your students
   interact with throughout the project). If you have the technical resource to
   host it yourself, you can — otherwise use a hosting service in the cloud:
   * See [more about self-hosting](../hosting/self-hosting).

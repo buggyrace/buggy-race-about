@@ -156,7 +156,7 @@ See the [full requirements](overview/requirements). You need to
         Animated view of race result
       </p>
       <p class="item-footer">
-        <a href="{{site.content.demo_url}}/races/1/replay#replay">&rarr;&nbsp;see&nbsp;on&nbsp;demo&nbsp;site</a>
+        <a href="{{site.content.demo_url}}/races/{{site.content.demo_race_id}}/replay#replay">&rarr;&nbsp;see&nbsp;on&nbsp;demo&nbsp;site</a>
       </p>
     </div>
     <div class="item-card">
