@@ -9,22 +9,27 @@ has_children: false
 
 # Inside the JSON race-file
 
-The race server produces a race-file when you [download a race](../downloading),
-which you must do in order to [run the race](../running). It contains a
+The race server produces a race-file when you [download a race](downloading),
+which you must do in order to [run the race](running). It contains a
 description of the race and each of the buggies that was entered into it.
 
 {: .note}
 You **do not need to know this** for normal operation of buggy-racing project!  
 This information is for you (or your students) if you (or they) are
-[customising the race-player](../custom-player) or
-[customising the race-runner](../custom-runner).
+[customising the race-player](custom-player) or
+[customising the race-runner](custom-runner).
 
-When you [run the race](../running), the race-runner produces a new version of
+When you [run the race](running), the race-runner produces a new version of
 that race-file that contains the detailed _events_ of the race. It also updates
 the buggies so each now contains a `race-position` and (where appropriate) the
 `violations-str`.
 
-When you [replay a race](../replaying), the race-player reads the race-file
+After running the race, you [upload the race file](uploading-results). The
+race server reads the results from the race file and updates the database.
+The results for all races are displayed on the race server (unless you've opted
+to hide them — see [editing races](editing)).
+
+When you [replay a race](replaying), the race-player reads the race-file
 and animates the events described within it.
 
 ## Fields in the race file
@@ -102,17 +107,18 @@ detla would move a buggy in reverse.
 
 #### `e`: Event type
 
-An event does not need to have an event type. But if it doesn, the race player
+An event does not need to have an event type. But if it does, the race player
 can triggert appropriate behaviour. The default race runner currently generates
 two possible events by way of an example:
 
-| Event type       | Code | Detail                                               |
+| Event type     | Code | Detail                                               |
 |----------------+------+------------------------------------------------------|
 | `PUNCTURE`     | `p`  | A puncture causes a loss of tyre (automatically replaced with a spare tyre, if available) |
-| `CHASSIS_FAIL` | `xc` | End of race: chais breaks (typically because it wasn't strong enough for the mass of the buggy) |
+| `CHASSIS_FAIL` | `xc` | End of race: chassis breaks (typically because it wasn't strong enough for the mass of the buggy). Potentially other failure might be prefixed with `x`. |
 
 The race player can use these events to trigger animations or special messages
 in thew race player. The race player should ignore event types it doesn't
+recognise or know how to handle.
 
 
 ## Example race file
