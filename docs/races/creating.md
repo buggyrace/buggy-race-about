@@ -80,6 +80,28 @@ have been run, provided you've marked them visible too).
   In the admin, staff accounts can access them as soon as you have uploaded them,
   so you can check how they look before publishing them for the students.
 
+* **Number of laps**  
+  Over how many laps of the racetrack is this race to be run? If you're not
+  sure you can set this when you upload the results. It's best to decide in
+  advance, in case it affects students' decisions as to how they equip their
+  buggies (for speed, or endurance). However, our experience is that this isn't
+  a critical factor, at least at the start of the project, and we adjusted it
+  to match the behaviour of the submitted buggies to avoid all races petering
+  out with everyone running out of fuel, and making the replays very dull.
+  Ideally you avoid this by stressing the importance of fuel to your students.
+
+* **Is Did-Not-Finish a position?**  
+  Are buggies who do not finish all the laps given a position? If so, how far
+  they got (distance travelled) is used to calculate their position relative to
+  other buggies. The default, _Yes_, is generous: for example, it means that
+  qualification in the race guarantees a result (even if, in the extreme case,
+  the buggy doesn't move forward at all). This rewards students who manage to
+  qualify (which is a key test of the quality of their buggy editor) but
+  doesn't penalise them for a bady designed buggy (e.g., one with no fuel).
+  Set to _No_ for a harsher (but more real-world) approach to race results.
+
+  
+
 For more about publishing results, see
 [uploading race results](uploading-results).
 
