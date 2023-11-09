@@ -24,8 +24,8 @@ The public `/races` page only ever shows **one** future race — the next one.
 So if you have ten races, all visible, only the _next_ one will appear on that
 page (together with all past ones that are not hidden).
 
-The setting _Are results visible?_ can be used to hide races while you are
-working on them. You can check that the results (and replaying) work as
+The setting _Are results visible?_ can be used to hide race results while you
+are working on them. You can check that the results (and replaying) work as
 expected before publishing them to the students.
 
 ## Changing races after results have been uploaded
