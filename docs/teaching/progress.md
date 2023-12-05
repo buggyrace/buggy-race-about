@@ -34,10 +34,10 @@ when a student is not participating or perhaps falling behind:
 
 ### Login activity
 
-The admin dashboard summaries who's logged in (to the race server) today,
-who's logged in during the last seven days, and who has never logged in.
-This allows you to quickly see any students who have not accessed the race
-server _while logged in_.
+The [admin dashboard](../running/dashboard) summarises who's logged in (to the
+race server) today, who's logged in during the last seven days, and who has
+never logged in. This allows you to quickly see any students who have not
+accessed the race server _while logged in_.
 
 We don't track activity of site visitors who have not logged in — so browsing
 the tech notes and scrutinising the specs, which is a sound way for a student
@@ -70,7 +70,7 @@ It's a good idea to try to can impress upon your students the _usefulness_ of
 taking notes as they go along, which is what the task texts are doing. The two
 benefits to the students are:
 
-* writing the notes _at the time they are tackling the task_ means they can
+* Writing the notes _at the time they are tackling the task_ means they can
   remember what they did to solve the problem. This is much harder to do
   retrospectively.
 
