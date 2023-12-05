@@ -136,7 +136,7 @@ academic year).
 
 We designed the tasks with consideration on _how_ they build on each other.
 
-The [buggy editor](../buggy-editor) that the students stat with is deliberately
+The [buggy editor](../buggy-editor) that the students start with is deliberately
 basic: it lets the student change the _number of wheels_. And that's it.
 
 But the database it includes _also_ has three columns for the racing pennant:
