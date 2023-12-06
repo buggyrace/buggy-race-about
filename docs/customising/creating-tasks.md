@@ -44,10 +44,11 @@ method you are using.
 ![Screenshot of upload tasks dialogue](/docs/img/screenshots/upload-tasks.png)
 
 {: .caption}
-The upload tasks dialogue — if you don't provide a file to upload, the race
-server will use the default tasks (but the first two tasks of phase 0 assume
-your students are downloading the buggy editor as a zip file from your race
-server).
+The upload tasks dialogue. If you don't provide a file to upload, the race
+server will use the default tasks — but the first two tasks of phase 0 (`0-GET`
+getting the source code, and `0-RUN` running it) will be customised depending
+on how you've decided to distribute the buggy editor source code to your
+students).
 
 Creating the tasks is potentially destructive (it will delete any existing
 tasks), so you need the [authorisation code](auth) to do it.
