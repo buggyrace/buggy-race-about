@@ -32,8 +32,11 @@ The basic service described here is free.
 {: .note}
 What follows are the **manual** steps for getting the editor running up on
 PythonAnywhere, with a (basic, free) student account. PythonAnywhere has an
-educational tier, so it's possible you could automate this process so accounts
-are already set up for all your students.
+educational tier. However, PythonAnywhere tell us that, even if you've added
+the students to your account (that is, their home directories appear under
+yours (as the teacher)), you cannot automate the
+_[Set it up to run as a webapp](#set-it-up-to-run-as-a-webapp)_ step on your
+students' accounts, which is disappointing.
 
 {: .screenshot}
 ![Screenshot of PythonAnywhere buggy-race-editor files](/docs/img/screenshots/pythonanywhere.png)
