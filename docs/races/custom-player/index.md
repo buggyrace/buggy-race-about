@@ -24,7 +24,7 @@ which is a standalone application that calculates the outcome (events and
 results) of a race.
 
 {: .todo}
-This page is incomplete, and is currently being written! (2-Oct-2023)
+This page is incomplete, and is currently being written! (6-Dec-2023)
 
 ## Summary: inputs/process/output
 

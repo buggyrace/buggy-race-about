@@ -55,7 +55,6 @@ For more about the context of races as an incentive for students — specificall
 _qualification for races_ — see
 [about races: What the races show](../races/about#what-the-races-show).
 
-## Building a custom race-runner
 
 ## Made a race-runner? Let us know!
 
