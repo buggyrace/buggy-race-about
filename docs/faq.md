@@ -53,6 +53,7 @@ and the other env variables that can affect it.
 Yes, and if you delete a user their buggy and and task texts will be deleted
 too. If you delete a user, you can't get them back, so only do it if you're
 sure you don't want their data (for example, if they were added by mistake).
+See [Deleting a user](running/user-management.html#deleting-a-user).
 
 If you want to _suspend_ a user, you can mark them as _inactive_, which is
 like deletion without destroying the data. Go to **Admin** → **Users**, pick
