@@ -40,13 +40,13 @@ that, you should delete it as soon as you've completed your set-up.
 
 Don't use weak, obvious or short passwords. Don't use duplicate passwords.
 Don't share passwords. Make a point of looking away if a student or colleague
-ever types theirs in front of you (it's a teaching point :-) — it also an
+ever types theirs in front of you (it's a teaching point :-) — it is also an
 old-school nerd courtesy). Don't leave passwords in places where they can be
 discovered. Encourage your students to adopt good security practice too. Use a
 password manager!
 
 If you believe a password has been compromised,
-[user-management#changing-passwords](change it).
+[change it](../running/user-management#changing-passwords).
 
 The race server does not support two-factor authentication. As a future feature
 it would be good if it were integrated into your institutions OAuth login
