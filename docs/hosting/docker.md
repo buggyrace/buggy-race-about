@@ -39,9 +39,9 @@ with Heroku](heroku).
 ## Consider creating a virtual machine
 
 This isn't a requirement for deployment, but — especially if you are running
-the race server as one service amongst others your institution's machine, it's
-a good policy to create a VM and run everything within that. Setting that up is
-beyond the scope of this documentation but if you or your tech team are
+the race server as one service amongst others on your institution's machine —
+it's a good policy to create a VM and run everything within that. Setting that
+up is beyond the scope of this documentation but if you or your tech team are
 comfortable doing that — and exposing port 443 to the outside world — then that
 is a recommended solution.
 
@@ -83,7 +83,7 @@ your race server.
 {: .note}
 If you get into a pickle with enviroment variables (for example if you ignored
 our advice and did edit the `environment` section in your Docker files),
-remember that — once your server is running — as an admin, you can see the
+remember that — once your server is running — as an admin, you can inspect the
 settings through the web interface: see [system
 info](../customising/env#other-system-settings-system-info).
 
