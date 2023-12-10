@@ -17,26 +17,33 @@ parent: Installation and Hosting
 # Self-hosting with Docker
 
 The buggy race server is a Python Flask application that connects to an SQL
-database. It is possible to run these "[without Docker](bnarewithout-docker)",
-but the [race server repo](https://github.com/buggyrace/buggy-race-server)
-includes the necessary [Docker](https://www.docker.com) files to deploy using
-Docker containers. The rest of this page describes hosting the server using
-Docker.
+database.
+
+This page describes hosting the server using [Docker](https://www.docker.com),
+which is a tool that helps you manage deployment by wrapping the services in
+containers. You don't need to do this — if you prefer to self-host directly,
+see the page about self-hosting the server [without Docker](without-docker).
+
+The [race server repo](https://github.com/buggyrace/buggy-race-server) includes
+the necessary files to deploy using Docker containers. These files are ignored
+if you're not using Docker. Docker is not a requirement, but you may find it
+convenient to use it.
 
 {: .note}
 **This page assumes you are familiar with Docker!**  
 Self-hosting the race server requires either you or your tech team to be
-familiar with the underlying technology to set this up. If you're not
-confident with this, we recommend [hosting in the cloud with Heroku](heroku).
+familiar with the underlying technology to set up and run the webserver and its
+database. If you're not confident with this, we recommend [hosting in the cloud
+with Heroku](heroku).
 
 ## Consider creating a virtual machine
 
 This isn't a requirement for deployment, but — especially if you are running
 the race server as one service amongst others your institution's machine, it's
-a good policy to create a VM and run everything within that. Setting that up
-is beyond the scope of this documentation but if you or your tech team are
-comfortable setting that up — and exposing port 443 to the outside world —
-then that is a recommended solution.
+a good policy to create a VM and run everything within that. Setting that up is
+beyond the scope of this documentation but if you or your tech team are
+comfortable doing that — and exposing port 443 to the outside world — then that
+is a recommended solution.
 
 {: .rhul}
 In the 2023 buggy racing at RHUL, we ran the race server as a dockerised
@@ -73,7 +80,16 @@ declarations is doing.
 See [more about using environment variables](../customising/env) to customise
 your race server.
 
-To run kick everything off, do:
+{: .note}
+If you get into a pickle with enviroment variables (for example if you ignored
+our advice and did edit the `environment` section in your Docker files),
+remember that — once your server is running — as an admin, you can see the
+settings through the web interface: see [system
+info](../customising/env#other-system-settings-system-info).
+
+## Compose the Dockerised containers
+
+To kick everything off, do:
 
     docker-compose up
 
@@ -82,9 +98,22 @@ There are four containers in the Dockerised application:
 * the Flask webserver
 * the PostgreSQL database
 * a persistent file volume (`published/` within the application file structure)
-  where generated static content is saved
-* the node_modules used to run [webpack](https://webpack.js.org)
+  where generated [static content](../static-content) is saved
+* the `node_modules` used to run [webpack](https://webpack.js.org)
 
+The first time you run this, it may take a while (for example, there's a lot of
+material to download in the node modules). Docker checks the timestamps as it's
+building and doesn't reload files it's already got — so subsequent runs will
+usually be much quicker.
 
+## There's a (small) delay in the build process
 
+The Flask application uses SQLAlchemy to handle any database schema migrations,
+but it also stores its config settings in the database. This means there's a
+slight chicken-and-egg situation when the app is launched. We've solved this
+problem (for now) by imposing a short delay (about 10 seconds) to allow any
+migrations to run their course on the database before the Flask application
+launches. You don't need to worry about this, but it explains why, if you're
+watching a deployment — and if you're issuing `docker-compose` commands, you
+probably are — it looks like nothing's happening for a few seconds.
 
