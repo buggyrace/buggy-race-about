@@ -59,9 +59,9 @@ keys**. The server will randomise a separate key for each user you selected.
 
 Similarly, you can revoke a key by clicking **Clear API keys**.
 
-We suggest that you do not grant API keys until individual students as for one.
-It's a simple way to check with their progress and an opportunity to see how
-much they've understood about how the API works.
+We suggest that you do not grant API keys until individual students ask for
+one. It's a simple way to check with their progress and an opportunity to see
+how much they've understood about how the API works.
 
 ## Setting the API secret
 
