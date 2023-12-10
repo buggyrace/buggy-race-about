@@ -21,7 +21,7 @@ straightforward for you. Our instructions for [hosting on
 Heroku](../hosting/heroku) cover this for you.
 
 If you're self-hosting on your own infrastructure, you or your tech team should
-be able to set this up on your own domain. If you're familiar with SSL
+be able to set this up on your own domain. If you're not familiar with SSL
 certificates it can be a bit daunting, but
 [letsencrypt.org](https://letsencrypt.org) has been enabling free encryption
 on the net for years and is a good place to start.
