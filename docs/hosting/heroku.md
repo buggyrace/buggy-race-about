@@ -175,7 +175,7 @@ PostgreSQL service on Amazon AWS) won't connect without the latter two.
 If you want to set a non-default authorisation code _before_ you set up, you
 can do so here too. Note that the very first step of your set up on the site
 will be to change this. So you really only need to do this if you are not going
-to run the set up process as soon as your have deployed.
+to run the set up process as soon as you have deployed.
 
 | Name                              | Value                         |
 |-----------------------------------|-------------------------------|
