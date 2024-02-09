@@ -318,6 +318,10 @@ below that apply generally to distributing the code.
   <div>
     <label>Details</label>
     <p>
+      This method is the same as the previous one, except the students
+      fork your (or your institution's) repo into their own GitHub accounts
+      first (rather than downloading/cloning directly from yours).
+      <br>
       You need to fork and customise the editor repo, and then the students
       fork that repo into their own accounts. Then they download the source
       code <strong>from their own</strong> repo, ideally using <code>git
@@ -328,8 +332,13 @@ below that apply generally to distributing the code.
     <label>Pros</label>
     <ul class="pros">
       <li>
-        Exposes students to GitHub and Git practice — because they can
-        <code>push</code> back up to their own upstream (GitHub) repo.
+        Exposes students to GitHub and Git practice — because they now they
+        can <code>push</code> back up to their own upstream (GitHub) repo.
+      </li>
+      <li>
+        That extra level of de-reference (forking instead of just cloning the
+        code from your upstream repo) has subtle but powerful consequences,
+        and is a useful introduction to how GitHub/remote repos operate.
       </li>
     </ul>
   </div>
@@ -418,7 +427,7 @@ below that apply generally to distributing the code.
     <ul class="cons">
       <li>
         You need to set up a GitHub OAuth app that students grant permission to
-        operator on their GitHub account.
+        access and operate on their GitHub account.
       </li>
       <li>
         You'll be storing a GitHub access token for each student on the race
@@ -427,7 +436,7 @@ below that apply generally to distributing the code.
       <li>
         This is overkill if students aren't going to push commits back up to
         their repo, there's no real need to fork — instead use a simpler 
-        mnechanism.
+        mechanism.
       </li>
     </ul>
   </div>
@@ -488,7 +497,7 @@ below that apply generally to distributing the code.
   <div>
     <label>Details</label>
     <p>
-      This is the same as the previous one, except students use a VCSCode
+      This method is the same as the previous one, except students use a VCSCode
       workfile that clones their repo into an external account (such as a Unix
       server), which they then access through a SSH tunnel through VSCode.
       <br>
