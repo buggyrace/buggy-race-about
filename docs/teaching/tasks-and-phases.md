@@ -48,9 +48,9 @@ you set it to `0` then no recommendation will be shown.
 This fluid approach — letting students decide how thoroughly to address each
 task — worked well with the range of students. Inevitably, some students do
 the minimum. But most engaged students did a lot more. It's also common — and
-a good indicator of a growing strategy of approaching software development —
-to see students revisit tasks to add more coverage to them once they've
-worked out a way to implement a solution.
+a good indicator of a growing appreciation of what's involved in software
+development — to see students revisit tasks to add more coverage to them once
+they've worked out a way to implement a solution.
 
 ## The contents of a task
 
@@ -60,8 +60,8 @@ You can edit all or part of any task. Each task has the following components:
 
 Every task has a clear, short, mnemonic name so students can unambiguously
 identity what they are working on and what they need to achieve. The number of
-the phase to which it belongs is part of this name — for example, task See
-[task 2-COST]({{site.content.demo_url}}/project/tasks/2-COSST), is the task
+the phase to which it belongs is part of this name — for example,
+[task 2-COST]({{site.content.demo_url}}/project/tasks/2-COST) is the task
 that adds calculation of the total cost of the buggy, and there's a link (via
 your race server) to its definitive description.
 
