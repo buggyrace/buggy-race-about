@@ -62,8 +62,9 @@ Every task has a clear, short, mnemonic name so students can unambiguously
 identity what they are working on and what they need to achieve. The number of
 the phase to which it belongs is part of this name — for example,
 [task 2-COST]({{site.content.demo_url}}/project/tasks/2-COST) is the task
-that adds calculation of the total cost of the buggy, and there's a link (via
-your race server) to its definitive description.
+that makes the buggy editor calculate the total cost of the buggy, which is
+in phase 2. Your race server uses the task name to create a definitive link
+(via your server) to the task's complete description.
 
 ### Task problem statement
 
@@ -107,10 +108,11 @@ task list and its links with your students.
 
 ## Downloading and uploading all tasks in one go
 
-Because the tasks are inherently verbose, if you want to edit them, you can
-download a single markdown file that contains them all. You can then edit
-this file — keeping the basic structure you'll see in the example you've
-downloaded — and upload when you're happy with it. This _replaces all the
+The tasks are inherently verbose, so it can be inconvenient to edit them
+in a form in your browser. If you want to edit them, you can download
+a single markdown file that contains them all. You can then edit this file
+— keeping the basic structure you'll see in the example you've downloaded —
+and upload it when you're happy with your changes. This _replaces all the
 tasks on the server_ in one go, so may be a more convenient way for you to
 customise your tasks if there's a lot you want to change.
 
