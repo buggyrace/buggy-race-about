@@ -56,7 +56,7 @@ and the sort of things you need to think about before you start.
   
 ### Customise it
 
-> Run through the set-up phase, making the config fit to the the way you or
+> Run through the set-up phase, making the config fit to the way you or
 > your institution want to run the project. Most settings have sensible
 > defaults, so this isn't too arduous.  
 > → [customising](../customising)

@@ -17,7 +17,7 @@ There are basically two ways to host this — either self-host (on your own
 or your institution's infrastructure, or on a third-party hosting provider),
 or in the cloud, using Heroku.
 
-The students do **not** their programming work on the race server — that
+The students do **not** do their programming work on the race server — that
 happens on their own machines (or in the cloud): see [Where to run the
 app?](../buggy-editor/running-where).
 
