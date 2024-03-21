@@ -30,20 +30,50 @@ running, try running `npm run build` and look for diagnostic/error messages.
 
 ---
 
+## I see "There was a problem at start-up" (and code 500)
+
+The message that accompanies this is "Warning: app had unpopulated database
+(missing table): need to run migrations first, or schema.sql?". If you are
+seeing this it means you managed to run the race server before you'd populated
+the database. Specifically, you might have successfully created the database 
+and the app may even be connecting to it, but the tables it expected to find in
+there aren't there yet. You won't be able to run your set-up phase until
+you've fixed this. 
+
+If you're using Docker or Heroku, the start-up process automatically runs 
+Flask's database migrations before it launches the webserver, which takes care
+of this (the migrations make the tables). If that's not working for you — which
+is unexpected, so get in touch — there will be failure messages in the build
+or release logs that should help with diagnosis.
+
+If you're doing things manually (for example, on your own dev machine), make
+sure your [`DATABASE_URL` setting](../customising/env.html#database_url) looks
+right. One test for this is to switch your `DATABASE_URL` to use SQLite — just
+as a test — and see if you get the same problem. If you don't, it's a
+connection problem (SQLite doesn't use any auth credentials, which is why
+that's a good test: you can't get a password or username wrong). If that's OK,
+you probably just need to run `flask db upgrade`. After that, try launching the
+main app again. Look inside
+[`env.example`](https://github.com/buggyrace/buggy-race-server/blob/main/env.example)
+to see what those `DATABASE_URL`s can look like, including the SQLite one.
+
+If you can't run the Flask database schema migrations, then there's a 
+[`schema.sql`](https://github.com/buggyrace/buggy-race-server/blob/main/db/schema.sql)
+in the server repo that you can use to populate the database manually instead.
+
+
+---
+
 ## Server responds to every request with unknown key error (and code 500)
 
-If you _always_ see a 500 error and in the logs that's an unknown key error
-looking for a config setting — your server isn't connecting to the database.
-All the config (except environmental overrides) is in the database, so if
-the server can't connect to that the first thing the app fails at will be
-getting its own configuration. Check that your database server is running and
-that the `DATABASE_URL` you've specified for it works for you if you try
-connecting directly.
-
-The first thing to investigate is whether you've specified the connection
-details correctly. This is the environment variable `DATABASE_URL`: see this
-[information about `DATABASE_URL`](../customising/env.html#database_url)
-and the other env variables that can affect it.
+This used to be the behaviour of the server if the database connection was
+missing at start-up — we've since changed this, so now you get the more informative
+warning [described above](#i-see-there-was-a-problem-at-start-up-and-code-500).
+If you're still seeing this message then maybe the database connection has gone
+down while the app has been running. Try restarting the database, check it's
+running, and that the connection criteria in your
+[`DATABASE_URL` setting](../customising/env.html#database_url) still work. Once
+you know the database is good again, restart the race server.
 
 
 ---
