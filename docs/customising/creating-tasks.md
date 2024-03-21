@@ -18,16 +18,17 @@ has_children: false
 # Creating the tasks
 
 {: .navigation}
-**Admin** → **Config** → **Tasks** → **Load new tasks into database**
+**Admin** → **Config** → **Tasks** → **Load or bulk-edit tasks**
 
 When the set-up phase is complete — all the config settings have been defined
 — you can create the tasks your students are going to attempt.
 
 Each task includes hints and descriptions, so is quite verbose. The default
 tasks are the ones that come built-in with the server, and you might not need
-to change them. But if you want to, because they are so verbose, they are
-available in a single markdown file which you can download and edit conveniently
-offline: see the instructions below.
+to change them. But if you want to, there are two ways to customise them. You
+_can_ edit each one individually, up on the race server. Alternatively, you can
+download the whole lot as a single markdown file, which you can then edit
+conveniently offline and upload when you're done: see the instructions below.
 
 
 {: .note}
@@ -39,17 +40,6 @@ match your config settings (especially in the "GitHub" group, i.e,,
 Specifically, tasks `0-GET` and `0-RUN` may differ based on which distribution
 method you are using.
 
-
-{: .screenshot}
-![Screenshot of upload tasks dialogue](/docs/img/screenshots/upload-tasks.png)
-
-{: .caption}
-The upload tasks dialogue. If you don't provide a file to upload, the race
-server will use the default tasks — but the first two tasks of phase 0 (`0-GET`
-getting the source code, and `0-RUN` running it) will be customised depending
-on how you've decided to distribute the buggy editor source code to your
-students).
-
 Creating the tasks is potentially destructive (it will delete any existing
 tasks), so you need the [authorisation code](auth) to do it.
 
@@ -60,10 +50,19 @@ this once the project has started!
 
 ## Accept the defaults
 
+{: .screenshot}
+![Screenshot of upload tasks dialogue](/docs/img/screenshots/upload-tasks-default.png)
+
+{: .caption}
+Loading the default tasks. The first two tasks of phase 0 (`0-GET` getting the
+source code, and `0-RUN` running it) will be customised depending on how you've
+decided to distribute the buggy editor source code to your students).
+
 The simplest way to create the tasks is to accept the default tasks delivered
 with the project. To do this, don't upload anything. Choose `Yes` to the
 _Are you sure?_ prompt, select the distribution method that matches how your
-students get the buggy editor source code, and press the red upload button.
+students get the buggy editor source code, and press the red **Load tasks into
+database** button.
 
 This will populate the database with the default 27 tasks in 7 phases.
 
@@ -73,31 +72,55 @@ in your configuration settings! See more about
 [how the buggy editor code is distributed](../buggy-editor/distributing-the-code),
 which includes the _specific_ settings needed for each method.
 
+If you want to edit the tasks offline (see the next section), but you're not
+using the default distribution method, it's probably easiest to load the
+defaults like this first, being careful to choose the appropriate distribution
+method. This changes the first two tasks' texts to match your setup (this is a
+default-within-a-default!). Now you can download the _current_ tasks as
+markdown and that change will already be in there... and you can dive in and
+edit them further.
 
 ## Or upload a customised markdown file
 
+{: .screenshot}
+![Screenshot of upload tasks dialogue](/docs/img/screenshots/upload-tasks-bulk-markdown.png)
+
+{: .caption}
+Instead of using the default tasks, or editing them in place, you can download
+them all in one markdown file, edit it, and upload it back here — the race
+server parses that file and inserts the individual tasks into the database.
+Because tasks can be verbose, this may be much more convenient.
+
 Before you can upload your own markdown file, you need to download one from
 the race server as a basis to work from. There are two **Download** buttons on
-the task admin page.
-
-* **Download the _current_ tasks as Markdown**  
-  The downloaded file will contain the complete details of existing tasks in a
-  markdown file that you can edit (and subsequently upload). This file contains
-  edits (if any) that have been made since the tasks were added to the database.
+the load task admin page (below the form).
 
 * **Download the _default_ tasks as Markdown**  
   The downloaded file will contain the complete details of the default tasks
   — regardless of what's in the database. These will always be the unedited,
   default tasks.
 
+* **Download the _current_ tasks as Markdown**  
+  The downloaded file will contain the complete details of existing tasks in a
+  markdown file that you can edit (and subsequently upload). This file contains
+  edits (if any) that have been made since the tasks were added to the database.
+
+Be careful to respect the organisation of the markdown file you downloaded,
+because the server uses that structure when it parses what you send back up.
+If you break it badly (or upload a file that isn't markdown) you'll probably
+see a **Error parsing/adding tasks: No tasks found** error. The level of the
+headings is significant: `#` for the name, `##` for the title, and `###` for
+the `Problem`, `Solution` and `Hints` sections. If you deviate from this
+structure, the file probably won't parse the way you expect.
+
 ## Then edit on the race server
 
-Once you've created them, you can edit the tasks on the race server. In practice
-this allows you to make refinements and corrections to the tasks that are now
-held in the database.
+Once you've loaded or uploaded them, you can edit the tasks on the race
+server. In practice this allows you to make refinements and corrections to the
+tasks that are now held in the database.
 
-Remember that any changes you make here **will not be seen** until you publish
-(or re-publish) the task list.
+Remember that any changes you make here **will not be seen** by the students
+until you publish (or re-publish) the task list.
 
 {: .warning}
 Be careful about materially changing any tasks once the project has started:
@@ -146,9 +169,9 @@ The file is made publicly available on your race server at
 `/project/tasks/issues.csv`, and there's a button on the admin tasks page so
 you can download it in case this is useful to you.
 
-Note that the task admin page also allows you to download the _current_ tasks
-in this form, which might not be the same as the published issues (if you have
-edited the tasks since you last published them).
+Note that the load task admin page also allows you to download the _current_
+tasks in this form, which might not be the same as the published issues (if you
+have edited the tasks since you last published them).
 
 
 ---
