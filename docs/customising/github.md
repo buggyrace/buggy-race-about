@@ -24,14 +24,14 @@ behaviour are all in this "GitHub" group.
 To see which settings are required for each distribution method, see the
 individual descriptions (the settings are listed in the "Set up" section):
 
-<ol class="upper-alpha">
-  <li><a href="../buggy-editor/distributing-the-code#method-zip">Students download a zipfile from race server</a> (the default)</li>
-  <li><a href="../buggy-editor/distributing-the-code#method-page">Students get the source code from a custom page you set up elsewhere</a></li>
-  <li><a href="../buggy-editor/distributing-the-code#method-repo">Students get the source code from your repo</a></li>
-  <li><a href="../buggy-editor/distributing-the-code#method-fork">Students manually fork your repo into their own account</a></li>
-  <li><a href="../buggy-editor/distributing-the-code#method-autofork">Server forks your repo into students' GitHub accounts</a></li>
-  <li><a href="../buggy-editor/distributing-the-code#method-vsremote">Server forks your repo into students' GitHub accounts and then clones via VSCode</a></li>
-</ol>
+<ul>
+  <li><a href="../buggy-editor/distributing-the-code#method-zip"><strong>zip</strong>: Students download a zipfile from race server</a> (the default)</li>
+  <li><a href="../buggy-editor/distributing-the-code#method-page"><strong>page</strong>: Students get the source code from a custom page you set up elsewhere</a></li>
+  <li><a href="../buggy-editor/distributing-the-code#method-repo"><strong>repo</strong>: Students get the source code from your repo</a></li>
+  <li><a href="../buggy-editor/distributing-the-code#method-fork"><strong>fork</strong>: Students manually fork your repo into their own account</a></li>
+  <li><a href="../buggy-editor/distributing-the-code#method-autofork"><strong>autofork</strong>: Server forks your repo into students' GitHub accounts</a></li>
+  <li><a href="../buggy-editor/distributing-the-code#method-vsremote"><strong>vsremote</strong>: Server forks your repo into students' GitHub accounts and then clones via VSCode</a></li>
+</ul>
 
 
 ## Config settings ("GitHub")

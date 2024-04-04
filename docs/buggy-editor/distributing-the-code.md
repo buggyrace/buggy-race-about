@@ -38,12 +38,12 @@ everyone is doing it the same way.
 
 ## Different methods to choose from
 
-- [Students download a zipfile from race server](#method-zip) (the default)
-- [Students get the source code from a custom page you set up elsewhere](#method-page)
-- [Students get the source code from your repo](#method-repo)
-- [Students manually fork your repo into their own account](#method-fork)
-- [Server forks your repo into students' GitHub accounts](#method-autofork)
-- [Server forks your repo into students' GitHub accounts and then clones via VSCode](#method-vsremote)
+- **zip**: [Students download a zipfile from race server](#method-zip) (the default)
+- **page**: [Students get the source code from a custom page you set up elsewhere](#method-page)
+- **repo**: [Students get the source code from your repo](#method-repo)
+- **fork**: [Students manually fork your repo into their own account](#method-fork)
+- **autofork**: [Server forks your repo into students' GitHub accounts](#method-autofork)
+- **vsremote**: [Server forks your repo into students' GitHub accounts and then clones via VSCode](#method-vsremote)
 
 
 {: .rhul}
@@ -636,7 +636,7 @@ to get the zipfile.
 To download a zipfile containing the editor source files, click on the green
 **Code** button (1) and then **Download ZIP** (2)
 
-### Enabling automatic forking (methods E & F)
+### Enabling automatic forking (methods *autofork* & *vsremote*)
 
 The server can automatically fork the repo into each student's GitHub account
 (and, optionally, inject GitHub issues too — one for each task). We recommend
