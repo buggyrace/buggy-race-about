@@ -26,6 +26,10 @@ If you're setting the `PROJECT_REPORT_TYPE` manually, the only recognised
 values are nothing (empty string), `report` or `poster`.
 
 
+
+
+
+
 ## Config settings ("Project")
 
 {: .config-settings}

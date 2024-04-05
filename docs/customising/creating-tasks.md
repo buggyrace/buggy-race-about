@@ -145,35 +145,26 @@ published (not when they are uploaded into the database). This means that if
 you change config settings, you should re-publish the task list to reflect the
 latest values.
 
+## Publish the task list
 
-## Issues CSV
+{: .navigation}
+**Admin** → **Config** → **Tasks** → **Publish task list**
 
-{: .note}
-The issues CSV described here is optional. The race server might use it, but
-normally you won't need to — so skip this if you're not interested.
+You must explicitly publish the task when you have finished editing the tasks.
+The [task list](../static-content/task-list) is the static, public page that
+describes the work you require your students to do. If you make any changes
+either to tasks or config settings they might refer to, you should publish (or re-publish) the task list.
 
-The most important effect of publishing the task list is that the current tasks,
-_and_ the current values of any config settings they reference, are rendered
-into HTML as the task list. Students work directly from this task list.
+The race server will show the **Publish** button in red if it detects
+changes since you last published it, but this isn't foolproof — especially
+if you've made any changes to config settings since you last published it...
+so remember to publish the tasks whenever you change something within them!
 
-However, the publishing process _also_ generates an "issues CSV" which the
-server will use if you've set the config setting
-`IS_USING_GITHUB_API_TO_INJECT_ISSUES` to `Yes`. The issues CSV is effectively
-a static file "frozen" to be in synch with the published task list. It is a
-headerless CSV file with two columns:
-
-* name and title
-* problem description and link to the task on the race server (markdown)
-
-The file is made publicly available on your race server at
-`/project/tasks/issues.csv`, and there's a button on the admin tasks page so
-you can download it in case this is useful to you.
-
-Note that the load task admin page also allows you to download the _current_
-tasks in this form, which might not be the same as the published issues (if you
-have edited the tasks since you last published them).
-
+Note that publishing the task list will also publish a
+[CSV file containing the tasks](../static-content/issues-csv),
+which may be useful if your students are using GitHub or GitLab.
 
 ---
 
- * Previous: [GitHub config](github)
+* Previous: [GitHub config](github)
+

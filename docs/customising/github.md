@@ -34,6 +34,10 @@ individual descriptions (the settings are listed in the "Set up" section):
 </ul>
 
 
+
+
+
+
 ## Config settings ("GitHub")
 
 {: .config-settings}
@@ -52,7 +56,3 @@ individual descriptions (the settings are listed in the "Set up" section):
 | `GITHUB_CLIENT_ID` | The GitHub client ID for the GitHub app that the server uses to fork the buggy editor repo into a student's own GitHub account.  <br><br> _Default value:_ _none/empty_ |
 | `GITHUB_CLIENT_SECRET` | A string that exactly matches the client secret stored on the GitHub app that the server uses to fork the buggy editor repo into a student's own GitHub account. You only need this if `IS_USING_GITHUB_API_TO_FORK` is `Yes`.  <br><br> _Default value:_ _none/empty_ |
 
-
- ---
- * Previous: [Races config](races)
- * Next: [Creating the tasks](creating-tasks)
