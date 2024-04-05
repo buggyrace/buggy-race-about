@@ -8,11 +8,14 @@ from os import path
 # +++ SCRIPT CHANGES MARKDOWN FILES IN docs/customise SO BE CAREFUL +++
 #
 # Run this from root, e,g, python3 src/custom-util.py
-# You'll need an input file containing the markdown produced by the race server
-# here: <race-server>/admin/config-docs-helper
-# Copy that into a file (the default is src/input.py) and run this script,
-# which will replace the existing tables of config settings in
-# customise
+# You'll need an input file containing the markdown produced by the race server:
+# go to https://<your-race-server>/admin/config-docs-helper
+# ...and copy that into a file (the default is src/input.txt) and run this
+# script, which will replace the existing tables of config settings in the
+# "customise" section of the docs.
+# You probably want to commit those changes (once you've checked they're OK!)
+# and push it up to https://github.com/buggyrace/buggy-race-server if you're
+# updating the public/"official" docs.
 
 DEFAULT_INPUT_FNAME = "src/input.txt"
 
@@ -33,7 +36,7 @@ SKIP_UPDATE = [ConfigGroupNames.SOCIAL]
 
 config_detail_lines = {}
 
-input_fname = input("Filename from /admin/config-docs-helper? ") or DEFAULT_INPUT_FNAME
+input_fname = input(f"Filename containing content from /admin/config-docs-helper? (default is {DEFAULT_INPUT_FNAME}) ") or DEFAULT_INPUT_FNAME
 with open(input_fname) as input_file:
     line = input_file.readline()
     while line:
