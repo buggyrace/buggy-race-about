@@ -229,7 +229,7 @@ Clarification of terms used in the project and its documentation.
 <dd>
   The templating system used inside Flask (for example, for specifying HTML
   pages).
-  <br>→ <a href="htthttps://pypi.org/project/Jinja2">Jinja2 docs</a>
+  <br>→ <a href="https://pypi.org/project/Jinja2">Jinja2 docs</a>
 </dd>
 
 <dt id="mass">mass</dt>
