@@ -20,6 +20,10 @@ the project tasks as issues. This can be useful if you're encouraging your
 students to use an online version control system like GitHub or GitLab, and
 want to expose them to those systems' use of issues.
 
+{: .demo}
+Download the [task issues in CSV format]({{site.content.demo_url}}/project/tasks/issues.csv).
+
+
 > If you're [distributing the editor code](../buggy-editor/distributing-the-code)
 > with the **autofork** method (so `IS_USING_GITHUB_API_TO_INJECT_ISSUES` is
 > set to `Yes`), the race server uses this CSV to automatically inject the
