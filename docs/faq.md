@@ -32,13 +32,34 @@ running, try running `npm run build` and look for diagnostic/error messages.
 
 ## I see "There was a problem at start-up" (and code 500)
 
-The message that accompanies this is "Warning: app had unpopulated database
-(missing table): need to run migrations first, or schema.sql?". If you are
-seeing this it means you managed to run the race server before you'd populated
-the database. Specifically, you might have successfully created the database 
-and the app may even be connecting to it, but the tables it expected to find in
-there aren't there yet. You won't be able to run your set-up phase until
-you've fixed this. 
+Check the message that accompanies the warning. There are two distinct
+kinds of problem — notice which of these two you're seeing:
+
+* "probably a failure to connect: check DATABASE_URL and error logs"
+* "app had unpopulated database (missing table): need to run migrations first,
+   or schema.sql?"
+
+In the first case, check that your `DATABASE_URL` is correct. If you're using
+something like Postgres or mySQL, check that you really can (manually) connect
+to the database using the authorisation criteria you've included in the URL.
+Remember that the username and password here are for the _database_, and
+nothing to do with (for example) any passwords or auth codes on the race server.
+
+There are a couple of special config settings which affect the way that
+`DATABASE_URL` is used, so if you're sure the username and password you've
+provided in that string are correct, these might help: see more about
+[database-related environment variables](customising/env#important-variables-you-must-or-should-set).
+
+You can see examples of what the `DATABASE_URL` should look like for different
+kinds of database (including the SQLite one: see note below) by looking inside
+[`env.example`](https://github.com/buggyrace/buggy-race-server/blob/main/env.example).
+
+In the second case — where you see the "unpopulated database" message — the
+connection (and hence `DATABASE_URL`) is OK but you've managed to run the race
+server before you've populated the database. Specifically, the tables the app
+expected to find in there don't exist yet. These are usually set up by running
+Flask's _database migration_. You won't be able to run your set-up phase until
+you've fixed this.
 
 If you're using Docker or Heroku, the start-up process automatically runs 
 Flask's database migrations before it launches the webserver, which takes care
@@ -46,20 +67,20 @@ of this (the migrations make the tables). If that's not working for you — whic
 is unexpected, so get in touch — there will be failure messages in the build
 or release logs that should help with diagnosis.
 
-If you're doing things manually (for example, on your own dev machine), make
-sure your [`DATABASE_URL` setting](../customising/env.html#database_url) looks
-right. One test for this is to switch your `DATABASE_URL` to use SQLite — just
-as a test — and see if you get the same problem. If you don't, it's a
-connection problem (SQLite doesn't use any auth credentials, which is why
-that's a good test: you can't get a password or username wrong). If that's OK,
-you probably just need to run `flask db upgrade`. After that, try launching the
-main app again. Look inside
-[`env.example`](https://github.com/buggyrace/buggy-race-server/blob/main/env.example)
-to see what those `DATABASE_URL`s can look like, including the SQLite one.
+You can explicitly run the database migrations using:
 
-If you can't run the Flask database schema migrations, then there's a 
+     flask db upgrade
+
+If you can't run the Flask database schema migrations, but you know your way
+around SQL, then there's a 
 [`schema.sql`](https://github.com/buggyrace/buggy-race-server/blob/main/db/schema.sql)
 in the server repo that you can use to populate the database manually instead.
+
+An extra tip: if you're having database problems, one thing to try is switching
+your `DATABASE_URL` to use SQLite — just as a test — and see if you get the
+same problem. This can be handly because SQLite doesn't use any authorisation
+credentials, which is why that's a good smoke test: you can't get a password or
+username wrong.
 
 
 ---
