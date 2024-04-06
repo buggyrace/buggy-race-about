@@ -147,7 +147,7 @@ default is an SQLite database which is _not suitable for production_):
       <p>
         Incidentally, Heroku generates a URI prefixed with
         <code>postgres://</code> which is deprecated in SQLAlchemy, so the race
-        server automatically rewrites this to <code>postrgesql://</code>.
+        server automatically rewrites this to <code>postgresql://</code>.
       </p>
     </div>
   </div>
