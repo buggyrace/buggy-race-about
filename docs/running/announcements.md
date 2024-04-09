@@ -103,7 +103,7 @@ to click to put it right. This can happen if your HTML does not properly
 balance (that is, you opened an HTML tag such as `<div>` that you didn't close).
 
 Don't panic! Use the **Suppress HTML in list** button (or go to
-`/admin/announcements/nohtml` on your race server) to stop the HTML rendering
+`/admin/announcements/no-html` on your race server) to stop the HTML rendering
 in the list view (and at the top of the screen). Then you can click **Edit** on
 the offending announcement, and fix the offending HTML in the announcement's
 text.
