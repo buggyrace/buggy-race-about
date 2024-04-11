@@ -51,6 +51,7 @@ Clarification of terms used in the project and its documentation.
 <li><a href="#specs">specs</a></li>
 <li><a href="#staff-user">staff&nbsp;user</a></li>
 <li><a href="#static-content">static&nbsp;content</a></li>
+<li><a href="#submission">submission</a></li>
 <li><a href="#task">task</a></li>
 <li><a href="#task-list">task&nbsp;list</a></li>
 <li><a href="#task-text">task&nbsp;text</a></li>
@@ -385,6 +386,16 @@ Clarification of terms used in the project and its documentation.
   href="{{site.content.demo_url}}/tech-notes/static-vs-dynamic">see it on the
   demo server</a>).
   <br>→ <a href="static-content">static content</a> (on the race server)
+</dd>
+
+<dt id="submission">submission, submit</dt>
+<dd>
+  If you're running the project as an assessed piece of work, which may or may
+  not include a <a href="#report">report</a>, then you'll probably need a mechanism by which students submit their work. The server doesn't handle
+  submission itself, but you can use some of the
+  <a href="customising/project">"Project" config settings</a> to inform
+  students about how and when to submit their work.
+  <br>→ <a href="teaching/submission">how students submit </a> 
 </dd>
 
 <dt id="task">task</dt>
