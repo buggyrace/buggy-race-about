@@ -49,6 +49,7 @@ Clarification of terms used in the project and its documentation.
 <li><a href="#rhul">RHUL</a></li>
 <li><a href="#set-up-phase">set-up&nbsp;phase</a></li>
 <li><a href="#specs">specs</a></li>
+<li><a href="#sql">SQL</a></li>
 <li><a href="#staff-user">staff&nbsp;user</a></li>
 <li><a href="#static-content">static&nbsp;content</a></li>
 <li><a href="#submission">submission</a></li>
@@ -363,6 +364,17 @@ Clarification of terms used in the project and its documentation.
   useful to students building their buggy editors.
   <br>→ <a href="{{ site.content.demo_url }}/specs">specs on the demo site</a>
 </dd>
+
+<dt id="sql">SQL</dt>
+<dd>
+  SQL (Structured Query Language) is used to store and recover data about
+  each student's buggy in their <a href="#config-setting">config settings</a>. 
+  There are examples of SQL (or more specifically, Python calling SQL) in the
+  source code your students start with, so they can make progress with the
+  project even if you're not teaching SQL explicitly.
+  <br>→ <a href="https://en.wikipedia.org/wiki/SQL">SQL</a> 
+</dd>
+
 
 <dt id="staff-user">staff user</dt>
 <dd>
