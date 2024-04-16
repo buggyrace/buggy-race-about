@@ -10,12 +10,17 @@ from os import path
 # Run this from root, e,g, python3 src/custom-util.py
 # You'll need an input file containing the markdown produced by the race server:
 # go to https://<your-race-server>/admin/config-docs-helper
-# ...and copy that into a file (the default is src/input.txt) and run this
+#
+# >  Note:
+# >  If you get a 404 there (after you're logged in as staff!), make sure
+# >  the ENV setting for that server _IS_DOCS_HELPER_PAGE_ENABLED is set to 1.
+#
+# ...and copy that into a file (the default is src/input.txt). Then run this
 # script, which will replace the existing tables of config settings in the
 # "customise" section of the docs.
 # You probably want to commit those changes (once you've checked they're OK!)
 # and push it up to https://github.com/buggyrace/buggy-race-server if you're
-# updating the public/"official" docs.
+# updating the public "official" docs.
 
 DEFAULT_INPUT_FNAME = "src/input.txt"
 
