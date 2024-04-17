@@ -99,6 +99,25 @@ you know the database is good again, restart the race server.
 
 ---
 
+## Error: Could not locate a Flask application
+
+If you see this error and you're trying to launch the app — or the database
+migrations — from the command line, then perhaps your `FLASK_APP` environment
+variable is wrong (maybe from another project entirely?), you haven't set
+one at all, or you're trying to launch from the "wrong" directory.
+
+First, `cd` to the directory that contains the application files and try again.
+
+If that doesn't work, then the error message probably goes on to suggest
+setting `FLASK_APP` or using the `--app` option. How you do that depends a
+little which platform you're on: see
+[set or export env variables](customising/env#set-or-export-environment-variables-explicitly).
+Provided you are in the right directory (because the values here are
+relative), either one of these values should work: `autoapp.py` or
+`buggy_race_server/app.py`.
+
+---
+
 ## Can I delete a user?
 
 Yes, and if you delete a user their buggy and and task texts will be deleted
