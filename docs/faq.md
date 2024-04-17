@@ -203,6 +203,31 @@ to show them. See [running races](races/running) for more information.
 
 ---
 
+## I made a task text but it's not showing up! Where is it?
+
+You can access you own task texts by clicking on **Settings** →
+**List your task texts**.
+This is where you can find all the texts you've made, as well as editing (or
+even deleting) them.
+
+If you're not an enrolled student (for example, you're a Teaching Assistant
+or admin) then your texts _will not appear_ on 
+[the main text matrix](teaching/the-report.html#using-task-texts).
+That only shows the texts for active (that is, not suspended) students.
+
+This is why, while you're setting up the course, it's OK to set staff users to
+_also_ be "enrolled students", so you can experiment with things like this and
+see how it looks. Just remember to [edit the user](running/user-management.html#edit-a-user)
+to remove enrolled student status from any staff accounts before the course
+starts.
+
+Note that task texts can be disabled _entirely_ by setting
+`IS_STORING_STUDENT_TASK_TEXTS` to `No`: see the
+['Tasks' config settings](customising/tasks).
+
+
+---
+
 ## How can I find out what version I'm running?
 
 Go to **Admin** → **Dashboard** → **System info** where it's at the top of the
