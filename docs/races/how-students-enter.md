@@ -21,7 +21,7 @@ Students "upload a buggy" (JSON output from their
 automatically entered into the next race** (and all subsequent races).
 
 As staff, this is why you should fluctuate the race costs between races (and,
-if you have control over them when you run the races) environmental factors —
+if you have control over them when you run the races, environmental factors
 such as number of laps). This rewards students who have the most control over
 _changing their buggy_ to match different criteria... which is the superpower
 that their buggy editor provides.
