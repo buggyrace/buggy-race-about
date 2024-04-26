@@ -12,7 +12,7 @@ has_children: false
 {: .navigation}
 **Admin** → **Config** → Config:**Social**
 
-You can add up to to four links to external sites, which are displayed on the
+You can add up to four links to external sites, which are displayed on the
 home page and on the footer of the tech notes. These are useful for linking to
 social media sites or other pages that are related to your course.
 

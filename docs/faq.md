@@ -120,7 +120,7 @@ relative), either one of these values should work: `autoapp.py` or
 
 ## Can I delete a user?
 
-Yes, and if you delete a user their buggy and and task texts will be deleted
+Yes, and if you delete a user their buggy and task texts will be deleted
 too. If you delete a user, you can't get them back, so only do it if you're
 sure you don't want their data (for example, if they were added by mistake).
 See [Deleting a user](running/user-management.html#deleting-a-user).
@@ -180,7 +180,7 @@ done that, maybe [deactivate or delete the new one](#can-i-delete-a-user).
 
 Announcements are uniquely dangerous because if you accidentally fail to
 "balance your tags" they can have a destructive effect on page layout
-(including the pages for fixing it). You can resolve this this by editing the
+(including the pages for fixing it). You can resolve this by editing the
 announcement to remove the offending HTML. Specifically, you can
 [disable the HTML to get to the edit-announcements pages](running/announcements.html#recovering-from-an-announcement-with-critically-broken-html).
 

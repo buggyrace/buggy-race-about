@@ -137,7 +137,7 @@ there is one.
 ### Example: using first name as a username
 
 Suppose you've configured your race server such that students just need a
-username and password (the simplest configuration). All you've got from from
+username and password (the simplest configuration). All you've got from
 college admin is a spreadsheet with columns "Full name", "class" and "email
 address". Save the spreadsheet as a CSV and upload it to the Pre-registration
 CSV utility, and click **Show options**.

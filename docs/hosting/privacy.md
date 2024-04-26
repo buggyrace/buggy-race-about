@@ -106,7 +106,7 @@ tracking student engagement.
 
 However, we do record _when_ students are logged in and active on the site. A
 summary of this information is presented on the admin dashboard showing which
-students have logged in in the last day, the last week, or never. See 
+students have logged-in in the last day, the last week, or never. See 
 [tracking progress](../teaching/progress) for more about how you can see
 which students are keeping up, and which are falling behind.
 
