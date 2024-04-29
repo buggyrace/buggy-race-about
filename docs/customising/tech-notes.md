@@ -17,9 +17,11 @@ the tech notes (explanatory pages relating to the tech and some specifics of
 the tasks) are handled.
 
 {: .note}
-You cannot edit the tech notes that are presented by the server, but you can
-host them externally (so you can then change and customise them): see
-`TECH_NOTES_EXTERNAL_URL`, which redirects requests away from the race server.
+You cannot edit (via the web interface) the tech notes that are presented by the
+server, but you can host them externally (so you can then change and customise
+them): see `TECH_NOTES_EXTERNAL_URL`, which redirects requests away from the
+race server. Alternatively, if you have forked the server repo, you can edit
+the source that is then deployed to your own server.
  
 See more about [managing the tech notes](../static-content/tech-notes).
 

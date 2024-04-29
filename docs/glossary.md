@@ -35,6 +35,7 @@ Clarification of terms used in the project and its documentation.
 <li><a href="#heroku">Heroku</a></li>
 <li><a href="#jinja-templates">Jinja&nbsp;templates</a></li>
 <li><a href="#mass">mass</a></li>
+<li><a href="#pelican">Pelican</a></li>
 <li><a href="#petrol">petrol</a></li>
 <li><a href="#phase">phase</a></li>
 <li><a href="#poster">poster</a></li>
@@ -239,6 +240,18 @@ Clarification of terms used in the project and its documentation.
   Most components of a racing buggy have a mass. The total mass of a buggy may
   be a factor of its performance during the race. The mass values are available
   as part of the <a href="#specs">specs</a>.
+</dd>
+
+<dt id="pelican">Pelican</dt>
+<dd>
+  Pelican is a Python-based static site generator. When you publish the
+  <a href="#tech-notes">tech notes</a>, the race server uses Pelican behind the
+  scenes to convert the (mostly) markdown source files into pretty HTML pages.
+  The server handles this for you, so you don't need Pelican unless you decide
+  to <a href="tech-notes#publishing-the-tech-notes-yourself">extract and host
+  the tech notes yourself</a>. (If you're familiar with GitHub Pages: Pelican is
+  effectively a Python-only alternative to <a href="https://jekyllrb.com">Jekyll</a>).
+  <br>→ <a href="https://getpelican.com/">Pelican website</a>
 </dd>
 
 <dt id="petrol">petrol</dt>
