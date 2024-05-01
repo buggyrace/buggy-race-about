@@ -228,6 +228,20 @@ Note that task texts can be disabled _entirely_ by setting
 
 ---
 
+## What's the difference between an external ID and an external username?
+
+Very little — both are _optional_ settings (with string values) that you can
+save with each of your users if that's helpful. We used both at at Royal
+Holloway because students had both a college username (which we were using for
+the more [complex VSCode distribution method](distributing-the-code#method-vsremote))
+and an underlying Moodle ID which helped us when doing our assessments/marking.
+
+You can enable either or both of these, together with giving them descriptive
+names and example values, via the ["Users" group of config settings](customising/users).
+
+
+---
+
 ## How can I find out what version I'm running?
 
 Go to **Admin** → **Dashboard** → **System info** where it's at the top of the
