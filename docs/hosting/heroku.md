@@ -341,6 +341,7 @@ You don't need to do a Git pull because Heroku always gets the latest version
 of the branch you've specified (and we always make sure the head of the `main`
 branch is the latest working version).
 
+See also this information about [setting up nightly backups on Heroku](../running/database-backup#heroku-backups).
 
 
 

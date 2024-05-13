@@ -7,6 +7,15 @@ parent: Day-to-day running
 
 # Backing up the database
 
+<details close markdown="block">
+  <summary>
+    Contents of this page:
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
 {: .note}
 The race server does **not** provide a backup mechanism. This page encourages
 you to consider implementing regular (nightly?) backups, but it can't tell you
@@ -37,16 +46,14 @@ kinds of event:
 > If you have set `IS_STORING_STUDENT_TASK_TEXTS` to `Yes` (in the "Tasks" group
 > of config settings), then students who have been accumulating their task texts
 > on the server are at risk of losing them, because the interface _does_ allow
-> them to edit (of course) **and delete** their own texts as well as add them.
+> them to edit (of course) and therefore delete their own texts.
 > 
 > The server does _not_ keep an audit trail of edits to the texts, but if you're
 > taking nightly backups then it is at least feasible that you could recover
-> lost work from previous days for a distraught student. You'd probably need
-> to load the SQL into a standalone database to extract the lost data, and it
-> will be fiddly. There is an
-> [open enhancement issue (#181)](https://github.com/buggyrace/buggy-race-server/issues/181)
-> to implement a more convenient way to get old task texts back into the
-> database.
+> lost work from previous days for a distraught student. There's a utilty to
+> support you, but it presupposes you can load the backup into a local copy
+> of a race server in order to extract them. See
+> [Recovering texts](recovering-texts) for details.
 
 ## Example backup script: with Docker
 
@@ -78,6 +85,49 @@ backup_filename="buggy_race_bk_$(date +\%Y\%m\%d).sql.gz"
 /usr/bin/docker exec -t $container_name pg_dump -U $database_username $database_name | /usr/bin/gzip > $backup_dir/$backup_filename
 ```
 
+## Heroku backups
+
+If you're [hosting on Heroku](../hosting/heroku), then currently you can
+schedule nightly backups of the _whole_ PostgreSQL database. See
+[Heroku's backup documentation](https://devcenter.heroku.com/articles/heroku-postgres-backups).
+
+You'll need to know the name of your app and possibly that of its database too
+(`APP_NAME` and `DATABASE_ID` in the examples below). The app name is clearly
+displayed when you log into your Heroku account. The database ID is shown as
+the name of the Heroku PostGreSQL "Add-on", and will look something like
+`postrgresql-banana-123`.
+
+If you don't provide a database ID, Heroku should use your app's default
+database by inspecting the `DATABASE_URL` you're using.
+
+To schedule nightly backups (e.g., at 3am every night in the UK), do this:
+
+```
+heroku pg:backups:schedule DATABASE_ID --at "03:00 Europe/London" --app APP_NAME
+Scheduling automatic daily backups of DATABASE_ID at 03:00 Europe/London... done
+```
+
+To get information on the backups you've got:
+
+    heroku pg:backups --app APP_NAME
+
+To download the latest backup:
+
+    heroku pg:backups:download --app APP_NAME
+
+The file this pulls down is in PostgreSQL's binary dump format. You can convert
+it into SQL text (such as an SQL file) using
+[`pg_restore`](https://www.postgresql.org/docs/current/app-pgrestore.html):
+
+    pg_restore latest.dump -f - > sql_statements.sql
+
+Be sure to check Heroku's information about how long backups are retained up on
+their servers.
+
+If you're storing personal data in your database (for example, GitHub
+credentials or even email addresses) you need to handle your local backups just
+as securely locally as you do up on Heroku. See also the information about
+[privacy considerations on the race server](../hosting/privacy).
 
 ## Static content backup
 
