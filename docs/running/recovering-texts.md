@@ -69,8 +69,17 @@ On your local race server, populated from the database backup, go to the user
 (the **Load texts as JSON** button is at the bottom of the page).
 
 {: .navigation}
-**Admin** → **Texts** (or **Users**) → User (by username) → **Load texts as JSON** →
-**Download as JSON (admin)**
+**Admin** → **Texts** (or **Users**) → User (by username) → **Load texts as JSON**
+
+This takes you to the "Task texts... JSON" page where you can download the task
+texts for this user in JSON format. Notice that this screen shows the _most
+recent timestamp on a task text_. Check that this matches the date you expected:
+if you've populated this local server with a backup, you should not see a
+timestamp here that is more recent than that backup. (Task texts are timestamped
+with both created-at and modified-at times, and this is showing you the most
+recent of all of those for the user whose texts you are recovering).
+
+Click on the **Download User's texts as JSON** button.
 
 You'll get a JSON file which contains the student's texts at the time you took
 that backup. You have just extracted the texts (for this single user) in a
