@@ -109,8 +109,8 @@ to the race-server app, find **Settings** and click **Reveal config settings**.
 
 ## Important variables you must or should set
 
-You **must** set an environment variable called `DATABASE_URL` (if you don't, the
-default is an SQLite database which is _not suitable for production_):
+You **must** set an environment variable called `DATABASE_URL`. If you do not,
+the application will not run: this is a feature not a bug.
 
 <div class="card">
   <h3 id="database_url">
@@ -159,6 +159,13 @@ default is an SQLite database which is _not suitable for production_):
       </li>
       <li>
         <code>mysql+mysqlconnector://username:password@localhost:3306/buggy</code>
+      </li>
+      <li style="margin-top:1rem;">
+        <p>
+          Do not use SQLite for production!
+          This is for development work:
+        </p>
+        <code>sqlite:////tmp/buggy-race-server.db</code>
       </li>
     </ul>
   </div>
