@@ -26,21 +26,37 @@ Students are listed before staff.
 You can choose which columns are displayed by clicking the white buttons at
 the top of the table: they toggle the display of the respective column. The
 show/hide choices are stored in your browser, so will be used whenever you
-revisit this page.
+revisit this page. For example, once the project is running you probably don't
+need to see the date each user was created, or their first login timestamp.
+The user table can be a bit crowded, so you can also choose to truncate all
+timestamps by only showing dates without HH:MM times.
 
 {: .note}
-In general, only administrators who know the authorisation code can change 
-other users' data.  
-Depending on config settings (in the "Users" group), Teaching Assistants may
-be able to add staff comments and reset students' passwords.
+In general, only administrators who know the authorisation code can change
+other users' data. Depending on config settings (in the
+["Users" group](../customising/users)), Teaching Assistants may be able to add
+staff comments and reset students' passwords.
 
-### Active vs. inactive users
+## Active vs. inactive users
 
 If you mark a user as _inactive_, they are effectively suspended: they won't
 be able to log in, their existing login session will be terminated, and they
 won't be included in any downloads.
 
-### Types of user
+{: .rhul }  
+Our definitive list of enrolled students came from the Moodle (we
+exported that list, as a CSV, to
+[register the students](../registering-users/spreadsheet) on the race server).
+Inevitably one or two of those students might no longer be on the course, but
+that doesn't always become apparent until term has started. Marking those as
+_inactive_ on the race server kept everything in synch with the Moodle list —
+no missing students — but kept them out of the way from our day-to-day running
+of the project: Inactive students are not included in totals when [tracking
+progress](../teaching/progress) or [running races](../races).
+
+## Types of user
+
+### Students
 
 A user can be an _enrolled student_. This is used to distinguish students
 who are actively engaged in the project from other users (such as staff —
@@ -77,11 +93,19 @@ There are two types of staff user:
 The username you nominated as the admin user during the setup-up phase is
 automatically an administrator.
 
+### Other users: guest observers
+
+It is possible for a user to be neither student not staff. These are
+effectively guest accounts — you probably don't need them unless you want to
+give access to colleagues who are not actively working on the course. Remember
+to consider [privacy implications](../hosting/privacy) of granting access to
+the race server.
+
 ## Inspect a user
 
-When you're looking at the list on the _Users_ page, you can click on **✱** to
-view the for-staff-only _comment_. The JSON button (with a spanner icon)
-displays the last-uploaded JSON.
+When you're looking at the list on the _Users_ page, you can click on the
+speech bubble icon to view the for-staff-only _comment_. The JSON button (with
+a spanner icon) displays the last-uploaded JSON.
 
 You can click on the username to inspect the user's settings and task texts
 in detail.
@@ -93,8 +117,8 @@ users on the server (that is, students do not see these comments). By default
 Teaching Assistants can edit comments as well as read them (although you can
 disable this by setting `IS_TA_EDIT_COMMENT_ENABLED` to `No`). You'll see
 comments (if any) when you inspect a user, but there's also a button (marked
-<code>✱</code>) for quick inspection when you're listing all users (**Admin** →
-**Users**).
+with a speech bubble) for quick inspection when you're listing all users
+(**Admin** → **Users**).
 
 ## Changing passwords
 
@@ -132,6 +156,33 @@ You can change the staff status of any user when you edit them.
 Be careful not to revoke administrator status from _all_ the staff users. If
 you do, you'll need to create a new administrator by overriding config settings
 using environment variables.
+
+
+## Enabling or disabling logins
+
+{: .note}
+**Administrators**' logins are never disabled: this setting is ignored for
+admin accounts. 
+
+{: .navigation}
+**Admin** → **Users** → **Enable/disable logins**
+
+You can disable (or enable) logins in bulk: choose students, Teaching
+Assistants, or all users. Disabling a login simply prevents access to the
+logged-in pages of the server, until you enable it again. This might be useful
+if you want to disable logins for all students before or after the end of term,
+for example.
+
+If you want to disable logins for all but a handful of students (perhaps they
+have extensions on their deadlines), first disable _all_ student logins using
+this bulk setting, and then edit the exceptions individually to enable them.
+
+{: .navigation}
+**Admin** → **Users** → _**Username**_ → **Edit**
+
+Enabling or disabling a user's login is one of the settings available when you
+[edit a user](#edit-a-user).
+
 
 ## Deleting a user's GitHub details
 

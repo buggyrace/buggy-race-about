@@ -132,6 +132,9 @@ and also prevents them logging in. Inactive users' buggies are excluded from
 race files: when you download a race file for a race, only buggies belonging to
 active users are included.
 
+You can also [disable a user's login](running/user-management.html#enabling-or-disabling-logins)
+if you just want to prevent them logging in or changing anything on the server.
+
 ---
 
 ## I've forgotten the authorisation code
