@@ -162,7 +162,8 @@ using environment variables.
 
 {: .note}
 **Administrators**' logins are never disabled: this setting is ignored for
-admin accounts. 
+admin accounts. Similarly, an _inactive_ user can never log in, regardless of
+whether their login is enabled or not.
 
 {: .navigation}
 **Admin** → **Users** → **Enable/disable logins**
@@ -210,9 +211,8 @@ form**. The delete form requires confirmation and the authorisation code.
 When you delete a user, their buggy and task texts (if any) will also be
 deleted. You can't get them back; there is no undo. For this reason, consider
 marking them as _inactive_ (set **Is active?** to `No`), which effectively
-suspends them without destroying any data.
-
-An user who has been marked as not active cannot log in.
+suspends them without destroying any data. A user who has been marked as not
+active cannot log in.
 
 
 ## Downloading user data
