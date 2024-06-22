@@ -323,9 +323,9 @@ Clarification of terms used in the project and its documentation.
   The program or process that is used to actually <em>run</em> a race. It
   calculates the outcome of a race and produces an updated
   <a href="#race-file">race file</a> containing the results and the events
-  needed that the <a href="#race-player">race player</a> needs to replay it.
-  There is a Python script race runner included in the race server repo source
-  code, but it's deliberately not part of the on-line server.
+  that the <a href="#race-player">race player</a> needs to replay it. There is
+  a Python script race runner included in the race server repo source code, but
+  it's deliberately not part of the on-line server.
   <br>→ <a href="races/running">running races</a>
 </dd>
 
