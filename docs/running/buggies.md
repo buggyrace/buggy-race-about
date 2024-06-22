@@ -49,13 +49,18 @@ items in it: the number of wheels (`qty_wheels`), and the local ID (see below).
 
 You can see the default values for a buggy in the specifications. You can
 usually spot default buggies in the list of buggies (or in the races) because
-they have a plain white pennant, four wheels, and a single unit of petrol.
+they have a default plain pennant, four wheels, and a single unit of petrol.
 
 {: .demo}
 See the [buggy specifications]({{site.content.demo_url}}/specs/).
 
 In general, up on the server you'd expect to see more settings in more buggies
 deviate from the default settings as students develop their editors.
+
+{: .note}
+By default, racing buggies fly a middle-grey pennant, but you can change this
+default (ideally at the start of your project): see the `DEFAULT_FLAG_COLOR`
+setting in the ['Races' config group](../customising/races).
 
 
 ## What is the `id2` field?

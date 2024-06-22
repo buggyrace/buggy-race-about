@@ -30,6 +30,7 @@ of the project — so the report needs to be presented as a page within the app.
 Specifically, it's a route to `/report` in each student's own buggy editor app.
 
 {: .note}
+"Report" or "poster"?  
 In fact — for historic reasons — originally this was `/poster` (which is still
 a configurable alternative... but we think `/report` makes more sense). There
 is still a promotional part of the report ("tell us why we should use your
@@ -56,6 +57,12 @@ The server provides buttons so a logged-in student can download their
 accumulated task texts as a single file suitable for dropping into the
 `report.html` template that they are presumably adding to their buggy editor.
 This can also do markdown to HTML conversion.
+
+The convenience to students of saving task texts as-you-go, and then generating
+the report from that effectively automatically, is the incentive for students
+to use this mechanism. In turn you get a reasonably good indicator of students'
+progress, as you see the texts increasing in both size and quantity over the
+duration of the project.
 
 
 

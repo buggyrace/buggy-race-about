@@ -91,6 +91,8 @@ The task text "matrix" shows which tasks students have saved notes against —
 these can be downloaded to form their reports towards the end of the project.
 You can click on a cell to view the student's text for the given task.
 
+For more about monitoring this, see
+[day-to-day running: viewing students' texts](../running/students-texts).
 
 Some students may prefer to take their notes offline, using other tools. That
 of course is fine, provided that is what they are doing.
@@ -99,6 +101,7 @@ of course is fine, provided that is what they are doing.
 Because we are _not_ doing any assessment on the server, the task texts are
 not a mechanism for _knowing_ the progress students are making... but they are
 a useful indicator.
+
 
 ### Buggy JSON uploads
 
