@@ -30,6 +30,7 @@ values are nothing (empty string), `report` or `poster`.
 
 
 
+
 ## Config settings ("Project")
 
 {: .config-settings}
