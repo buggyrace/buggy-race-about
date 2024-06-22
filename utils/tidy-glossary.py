@@ -1,5 +1,5 @@
 # tidy glosary
-# runs through the glossary page and adds a aliggified ID to each term
+# runs through the glossary page and adds a sluggified ID to each term
 
 import re
 
