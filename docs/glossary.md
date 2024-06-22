@@ -43,6 +43,7 @@ Clarification of terms used in the project and its documentation.
 <li><a href="#race-file">race&nbsp;file</a></li>
 <li><a href="#race-player">race&nbsp;player</a></li>
 <li><a href="#race-rules">race&nbsp;rules</a></li>
+<li><a href="#race-runner">race&nbsp;runner</a></li>
 <li><a href="#race-server">race&nbsp;server</a></li>
 <li><a href="#racetrack">racetrack</a></li>
 <li><a href="#replay">replay</a></li>
@@ -315,6 +316,17 @@ Clarification of terms used in the project and its documentation.
   The rules that define whether or not a buggy is allowed to take part in a 
   given race. One of the rules is that a buggy must have an even number of 
   wheels. The rules are embedded in the <a href="#specs">specs</a>.
+</dd>
+
+<dt id="race-runner">race runner</dt>
+<dd>
+  The program or process that is used to actually <em>run</em> a race. It
+  calculates the outcome of a race and produces an updated
+  <a href="#race-file">race file</a> containing the results and the events
+  needed that the <a href="#race-player">race player</a> needs to replay it.
+  There is a Python script race runner included in the race server repo source
+  code, but it's deliberately not part of the on-line server.
+  <br>→ <a href="races/running">running races</a>
 </dd>
 
 <dt id="race-server">race server</dt>
