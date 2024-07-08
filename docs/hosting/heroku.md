@@ -131,7 +131,7 @@ your GitHub one. When you've selected it, click **Connect**.
 {: .caption}
 Connect your Heroku app to your own GitHub account's fork of the buggy race
 server by using GitHub (1), finding the repo you just forked (2) and clicking
-**Connect** (3). The owner of the repo will be you (and not buggyrace),
+**Connect** (3). The owner of the repo will be you (and not `buggyrace`),
 because you're connecting to your own fork.
 
 {: .note}
@@ -177,11 +177,11 @@ We recommend you **add the following three config vars**, exactly like this:
 | `IS_REWRITING_DB_URI_PW_AS_QUERY` | `1`                           |
 
 {: .note}
-`FLASK_APP` is always necessary here, and it's a file path so do _not_ change
-it (that is, it does not need to match your server name).  
-Our recent experience
-is that the current version of SQLAlchemy running on Heroku (hosting its
-PostgreSQL service on Amazon AWS) won't connect without the latter two.
+`FLASK_APP` is always necessary here, and it's a file path so use the value
+exactly as shown above (that is, it is not supposed to match your server name).  
+Our recent experience is that the current version of SQLAlchemy running on
+Heroku (hosting its PostgreSQL service on Amazon AWS) won't connect without the
+latter two.
 
 If you want to set a non-default authorisation code _before_ you set up, you
 can do so here by adding a value for `AUTHORISATION_CODE`. The very first step
