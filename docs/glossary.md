@@ -26,6 +26,7 @@ Clarification of terms used in the project and its documentation.
 <li><a href="#cost">cost</a></li>
 <li><a href="#demo-site">demo&nbsp;site</a></li>
 <li><a href="#demo-user">demo&nbsp;user</a></li>
+<li><a href="#dns">DNS</a></li>
 <li><a href="#docker">Docker</a></li>
 <li><a href="#ext_id">ext_id</a></li>
 <li><a href="#ext_username">ext_username</a></li>
@@ -173,6 +174,17 @@ Clarification of terms used in the project and its documentation.
   site</a> so they can't accidentally lock other admins (us) out of the demo
   site. If you spot this at all it will only be on our demo site — you won't
   see this on your own site because yours isn't a demo!
+</dd>
+
+<dt id="dns">DNS</dt>
+<dd>
+    A Domain Name Server (DNS) controls the internet address of your race server.
+    If you're running the race server on a custom domain — that is, different
+    from that of the hosting provider — you'll need to make sure this has been
+    set up. The details will vary depending to how you're running your server,
+    but in general you'll need to be able to edit your DNS records to "point"
+    at the underlying web address (e.g., using a <code>CNAME</code> record).
+    <br>→ <a href="hosting/heroku#9-add-a-domain-if-you-want">example of custom domain on Heroku</a>
 </dd>
 
 <dt id="docker">Docker</dt>
