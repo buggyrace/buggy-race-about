@@ -162,8 +162,11 @@ Click on **Submit Order Form**.
 
 Back at your app page (now with a database resource too), go to the
 **Settings** tab and by _Config vars_ click on **Reveal config vars**.
+
 You'll see that Heroku has put one in there already called `DATABASE_URL` (you
-can't edit this — and you don't need to).
+can't edit this — and you don't need to). If you've just started the database,
+don't panic if you don't see it yet: it might take a few minutes until it
+appears... you can do all the following steps up until "deploy the site".
 
 We recommend you **add the following three config vars**, exactly like this:
 
@@ -173,16 +176,22 @@ We recommend you **add the following three config vars**, exactly like this:
 | `FORCED_DB_URI_SSL_MODE`          | `require`                     |
 | `IS_REWRITING_DB_URI_PW_AS_QUERY` | `1`                           |
 
-_Technical note:_
+{: .note}
 `FLASK_APP` is always necessary here, and it's a file path so do _not_ change
-it (that is, it does not need to match your server name). Our recent experience
+it (that is, it does not need to match your server name).  
+Our recent experience
 is that the current version of SQLAlchemy running on Heroku (hosting its
 PostgreSQL service on Amazon AWS) won't connect without the latter two.
 
 If you want to set a non-default authorisation code _before_ you set up, you
-can do so here too. Note that the very first step of your set up on the site
-will be to change this. So you really only need to do this if you are not going
-to run the set up process as soon as you have deployed.
+can do so here by adding a value for `AUTHORISATION_CODE`. The very first step
+of your set-up on the site will be to change this again. So this is a temporary
+setting that prevents anyone accessing the set-up phase (for example, while
+you're waiting for a custom domain to propagate) with the default auth code
+("`CHANGEME`") before you set it to a secure one. This temporary one isn't as
+secure because it's in plain-text up on Heroku (albeit behind a secure login),
+which is why you should delete it once you've finished your set-up phase.
+
 
 | Name                              | Value                         |
 |-----------------------------------|-------------------------------|
@@ -199,11 +208,12 @@ available to the public (that is, your colleagues and students) at a URL like
 You can run like that — especially if you're linking to it from a course
 module site (such as Moodle or Blackboard).
 
-However you may prefer to run the server on a custom domain (for example, your
-institution's, or register a new domain — they are relatively inexpensive, and
-remember you don't need hosting for this — Heroku are already providing that).
-You or your tech team will need to have access to the Domain Name Service (DNS)
-records for the domain you are going to use.
+However, you may prefer to run the server on a custom domain. For example, you
+could run your race server on a subdomain or path on your institution's own
+domain. Alternatively, you could register a new domain — they are relatively
+inexpensive, and remember you don't need hosting for this — Heroku are already
+providing that). You or your tech team will need to have access to the Domain
+Name Service (DNS) records for the domain you are going to use.
 
 Go to the **Settings** tab and click **Add domain**. Enter the domain exactly
 as you intend (for example, for our demo site we typed `demo.buggyrace.net`).
@@ -218,6 +228,12 @@ your domain name, as the alias, to point at.
 
 Copy the "DNS target". Go to the your DNS provider and add a `CNAME` record,
 aliasing the desired domain name with the underlying, canonical one.
+
+{: .note}
+The details of _how_ to set your DNS records will vary depending on who is
+managing your domain — typically this will be your domain registrar (where you
+bought the domain), or your tech team if you are at an institution that runs its
+own.
 
 It will take a while to percolate through the internet once you've done this.
 
@@ -264,7 +280,7 @@ same URL, on the same domain, that your students will be using.
 If you added a domain (see above), Heroku will (correctly) serve a 502 Bad
 Gateway error on your custom domain (that is, _not_ the `herokuapp.com` one)
 until you've deployed. Our own experience, using Cloudflare to manage the DNS
-records, is that propogation happens surprising quickly (for example, in 10
+records, is that propagation happens surprising quickly (for example, in 10
 minutes or so).
 
 You can launch the site now — go to **Deploy** and choose **Manual deploy**.
