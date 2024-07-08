@@ -99,9 +99,16 @@ Choose an appropriate region. See these notes about
 
 ## 5. Add Python and Node.js buildpacks
 
-Now you're "in" the page for your new app, go to the **Settings** tab, and find
-**Buildpacks**. You need to add two. Click on **Add buildpack** and choose each
-of these:
+Now you're "in" the page for your new app.
+
+{: .screenshot}
+![Screenshot of Heroku app page's tabs](/docs/img/screenshots/heroku-tabs.png)
+
+{: .caption}
+There are seven tabs: first, go to **Settings**.
+
+Go to the **Settings** tab, and find **Buildpacks**. You need to add two. Click
+on **Add buildpack** and choose each of these:
 
 * **python**  
   because the race server is a Python application
