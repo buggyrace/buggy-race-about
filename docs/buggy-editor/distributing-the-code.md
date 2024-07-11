@@ -33,8 +33,8 @@ up your server, because several config settings (especially in the "GitHub"
 group) implement this decision.
 
 Here are several ways to distribute the code — they are not _all_ mutually
-exclusive, although it's probably simpler for both you and your students if
-everyone is doing it the same way.
+exclusive, although it's simpler for both you and your students if everyone is
+doing it the same way.
 
 ## Different methods to choose from
 
