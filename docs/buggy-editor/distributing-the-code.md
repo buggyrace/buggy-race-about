@@ -47,20 +47,21 @@ everyone is doing it the same way.
 
 
 {: .rhul}
-We used [the auto-forking method](#method-autofork): initially, we
-automatically forked the buggy editor into each student's GitHub account, which
-they then either cloned or downloaded by zip. Later (for the third time we ran
-the project and onwards), we semi-automated that last stage by cloning onto our
+Over the years we've used four of the distribution methods: the first two times
+we used [the auto-forking method](#method-autofork): initially, we automatically
+forked the buggy editor into each student's GitHub account, which they then
+either cloned or downloaded by zip. The third time we ran the project, we
+semi-automated that last stage by cloning onto our
 [remote server through VSCode](running-remote) — that's the
-[VScode tunnel method](#method-vsremote). In effect, we used GitHub as a
-convenient way to distribute the code — this makes it a little easier for us
-(you), and also exposes students to Git and GitHub in the process.
+[VScode tunnel method](#method-vsremote). In the fourth year we switched to using
+the department's own GitLab server, and directed students to the repo — that's
+[the repo method](#method-repo).
 <br>
 Once students had the code, we explicitly made it clear that using Git or
-GitHub was entirely optional within the project, and most never used it (which
-was fine). But those who did — because we'd injected the issues too — were free
-to play with it _properly_.
-
+GitHub/GitLab was entirely optional within the project, and most never used it
+(which was fine). But those who did — because we'd injected the issues too —
+were free to play with it _properly_. For more on this, see the information on
+[the issues CSV](../static-content/issues-csv).
 
 {: .note}
 There are some [additional notes](#things-to-consider-when-distributing-the-code)
