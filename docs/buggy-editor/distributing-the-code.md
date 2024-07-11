@@ -226,7 +226,7 @@ below that apply generally to distributing the code.
   <div>
     <label>GitHub?</label>
     <p>
-      <em>you:</em> GitHub account
+      <em>you:</em> GitHub account (or <a href="../glossary#gitlab">GitLab)</a>
       <br>
       <em>students:</em> optional
     </p>
@@ -308,7 +308,8 @@ below that apply generally to distributing the code.
   </div>
   <div>
     <label>GitHub?</label>
-    <p>required</p>
+    <p>required  (or <a href="../glossary#gitlab">GitLab)</a>
+    </p>
   </div>
   <div>
     <label>Link</label>
@@ -333,6 +334,11 @@ below that apply generally to distributing the code.
     <label>Pros</label>
     <ul class="pros">
       <li>
+        Note: if your institution runs a <a href="../glossary#gitlab">GitLab</a>
+        server then this mechanism works just as well, but without the need
+        for students to have GitHub accounts
+      </li>
+      <li>
         Exposes students to GitHub and Git practice — because they now they
         can <code>push</code> back up to their own upstream (GitHub) repo.
       </li>
@@ -347,7 +353,8 @@ below that apply generally to distributing the code.
     <label>Cons</label>
     <ul class="cons">
       <li>
-        Students need GitHub accounts.
+        Students need GitHub accounts (but see GitLab note above, as an
+        alternative)
       </li>
       <li>
         If students aren't going to push commits back up to their repo, there's
@@ -438,6 +445,13 @@ below that apply generally to distributing the code.
         This is overkill if students aren't going to push commits back up to
         their repo, there's no real need to fork — instead use a simpler 
         mechanism.
+      </li>
+      <li>
+        If your institution is running a GitLab server and you prefer to use
+        that, you <strong>cannot</strong> use this method: the race server code
+        for this is GitHub-specific... but your tech team may be able to fork
+        the editor repos directly into students' GitLab accounts for you, which
+        is even better — ask them!
       </li>
     </ul>
   </div>
@@ -537,6 +551,11 @@ below that apply generally to distributing the code.
       <li>
         This can be opaque or confusing for students who are unfamiliar with
         remote servers.
+      </li>
+      <li>
+        As for the autofork method above, this won't work if you're using your
+        own GitLab server instead of GitHub... but in that case, you may be able
+        to populate your students' GitLab repos directly — ask your tech team!
       </li>
     </ul>
   </div>
