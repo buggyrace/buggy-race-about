@@ -219,6 +219,31 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="https://flask.palletsprojects.com/en/2.3.x/">Flask docs</a>
 </dd>
 
+<dt id="github">GitHub</dt>
+<dd>
+  GitHub is a widely-used online service for hosting git repos — we use it to
+  distribute the source code for this race server and associated code (including
+  this documentation site). Your students only need to be exposed to Git and
+  GitHub (or GitLab) if you choose to use it — it depends on how you choose
+  to <a href="buggy-editor/distributing-the-code">distribute the (editor) code</a>
+  to them. See also: <a href="#gitlab">GitLab</a>.
+  <br>→ <a href="https://github.com">GitHub</a>
+</dd>
+
+<dt id="gitlab">GitLab</dt>
+<dd>
+  GitLab provides software that includes the capability of hosting your own
+  Git repos — like <a href="#github">GitHub</a> but running locally. You might
+  come across this if your institution runs GitLab as an alternative to GitHub.
+  From the point of view of running Buggy Racing, there is very little
+  difference between the two, so the terms GitHub/GitLab can almost be used
+  interchangeably. (In the <a href="#rhul">RHUL</a> case studies, we used GitHub
+  for the first three years, but then switched to GitLab when the CompSci
+  department started using that service).
+  <br>GitLab's CE edition is available under an MIT-style (open source) license.
+  <br>→ <a href="https://gitlab.com">GitLab website</a>
+</dd>
+
 <dt id="greensock">Greensock<br>(GSAP)</dt>
 <dd>
   A widely-used JavaScript library for managing animation on web pages, used by

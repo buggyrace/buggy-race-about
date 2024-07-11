@@ -54,8 +54,8 @@ either cloned or downloaded by zip. The third time we ran the project, we
 semi-automated that last stage by cloning onto our
 [remote server through VSCode](running-remote) — that's the
 [VScode tunnel method](#method-vsremote). In the fourth year we switched to using
-the department's own GitLab server, and directed students to the repo — that's
-[the repo method](#method-repo).
+the department's own [GitLab](../glossary#gitlab) server, and directed students
+to a copy of the editor repo — that's [the repo method](#method-repo).
 <br>
 Once students had the code, we explicitly made it clear that using Git or
 GitHub/GitLab was entirely optional within the project, and most never used it
