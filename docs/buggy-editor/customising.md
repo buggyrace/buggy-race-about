@@ -85,7 +85,7 @@ your students running their editor apps. For example, the default README
 directs students to find their running app at `localhost:5000` at Flask's
 default port 5000. But if you will be encouraging your students to run on
 [pythonanywhere](https://www.pythonanywhere.com) or
-[repl.it](https://replit.com)] that might be misleading.
+[repl.it](https://replit.com) that might be misleading.
 
 {: .note}
 The README suggestion text incorporates your config settings (including,
