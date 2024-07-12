@@ -204,6 +204,10 @@ If the **Replay** button is there but the problem is that the race won't run
 wrong race file. It must be a race file with _events_ in it for the player
 to show them. See [running races](races/running) for more information.
 
+The route of a race is defined by the path inside an [SVG file](glossary#svg):
+if that won't load, the race can't be replayed. If that's the problem, see
+[Racetrack not working: "Problem getting SVG"](#racetrack-not-working-problem-getting-svg).
+
 ---
 
 ## I made a task text but it's not showing up! Where is it?
@@ -241,6 +245,37 @@ and an underlying Moodle ID which helped us when doing our assessments/marking.
 
 You can enable either or both of these, together with giving them descriptive
 names and example values, via the ["Users" group of config settings](customising/users).
+
+
+## Racetrack not working: "Problem getting SVG"
+
+If you look at a race or a racetrack as an admin and you see "Problem getting
+SVG", there are a couple of things to check. If you have this problem, it
+probably means the race won't replay on the [race player](races/replaying)
+either.
+
+First, try hitting the racetrack SVG's URL in the browser (view either the race
+or the racetrack in the admin): you should not get a 404. If you do, then
+either the URL is wrong, or the SVG file has been deleted since the URL was
+added.
+
+If it's not that, the other reason might be a [CORS
+problem](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors). This
+can happen if the SVG is coming from a different domain than your race server.
+If that's the case, look in your browser's console for messages such as
+`Cross-Origin Request Blocked`. If that's what you see, you need to either
+modify the server that's sending the SVG file to send the correct CORS headers
+or, if you can't do that, host it on a server that does. SVG files served from
+[GitHub Pages]() sites have wildcarded CORS headers, so those should work. The
+most certain way to avoid CORS problems is to serve the SVG file from the same
+domain as the requester — in this context, that's almost certainly the race
+server whose race player you are running. If you're hosting your own race
+server consider adding static files such as the racetrack SVG to the repo you've
+forked. Look in `buggy_race_server/race/assets/tracks` to see the race server's
+default racetracks, and add your own alongside those. You can access them on
+your server at `/races/assets/tracks/filename.svg`. Note that racetrack assets
+like this are treated differently from general static content (such as images
+or CSS) because they are not handled by [Webpack](glossary#webpack).
 
 
 ---
