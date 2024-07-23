@@ -56,25 +56,55 @@ where students discover if they've missed — or failed to apply — rules too
 > See [about races: What the races show](../races/about#what-the-races-show)
 > for more about the underlying value of race results.
 
-## Events in a race
-
-The detailed events that occurred during the race may be included in the race
-file you've uploaded (if you use the default Python script for running the
-race, they will be). These can be used to show an animated replay of the race.
-For more about this, see [replaying race](replaying).
-
-## Visibility of results
-
-The results you upload are only visible to students if you've set both
-_Is visible?_ and  _Are results visible?_ to be `Yes` — see
-[editing races](editing).
-
 {: .warning}
 Be sure to upload the race file that **contains the results** of the race —
 it's possible to get this wrong, because the race file did exist before you ran
 the race. Running the race creates a new copy of the race file. If you
 accidentally upload the wrong one, you'll see a warning that the _file contains
 no results_.
+
+## What if there really are no results?
+
+If you need to mark a race as complete without having any buggies entered into
+it, [edit the race](editing) and set the "Results uploaded at" date without
+uploading a race file. This might arise if there were no students' buggies on
+the server when you ran the race, or if the race had to be cancelled for some
+other reason. If you want to add an explanation for the race not having been
+run, consider editing its `description` text too, which is displayed on the
+public results page.
+
+It's also possible to [delete the race](editing#deleting-a-race) if, after
+you've created it, you decide you aren't ever going to run it.
+
+## Visibility of results
+
+{: .navigation}
+**Races** → (specific race) **Results**  
+
+The results of races are public (that is, visible to students) as soon as you
+upload them only if you've set both _Is visible?_ and  _Are results visible?_ to
+be `Yes` — see [editing races](editing). You should always make the race visible
+to students in time for them to prepare and submit their racing buggy, but
+there's a case for keeping the results hidden until you've uploaded them and
+checked everything looks OK.
+
+
+{: .navigation}
+**Admin** → **Races** → Race: **Details** →  **View results (preview)**
+
+If you've set _Is visible?_  or _Are results visible?_ for this race to `No`,
+anyone with a staff account can view a preview of the results. This allows you
+to preview (and indeed replay) races before the students can. You can of course
+make the results public at any time by editing the race and changing _Are
+results visible?_ to `Yes`.
+
+
+## Events in a race
+
+The detailed events that occurred during the race may be included in the race
+file you've uploaded (if you use the default Python script for running the
+race, they will be). These can be used to show an animated replay of the race.
+For more about this, see [replaying race](replaying).
 
 
 ---
