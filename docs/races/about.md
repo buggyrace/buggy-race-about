@@ -12,8 +12,8 @@ has_children: false
 Top menu bar: **Races**
 
 Although this is the _Buggy Racing_ project, really the students' focus is on
-their buggy editors — the web app each student develops in order to create
-and customise the specification for a racing buggy.
+their [buggy editors](../buggy-editor/the-editor) — the web app each student
+develops in order to create and customise the specification for a racing buggy.
 
 It _is_ feasible to run this project without running any races, although that's
 not ideal.
