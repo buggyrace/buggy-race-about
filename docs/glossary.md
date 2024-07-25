@@ -56,8 +56,8 @@ Clarification of terms used in the project and its documentation.
 <li><a href="#sql">SQL</a></li>
 <li><a href="#staff-user">staff&nbsp;user</a></li>
 <li><a href="#static-content">static&nbsp;content</a></li>
-<li><a href="#svg">SVG</a></li>
 <li><a href="#submission">submission</a></li>
+<li><a href="#svg">SVG</a></li>
 <li><a href="#task">task</a></li>
 <li><a href="#task-list">task&nbsp;list</a></li>
 <li><a href="#task-text">task&nbsp;text</a></li>
@@ -475,15 +475,6 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="static-content">static content</a> (on the race server)
 </dd>
 
-<dt id="svg">SVG</dt>
-<dd>
-  SVG (Scalable Vector Graphics) is a text-based format that describes graphics
-  in terms of their geometry instead of as pixel-by-pixel bitmaps. The race
-  server uses a <code>path</code> within an SVG file to define the route of a
-  <a href="#racetrack">racetrack</a>. You can make SVG files using drawing
-  software (look for an "export as SVG" option), or using an SVG editor online.
-</dd>
-
 <dt id="submission">submission, submit</dt>
 <dd>
   If you're running the project as an assessed piece of work, which may or may
@@ -493,6 +484,16 @@ Clarification of terms used in the project and its documentation.
   students about how and when to submit their work.
   <br>→ <a href="teaching/submission">how students submit </a> 
 </dd>
+
+<dt id="svg">SVG</dt>
+<dd>
+  SVG (Scalable Vector Graphics) is a text-based format that describes graphics
+  in terms of their geometry instead of as pixel-by-pixel bitmaps. The race
+  server uses a <code>path</code> within an SVG file to define the route of a
+  <a href="#racetrack">racetrack</a>. You can make SVG files using drawing
+  software (look for an "export as SVG" option), or using an SVG editor online.
+</dd>
+
 <dt id="task">task</dt>
 <dd>
   A task is a unit of work for a student to do. Almost every task can be
