@@ -492,6 +492,7 @@ Clarification of terms used in the project and its documentation.
   server uses a <code>path</code> within an SVG file to define the route of a
   <a href="#racetrack">racetrack</a>. You can make SVG files using drawing
   software (look for an "export as SVG" option), or using an SVG editor online.
+  <br>→ <a href="races/racetracks#how-to-make-your-own-svg">SVG details for custom racetracks</a>
 </dd>
 
 <dt id="task">task</dt>
