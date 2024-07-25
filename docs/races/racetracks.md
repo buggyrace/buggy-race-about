@@ -74,14 +74,18 @@ SVG files are text files, so you can go into a text editor and change the
 ## Detailed requirements of the SVG
 
 {: .note}
-Since the length of the path is significant — the "unit" of distance is used in
-the calculation of how far the buggies move, for example, it's a good idea to
-work on a 200 × 100 layout as there's currently no "scale" option.
+If you're using the default [race-player](../glossary#race-player), your SVG
+**must** be within a viewbox that's 200 × 100 — for example:  
+`viewBox="0 0 200 100"`  
+You cannot use a `scale` transform to fix this; the `viewBox` attribute must
+describe a 200 × 100 box.
 
 The racetrack's path SVG must contain a _single_ `path` element that describes
 a closed loop. The `fill` and `stroke` should be `none` as it's not used for
 display — it's used as the path the buggies are mapped onto during the replay
-animation.
+animation. If you do set either of these attributes to a colour, the racetrack
+will still work... but it's probably better to keep visual representation of
+the track in the bitmap image that is layered beneath it.
 
 The start point of the path is significant — it's where buggies start and end
 their laps. Buggies will follow the path in the direction described, that is,
