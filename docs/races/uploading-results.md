@@ -65,13 +65,14 @@ no results_.
 
 ## What if there really are no results?
 
+**Admin** → **Races** → Race: **Details** → **Edit** → **Abandon race**
+
 If you need to mark a race as complete without having any buggies entered into
-it, [edit the race](editing) and set the "Results uploaded at" date without
-uploading a race file. This might arise if there were no students' buggies on
-the server when you ran the race, or if the race had to be cancelled for some
-other reason. If you want to add an explanation for the race not having been
-run, consider editing its `description` text too, which is displayed on the
-public results page.
+it, you can [abandon the race](editing#abandoning-races). This might arise if
+there were no students' buggies on the server when you ran the race, or if the
+race had to be cancelled for some other reason. If you want to add an
+explanation for the race not having been run, consider editing its
+`description` text too, which is displayed on the public results page.
 
 It's also possible to [delete the race](editing#deleting-a-race) if, after
 you've created it, you decide you aren't ever going to run it.
