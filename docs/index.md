@@ -217,9 +217,9 @@ code club. Available **for free** under the GNU GPL license.
 
 ## License: free and open source software
 
-The race server and buggy editor is made available under the
-the **GNU Affero General Public License**: a free, copyleft license
-(see [gnu.org for details](http://www.gnu.org/licenses/)).
+The race server and buggy editor is made available under the **GNU Affero
+General Public License**: a free, copyleft license (see [gnu.org for
+details](http://www.gnu.org/licenses/)).
 
 In practice this means: you and your institution don't have to pay to use it
 — there's nothing to buy, because the whole thing is made freely, explicitly
