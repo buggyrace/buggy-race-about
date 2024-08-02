@@ -67,7 +67,7 @@ missing. Students visiting the tech notes link will see a 404 error.
 ## Editing the tech notes on your own server
 
 The tech notes are mostly defined as markdown files (with some HTML for content
-that's more complex, inclduding some JavaScript-driven interactive diagrams).
+that's more complex, including some JavaScript-driven interactive diagrams).
 The source is in the server repo in the `tech_notes/` folder — that folder
 includes supporting scripts and assets, so if you want to see the actual pages,
 look in `tech_notes/content/tech-notes/`. 

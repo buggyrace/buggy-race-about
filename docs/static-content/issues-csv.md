@@ -61,7 +61,7 @@ description, which is markdown text, includes a link to the task on your
 race server's task list.
 
 Remember that this CSV is updated whenever you publish the task list — so
-if you edit any tasks, or change any config settings that they refert to,
+if you edit any tasks, or change any config settings that they refer to,
 the CSV won't reflect those changes until you re-publish the task list.
 However, that the load task admin page also allows you to download the
 _current_ tasks in this form, which might not be the same as the published

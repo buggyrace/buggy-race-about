@@ -78,7 +78,7 @@ in the server repo that you can use to populate the database manually instead.
 
 An extra tip: if you're having database problems, one thing to try is switching
 your `DATABASE_URL` to use SQLite — just as a test — and see if you get the
-same problem. This can be handly because SQLite doesn't use any authorisation
+same problem. This can be handy because SQLite doesn't use any authorisation
 credentials, which is why that's a good smoke test: you can't get a password or
 username wrong.
 

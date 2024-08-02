@@ -32,7 +32,7 @@ Because they are free to edit their texts at any time during the course of the
 project, students can also (presumably accidentally) destructively edit them
 (or even delete them). This can seem catastrophic to a distressed student,
 but... if you have been retaining [database backups](database-backup) it is
-technnically feasible to recover them.
+technically feasible to recover them.
 
 For this reason the race server has a mechanism for extracting an individual
 student's task texts as a JSON file which can subsequently be used to replace
@@ -121,7 +121,7 @@ changed name (or phase) since the backup was taken, or if the username has been
 changed. Unless you've opted to ignore warnings, any such anomalies will
 prevent any changes being made.
 
-This mechanism delibeately does _not_ use the underlying `id` values for the
+This mechanism deliberately does _not_ use the underlying `id` values for the
 records it's recovering: it matches each text to user and task using their
 _names_.
 
@@ -131,7 +131,7 @@ _names_.
   on the race server: the username inside the JSON file is ignored.
 
 * **task name (or phase) doesn't match**  
-  If there is a mistamtch with any of the task names, the texts will *not* be
+  If there is a mismatch with any of the task names, the texts will *not* be
   included. You can fix this by manually editing the JSON (to have the correct
   task phases and names) and trying again.
 

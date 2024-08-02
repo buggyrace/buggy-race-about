@@ -97,7 +97,7 @@ have been run, provided you've marked them visible too).
   qualification in the race guarantees a result (even if, in the extreme case,
   the buggy doesn't move forward at all). This rewards students who manage to
   qualify (which is a key test of the quality of their buggy editor) but
-  doesn't penalise them for a bady designed buggy (e.g., one with no fuel).
+  doesn't penalise them for a badly designed buggy (e.g., one with no fuel).
   Set to _No_ for a harsher (but more real-world) approach to race results.
 
   

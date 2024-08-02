@@ -30,7 +30,7 @@ copy/rename it to `race.json`. The script doesn't change the input file; it
 creates a new (output) one.
 
 When the script has completed, [upload the race file](uploading-results) — it
-contains the results of the race as well as details of each event withint it.
+contains the results of the race as well as details of each event within it.
 
 
 ## Set-up and requirements

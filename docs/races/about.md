@@ -34,7 +34,7 @@ The race player replaying a race.
 ## What the races show
 
 It's important to remember that the objective of the project is not to _win_
-races. Although that's a laudible goal, the focus from a software development
+races. Although that's a laudable goal, the focus from a software development
 point of view is to provide a context, and an incentive, for the improving the
 buggy editor. After all, the students _start_ with a working editor: the
 incentive for the project should be to make it better.
@@ -47,7 +47,7 @@ It's a deliberate feature of the design of the project that the software that
 determines the outcome of races can (and does) run separately from the race
 server. That is, we encourage you to customise or write your own. We think there
 is case for making the outcomes of the races clearly random enough that winning
-is more a cause of delight than an testiment of engineering brilliance. In
+is more a cause of delight than an testament of engineering brilliance. In
 that respect, we ran our races more like a card game than a physics simulation.
 
 ### Total cost and race rule violations

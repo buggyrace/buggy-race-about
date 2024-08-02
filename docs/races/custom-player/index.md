@@ -51,7 +51,7 @@ There are effectively three inputs for the race player:
 
 {: .note}
 If you are also [building your own race-runner](../custom-runner) then you can
-put anything you want in the race file for your customn race-player to consume.
+put anything you want in the race file for your custom race-player to consume.
 You need to keep the parts that the race-server uses intact (the buggies'
 `position` for example is used when uploading results), but any new fields will
 be ignored. The server does not inspect anything in the `events` object.

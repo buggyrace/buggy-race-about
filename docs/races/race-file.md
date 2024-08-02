@@ -103,12 +103,12 @@ buggy originates).
 
 The "delta" is added to the buggy's linear position along the track. Therefore a
 missing delta, or a delta of `0`, result in no movement. In theory, a negative
-detla would move a buggy in reverse.
+delta would move a buggy in reverse.
 
 #### `e`: Event type
 
 An event does not need to have an event type. But if it does, the race player
-can triggert appropriate behaviour. The default race runner currently generates
+can trigger appropriate behaviour. The default race runner currently generates
 two possible events by way of an example:
 
 | Event type     | Code | Detail                                               |

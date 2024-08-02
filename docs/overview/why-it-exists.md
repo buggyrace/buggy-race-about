@@ -17,7 +17,7 @@ If you are:
   pay to use it if it already existed)
 
 then this Buggy Racing might be what you'd create if you had the time and
-webdev experience to put together. 
+web dev experience to put together. 
 
 That's how this project came to be — a Teaching Fellow frustrated by how the
 people best positioned to create such a thing (front-line programming teaching

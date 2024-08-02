@@ -43,7 +43,7 @@ you'll need to use `pip` to load them:
     pip install -r requirements.txt
 
 You must set some environment variables: two crucial ones are `FLASK_APP`
-which locates the `app.py` file, and `DATABASE_URL` which containes the
+which locates the `app.py` file, and `DATABASE_URL` which contains the
 criteria needed for connecting to the database.
 
 You _can_ export the environment variables, but the simplest way to set this

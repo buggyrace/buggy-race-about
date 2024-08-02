@@ -22,7 +22,7 @@ If you want to run a Buggy Racing project, this is what you'll need:
   * For an example of cloud-based hosting, see [more about hosting on Heroku](../hosting/heroku).
 
 * **Familiarity with Python, Flask, and basic SQL (and optionally Git)**  
-  You and your staff will be guiding, teaching, and encouraring student
+  You and your staff will be guiding, teaching, and encouraging student
   developers — and helping debug them out of the corners they code themselves
   into. The application they are building (a [buggy editor](../buggy-editor))
   is a Flask webserver connecting to a SQLite database — so you need to know
@@ -40,7 +40,7 @@ If you want to run a Buggy Racing project, this is what you'll need:
   How long the project takes to run can vary wildly depending on the experience
   of your students and how thoroughly you expect them to do the work. Although
   we've run it as a way to develop students' Python experience, it's feasible
-  to run this project with the focus on webdev, UX design, or version control
+  to run this project with the focus on web dev, UX design, or version control
   practices instead. Also, of course, it will depend on how much time you're
   expecting your students to spend on it each week.
 

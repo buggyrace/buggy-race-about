@@ -50,7 +50,7 @@ kinds of event:
 > 
 > The server does _not_ keep an audit trail of edits to the texts, but if you're
 > taking nightly backups then it is at least feasible that you could recover
-> lost work from previous days for a distraught student. There's a utilty to
+> lost work from previous days for a distraught student. There's a utility to
 > support you, but it presupposes you can load the backup into a local copy
 > of a race server in order to extract them. See
 > [Recovering texts](recovering-texts) for details.
@@ -94,7 +94,7 @@ schedule nightly backups of the _whole_ PostgreSQL database. See
 You'll need to know the name of your app and possibly that of its database too
 (`APP_NAME` and `DATABASE_ID` in the examples below). The app name is clearly
 displayed when you log into your Heroku account. The database ID is shown as
-the name of the Heroku PostGreSQL "Add-on", and will look something like
+the name of the Heroku PostgreSQL "Add-on", and will look something like
 `postrgresql-banana-123`.
 
 If you don't provide a database ID, Heroku should use your app's default

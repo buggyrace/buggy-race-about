@@ -81,7 +81,7 @@ See [more about using environment variables](../customising/env) to customise
 your race server.
 
 {: .note}
-If you get into a pickle with enviroment variables (for example if you ignored
+If you get into a pickle with environment variables (for example if you ignored
 our advice and did edit the `environment` section in your Docker files),
 remember that — once your server is running — as an admin, you can inspect the
 settings through the web interface: see [system
