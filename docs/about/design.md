@@ -128,7 +128,7 @@ does before they need knowledge of the internals of _how_ it's doing it.
 There are some idiosyncrasies of SQL that can make it tough for new learners,
 so when we ran this project ourselves we made it clear that we'd answer and
 help with any questions on SQL — even fixing code — because _that_ isn't what
-the project was about. In the vast majority of cases, student's didn't block
+the project was about. In the vast majority of cases, students didn't block
 on SQL (sometimes to their own surprise!) because _pattern matching_ turns out
 to be a very useful and universal skill that can get you a long way in a
 language you haven't learned. (For a course on databases, this is not the
