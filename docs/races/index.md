@@ -23,13 +23,13 @@ Steps for running a race:
 
 * **[Run the race](running)**  
   The race file you downloaded is the input to the program that runs the race.
-  It produces a new the race file that now includes the results, and the events
+  It produces a new race file that now includes the results, and the events
   that occurred in the race.
 
 *  **[Upload the race file](uploading-results) (now with results)**  
   This loads the results into the database on the server. If you publish the
-  race file on the web (for example, on GitHub pages), students can also
-  **[replay the race](replaying)**.
+  race file on the web (which, by default, happens on the race server),
+  students can also **[replay the race](replaying)**.
 
 
 
