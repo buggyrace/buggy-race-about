@@ -17,7 +17,7 @@ platform or module website, for example — consider running a static placeholde
 in its place.
 
 The static site is intended solely to return meaningful content to a human who
-follows the link. This may be helpful both to students, and staff who are
+follows the link. This may be helpful to students and also to staff who are
 unfamiliar with the project.
 
 This presupposes that you can either remap the DNS settings for your race server
@@ -27,10 +27,10 @@ that was running that race server.
 A static placeholder _could_ be as simple as a single page that displays a
 "not running at the moment" message. The limitation of this is that ideally you
 want to send a meaningful response to _any_ path that might have persistent
-links. The solution shown here is to run a GitHub Pages site with a custom 404
-page. (There is be a case for returning
+links. The solution shown below is to run a GitHub Pages site with a custom 404
+page. (There is a case for returning
 [302 Found](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302)
- → the holding page instead but... this really is just a placeholder!).
+ → the holding page instead, but... this really is just a placeholder!).
 
 ## An example of a placeholder site
 
@@ -61,7 +61,7 @@ a custom 404 page — only works on GitHub Pages sites when using a custom URL
 Screenshot of the [RHUL](../glossary#rhul) "placeholder" buggy racing site, with
 message "Buggy racing is currently suspended".
 
-When we're ready to run the dynaimc race server again, we spin it up (and test
+When we're ready to run the dynamic race server again, we spin it up (and test
 it on its [local](../hosting/heroku), or [heroku-specific](../hosting/heroku),
 URL), and when it's ready we change the DNS record to point `CNAME` back to
 that.
