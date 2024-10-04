@@ -78,7 +78,7 @@ race is replayed.
 ## Consider running a static placeholder
 
 If you've shared links to your race server elsewhere — for example, on your
-institution's online learning system — simple switching the race server off can
+institution's online learning system — simply switching the race server off can
 be unhelpful. This really only matters if you intend to preserve the domain or
 subdomain over time, and you want to indicate that the URL is correct (which is
 good practice!). See [running a static placeholder](placeholder).
