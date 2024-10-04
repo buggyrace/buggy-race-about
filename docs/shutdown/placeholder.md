@@ -10,7 +10,7 @@ has_children: false
 # Running a static placeholder
 
 Once you've [shut down the race server](../shutdown), any attempts to connect to
-it in a browser will, of course fail. This may well be OK — it's what happens
+it in a browser will, of course, fail. This may well be OK — it's what happens
 when any server is offline. But if the URL to the server is one that you might
 be re-using, and links to it may persist — on your institution's online learning
 platform or module website, for example — consider running a static placeholder
