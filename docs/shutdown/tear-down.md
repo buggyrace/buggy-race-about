@@ -22,10 +22,11 @@ Here are some things to consider before you shutdown your race server.
 
 ## Take a backup
 
-If you save a backup of the database, you can run up a new instance of the
-race server in the future. Almost all the config settings are preserved in
-that database backup, although for completeness you might find it helpful to
-save a [snapshot of the config settings](../customising/env#saving-a-config-snapshot-for-env)
+If you [save a backup of the database](../running/database-backup), you can run
+up a new instance of the race server in the future. Almost all the config
+settings are preserved in that database backup, although for completeness you
+might find it helpful to save a
+[snapshot of the config settings](../customising/env#saving-a-config-snapshot-for-env)
 as a text file too.
 
 {: .warning}
