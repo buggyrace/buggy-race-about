@@ -32,6 +32,9 @@ Clarification of terms used in the project and its documentation.
 <li><a href="#ext_id">ext_id</a></li>
 <li><a href="#ext_username">ext_username</a></li>
 <li><a href="#flask">Flask</a></li>
+<li><a href="#github">GitHub</a></li>
+<li><a href="#github-classroom">GitHub&nbsp;Classroom</a></li>
+<li><a href="#gitlab">GitLab</a></li>
 <li><a href="#greensock">Greensock</a></li>
 <li><a href="#hamster">hamster</a></li>
 <li><a href="#heroku">Heroku</a></li>
@@ -63,6 +66,7 @@ Clarification of terms used in the project and its documentation.
 <li><a href="#task-text">task&nbsp;text</a></li>
 <li><a href="#teaching-assistant">Teaching&nbsp;Assistant</a></li>
 <li><a href="#tech-notes">tech&nbsp;notes</a></li>
+<li><a href="#vcs">VCS</a></li>
 <li><a href="#violation">violation</a></li>
 <li><a href="#vs-code">VS&nbsp;Code</a></li>
 <li><a href="#webpack">webpack</a></li>
@@ -243,16 +247,28 @@ Clarification of terms used in the project and its documentation.
   <br>→ <a href="https://github.com">GitHub</a>
 </dd>
 
+<dt id="github-classroom">GitHub Classroom</dt>
+<dd>
+  GitHub Classroom is a teaching tool that lets you manage digital classrooms
+  within the GitHub infrastructure. If you're using it to run a Buggy Racing
+  project, you probably want to use the to
+  <a href="buggy-editor/distributing-the-code#metho-preload">preload method</a>
+  to distribute the (editor) code. Note that GitHub Classroom is a commercial
+  service, but may be available free depending on how your institution runs it.
+  <br>→ <a href="https://docs.github.com/en/education/manage-coursework-with-github-classroom/">GitHub Classroom</a>
+</dd>
+
 <dt id="gitlab">GitLab</dt>
 <dd>
   GitLab provides software that includes the capability of hosting your own
-  Git repos — like <a href="#github">GitHub</a> but running locally. You might
-  come across this if your institution runs GitLab as an alternative to GitHub.
-  From the point of view of running Buggy Racing, there is very little
-  difference between the two, so the terms GitHub/GitLab can almost be used
-  interchangeably. (In the <a href="#rhul">RHUL</a> case studies, we used GitHub
-  for the first three years, but then switched to GitLab when the CompSci
-  department started using that service).
+  Git repos — like <a href="#github">GitHub</a> but running locally. In many
+  ways there's not much difference between running Buggy Racing on GitLab
+  instead of GitHub... except you may find, as staff, that you have full access
+  to students' repos on your instution's own GitLab service. This means you can
+  use the <a href="buggy-editor/distributing-the-code#method-preload">preload
+  method</a> of distributing the source code. (In the <a href="#rhul">RHUL</a>
+  case studies, we used GitHub for the first three years, but then switched to
+  GitLab when the CompSci department started using that service).
   <br>GitLab's CE edition is available under an MIT-style (open source) license.
   <br>→ <a href="https://gitlab.com">GitLab website</a>
 </dd>
@@ -542,6 +558,19 @@ Clarification of terms used in the project and its documentation.
   notes can't be edited in place, but you can make and host your own copy and
   link to those instead.
   <br>→ <a href="static-content/tech-notes">tech notes</a>
+</dd>
+
+<dt id="vcs">VCS,<br>Version Control System</dt>
+<dd>
+  A version control system is used to manage different versions and histories
+  of files in a project. In the context of Buggy Racing, the VCS also implies
+  the web platform that hosts it. The two common examples are
+  <a href="#github">GitHub</a> and <a href="#gitlab">GitLab</a>, but others
+  (including Subversion) could also work. You don't need to explose your
+  students to use of a VCS — it depends on how you choose to
+  <a href="buggy-editor/distributing-the-code">distribute the (editor) code</a>
+  to them, and whether you require them to use version control when working on
+  it.
 </dd>
 
 <dt id="violation">violation</dt>

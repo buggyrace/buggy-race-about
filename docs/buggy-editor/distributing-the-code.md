@@ -41,6 +41,7 @@ doing it the same way.
 - **zip**: [Students download a zipfile from race server](#method-zip) (the default)
 - **page**: [Students get the source code from a custom page you set up elsewhere](#method-page)
 - **repo**: [Students get the source code from your repo](#method-repo)
+- **preload**: [You preload the source code by forking repos into students' accounts](#method-preoload)
 - **fork**: [Students manually fork your repo into their own account](#method-fork)
 - **autofork**: [Server forks your repo into students' GitHub accounts](#method-autofork)
 - **vsremote**: [Server forks your repo into students' GitHub accounts and then clones via VSCode](#method-vsremote)
@@ -55,7 +56,9 @@ semi-automated that last stage by cloning onto our
 [remote server through VSCode](running-remote) — that's the
 [VScode tunnel method](#method-vsremote). In the fourth year we switched to using
 the department's own [GitLab](../glossary#gitlab) server, and directed students
-to a copy of the editor repo — that's [the repo method](#method-repo).
+to a copy of the editor repo — that's [the repo method](#method-repo). In the
+fifth year, we experimented with [preloading the repos](#method-preload) into
+the students' GitLab accounts.
 <br>
 Once students had the code, we explicitly made it clear that using Git or
 GitHub/GitLab was entirely optional within the project, and most never used it
@@ -295,6 +298,98 @@ below that apply generally to distributing the code.
       <p>
         Keep <code>IS_USING_GITHUB_API_TO_FORK</code> set to <code>No</code>
         (unless you want to automate this — which is <a href="#method-autofork">the auto-forking method</a>).
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <h3 id="method-preload"><span>preload</span> You preload the source code by forking repos into students’ accounts</h3>
+  <div>
+    <label>Complexity</label>
+    <p class="complexity complex-2">2</p>
+  </div>
+  <div>
+    <label>GitHub?</label>
+    <p><em>you:</em> required, with have full admin access (e.g., you're using
+      <a href="">GitHub Classroom</a> or your
+      institution's own <a href="../glossary#gitlab">GitLab)</a> instance)
+      <br>
+      <em>students:</em> required (as part of the classroom/lab)
+    </p>
+  </div>
+  <div>
+    <label>Link</label>
+    <p>
+      Link on the home page goes to your GitLab repo, or a project page
+    </p>
+  </div>
+  <div>
+    <label>Details</label>
+    <p>
+      If you have <strong>full admin access</strong> to the platform that's
+      hosting your students' repos (for example, if you're running a GitLab
+      instance), then you can set everything up for them before the project
+      starts.
+    </p>
+    <p>
+      This means the students' forked repo and issues are already in place for
+      them, and they just need to `clone` it locally to start work.
+    </p>
+  </div>
+  <div>
+    <label>Pros</label>
+    <ul class="pros">
+      <li>
+        Same as 
+      </li>
+      <li>
+        Exposes students to GitHub and Git practice — because they now they
+        can <code>push</code> back up to their own upstream (GitHub) repo.
+      </li>
+      <li>
+        That extra level of de-reference (forking instead of just cloning the
+        code from your upstream repo) has subtle but powerful consequences,
+        and is a useful introduction to how GitHub/remote repos operate.
+      </li>
+    </ul>
+  </div>
+  <div>
+    <label>Cons</label>
+    <ul class="cons">
+      <li>
+        Students need GitHub accounts (but see GitLab note above, as an
+        alternative)
+      </li>
+      <li>
+        If students aren't going to push commits back up to their repo, there's
+        no real need to fork — instead could just <code>git clone</code> from
+        your repo.
+      </li>
+    </ul>
+  </div>
+  <div>
+    <label>Set up</label>
+    <div>
+      <p>
+        You must fork the editor repo into your own account and customise
+        it.
+      </p>
+      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>GitHub</strong></p>
+      <p>
+        Set <code>IS_USING_GITHUB</code> to <code>Yes</code>.
+      </p>
+      <p>
+        Set <code>BUGGY_EDITOR_GITHUB_URL</code> to the URL of your repo on
+        GitHub — and change <code>BUGGY_EDITOR_REPO_NAME</code> and
+        <code>BUGGY_EDITOR_REPO_OWNER</code> to match it.
+      </p>
+      <p>
+        Keep <code>IS_STUDENT_USING_GITHUB_REPO</code> to <code>Yes</code>.
+      </p>
+      <p>
+        Keep <code>IS_USING_GITHUB_API_TO_FORK</code> set to <code>No</code>
+        (if you do want to automate this, see <a href="#method-autofork">the auto-forking method</a>).
       </p>
     </div>
   </div>
