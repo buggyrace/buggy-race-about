@@ -43,4 +43,4 @@ See more about [running races](../races/).
 
  ---
  * Previous: [Tech notes config](tech-notes)
- * Next: [GitHub config](github)
+ * Next: [VCS config](vcs)

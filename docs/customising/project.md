@@ -26,11 +26,6 @@ If you're setting the `PROJECT_REPORT_TYPE` manually, the only recognised
 values are nothing (empty string), `report` or `poster`.
 
 
-
-
-
-
-
 ## Config settings ("Project")
 
 {: .config-settings}
@@ -53,7 +48,8 @@ values are nothing (empty string), `report` or `poster`.
 | `SUPERBASICS_URL` | There are a few places (for example in the workflow page and the tech notes) that link to a "superbasics" site which explains basic concepts for students. You can use the default, but you can also fork it and customise it, in which case put its URL here. Note that the links are to specific paths within the superbasics, which are added to this base URL, so if you host your own version be cautious about changing existing paths within it.  <br><br> _Default value:_ `https://superbasics.beholder.uk` |
 
 
+
 ---
 
 * Previous: [Users config](users)
-* Next: [Tasks config](tasks)
+* Next: [Editor config](editor)

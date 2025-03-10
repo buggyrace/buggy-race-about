@@ -8,8 +8,8 @@ has_children: false
 
 # What is the buggy editor?
 
-The buggy editor is small Python application that the students develop and run.
-It's a Flask webserver that lets the user produces a JSON description of a
+The buggy editor is a small Python application that the students develop and
+run. It's a Flask webserver that lets the user produce a JSON description of a
 racing buggy which can then be uploaded to the race server. If a student's
 buggy has been uploaded to the server, it's automatically included in the next
 race.

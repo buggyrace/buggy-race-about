@@ -166,5 +166,5 @@ which may be useful if your students are using GitHub or GitLab.
 
 ---
 
-* Previous: [GitHub config](github)
+* Previous: [VCS config](vcs)
 

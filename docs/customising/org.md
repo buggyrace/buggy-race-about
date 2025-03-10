@@ -16,11 +16,6 @@ The organisation settings are used throughout the project. The short name is
 generally used where screen space is limited. You must provide both full and
 short names, but they can be the same.
 
-
-
-
-
-
 ## Config settings ("Org")
 
 {: .config-settings}

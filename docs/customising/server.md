@@ -30,11 +30,6 @@ If the hostname of the server you've used to access the admin interface differs
 from the `BUGGY_RACE_SERVER_URL`, the server will add a button to load the
 current, active value.
 
-
-
-
-
-
 ## Config settings ("Server")
 
 {: .config-settings}
@@ -49,6 +44,7 @@ current, active value.
 | `API_SECRET_TIME_TO_LIVE` | The default time-to-live for a users' API secret, in seconds (for example, 3600 seconds = 1 hour).  <br><br> _Default value:_ `3600` |
 | `IS_API_SECRET_ONE_TIME_PW` | Is the API secret _always_ a one-time password? If it is, it won't work after the first success (and needs to be reset). This does not affect the time-to-live of the secret. The default settings of this and `IS_STUDENT_API_OTP_ALLOWED` (`No` and `Yes` respectively) mean OTPs are not used except where students enable them on their own accounts.  <br><br> _Default value:_ `No` |
 | `IS_STUDENT_API_OTP_ALLOWED` | Can individual students choose to set their own API secret to be different from the default one-time-password behaviour you've set with `IS_API_SECRET_ONE_TIME_PW`? For example, it's a little simpler for students to get the API working if it's not an OTP — but by setting this to `Yes` they can opt in or out.  <br><br> _Default value:_ `Yes` |
+| `IS_SHOWING_CONFIG_WARNINGS` | Once setup is complete, the settings pages display a warning if any of your config settings differ from the suggested values for the editor distribution method you've chosen. Keep this set to `Yes` unless you're sure your settings are correct and it's safe to ignore the automated suggestions. If there are warnings, they will always be shown on the setup summary page regardless of this setting.  <br><br> _Default value:_ `Yes` |
 | `IS_SHOWING_RESTART_SUGGESTION` | Do you want the server to suggest you restart it after changing any config settings? Our experience is that normally changing config does not require a restart _but_ in case your implementation would benefit from this, you can switch the suggestions on.  <br><br> _Default value:_ `No` |
 
 

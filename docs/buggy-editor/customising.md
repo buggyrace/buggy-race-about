@@ -111,13 +111,13 @@ is a case for using `git rebase` to "flatten" the history so it only contains
 one commit ("Initial commit"). From the students' point of view, the
 relationship between our repo and your customisations isn't relevant detail.
 
-## Update the server GitHub config
+## Update the server VCS config
 
 If you have forked (and customised) the editor repo, be sure to set the config
 to point at **your** fork of the repo, and not ours.
 
 {: .navigation}
-**Admin** → **Config** → Config:**GitHub**
+**Admin** → **Config** → Config:**VCS**
 
 These are the config settings you should change/check:
 

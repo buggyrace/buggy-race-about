@@ -252,7 +252,7 @@ Clarification of terms used in the project and its documentation.
   GitHub Classroom is a teaching tool that lets you manage digital classrooms
   within the GitHub infrastructure. If you're using it to run a Buggy Racing
   project, you probably want to use the to
-  <a href="buggy-editor/distributing-the-code#metho-preload">preload method</a>
+  <a href="buggy-editor/distributing-the-code#method-preload">preload method</a>
   to distribute the (editor) code. Note that GitHub Classroom is a commercial
   service, but may be available free depending on how your institution runs it.
   <br>→ <a href="https://docs.github.com/en/education/manage-coursework-with-github-classroom/">GitHub Classroom</a>
@@ -264,7 +264,7 @@ Clarification of terms used in the project and its documentation.
   Git repos — like <a href="#github">GitHub</a> but running locally. In many
   ways there's not much difference between running Buggy Racing on GitLab
   instead of GitHub... except you may find, as staff, that you have full access
-  to students' repos on your instution's own GitLab service. This means you can
+  to students' repos on your instution's own GitLab service, which means you can
   use the <a href="buggy-editor/distributing-the-code#method-preload">preload
   method</a> of distributing the source code. (In the <a href="#rhul">RHUL</a>
   case studies, we used GitHub for the first three years, but then switched to

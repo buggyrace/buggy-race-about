@@ -28,20 +28,26 @@ The source code for the Buggy Editor is available in this GitHub repo:
 However you should [customise the editor repo](customising) before you share it.
   
 {: .note}
-You must decide how you're going to distribute the code _before_ you set
-up your server, because several config settings (especially in the "GitHub"
-group) implement this decision.
+Decide how you're going to distribute the code _before_ you set up your server,
+because several config settings (especially in the "Project" and "VCS" groups)
+implement this decision. It also affects <strong>Phase&nbsp;0</strong> of the
+<a href="../teaching/tasks-and-phases">project tasks</a>, which effectively
+requires the students to get their Buggy Editor running locally.
 
 Here are several ways to distribute the code — they are not _all_ mutually
 exclusive, although it's simpler for both you and your students if everyone is
 doing it the same way.
+
+During the [set-up phase](../customising/setup-phase), you need to choose the
+method you are going to use for the `EDITOR_DISTRIBUTION_METHOD` config
+setting.
 
 ## Different methods to choose from
 
 - **zip**: [Students download a zipfile from race server](#method-zip) (the default)
 - **page**: [Students get the source code from a custom page you set up elsewhere](#method-page)
 - **repo**: [Students get the source code from your repo](#method-repo)
-- **preload**: [You preload the source code by forking repos into students' accounts](#method-preoload)
+- **preload**: [You preload the source code by forking repos into students' accounts](#method-preload)
 - **fork**: [Students manually fork your repo into their own account](#method-fork)
 - **autofork**: [Server forks your repo into students' GitHub accounts](#method-autofork)
 - **vsremote**: [Server forks your repo into students' GitHub accounts and then clones via VSCode](#method-vsremote)
@@ -127,7 +133,7 @@ below that apply generally to distributing the code.
   <div>
     <label>Set up</label>
     <div>
-      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>GitHub</strong></p>
+      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>VCS</strong></p>
       <p>
         Set <code>IS_USING_GITHUB</code> to <code>No</code>.
       </p>
@@ -200,7 +206,7 @@ below that apply generally to distributing the code.
   <div>
     <label>Set up</label>
     <div>
-      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>GitHub</strong></p>
+      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>VCS</strong></p>
       <p>
         Set <code>IS_USING_GITHUB</code> to <code>No</code> and
         <code>BUGGY_EDITOR_DOWNLOAD_URL</code> to the URL of the page (maybe
@@ -282,7 +288,7 @@ below that apply generally to distributing the code.
         You must fork the editor repo into your own account and customise
         it.
       </p>
-      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>GitHub</strong></p>
+      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>VCS</strong></p>
       <p>
         Set <code>IS_USING_GITHUB</code> to <code>Yes</code>.
       </p>
@@ -311,17 +317,17 @@ below that apply generally to distributing the code.
   </div>
   <div>
     <label>GitHub?</label>
-    <p><em>you:</em> required, with have full admin access (e.g., you're using
-      <a href="">GitHub Classroom</a> or your
-      institution's own <a href="../glossary#gitlab">GitLab)</a> instance)
+    <p><em>you:</em> full admin access (e.g., your
+      institution's own <a href="../glossary#gitlab">GitLab)</a> instance,
+      although see <em>GitHub Classroom</em> note below)
       <br>
-      <em>students:</em> required (as part of the classroom/lab)
+      <em>students:</em> you create accounts/repos for them
     </p>
   </div>
   <div>
     <label>Link</label>
     <p>
-      Link on the home page goes to your GitLab repo, or a project page
+      FIXME Link on the home page goes to your GitLab repo, or a project page
     </p>
   </div>
   <div>
@@ -341,16 +347,24 @@ below that apply generally to distributing the code.
     <label>Pros</label>
     <ul class="pros">
       <li>
-        Same as 
+        If you want your students to use version control as part of the project
+        (and perhaps you're using it for monitoring progress and even assessment)
+        then this method effectively gets everything in place before the students
+        start, with no risk of individual students misconfiguring the set-up.
       </li>
       <li>
-        Exposes students to GitHub and Git practice — because they now they
+        Exposes students to Git practice — because they now they
         can <code>push</code> back up to their own upstream (GitHub) repo.
       </li>
       <li>
-        That extra level of de-reference (forking instead of just cloning the
-        code from your upstream repo) has subtle but powerful consequences,
-        and is a useful introduction to how GitHub/remote repos operate.
+        Probably the best mechanism for students new to version control, since
+        each student's repo can remain private.
+      </li>
+      <li>
+        Because you're in control of the repo set-up, you can be confident it's
+        correct, which it turn means you can potentially base assessment on
+        activity on the student's remote repos — i.e., make pushing a mandatory
+        part of the project.
       </li>
     </ul>
   </div>
@@ -358,13 +372,10 @@ below that apply generally to distributing the code.
     <label>Cons</label>
     <ul class="cons">
       <li>
-        Students need GitHub accounts (but see GitLab note above, as an
-        alternative)
-      </li>
-      <li>
-        If students aren't going to push commits back up to their repo, there's
-        no real need to fork — instead could just <code>git clone</code> from
-        your repo.
+        You need to have write-access to your students accounts on the VCS
+        platform, which in turn means you or your institution needs to be
+        running such a host (for example,
+        <a href="../glossary#gitlab">GitLab)</a>)
       </li>
     </ul>
   </div>
@@ -372,10 +383,16 @@ below that apply generally to distributing the code.
     <label>Set up</label>
     <div>
       <p>
-        You must fork the editor repo into your own account and customise
-        it.
+        Fork the editor repo into your own account and customise it. Create
+        accounts for each of your students, and fork your repo into each of
+        those.
       </p>
-      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>GitHub</strong></p>
+      <p>
+        Create a <a href="../static-content/issues-csv">CSV of tasks-as-issues</a>
+        and load those into each student's repo.
+      </p>
+    </p>
+      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>VCS</strong></p>
       <p>
         Set <code>IS_USING_GITHUB</code> to <code>Yes</code>.
       </p>
@@ -390,6 +407,11 @@ below that apply generally to distributing the code.
       <p>
         Keep <code>IS_USING_GITHUB_API_TO_FORK</code> set to <code>No</code>
         (if you do want to automate this, see <a href="#method-autofork">the auto-forking method</a>).
+      </p>
+      <p>
+        It's feasible to use <a href="../glossary#github-classroom">GitHub Classroom</a>
+        in this way, although loading the tasks via an <a
+        href ="../static-content/issues-csv">CSV of issues</a> is not supported.
       </p>
     </div>
   </div>
@@ -465,7 +487,7 @@ below that apply generally to distributing the code.
         You must fork the editor repo into your own account and customise
         it.
       </p>
-      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>GitHub</strong></p>
+      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>VCS</strong></p>
       <p>
         Set <code>IS_USING_GITHUB</code> to <code>Yes</code>.
       </p>
@@ -560,7 +582,7 @@ below that apply generally to distributing the code.
       <p>
         You must also create a GitHub OAuth app.
       </p>
-      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>GitHub</strong></p>
+      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>VCS</strong></p>
       <p>
         Set <code>IS_USING_GITHUB</code> to <code>Yes</code>.
       </p>
@@ -669,7 +691,7 @@ below that apply generally to distributing the code.
         unique port number for each student. Also make sure the required Python
         environment is set up for the students.
       </p>
-      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>GitHub</strong></p>
+      <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>VCS</strong></p>
       <p>
         Set <code>IS_USING_GITHUB</code> to <code>Yes</code>.
       </p>
