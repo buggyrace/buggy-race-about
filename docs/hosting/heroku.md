@@ -108,7 +108,7 @@ Now you're "in" the page for your new app.
 There are seven tabs: first, go to **Settings**.
 
 Go to the **Settings** tab, and find **Buildpacks**. You need to add two. Click
-on **Add buildpack** and choose each of these:
+on **Add buildpack** and choose each of these, _in this order_:
 
 * **python**  
   because the race server is a Python application
@@ -117,6 +117,11 @@ on **Add buildpack** and choose each of these:
   
 You'll see a note telling you that these will be applied when you deploy the
 application.
+
+{: .note}
+You **must** add the Python buildpack first, before the Node.js one (if you did
+not, you can click and drag them to change their order). The Python buildpack
+defines the `flask` command before node.js runs it.
 
 ## 6. Choose the "GitHub" deployment method
 
