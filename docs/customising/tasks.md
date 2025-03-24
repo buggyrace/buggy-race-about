@@ -18,6 +18,8 @@ See more about [creating the tasks](creating-tasks), which you can do when you
 have completed set-up phase.
 
 
+## Config settings ("Tasks")
+
 {: .config-settings}
 | Setting  | Description   |
 |----------|---------------|
@@ -36,6 +38,7 @@ have completed set-up phase.
 | `IS_ISSUES_CSV_CRLF_TERMINATED` | Choose `Yes` if you need Windows newlines at the end of each line of the task issues CSV file (you probably don't need to change this).  <br><br> _Default value:_ `No` |
 
 
+
  ---
- * Previous: [Project config](project)
- * Next: [Tech notes config](tech-notes)
+ * Previous: [Editor config](editor)
+ * Next: [Users config](users)

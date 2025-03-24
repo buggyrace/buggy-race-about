@@ -30,7 +30,6 @@ You can choose whether or not you require students to create a report and/or
 a poster as part of the project: see
 [the students' report and poster](../teaching/report-and-poster) for details.
 
-
 ## Config settings ("Project")
 
 {: .config-settings}
@@ -49,6 +48,7 @@ a poster as part of the project: see
 | `PROJECT_ZIP_NAME_TYPE` | Normally the suggested filename for submissions (the students' zip file) is their username + `.zip`. But if you prefer your students to use an external username or ID, you can suggest it here. If you pick a type that users don't have, it will fall back to `username` (because all users have one). This setting is ignored if `IS_PROJECT_ZIP_INFO_DISPLAYED` is `No`.  <br><br> _Default value:_ `username` |
 | `IS_SHOWING_PROJECT_WORKFLOW` | It can be helpful for students to have a summary of the workflow process. If you set `IS_SHOWING_PROJECT_WORKFLOW` to `Yes` then the server will show either the default workflow page, or an external one if you specify `PROJECT_WORKFLOW_URL`. If you do choose to display the workflow page, when it's published take a moment to read it to confirm it matches what you expect your students to do.  <br><br> _Default value:_ `No` |
 | `PROJECT_WORKFLOW_URL` | You can replace the default workflow page with a redirection to one you've customised (and hosted elsewhere). If you leave this setting blank, the default page will be shown. In either case, this setting is ignored if `IS_SHOWING_PROJECT_WORKFLOW` is `No`.  <br><br> _Default value:_ _none/empty_ |
+
 
 ---
 

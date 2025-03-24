@@ -36,7 +36,6 @@ See more about [managing the tech notes](../static-content/tech-notes).
 | `IS_FAKE_LATEX_CHOICE_ENABLED` | The tech notes are static pages, rendered on a dark background (to clearly distinguish from the race server's pages). If you choose `Yes`, this option adds a small button to the bottom right-hand corner of each page that toggles the style between the dark style, and a simulation of a classic page created with LaTeX, the excellent typesetting system beloved of academics. Because the tech notes are static content, this CSS toggle is implemented in JavaScript. This feature is an in-joke that only need be engaged if you are feeling playful, or if there are academics in your institution who might be horrified by the prospect of reading text on anything other than crisp white paper in Computer Modern font.  <br><br> _Default value:_ `No` |
 
 
-
  ---
- * Previous: [Tasks config](tasks)
- * Next: [Races config](races)
+ * Previous: [Remote server config](remote)
+ * Next: [Creating the tasks](creating-tasks)

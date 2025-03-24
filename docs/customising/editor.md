@@ -18,6 +18,8 @@ each student develops) is managed.
 The `EDITOR_DISTRIBUTION_METHOD` setting is critical to how your students start
 your project: see [more details about distributing the code](buggy-editor/distributing-the-code).
 
+## Config settings ("Editor")
+
 {: .config-settings}
 | Setting  | Description   |
 |----------|---------------|
@@ -29,3 +31,7 @@ your project: see [more details about distributing the code](buggy-editor/distri
 | `IS_WRITING_SERVER_URL_IN_EDITOR` | If you publish the buggy editor app on this server, should the `BUGGY_RACE_SERVER_URL` be written into `app.py`? This setting won't be used if you don't generate the zipfile on this server (for example, if `IS_USING_VCS` is `Yes`) but remember you or your students do need to change it inside the buggy editor source code eventually.  <br><br> _Default value:_ `Yes` |
 
 
+---
+
+* Previous: [Project config](project)
+* Next: [Tasks config](tasks)

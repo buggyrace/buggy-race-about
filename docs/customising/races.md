@@ -37,5 +37,5 @@ See more about [running races](../races/).
 
 
  ---
- * Previous: [Tech notes config](tech-notes)
+ * Previous: [Users config](users)
  * Next: [VCS config](vcs)

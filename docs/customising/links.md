@@ -36,19 +36,21 @@ you leave gaps/skip numbers, but the links will be displayed in numeric order â€
 so `SITE_1` will always be displayed before `LINK_4`.
 
 
+## Config settings ("Links")
 
 {: .config-settings}
 | Setting  | Description   |
 |----------|---------------|
+| `SUPERBASICS_URL` | There are a few places (for example in the workflow page and the tech notes) that link to a "superbasics" site which explains basic concepts for students. You can use the default, but you can also fork it and customise it, in which case put its URL here. Note that the links are to specific paths within the superbasics, which are added to this base URL, so if you host your own version be cautious about changing existing paths within it.  <br><br> _Default value:_ `https://superbasics.beholder.uk` |
 | `LINK_1_NAME` | Name of the linked site (it's shown on button).<br>If this is empty, the link **will not be displayed**.  <br><br> _Default value:_ _none/empty_ |
 | `LINK_1_TEXT` | A short description of the site or link  <br><br> _Default value:_ _none/empty_ |
 | `LINK_1_URL` | Full URL to external site/resource  <br><br> _Default value:_ _none/empty_ |
 
 Repeat for:
 
-* `LINK_1_NAME`, `LINK_1_TEXT`, `LINK_1_URL`
-* `LINK_2_NAME`, `LINK_2_TEXT`, `LINK_2_URL`
-* `LINK_3_NAME`, `LINK_3_TEXT`, `LINK_3_URL`
+* `LINK_2_NAME`, `LINK_2_TEXT`, `LINK_3_URL`
+* `LINK_3_NAME`, `LINK_3_TEXT`, `LINK_4_URL`
+* `LINK_4_NAME`, `LINK_4_TEXT`, `LINK_4_URL`
 
 
 ---

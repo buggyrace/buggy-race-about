@@ -28,4 +28,4 @@ short names, but they can be the same.
 
 ---
 * Previous: [Server config](server)
-* Next: [External links config](social)
+* Next: [External links config](links)
