@@ -1,7 +1,7 @@
 ---
 title: Users config
 layout: home
-nav_order: 50
+nav_order: 80
 parent: Customising
 has_children: false
 ---
@@ -134,7 +134,6 @@ see [how to set announcements](../running/announcements).
 | `IS_TA_PASSWORD_CHANGE_ENABLED` | Administrators can change all other users' passwords. Choose `Yes` if you also want Teaching Assistants to be able to change (non-staff) users' passwords. Note that students who forget their passwords cannot reset them, and will need to ask a staff member to do it — so enabling TAs might be helpful. Changing a student's password does not require the auth code.  <br><br> _Default value:_ `Yes` |
 | `IS_TA_SET_API_KEY_ENABLED` | Do you want your Teaching Assistants to be able to set (or clear) student's API keys? If you're using the default tasks, students don't need these until they are in phase 4.   <br><br> _Default value:_ `Yes` |
 | `USER_ACTVITY_PERIOD_S` | The period (in seconds) over which each logged-in user's activity is logged. Pragmatically, this avoids updating the database on every request, because usually you're only concerned about whether or not a student has logged in recently, not the accuracy of the timestamp. This updates the "last activity" timestamp if the user sends a request this-number-of-seconds since the last recorded activity.  <br><br> _Default value:_ `300` |
-
 
  ---
  * Previous: [Social sites config](social)

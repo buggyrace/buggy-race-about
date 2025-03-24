@@ -1,7 +1,7 @@
 ---
 title: Tech notes config
 layout: home
-nav_order: 70
+nav_order: 130
 parent: Customising
 has_children: false
 ---

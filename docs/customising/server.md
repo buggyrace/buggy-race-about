@@ -28,7 +28,7 @@ this value (and not self-inspection) to determine what they should be.
 {: .caption}
 If the hostname of the server you've used to access the admin interface differs
 from the `BUGGY_RACE_SERVER_URL`, the server will add a button to load the
-current, active value.
+current, active value. 
 
 ## Config settings ("Server")
 

@@ -1,7 +1,7 @@
 ---
 title: Creating the tasks
 layout: home
-nav_order: 100
+nav_order: 130
 parent: Customising
 has_children: false
 ---

@@ -26,7 +26,7 @@ Remember that task texts can be disabled _entirely_ by setting
 
 ## The special case of student texts
 
-If you require your students to produce a [report](../teaching/the-report), you
+If you require your students to produce a [report](../teaching/report-and-poster), you
 may have encouraged them to save their [task texts](../glossary#task-text).
 Because they are free to edit their texts at any time during the course of the
 project, students can also (presumably accidentally) destructively edit them

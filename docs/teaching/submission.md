@@ -21,14 +21,16 @@ them.
 
 The server can't really handle this for you because there is so much variation
 — depending on the level of your students — as to how and what the submission
-really is. There might or might not be a [report](the-report) involved too —
-perhaps as the `/report` route inside each student's buggy editor. If you're
-using GitHub, you might not require explicit submissions from the students. Or
-you might be snapshot-cloning them at the cutoff date. Or you might require
-students to make a _release_.
+really is. There might or might not be a [report and/or poster](report-and-poster)
+involved too — perhaps as the `/report` route inside each student's buggy editor,
+or separate documents. If the students are using version control, you might not
+require explicit submissions from the students. Or you might be
+snapshot-cloning them at the cutoff date. Or you might require students to make
+a _release_.
 
 In general, we anticipate the students' work — if it is submitted at all — to
-take the form of the directory (or Git repo) they have been working in.
+take the form of the directory (or Git repo) they have been working in, and
+possibly additional documents.
 
 
 ## Set the submission deadline and link

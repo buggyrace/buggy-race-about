@@ -12,9 +12,9 @@ parent: Day-to-day running
 or  
 **Admin** → **Users** → _Individual user_
 
-If you require your students to [produce a report](../teaching/the-report), and you
-are storing their texts on the race server, you can inspect these texts both as
-a useful summary and in individual detail.
+If you require your students to [produce a report](../teaching/report-and-poster),
+and you are storing their texts on the race server, you can inspect these texts
+both as a useful summary and in individual detail.
 
 {: .note}
 For more about using texts as a means of tracking your students' progress,

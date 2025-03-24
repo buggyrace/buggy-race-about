@@ -49,7 +49,7 @@ See the demo race server at [demo.buggyrace.net]({{site.content.demo_url}}).
       task-based texts as-they-go (or not: you configure how the project is run)
     </p>
     <p class="item-footer">
-      <a href="teaching/the-report.html">&rarr;&nbsp;the&nbsp;report</a>
+      <a href="teaching/report-and-poster">&rarr;&nbsp;the&nbsp;report and/or poster</a>
     </p>
   </div>
   <div class="item-card">

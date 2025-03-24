@@ -340,10 +340,11 @@ Clarification of terms used in the project and its documentation.
 
 <dt id="poster">poster</dt>
 <dd>
-  "Poster" is an alternative name for the students' <a
-  href="#report">report</a> (it's an anomaly from the RHUL marking scheme that
-  we needed to use — you should just use the word "report").
-  <br>→ <a href="teaching/the-report">students' posters (i.e., reports)</a>
+  You can require your students to submit a poster advertising the features of
+  their buggy editor as part of their project. You can specify it be a document,
+  or a webpage (at <code>/poster</code>) within their editor. See also
+  <a href="#report">report</a>.
+  <br>→ <a href="teaching/report-and-poster">students' posters</a>
 </dd>
 
 <dt id="race-event">race event</dt>
@@ -423,9 +424,10 @@ Clarification of terms used in the project and its documentation.
 <dt id="report">report</dt>
 <dd>
   You can choose to require your students to submit a report as part of their
-  project submission. Each student's report takes the form of a webpage (at
-  <code>/report</code>) within their buggy editor.
-  <br>→ <a href="teaching/the-report">students' reports</a>
+  project. You can specify it be a document, or a webpage (at
+  <code>/report</code>) within their buggy editor. See also 
+  <a href="#poster">poster</a>.
+  <br>→ <a href="teaching/report-and-poster">students' reports</a>
 </dd>
 
 <dt id="rhul">RHUL</dt>

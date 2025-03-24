@@ -219,7 +219,7 @@ even deleting) them.
 
 If you're not an enrolled student (for example, you're a Teaching Assistant
 or admin) then your texts _will not appear_ on 
-[the main text matrix](teaching/the-report.html#using-task-texts).
+[the main text matrix](teaching/report-and-poster.html#using-task-texts).
 That only shows the texts for active (that is, not suspended) students.
 
 This is why, while you're setting up the course, it's OK to set staff users to
