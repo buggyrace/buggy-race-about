@@ -232,5 +232,6 @@ See the [race server's LICENSE.txt](https://github.com/buggyrace/buggy-race-serv
 
 Remember to teach your students about Open Source software :-)
 
+
 ![Buggy racing mascot: Mesocricetus roadentus](/docs/img/rene-hamster-1.png)
 
