@@ -29,3 +29,6 @@ explains why it's free.
 See [more about this project](../about).
 
 
+---
+
+* Previous: [Step-by-step process](step-by-step)

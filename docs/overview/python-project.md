@@ -42,3 +42,7 @@ The project can support students working on their own machines, college
 machines, or in the cloud using services like PythonAnywhere or Replit.
 See more about [where students can work](../buggy-editor/running-where).
 
+---
+
+* Previous: [Who is it for?](who-is-it-for)
+* Next: [Requirements](requirements)

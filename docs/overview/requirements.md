@@ -45,3 +45,8 @@ If you want to run a Buggy Racing project, this is what you'll need:
   expecting your students to spend on it each week.
 
 
+---
+
+* Previous: [The Python project](python-project)
+* Next: [Step-by-step process](step-by-step)
+

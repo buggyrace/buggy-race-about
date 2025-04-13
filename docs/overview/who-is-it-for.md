@@ -83,3 +83,7 @@ phase 3 before the submission deadline.
 {: .suggest}
 See **[about the students](../teaching/students)** in the _Teaching_ section
 and the [design philosophy](../about/design) behind the project.
+
+---
+
+* Next: [The Python project](python-project)
