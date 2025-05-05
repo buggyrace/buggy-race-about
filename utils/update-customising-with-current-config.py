@@ -2,46 +2,63 @@ from enum import Enum
 import re
 from os import path
 
-#  * before running this script... best to have everything up-to-date in git
+#-------------------------------------------------------------------------------
+#
+#  Updates documentation with settings text downloaded from race server
+#  ====================================================================
+#
+#  * Before running this script... best to have everything up-to-date in git
 #  * then you can see what it's changed, and revert if necessary
 #
-# +++ SCRIPT CHANGES MARKDOWN FILES IN docs/customise SO BE CAREFUL +++
+#  +++ SCRIPT CHANGES MARKDOWN FILES IN docs/customise SO BE CAREFUL +++
 #
-# Run this from root, e,g, python3 src/custom-util.py
-# You'll need an input file containing the markdown produced by the race server:
-# go to https://<your-race-server>/admin/config-docs-helper
+#  Run this from root, e,g, python3 src/custom-util.py
+#  You'll need an input file containing the markdown from the race server:
+#  go to https://<your-race-server>/admin/config-docs-helper and click the
+#  "download text" button.
 #
-# >  Note:
-# >  If you get a 404 there (after you're logged in as staff!), make sure
-# >  the ENV setting for that server _IS_DOCS_HELPER_PAGE_ENABLED is set to 1.
+#  >  Note:
+#  >  If you get a 404 there (after you're logged in as staff!), make sure
+#  >  the ENV setting for that server _IS_DOCS_HELPER_PAGE_ENABLED is set to 1.
 #
-# ...and copy that into a file (the default is src/input.txt). Then run this
-# script, which will replace the existing tables of config settings in the
-# "customise" section of the docs.
-# You probably want to commit those changes (once you've checked they're OK!)
-# and push it up to https://github.com/buggyrace/buggy-race-server if you're
-# updating the public "official" docs.
+#  ...and copy that into a file (the default is config-settings-for-docs.txt in
+#  the src/ directory). Then run this script, which will replace the existing
+#  tables of config settings in the "customise" section of the docs, and update
+#  the current server version. (There's interaction on the command line, so
+#  read the prompts). You probably want to commit those changes (once you've
+#  checked they're OK!) and (if you're updating the public "official" docs)
+#  push it up to https://github.com/buggyrace/buggy-race-server
+#
+#-------------------------------------------------------------------------------
 
-DEFAULT_INPUT_FNAME = "src/input.txt"
+DEFAULT_INPUT_FNAME = "src/config-settings-for-docs.txt"
 
 class ConfigGroupNames(str, Enum):
     AUTH = "auth"
-    GITHUB = "github"
+    EDITOR = "editor"
+    LINKS = "links"
     ORG = "org"
     PROJECT = "project"
     RACES = "races"
+    REMOTE = "remote"
     SERVER = "server"
-    SOCIAL = "social"
     TASKS = "tasks"
     TECH_NOTES = "tech_notes"
     USERS = "users"
+    VCS = "vcs"
 
-### skip social because the manual description is better than the automated one
-SKIP_UPDATE = [ConfigGroupNames.SOCIAL]
+### can nominate groups/sections to skip... currently none
+### (but it ised to be links because the manual description was better than the
+### automated one; since changes the output of the helper so this isn't so
+SKIP_UPDATE = [] # empty now; used to be: [ConfigGroupNames.LINKS]
 
 config_detail_lines = {}
+source_version = None
 
-input_fname = input(f"Filename containing content from /admin/config-docs-helper? (default is {DEFAULT_INPUT_FNAME}) ") or DEFAULT_INPUT_FNAME
+input_fname = input(
+    f"[?] Filename containing content from /admin/config-docs-helper? "
+    "(default is {DEFAULT_INPUT_FNAME}) "
+) or DEFAULT_INPUT_FNAME
 with open(input_fname) as input_file:
     line = input_file.readline()
     while line:
@@ -62,8 +79,37 @@ with open(input_fname) as input_file:
             elif re.match(r".*\S", line):
                 raise ValueError("Unexpected: missing ----/# section/---- structure")
         else:
+            if matches := re.match(r"<<\s*VERSION:\s*\"([^\"]+)\"\s*>>", line):
+                source_version = matches.group(1)
+                print(f"[ ] source version detected is \"{source_version}\"")
+                if source_version.endswith("dev"):
+                    source_version = source_version[:-3]
+                source_version = input(
+                    "[?] Update version number in docs? "
+                    f"(default is {source_version}, enter another string, "
+                    f" or \"no\" to prevent) ") or source_version
             line = input_file.readline()
 print(f"[ ] done: finished reading {input_fname}")
+
+if source_version:
+    source_version = source_version.strip()
+    if source_version.lower() == "no":
+        source_version = None
+    else:
+        config_filename = "_config.yml"
+        if not path.exists(config_filename):
+            raise FileNotFoundError(f"can't find {config_filename}")
+        lines = []
+        with open(config_filename) as config_file:
+            while line := config_file.readline():
+                if line.startswith("  server_version:"):
+                    line = f"  server_version: {source_version}"
+                lines.append(line)
+        print(f"[ ] updating {config_filename} with server version: {source_version}")
+        print("[ ]    (note: Jekyll in watch mode needs restart to pick up config changes)")
+        with open(config_filename, "w") as new_config_file:
+            for line in lines:
+                new_config_file.write(line)
 
 for group_name in config_detail_lines:
     if group_name in SKIP_UPDATE:
