@@ -113,31 +113,48 @@ external usermname (if you're using it) with the config settings
 You can also set a custom message that appears on the login page:
 see [how to set announcements](../running/announcements).
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Config settings ("Users")
 
 {: .config-settings}
 | Setting  | Description   |
 |----------|---------------|
-| `IS_PRETTY_USERNAME_TITLECASE` | Should usernames (which are always lower case) be displayed using title case? For example, choose `Yes` if the usernames you're using are effectively students' names. Login is always case insensitive, so this only affects how usernames are displayed, not what users need to type.  <br><br> _Default value:_ `Yes` |
-| `USERS_HAVE_EMAIL` | Do users need email addresses? The server doesn't send emails so you don't need this field unless it's a useful way of identifying a student.  <br><br> _Default value:_ `No` |
-| `USERS_HAVE_FIRST_NAME` | Do users need to have a first name? You might be using each student's first name as the username, in which case you don't need this.  <br><br> _Default value:_ `No` |
-| `USERS_HAVE_LAST_NAME` | Do users need to have a last name? If you can already identify your students from the other fields, you might not need this.  <br><br> _Default value:_ `No` |
-| `USERS_HAVE_VCS_USERNAME` | Do users have an external username for a version control system (VCS) such as GitHub or GitLab? You might want or need to store each student's VCS username depending on whether or not your students need to use a platform like GitHub or GitLab (which you specify by your choice of `EDITOR_DISTRIBUTION_METHOD` setting in the Project group). If you set this to `Yes`, make sure you set the `VCS_NAME` setting in the VCS group so everyone knows what platform this username is for. If you're not using a VCS, leave this as `No`.  <br><br> _Default value:_ `No` |
-| `USERS_HAVE_EXT_USERNAME` | Do users have an external username or account that's specific to your organisation or institution? You might not need this, or you might already be using it as the username — in which case choose `No`. Note: the race server does **not** use this for authentication (i.e., there is no OAuth implementation). However, if your users need to log into a remote server for development _and_ you are using VS Code workspace files, you will need this to be `Yes` — unless you're simply using those external usernames as the students' race server usernames when you register them.  <br><br> _Default value:_ `No` |
-| `USERS_HAVE_EXT_ID` | Do users have an ID from an external system? This might be useful if you want to match students with their existing ID on another system like Moodle, Blackboard or Canvas. You don't need this unless it's a useful way of identifying a student. If you do set this to `Yes`, you should also set `EXT_ID_NAME` to describe what it is.  <br><br> _Default value:_ `No` |
-| `USERNAME_EXAMPLE` | A placeholder string used in the login form. This can be especially helpful if students use a different username for accessing other college systems. You can set this to be blank.  <br><br> _Default value:_ `hamster` |
-| `EXT_USERNAME_NAME` | If users have an external username, what is it called? For example: "College username". This is to clearly differentiate the race server username (which students use to log into this race server) from this external one (which they presumably use to access other course systems). Keep it short, because it's used on buttons in the admin. This setting is ignored if `USERS_HAVE_EXT_USERENAME` is `No`.  <br><br> _Default value:_ `Ext. username` |
-| `EXT_USERNAME_EXAMPLE` | If users have an external username, provide an example format (e.g., `abcd123` or `ada@example.org`). Note that this only serves as a placeholder suggestion when inputting — it's not used to validate or force the format of inputs. This setting is ignored if `USERS_HAVE_EXT_USERENAME` is `No`.  <br><br> _Default value:_ `abcd123` |
-| `EXT_ID_NAME` | If user have an external ID, what is it called? For example: "Student number", "Moodle ID", "Blackboard ID", "Canvas ID". This setting is ignored if `USERS_HAVE_EXT_ID` is `No`.  <br><br> _Default value:_ `External ID` |
-| `EXT_ID_EXAMPLE` | If users have an external ID, provide an example of what it might look like. This setting is ignored if `USERS_HAVE_EXT_ID` is `No`.  <br><br> _Default value:_ `12345` |
-| `IS_TA_EDIT_COMMENT_ENABLED` | Teaching Assistants cannot edit user data. But do you want TAs to be able to add or edit comments left by staff?  <br><br> _Default value:_ `Yes` |
-| `IS_TA_PASSWORD_CHANGE_ENABLED` | Administrators can change all other users' passwords. Choose `Yes` if you also want Teaching Assistants to be able to change (non-staff) users' passwords. Note that students who forget their passwords cannot reset them, and will need to ask a staff member to do it — so enabling TAs might be helpful. Changing a student's password does not require the auth code.  <br><br> _Default value:_ `Yes` |
-| `IS_TA_SET_API_KEY_ENABLED` | Do you want your Teaching Assistants to be able to set (or clear) student's API keys? If you're using the default tasks, students don't need these until they are in phase 4.   <br><br> _Default value:_ `Yes` |
-| `USER_ACTVITY_PERIOD_S` | The period (in seconds) over which each logged-in user's activity is logged. Pragmatically, this avoids updating the database on every request, because usually you're only concerned about whether or not a student has logged in recently, not the accuracy of the timestamp. This updates the "last activity" timestamp if the user sends a request this-number-of-seconds since the last recorded activity.  <br><br> _Default value:_ `300` |
-| `USER_BULK_DELETE_TIMEOUT_DAYS` | Normally you only need to bulk-delete users (students or TAs) while you're setting things up, or during tear-down (and even then, only with care). Consequently, this feature is hidden from from the admin interface when the most recent **student** record is older than this number of days (or if there are no students at all). Set to `0` if you never want it hidden (so changing this to `0` will make the ability to delete all user records available all the time). Remember that this is only about bulk deletion: as admin, you can always delete (or suspend) users individually.  <br><br> _Default value:_ `1` |
+| `IS_PRETTY_USERNAME_TITLECASE` | Should usernames (which are always lower case) be displayed using title case? For example, choose `Yes` if the usernames you&#39;re using are effectively students&#39; names. Login is always case insensitive, so this only affects how usernames are displayed, not what users need to type.  <br/><br/> _Default value:_ `Yes` |
+| `USERS_HAVE_EMAIL` | Do users need email addresses? The server doesn&#39;t send emails so you don&#39;t need this field unless it&#39;s a useful way of identifying a student.  <br/><br/> _Default value:_ `No` |
+| `USERS_HAVE_FIRST_NAME` | Do users need to have a first name? You might be using each student&#39;s first name as the username, in which case you don&#39;t need this.  <br/><br/> _Default value:_ `No` |
+| `USERS_HAVE_LAST_NAME` | Do users need to have a last name? If you can already identify your students from the other fields, you might not need this.  <br/><br/> _Default value:_ `No` |
+| `USERS_HAVE_VCS_USERNAME` | Do users have an external username for a version control system (VCS) such as GitHub or GitLab? You might want or need to store each student&#39;s VCS username depending on whether or not your students need to use a platform like GitHub or GitLab (which you specify by your choice of `EDITOR_DISTRIBUTION_METHOD` setting in the Project group). If you set this to `Yes`, make sure you set the `VCS_NAME` setting in the VCS group so everyone knows what platform this username is for. If you&#39;re not using a VCS, leave this as `No`.  <br/><br/> _Default value:_ `No` |
+| `USERS_HAVE_EXT_USERNAME` | Do users have an external username or account that&#39;s specific to your organisation or institution? You might not need this, or you might already be using it as the username — in which case choose `No`. Note: the race server does **not** use this for authentication (i.e., there is no OAuth implementation). However, if your users need to log into a remote server for development _and_ you are using VS Code workspace files, you will need this to be `Yes` — unless you&#39;re simply using those external usernames as the students&#39; race server usernames when you register them.  <br/><br/> _Default value:_ `No` |
+| `USERS_HAVE_EXT_ID` | Do users have an ID from an external system? This might be useful if you want to match students with their existing ID on another system like Moodle, Blackboard or Canvas. You don&#39;t need this unless it&#39;s a useful way of identifying a student. If you do set this to `Yes`, you should also set `EXT_ID_NAME` to describe what it is.  <br/><br/> _Default value:_ `No` |
+| `USERNAME_EXAMPLE` | A placeholder string used in the login form. This can be especially helpful if students use a different username for accessing other college systems. You can set this to be blank.  <br/><br/> _Default value:_ `hamster` |
+| `EXT_USERNAME_NAME` | If users have an external username, what is it called? For example: &#34;College username&#34;. This is to clearly differentiate the race server username (which students use to log into this race server) from this external one (which they presumably use to access other course systems). Keep it short, because it&#39;s used on buttons in the admin. This setting is ignored if `USERS_HAVE_EXT_USERENAME` is `No`.  <br/><br/> _Default value:_ `Ext. username` |
+| `EXT_USERNAME_EXAMPLE` | If users have an external username, provide an example format (e.g., `abcd123` or `ada@example.org`). Note that this only serves as a placeholder suggestion when inputting — it&#39;s not used to validate or force the format of inputs. This setting is ignored if `USERS_HAVE_EXT_USERENAME` is `No`.  <br/><br/> _Default value:_ `abcd123` |
+| `EXT_ID_NAME` | If user have an external ID, what is it called? For example: &#34;Student number&#34;, &#34;Moodle ID&#34;, &#34;Blackboard ID&#34;, &#34;Canvas ID&#34;. This setting is ignored if `USERS_HAVE_EXT_ID` is `No`.  <br/><br/> _Default value:_ `External ID` |
+| `EXT_ID_EXAMPLE` | If users have an external ID, provide an example of what it might look like. This setting is ignored if `USERS_HAVE_EXT_ID` is `No`.  <br/><br/> _Default value:_ `12345` |
+| `IS_TA_EDIT_COMMENT_ENABLED` | Teaching Assistants cannot edit user data. But do you want TAs to be able to add or edit comments left by staff?  <br/><br/> _Default value:_ `Yes` |
+| `IS_TA_PASSWORD_CHANGE_ENABLED` | Administrators can change all other users&#39; passwords. Choose `Yes` if you also want Teaching Assistants to be able to change (non-staff) users&#39; passwords. Note that students who forget their passwords cannot reset them, and will need to ask a staff member to do it — so enabling TAs might be helpful. Changing a student&#39;s password does not require the auth code.  <br/><br/> _Default value:_ `Yes` |
+| `IS_TA_SET_API_KEY_ENABLED` | Do you want your Teaching Assistants to be able to set (or clear) student&#39;s API keys? If you&#39;re using the default tasks, students don&#39;t need these until they are in phase 4.   <br/><br/> _Default value:_ `Yes` |
+| `USER_ACTVITY_PERIOD_S` | The period (in seconds) over which each logged-in user&#39;s activity is logged. Pragmatically, this avoids updating the database on every request, because usually you&#39;re only concerned about whether or not a student has logged in recently, not the accuracy of the timestamp. This updates the &#34;last activity&#34; timestamp if the user sends a request this-number-of-seconds since the last recorded activity.  <br/><br/> _Default value:_ `300` |
+| `IS_USER_TOLD_TO_CHANGE_PASSWORD` | Do you want users to see a message reminding them to change their password when they very first log in? This can be helpful if you have allocated passwords as part of the set-up. Only *student* users are shown the message.  <br/><br/> _Default value:_ `No` |
+| `USER_BULK_DELETE_TIMEOUT_DAYS` | Normally you only need to bulk-delete users (students or TAs) while you&#39;re setting things up, or during tear-down (and even then, only with care). Consequently, this feature is hidden from from the admin interface when the most recent **student** record is older than this number of days (or if there are no students at all). Set to `0` if you never want it hidden (so changing this to `0` will make the ability to delete all user records available all the time). Remember that this is only about bulk deletion: as admin, you can always delete (or suspend) users individually.  <br/><br/> _Default value:_ `1` |
 
-
-
+  
  ---
  * Previous: [Tasks config](tasks)
  * Next: [Races config](races)

@@ -8,6 +8,24 @@ nav_order: 110
 # Technical details
 
 {: .note}
+The documentation you are reading applies to Buggy Race Server
+version **{{ site.content.server_version }}**.
+
+
+## How to check your race server version
+
+{: .navigation}
+**About** (version is below the hamser)
+<br>or<br>
+**Admin** → **Dashboard** → **System info**
+
+If you're looking in the source code, the latest version string should be in
+`buggy_race_server/config.py` as `MANUAL_LATEST_VERSION_IN_SOURCE`. You should
+also find releases on the [GitHub repo](https://github.com/buggyrace/buggy-race-server).
+
+
+## Summary of technical specs
+
 For general requirements for running this project, see
 [these requirements](overview/requirements).
 
@@ -34,9 +52,8 @@ Python version 3.9+ is required.
 
 {: .note}
 The Race Server is licensed under the GNU Affero GPL: it is **free and open
-source software**.  
-Some components from other projects may have different licensing:
-see [more about the licensing](about/software).
+source software**.  Some components from other projects may have different
+licensing: see [more about the licensing](about/software).
 
 ---
 > See the [about pages](about/software) for more about the software behind
