@@ -135,6 +135,11 @@ active users are included.
 You can also [disable a user's login](running/user-management.html#enabling-or-disabling-logins)
 if you just want to prevent them logging in or changing anything on the server.
 
+It is possible to bulk delete users, although we anticipate this only being
+useful at start-up, so (if you have the default settings) it is hidden from the
+interface once the students records are no longer "fresh". See
+[bulk deleting users](running/user-management.html#bulk-deleting-users).
+
 ---
 
 ## I've forgotten the authorisation code

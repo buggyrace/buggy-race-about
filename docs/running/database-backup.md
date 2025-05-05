@@ -91,29 +91,37 @@ If you're [hosting on Heroku](../hosting/heroku), then currently you can
 schedule nightly backups of the _whole_ PostgreSQL database. See
 [Heroku's backup documentation](https://devcenter.heroku.com/articles/heroku-postgres-backups).
 
-You'll need to know the name of your app and possibly that of its database too
-(`APP_NAME` and `DATABASE_ID` in the examples below). The app name is clearly
-displayed when you log into your Heroku account. The database ID is shown as
-the name of the Heroku PostgreSQL "Add-on", and will look something like
-`postrgresql-banana-123`.
+You'll need to know the name of your app (shown as `<APP_NAME>` in the example
+commands here). The app name is clearly displayed when you log into your Heroku
+account on the web interface, but you can also find it with the Heroku command
+line command `heroku apps`.
 
-If you don't provide a database ID, Heroku should use your app's default
-database by inspecting the `DATABASE_URL` you're using.
+Heroku gives each of its databases an ID — they look something like 
+`postrgresql-banana-123` (you can find them through the web interface when you
+look at your app's "add-ons"). But if you use `DATABASE_URL` you probably won't
+need it.
+
+
+{: .note}
+Heroku's command line can helpfully use your app's database `DATABASE_URL`
+setting to identify the database. Note that in the commands, this really is the
+**literal string** "`DATABASE_URL`", which Heroku will map to the value it's
+assigned to your app up at their end.
 
 To schedule nightly backups (e.g., at 3am every night in the UK), do this:
 
 ```
-heroku pg:backups:schedule DATABASE_ID --at "03:00 Europe/London" --app APP_NAME
-Scheduling automatic daily backups of DATABASE_ID at 03:00 Europe/London... done
+heroku pg:backups:schedule DATABASE_URL --at "03:00 Europe/London" --app <APP_NAME>
+Scheduling automatic daily backups of <database> at 03:00 Europe/London... done
 ```
 
 To get information on the backups you've got:
 
-    heroku pg:backups --app APP_NAME
+    heroku pg:backups --app <APP_NAME>
 
 To download the latest backup:
 
-    heroku pg:backups:download --app APP_NAME
+    heroku pg:backups:download --app <APP_NAME>
 
 The file this pulls down is in PostgreSQL's binary dump format. You can convert
 it into SQL text (such as an SQL file) using

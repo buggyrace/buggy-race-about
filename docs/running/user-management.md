@@ -214,6 +214,24 @@ marking them as _inactive_ (set **Is active?** to `No`), which effectively
 suspends them without destroying any data. A user who has been marked as not
 active cannot log in.
 
+## Bulk deleting users
+
+{: .navigation}
+**Admin** → **Users** → **Bulk delete users**
+
+It is possible to delete user records in bulk: you can choose to delete all
+students, all Teaching Assistants, or all non-administrator staff. We
+anticipate this mostly being useful at start-up if you've made a mistake when
+[uploading students](../registering-users/spreadsheet), so (if you have the
+default settings) it is hidden from the interface once the students records are
+no longer "fresh". Specifically, if the most recently created student user was
+added to the database more than `USER_BULK_DELETE_TIMEOUT_DAYS` days ago (or if
+there are no student records), the bulk delete option is disabled and hidden
+from the interface. If you need to get it back, edit the config setting in the
+**Users** group (or set it to `0` to keep bulk delete always available).
+
+Deleting users in this way also deletes their buggies and task texts. The
+bulk delete feature will not delete users who are administrators.
 
 ## Downloading user data
 

@@ -217,8 +217,12 @@ credentials for the server by creating a CSV to upload to the Moodle. Each
 student could then access their own message for their race server login
 criteria.
 
+## Bulk-deleting users
 
- 
+{: .navigation}
+**Admin** → **Users** → **Bulk delete users**
 
-
+When you're setting up your student users, if you make a mistake you can delete
+_all_ the new students' records and try again. See
+[bulk deleting users](../running/running/user-management#bulk-deleting-users).
 
