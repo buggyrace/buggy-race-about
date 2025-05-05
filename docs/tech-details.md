@@ -15,11 +15,11 @@ version **{{ site.content.server_version }}**.
 ## How to check your race server version
 
 {: .navigation}
-**About** (version is below the hamser)
+**About** (version is below the hamster)
 <br>or<br>
 **Admin** → **Dashboard** → **System info**
 
-If you're looking in the source code, the latest version string should be in
+If you're looking in the source code, the version string is written in
 `buggy_race_server/config.py` as `MANUAL_LATEST_VERSION_IN_SOURCE`. You should
 also find releases on the [GitHub repo](https://github.com/buggyrace/buggy-race-server).
 
