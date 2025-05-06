@@ -97,6 +97,10 @@ You must have JavaScript enabled in your browser to use this utility
 You'll see a drop-down list for every column that you need. Select the
 appropriate column from the titles from the CSV file(s) you uploaded.
 
+There's also a **Duplicate username policy** drop-down, which indicates how
+you want to deal with the situation of users potentially having identical
+usernames (adding a disambiguating number, with or without a hyphen).
+
 Click **Create CSV** to generate the CSV file. If everything was OK, you'll see
 a message telling you how many users have been processed, and a button marked
 **Download CSV**. Click the button to get the CSV file: you can use that to
@@ -114,9 +118,10 @@ file, normally the data from the corresponding cell in your source spreadsheet
 
 * data is always trimmed (leading and trailing spaces removed)
 * the `username` is always lowercase, and any internal spaces are removed
-  * if identical usernames are generated, each new one is "bumped" — you'll see
-    a message telling you which usernames have been bumped in this way (you
-    might want to edit them in the CSV file you download afterwards)
+  * if identical usernames are generated, they will be "bumped" according to the
+    disambiguation policy you chose — you'll see a message telling you which
+    usernames have been bumped in this way (you might want to edit them manually
+    in the CSV file once you've downloaded it)
 * for the `password` column, the default option is "Generate random" which will
   create a friendly initial password (inspired by the service of
   [DinoPass](https://www.dinopass.com) — we don't use their API directly
@@ -124,7 +129,7 @@ file, normally the data from the corresponding cell in your source spreadsheet
 * If the data may contain multiple words, you can choose to only use some of
   them. The data is split on space (or @-sign — which lets you pick out the
   username from an email address):
-  * **all** uses all the data for that cell in the CSV
+  * **whole thing** uses the entire string from the column in the CSV
   * **first word**
   * **last word**
   * **all but last**
@@ -151,14 +156,16 @@ CSV utility, and click **Show options**.
 The username will be the lower case first word from the "full name" column. If
 this would result in identical usernames, numbers are added to make the
 subsequent ones unique. For example, if there are multiple students with the
-first name Ada, the generated CSV will contain `ada`, `ada2`, `ada3` and so on.
+first name Ada, the generated CSV will contain `ada1`, `ada2`, `ada3` and so on.
 The utility reports which names have been "bumped" in this way so you can
 review, and if necessary edit, the CSV after you've downloaded it.
 
-We don't change `ada` to `ada1` in case this isn't the mechanism you want to
-use — it's often better to use the first letter of the last name to disambiguate,
-for example. So really we anticipate you resolving these usernames by hand in
-the CSV afterwards — add `1` to `ada` if that's how you want to do it.
+You can choose not to change `ada` to `ada1` (or `ada-1`) in case this isn't
+the mechanism you want to use — it's often better to use the first letter of
+the last name to disambiguate, for example. So really we anticipate you
+resolving these usernames by hand in the CSV afterwards — choose to add `1` to
+`ada` if that's how you want to do it.
+
 
 ### Secondary CSV
 
@@ -178,13 +185,14 @@ The common column that's being used to join the rows must have the same name in
 both CSVs.
 
 {: .rhul}
-Our CSV of enrolled students was downloaded from Moodle. But we also needed
-each student's college username (used for logging onto the CompSci department's
-own Unix server), which isn't held on the Moodle. So we created a secondary
-CSV, downloaded via the Unix LDAP service, containing our students' email
-addresses and college usernames. Because each student's email address appeared
-in both spreadsheets — and we made sure the email columns in both had the same
-title — the utility could use that to join together each row (for each
+Our CSV of enrolled students was downloaded from Moodle. But when we ran the
+with ["remote" distribution method](../buggy-editor/distributing-the-code), we
+also needed each student's college username (used for logging onto the CompSci
+department's own Unix server), which isn't held on the Moodle. So we created a
+secondary CSV, downloaded via the Unix LDAP service, containing our students'
+email addresses and college usernames. Because each student's email address
+appeared in both spreadsheets — and we made sure the email columns in both had
+the same title — the utility could use that to join together each row (for each
 student). In this way, the username column from the secondary CSV appeared in
 the drop-down options, and we could choose it for our `ext_username` field
 (which we call College Username).
@@ -224,5 +232,5 @@ criteria.
 
 When you're setting up your student users, if you make a mistake you can delete
 _all_ the new students' records and try again. See
-[bulk deleting users](../running/running/user-management#bulk-deleting-users).
+[bulk deleting users](../running/user-management#bulk-deleting-users).
 
