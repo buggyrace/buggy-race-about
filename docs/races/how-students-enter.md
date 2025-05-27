@@ -61,13 +61,14 @@ their default values, together with a warning.
 The default buggy editor produces JSON that describes a buggy with an explicit
 number of wheels (`qty_wheels`) — nothing more. Because everything accepts the
 default, except that number, the buggy that is produced will have the default
-pennant (a white flag).
+pennant (this is a mid-grey, unless you've set the config setting
+`DEFAULT_FLAG_COLOR` to something else).
 
 > Specifically, if you're looking at the specs, this means a `flag_pattern`
-> that is `plain`, with the colour set to `white`.
+> that is `plain`, with the colour set to `#888888`.
 >
 > The default buggy also has only one unit of (default) petrol as its primary
-> motive power, which isn't enough to get it around a lap of any distance.
+> motive power, which isn't enough to get it very far.
 
 ## Inspecting buggies and uploaded JSON
 
