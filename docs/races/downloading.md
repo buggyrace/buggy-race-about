@@ -13,7 +13,7 @@ has_children: false
 
 > The races are run _offline_ (see [running the race](running) for details on
 > why and how this is). You need to download the **race file** for the
-> race, because this is used as input when you run the run.
+> race, because this is used as input when you run the race.
 
 When you download the race file, the race server bundles up all the information
 needed *including the buggies*. The time you download the file matters: it's
