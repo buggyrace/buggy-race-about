@@ -65,6 +65,15 @@ not going to be awake then, change this to an earlier time!
 The Select-a-racetrack dialogue lets you pick from a collection of examples
 that are available by default — or you can create your own.
 
+{: .note}
+There's a **Show used-by races** button (requires JavaScript) that will display,
+in a list under each racetrack, the races that are using it. This is helpful if
+you want to run each of your races on a different track. "Used by" indicates
+that the race used, or will use, the _same_ URLs (image and path SVG) as the
+racetrack. (If you edit racetracks after you've created a race, or duplicate
+them, this may affect the "used-by" results.)
+
+
 * **Is visible?**  
   Students can only see races that you have explicitly marked as "visible" on
   the server. This lets you experiment without publishing them: if you choose
