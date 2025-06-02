@@ -56,8 +56,8 @@ config_detail_lines = {}
 source_version = None
 
 input_fname = input(
-    f"[?] Filename containing content from /admin/config-docs-helper? "
-    "(default is {DEFAULT_INPUT_FNAME}) "
+    "[?] Filename containing content from <your-race-server>/admin/config-docs-helper?\n"
+    f"[default: {DEFAULT_INPUT_FNAME}] "
 ) or DEFAULT_INPUT_FNAME
 with open(input_fname) as input_file:
     line = input_file.readline()
