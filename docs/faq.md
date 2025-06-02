@@ -311,7 +311,7 @@ page.
 Or look under the hamster on the <code>/about</code> page.
 
 This documentation is up-to-date for Buggy Race Server version
-**{{ site.content.server_version }}*.
+**{{ site.content.server_version }}**.
 
 ---
 
