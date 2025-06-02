@@ -245,8 +245,9 @@ Note that task texts can be disabled _entirely_ by setting
 Very little — both are _optional_ settings (with string values) that you can
 save with each of your users if that's helpful. We used both at Royal
 Holloway because students had both a college username (which we were using for
-the more [complex VSCode distribution method](distributing-the-code#method-vsremote))
-and an underlying Moodle ID which helped us when doing our assessments/marking.
+the more [complex VSCode distribution
+method](buggy-editor/distributing-the-code#method-vsremote)) and an underlying
+Moodle ID which helped us when doing our assessments/marking.
 
 You can enable either or both of these, together with giving them descriptive
 names and example values, via the ["Users" group of config settings](customising/users).
@@ -282,6 +283,24 @@ your server at `/races/assets/tracks/filename.svg`. Note that racetrack assets
 like this are treated differently from general static content (such as images
 or CSS) because they are not handled by [Webpack](glossary#webpack).
 
+---
+
+## Why can't I see all the (yellow) admin links at the top of my admin pages?
+
+There are a couple of admin pages that are contextual, and if your project is
+not using them, they are not displayed. For example, if your choice of 
+[distributing the code](buggy-editor/distributing-the-code) does not use the
+Buggy Editor source code _on the race server_, the link to that admin page is
+not displayed (it's `/admin/buggy-editor`). Similarly if you have disabled the
+display of [tech notes](static-content/tech-notes), then that link is not
+displayed on the admin (it's at `/admin/tech-notes`).
+
+The [admin dashboard](running/dashboard) always shows all the available admin
+"nav" links on the top. But on other admin pages, the second line is collapsed
+to save space. Use the **···** button to expand it, or **·×·** to collapse it.
+You can make these decisions "sticky" (so they _always_ expand or collapse when
+the page is loaded) by clicking on your username on the top right menu bar, and
+selecting your _Admin button preference_.
 
 ---
 
@@ -290,6 +309,9 @@ or CSS) because they are not handled by [Webpack](glossary#webpack).
 Go to **Admin** → **Dashboard** → **System info** where it's at the top of the
 page.  
 Or look under the hamster on the <code>/about</code> page.
+
+This documentation is up-to-date for Buggy Race Server version
+**{{ site.content.server_version }}*.
 
 ---
 
