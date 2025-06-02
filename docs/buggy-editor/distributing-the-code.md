@@ -327,7 +327,8 @@ below that apply generally to distributing the code.
   <div>
     <label>Link</label>
     <p>
-      FIXME Link on the home page goes to your GitLab repo, or a project page
+      Link on the home page goes to your public repo, or students' own repos
+      if logged in (GitLab or GitHub)
     </p>
   </div>
   <div>
@@ -339,8 +340,9 @@ below that apply generally to distributing the code.
       starts.
     </p>
     <p>
-      This means the students' forked repo and issues are already in place for
-      them, and they just need to `clone` it locally to start work.
+      This means the students' forked repo (and issues, if you want) are already
+      in place for them, and they just need to `clone` their own repo locally to
+      start work.
     </p>
   </div>
   <div>
