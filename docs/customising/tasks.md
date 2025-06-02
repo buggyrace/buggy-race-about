@@ -35,6 +35,8 @@ have completed set-up phase.
 
 
 
+
+
 ## Config settings ("Tasks")
 
 {: .config-settings}
@@ -42,7 +44,7 @@ have completed set-up phase.
 |----------|---------------|
 | `PROJECT_PHASE_MIN_TARGET` | This is the minimum phase you&#39;d expect an inexperienced programmer who&#39;s fully engaged in the project to have completed before running out of time. The default of 3 is based on our experience of running a 6-week project (several times) with students with only one term&#39;s prior experience of Python, and takes into account that task 3-MULTI is (deliberately) more involved than most students realise. This expectation is displayed to students (for example on the task list page). If you don&#39;t want this, set it to zero to remove the recommendation entirely.  <br/><br/> _Default value:_ `3` |
 | `IS_STORING_STUDENT_TASK_TEXTS` | Do you want students to be able to record text on this server reporting they approached/did each task? If you&#39;re running the project with a report (see `PROJECT_REPORT_TYPE`), then this allows students to save notes here as they go along, which in turn gives you some visibility of their progress (which is why we implemented it). If you choose `No`, this feature will be hidden. Note that you _can_ choose `Yes`, letting students store task texts, even if the project doesn&#39;t require a report.  <br/><br/> _Default value:_ `Yes` |
-| `IS_STORING_TASK_LIST_IN_DB` | When the task list is published, is the HTML page stored in the database? If you choose `No`, the cached HTML will be written as a file instead — in most cases (and especially if you are running on an ephemeral file system such as Heroku&#39;s) it&#39;s probably best to choose `Yes` and only change if you notice performance problems.  <br/><br/> _Default value:_ `Yes` |
+| `IS_STORING_TASK_LIST_IN_DB` | When the task list is published, is the HTML page stored in the database? If you choose `No`, the cached HTML will be written as a file instead — in most cases (and especially if you are running on an ephemeral file system such as Heroku&#39;s) it&#39;s probably best to choose `Yes` and only change if you notice performance problems. **Caution:** if you change this setting _after the task list has already been published_, the page showing the task list **will be deleted**, and you&#39;ll need to republish it.  <br/><br/> _Default value:_ `Yes` |
 | `TASK_NAME_FOR_VALIDATION` | The name of the task that requires use of validation. If set, this is shown as a helpful link in the explanatory text on the reports page. If you haven&#39;t customised the task list, you don&#39;t need to change this.  <br/><br/> _Default value:_ `1-VALID` |
 | `TASK_NAME_FOR_GET_CODE` | The name of the task for getting the source code. If you haven&#39;t customised the task list, you don&#39;t need to change this.  <br/><br/> _Default value:_ `0-GET` |
 | `TASK_NAME_FOR_ENV_VARS` | The name of the task for setting environment variables. If you haven&#39;t customised the task list, you don&#39;t need to change this.   <br/><br/> _Default value:_ `3-ENV` |

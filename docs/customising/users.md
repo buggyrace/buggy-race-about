@@ -130,6 +130,8 @@ see [how to set announcements](../running/announcements).
 
 
 
+
+
 ## Config settings ("Users")
 
 {: .config-settings}
@@ -144,7 +146,7 @@ see [how to set announcements](../running/announcements).
 | `USERS_HAVE_EXT_ID` | Do users have an ID from an external system? This might be useful if you want to match students with their existing ID on another system like Moodle, Blackboard or Canvas. You don&#39;t need this unless it&#39;s a useful way of identifying a student. If you do set this to `Yes`, you should also set `EXT_ID_NAME` to describe what it is.  <br/><br/> _Default value:_ `No` |
 | `USERNAME_EXAMPLE` | A placeholder string used in the login form. This can be especially helpful if students use a different username for accessing other college systems. You can set this to be blank.  <br/><br/> _Default value:_ `hamster` |
 | `EXT_USERNAME_NAME` | If users have an external username, what is it called? For example: &#34;College username&#34;. This is to clearly differentiate the race server username (which students use to log into this race server) from this external one (which they presumably use to access other course systems). Keep it short, because it&#39;s used on buttons in the admin. This setting is ignored if `USERS_HAVE_EXT_USERENAME` is `No`.  <br/><br/> _Default value:_ `Ext. username` |
-| `EXT_USERNAME_EXAMPLE` | If users have an external username, provide an example format (e.g., `abcd123` or `ada@example.org`). Note that this only serves as a placeholder suggestion when inputting — it&#39;s not used to validate or force the format of inputs. This setting is ignored if `USERS_HAVE_EXT_USERENAME` is `No`.  <br/><br/> _Default value:_ `abcd123` |
+| `EXT_USERNAME_EXAMPLE` | If users have an external username, provide an example format (e.g., `abcd123` or `ada@example.org`). Note that this only serves as an example/suggestion when inputting — it&#39;s not used to validate or force the format of inputs. This setting is ignored if `USERS_HAVE_EXT_USERENAME` is `No`.  <br/><br/> _Default value:_ `abcd123` |
 | `EXT_ID_NAME` | If user have an external ID, what is it called? For example: &#34;Student number&#34;, &#34;Moodle ID&#34;, &#34;Blackboard ID&#34;, &#34;Canvas ID&#34;. This setting is ignored if `USERS_HAVE_EXT_ID` is `No`.  <br/><br/> _Default value:_ `External ID` |
 | `EXT_ID_EXAMPLE` | If users have an external ID, provide an example of what it might look like. This setting is ignored if `USERS_HAVE_EXT_ID` is `No`.  <br/><br/> _Default value:_ `12345` |
 | `IS_TA_EDIT_COMMENT_ENABLED` | Teaching Assistants cannot edit user data. But do you want TAs to be able to add or edit comments left by staff?  <br/><br/> _Default value:_ `Yes` |

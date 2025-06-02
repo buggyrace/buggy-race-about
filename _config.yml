@@ -34,4 +34,4 @@ exclude: ["src", "utils"]
 content:
   demo_url: https://demo.buggyrace.net
   demo_race_id: 1
-  server_version: v3.0.2
+  server_version: v3.0.6

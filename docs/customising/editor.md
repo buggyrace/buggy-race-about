@@ -35,6 +35,8 @@ your project: see [more details about distributing the code](buggy-editor/distri
 
 
 
+
+
 ## Config settings ("Editor")
 
 {: .config-settings}
