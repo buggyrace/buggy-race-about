@@ -88,7 +88,7 @@ maybe) and want to test on localhost.
 
 To make it easier for you to replay a race before you commit to uploading it
 (for example, if you're testing or experimenting), the race server has a
-mechanism for uploading _any_ race file and immediately launcing the race
+mechanism for uploading _any_ race file and immediately launching the race
 player to view (play) it. Nothing is written to the database: this is just
 a convenient way of serving the race file without CORS problems (because the
 file is, for the duration, hosted on the same server as the race player).
@@ -101,8 +101,8 @@ see how the events within it play out.
 
 The file is temporary because it only persists until you upload another one (or,
 if you're hosting your race server on a platform that has an ephemeral file
-system, such as Heroku) the server restarts). If there is currently a temporary
-race file available, you'll also see buttons to replay or delete it.
+system, such as Heroku, the server is restarted). If there is currently a
+temporary race file available, you'll also see buttons to replay or delete it.
 
 You must be logged in as a staff user to access the temporary race file.
 
