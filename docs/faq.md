@@ -252,6 +252,7 @@ Moodle ID which helped us when doing our assessments/marking.
 You can enable either or both of these, together with giving them descriptive
 names and example values, via the ["Users" group of config settings](customising/users).
 
+---
 
 ## Racetrack not working: "Problem getting SVG"
 
@@ -301,6 +302,24 @@ to save space. Use the **···** button to expand it, or **·×·** to collapse
 You can make these decisions "sticky" (so they _always_ expand or collapse when
 the page is loaded) by clicking on your username on the top right menu bar, and
 selecting your _Admin button preference_.
+
+Finally, some of the admin pages are only available to administrators, so if
+you're logged in as a Teaching Assistant, some of those admin links will be not be enabled.
+
+---
+
+## Why does it say "hamster" in the login form? Can I change that?
+
+It's the default example username being used as a placeholder. You can change
+it (or set it to be blank) by editing the `USERNAME_EXAMPLE` config setting (in
+the **Users** group). It may be helpful to set an example here to distinguish
+the race server's usernames from those your students may be using on other
+systems. For more about this — and external usernames — see
+[customising users](customising/users). You can also
+[set a login message](running/announcements) to display above that form.
+
+The [hamster](glossary#hamster) is one of the forms of motive power available
+to racing buggies.
 
 ---
 
