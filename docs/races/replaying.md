@@ -28,9 +28,14 @@ described by the "race file" (the JSON file produced when you run a race).
 {: .demo}
 See this in action by [replaying a race]({{site.content.demo_url}}/races/{{site.content.demo_race_id}}/replay#replay).
 
-This presupposes that the race file is available online — by default, if you've
-uploaded it to the race server, it will be there, although you can override
-this if you've set the config setting `IS_STORING_RACE_FILES_IN_DB` to `No`.
+This presupposes that the race file is available online. By default, it's
+available on the race server because it was stored (in the database) when
+you [uploaded the results](uploading-results). You can override this behaviour
+by setting the config setting `IS_STORING_RACE_FILES_IN_DB` to `No` (in which
+case you'll need to publish the race file somewhere on the web where the race
+player can access it... but there's an extra complication with this: you may
+need to be aware of the [CORS headings](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS)
+that are being sent by whichever service is hosting them.
 
 {: .note}
 If _Are results visible?_ is `No` for this race, students won't be able to
