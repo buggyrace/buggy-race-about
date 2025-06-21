@@ -29,9 +29,20 @@ working directory... so either drop your downloaded race file there and/or
 copy/rename it to `race.json`. The script doesn't change the input file; it
 creates a new (output) one.
 
+{: .note}
+The script can run with options: `--no-race-file` (`-n`) to accept race data
+directly from the keyboard (not recommended) and `--csv` (`-c`) to ignore any
+buggies in the JSON file and use a CSV instead. Not using a race file is really
+only useful for testing, but using a CSV may be helpful if you need to bypass
+the buggies in the racefile (for example, you downloaded it at the wrong time).
+
 When the script has completed, [upload the race file](uploading-results) — it
 contains the results of the race as well as details of each event within it.
 
+{: .suggest}
+If you want to watch a replay of the race — any race — without _actually_
+entering it into the database, you can use your race server's **Upload & Replay
+Temporary Race File** feature.
 
 ## Set-up and requirements
 
