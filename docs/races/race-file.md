@@ -47,6 +47,7 @@ and animates the events described within it.
 | `version`         | String identifying the race-runner used to create this file |
 | `start_at`        | Timestamp of the public start time of the race           |
 | `raced_at`        | Timestamp when the race was actually run                 |
+| `is_dnf_position` | Is "Did-Not-Finish" a position? (`true` or `false`)      |
 | `buggies_entered` | Quantity of buggies entered in the race (length of `buggies` array) |
 | `buggies_started` | Quantity of buggies that were not disqualified from the race, i.e., starters (if the race has been run) |
 | `buggies_finished`| Quantity of buggies that finished the race (if the race has been run) |
@@ -139,6 +140,7 @@ recognise or know how to handle.
   "version": "1.0",
   "start_at": "2023-07-20 23:58",
   "raced_at": "2023-07-21 09:00",
+  "is_dnf_position": true,
   "buggies_entered": 15,
   "buggies_started": 12,
   "buggies_finished": 8,
@@ -167,17 +169,17 @@ recognise or know how to handle.
   ],
   "events": [
     [
-      {"b": "auberon",  "d": 10.0},
-      {"b": "ethel", "d": 5.0},
-      {"b": "foxglove", "d": 27.0},
+      {"b": "auberon",  "d": 10},
+      {"b": "ethel", "d": 5},
+      {"b": "foxglove", "d": 27},
       ...
     ],
     [
-      {"b": "gault", "d": 8.0}, 
+      {"b": "gault", "d": 8}, 
       {"b": "matthew", "e": "p", "s": "puncture! now running on 3 of 4 wheels"},
-      {"b": "mervyn", "d": 11.0},
+      {"b": "mervyn", "d": 11},
       {"b": "foxglove", "s": "is out of power (and has no auxillary power)"},
-      {"b": "gault", "d": 1.0},
+      {"b": "gault", "d": 1},
       ...
     ],
     [
