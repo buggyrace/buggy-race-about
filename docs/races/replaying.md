@@ -63,15 +63,48 @@ happen if there are lots of punctures).
 ## Standalone player
 
 {: .navigation}
-**Admin** → **Races** → **Replay race** + URL
+**Admin** → **Races** → (bottom of page) **Preview race replays**  
+→ (enter URL) **Replay race**
 
-As staff, you can test a race file in the player _before_ you've uploaded it to
-the server using the "standalone" player. That is, if you have a race file you
+{: .screenshot}
+![Screenshot of the temporary race file replay interface](/docs/img/screenshots/preview-race-replay.png)
+
+{: .caption}
+The admin interface to the standalone race file player.
+
+As staff, you can test a race file in the player _before_ you've uploaded the
+results by using the "standalone" player. That is, if you have a race file you
 can replay it even if it's not in the database on the server. However, you need
 to have the race file on a URL the server can access, which may mean you need
 to overcome [CORS limitations](#hosting-elsewhere-publishing-race-files) too.
 This can be useful if you're running a local copy of the server (as a developer
 maybe) and want to test on localhost.
+
+### Replaying a "temporary" race file
+
+{: .navigation}
+**Admin** → **Races** → (bottom of page) **Preview race replays**
+→ **Upload & replay**
+
+To make it easier for you to replay a race before you commit to uploading it
+(for example, if you're testing or experimenting), the race server has a
+mechanism for uploading _any_ race file and immediately launcing the race
+player to view (play) it. Nothing is written to the database: this is just
+a convenient way of serving the race file without CORS problems (because the
+file is, for the duration, hosted on the same server as the race player).
+
+The temporary race file is not inspected for data consistency against the
+users, buggies and even races in your database, so remember that this is *not*
+the same as uploading race results with a view to publishing them. This is only
+a mechanism for previewing one race file in the race player when you want to
+see how the events within it play out.
+
+The file is temporary because it only persists until you upload another one (or,
+if you're hosting your race server on a platform that has an ephemeral file
+system, such as Heroku) the server restarts). If there is currently a temporary
+race file available, you'll also see buttons to replay or delete it.
+
+You must be logged in as a staff user to access the temporary race file.
 
 ## Hosting elsewhere: extracting the race player
 
