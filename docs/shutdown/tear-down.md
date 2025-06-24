@@ -40,6 +40,23 @@ If you have not been storing [race files](../glossary#race-file) on the server
 it is) then you should probably save copies of those as well (from wherever they
 are).
 
+## Download a copy of your tasks (in markdown)
+
+Skip this if you did not customise the tasks in your project.
+
+{: .navigation}
+**Admin** → **Tasks** → **Download current tasks as Markdown**
+
+If you customised the tasks, you can save them as a markdown file. This is
+handy because if you decide to run the project again with a new cohort of students, you can load all your custom tasks by uploading this single markdown
+file, even on a freshly installed race server — see [bulk-editing tasks](../customising/creating-tasks).
+
+{: .warning}
+Make sure you download the **current** tasks, not the default ones! The default
+ones are in the server repo, which may be useful at the start of the project but
+aren't helpful when you're about to tear down.
+
+
 ## Disable student logins
 
 Disabling student logins prevents students making any changes on the server.
