@@ -45,7 +45,7 @@ are).
 Skip this if you did not customise the tasks in your project.
 
 {: .navigation}
-**Admin** → **Tasks** → **Download current tasks as Markdown**
+**Admin** → **Tasks** → **Get tasks as Markdown** → **Download current tasks as Markdown**
 
 If you customised the tasks, you can save them as a markdown file. This is
 handy because if you decide to run the project again with a new cohort of students, you can load all your custom tasks by uploading this single markdown

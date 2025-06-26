@@ -108,6 +108,9 @@ task list and its links with your students.
 
 ## Downloading and uploading all tasks in one go
 
+{: .navigation}
+**Admin** → **Tasks** → **Load or bulk-edit tasks**
+
 The tasks are inherently verbose, so it can be inconvenient to edit them
 in a form in your browser. If you want to edit them, you can download
 a single markdown file that contains them all. You can then edit this file
@@ -126,6 +129,9 @@ exact names you should use.
 <br>
 These are _not_ Jinja templates, so you can't use conditionals or anything
 especially fancy: just string replacement for named settings.
+
+{: .navigation}
+**Admin** → **Tasks** → **Get tasks as Markdown** → **Download** (current or default) **tasks as Markdown**
 
 You can also download the tasks on your server as a single markdown file _at
 any time_ — for example at the end of the project. This might be useful if you
