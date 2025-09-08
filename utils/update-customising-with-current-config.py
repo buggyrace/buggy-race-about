@@ -83,7 +83,7 @@ with open(input_fname) as input_file:
                 source_version = matches.group(1)
                 print(f"[ ] source version detected is \"{source_version}\"")
                 if source_version.endswith("dev"):
-                    source_version = source_version[:-3]
+                    source_version = source_version[:-4]
                 source_version = input(
                     "[?] Update version number in docs? "
                     f"(default is {source_version}, enter another string, "
