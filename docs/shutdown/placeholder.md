@@ -32,6 +32,9 @@ page. (There is a case for returning
 [302 Found](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302)
  → the holding page instead, but... this really is just a placeholder!).
 
+{: .note}
+If you're hosting on Heroku (or a service like it), when you switch the DNS away from pointing at it, be aware that the system at the hosting end may reoprt errors (for example, automtatic SSL certificate renewal will probably fail). This isn't a material problem, but is something you might encounter if the hosting service continues running after you've switched the DNS to the static stub. The remedy (other than simply shutting the hosting service down entirely!) is to disable the _Custom domain_ settings there.
+
 ## An example of a placeholder site
 
 {: .rhul}
