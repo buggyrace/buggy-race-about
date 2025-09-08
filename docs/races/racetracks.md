@@ -25,13 +25,16 @@ them by setting the config setting `IS_SHOWING_EXAMPLE_RACETRACKS` to `No`
 in the "Races" group. Otherwise, you'll see a button marked **Add missing
 racetracks** if any of the example tracks are not in the database.
 
-You can edit existing racetracks or add your own — but note that any new files
-(JPG or SVG) that you make are _not_ stored on the race server. You have to host
-them, and provide the URLs here.
+You can edit existing racetracks or add your own. If the config setting
+`IS_STORING_RACE_ASSETS_IN_DB` is set to `Yes` (the default) — then you can
+upload the JPG and SVG files needed. Storing your own race assets on the race
+server is simplest, but note that they are stored (as binary objects) in the 
+database. Alternatively, you can host yourself on a webserver with a friendly
+CORS policy, and provide the URLs.
 
-## Basic components: image, path, length
+## Basic components: image, path, lengths, and start offset
 
-The racetrack consists of:
+Each racetrack consists of:
 
 * **URL of racetrack image**  
   The image must be a landscape image twice as wide as it is tall (2:1 aspect
@@ -40,19 +43,46 @@ The racetrack consists of:
   URLs that point to the server because those track image files are pre-loaded.
   
   The example files are 1024 × 512 (pixel dimensions) JPEG files.
+  
+  If you upload a JPG image to store in the database, note that the race server
+  will make it available through a URL path that is slightly different from
+  that used by the example ("built-in") racetracks.
 
 * **URL of path SVG**  
   The path is overlaid on the background image in the replay animation. See
   more about the SVG specifics below: it must be a closed (loop) `path` in
-  a 200 × 100 viewport — those dimensions matter because they effect the length
-  of the path (currently there is no scaling factor).
+  a 200 × 100 viewport. The direction of the race (the way the buggies will
+  move around the track: clockwise or anticlockwise) is implicit in the order
+  in which the points within the path have been specified. The start and finish
+  line is, by default, where the path start point is specified.
+  
+  If you upload a SVG file to store in the database, note that the race server
+  will make it available through a URL path that is slightly different from
+  that used by the example ("built-in") racetracks.
+
+
+* **SVG path length**  
+  The calculated length of the SVG path is needed when displaying and animating
+  the race. For efficiency, it's handled as a stored value, rather than being
+  calculated every time its needed. The **View** option on the server will show
+  the result of the calculation so you can check it (and, if necessary, edit the
+  record to add it).
 
 * **Lap length**  
-  This should be the calculated length of the path in the SVG. It's stored
-  explicitly to avoid having to calculate it every time it's needed. The
-  **View** option on the server will show the result of the calculation so you
-  can check it. Make sure you save the same value.
+  This is the length of the racetrack in "game" units (perhaps those are metres,
+  although currently it's not strictly enforced) — that is, regardless of the
+  length of the graphical representation of the racetrack's SVG path. Use this
+  to keep all the racetracks in your project to be comparable size. If a
+  racetrack doesn't have an explicit lap length, it will default to using the
+  SVG path length (in which case, game units _are_ SVG units).
 
+* **Start offset**  
+  By default, the start (and finish) line of the racetrack is the position of
+  the SVG path's first point. But if you want to change this, the start offset
+  is how far around the track (in "game" units) the start (and finish) line is.
+  Currently this simply affects how the race is displayed in the
+  [race-player](../glossary#race-player).
+   
 ## Races copy racetrack URLs
 
 When you [create or edit a race](creating) and select a racetrack, you are
@@ -78,7 +108,8 @@ If you're using the default [race-player](../glossary#race-player), your SVG
 **must** be within a viewbox that's 200 × 100 — for example:  
 `viewBox="0 0 200 100"`  
 You cannot use a `scale` transform to fix this; the `viewBox` attribute must
-describe a 200 × 100 box.
+describe a 200 × 100 box (transform won't work because the JavaScript currently
+parses the SVG).
 
 The racetrack's path SVG must contain a _single_ `path` element that describes
 a closed loop. The `fill` and `stroke` should be `none` as it's not used for
