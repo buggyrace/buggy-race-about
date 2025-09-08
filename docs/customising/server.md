@@ -49,6 +49,7 @@ current, active value.
 
 
 
+
 ## Config settings ("Server")
 
 {: .config-settings}
@@ -65,6 +66,7 @@ current, active value.
 | `IS_STUDENT_API_OTP_ALLOWED` | Can individual students choose to set their own API secret to be different from the default one-time-password behaviour you&#39;ve set with `IS_API_SECRET_ONE_TIME_PW`? For example, it&#39;s a little simpler for students to get the API working if it&#39;s not an OTP — but by setting this to `Yes` they can opt in or out.  <br/><br/> _Default value:_ `Yes` |
 | `IS_SHOWING_CONFIG_WARNINGS` | Once setup is complete, the settings pages display a warning if any of your config settings differ from the suggested values for the editor distribution method you&#39;ve chosen. Keep this set to `Yes` unless you&#39;re sure your settings are correct and it&#39;s safe to ignore the automated suggestions. If there are warnings, they will always be shown on the setup summary page regardless of this setting.  <br/><br/> _Default value:_ `Yes` |
 | `IS_SHOWING_RESTART_SUGGESTION` | Do you want the server to suggest you restart it after changing any config settings? Our experience is that normally changing config does not require a restart _but_ in case your implementation would benefit from this, you can switch the suggestions on.  <br/><br/> _Default value:_ `No` |
+| `IS_ADMIN_API_ENABLED` | If you enable the admin API, then admin users can download a JSON dump of &#34;dashboard&#34; data if they provide a valid API key and secret. This may be helpful if you are monitoring engagement data and want to schedule regular data downloads. Only enable the admin API if you are accessing the server over https. If this is set to `No`, the admin endpoint will return a 404 response.  <br/><br/> _Default value:_ `No` |
 
   
 ---
