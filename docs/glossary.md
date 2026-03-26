@@ -40,10 +40,12 @@ Clarification of terms used in the project and its documentation.
 <li><a href="#heroku">Heroku</a></li>
 <li><a href="#jinja-templates">Jinja&nbsp;templates</a></li>
 <li><a href="#mass">mass</a></li>
+<li><a href="#notice">notice</a></li>
 <li><a href="#pelican">Pelican</a></li>
 <li><a href="#petrol">petrol</a></li>
 <li><a href="#phase">phase</a></li>
 <li><a href="#poster">poster</a></li>
+<li><a href="#project">project</a></li>
 <li><a href="#race-event">race&nbsp;event</a></li>
 <li><a href="#race-file">race&nbsp;file</a></li>
 <li><a href="#race-player">race&nbsp;player</a></li>
@@ -309,6 +311,14 @@ Clarification of terms used in the project and its documentation.
   as part of the <a href="#specs">specs</a>.
 </dd>
 
+<dt id="notice">notice</dt>
+<dd>
+  A project notice is a small text that can be displayed on the 
+  <code>/project</code> page. You can set a custom notice for individual 
+  students, which may be useful if you are also overriding project submission
+  dates or links for students who are have resits or extensions.
+</dd>
+
 <dt id="pelican">Pelican</dt>
 <dd>
   Pelican is a Python-based static site generator. When you publish the
@@ -345,6 +355,18 @@ Clarification of terms used in the project and its documentation.
   or a webpage (at <code>/poster</code>) within their editor. See also
   <a href="#report">report</a>.
   <br>→ <a href="teaching/report-and-poster">students' posters</a>
+</dd>
+
+<dt id="project">project</dt>
+<dd>
+  Buggy Racing was created as a project for students to do as part of a
+  practical, programming-focussed module in <a href="#rhul">RHUL</a>'s
+  computer science department's Foundation programme. But we know that it could
+  be equally useful in schools or coding bootcamps, so we've tried not to make
+  too many assumptions about how you might be running the "project" for your
+  students. This is partly why there's so many <a href="#config-setting">config
+  settings</a>! But in general, the "project" encompasses things like what (if
+  any) work your students will be expected to submit, how to submit, and if there is a deadline.
 </dd>
 
 <dt id="race-event">race event</dt>
