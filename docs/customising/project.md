@@ -30,24 +30,8 @@ You can choose whether or not you require students to create a report and/or
 a poster as part of the project: see
 [the students' report and poster](../teaching/report-and-poster) for details.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+You can also enable overriding certain project settings for individual users:
+see [customising deadlines and links for individual students](../teaching/submission#customising-deadlines-and-links-for-individual-students).
 
 
 ## Config settings ("Project")
