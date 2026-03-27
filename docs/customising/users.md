@@ -53,6 +53,12 @@ If your students are using GitHub, the GitHub account information is stored _in
 addition to_ these fields. You don't enter that, as the race server stores it
 when each student authenticates their GitHub account.
 
+{: .note}
+You can also [customise some project details](submission#customising-deadlines-and-links-for-individual-students)
+for individual students. That is configured by settings in the
+[Project config group](project), not in these User settings.
+
+
 ## Email address
 
 Currently, the race server never sends emails, so you only need add this if you
@@ -105,31 +111,13 @@ other usernames they might need in other contexts.
 
 ### Placeholders and login message
 
-If you're running the buggy racing as part of an institution (such as a college), it can be confusing to students which username should be used on
+If you're running the buggy racing project as part of an institution (such as a college), it can be confusing to students which username should be used on
 which website. You can set example placeholders for both the username and
 external usermname (if you're using it) with the config settings
 `USERNAME_EXAMPLE` and `EXT_USERNAME_EXAMPLE` respectively.
 
 You can also set a custom message that appears on the login page:
 see [how to set announcements](../running/announcements).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
