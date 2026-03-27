@@ -38,26 +38,6 @@ do not match suggested values for your chosen method.
 </ul>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Config settings ("VCS")
 
 {: .config-settings}

@@ -18,27 +18,6 @@ _need_ to run races, but we recommend that you do!
 See more about [running races](../races/).
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Config settings ("Races")
 
 {: .config-settings}

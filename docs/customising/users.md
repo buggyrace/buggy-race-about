@@ -120,7 +120,6 @@ You can also set a custom message that appears on the login page:
 see [how to set announcements](../running/announcements).
 
 
-
 ## Config settings ("Users")
 
 {: .config-settings}

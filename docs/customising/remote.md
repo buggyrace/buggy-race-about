@@ -22,25 +22,6 @@ an SSH tunnel between the students' VSCode workspace and a remote server. See
 more about [distributing the code](../buggy-editor/distributing-the-code).
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Config settings ("Remote")
 
 {: .config-settings}

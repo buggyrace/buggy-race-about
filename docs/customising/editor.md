@@ -18,26 +18,6 @@ each student develops) is managed.
 The `EDITOR_DISTRIBUTION_METHOD` setting is critical to how your students start
 your project: see [more details about distributing the code](buggy-editor/distributing-the-code).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Config settings ("Editor")
 
 {: .config-settings}

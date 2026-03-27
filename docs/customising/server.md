@@ -31,26 +31,6 @@ from the `BUGGY_RACE_SERVER_URL`, the server will add a button to load the
 current, active value. 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Config settings ("Server")
 
 {: .config-settings}

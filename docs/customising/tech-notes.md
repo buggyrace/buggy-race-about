@@ -26,25 +26,6 @@ the source that is then deployed to your own server.
 See more about [managing the tech notes](../static-content/tech-notes).
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Config settings ("Tech Notes")
 
 {: .config-settings}

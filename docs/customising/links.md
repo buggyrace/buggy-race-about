@@ -29,24 +29,6 @@ Example showing two links displayed on the race server's home page — one to
 Moodle, another to Discord. The text is shown above the button, and the name on
 the button.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Config settings ("Links")
 
 {: .config-settings}
