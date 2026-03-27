@@ -33,6 +33,11 @@ from os import path
 
 DEFAULT_INPUT_FNAME = "src/config-settings-for-docs.txt"
 
+ENTITY_SUBSTITUTIONS = {
+  "&#39;": "'",
+  "&#34;": '"',
+}
+
 class ConfigGroupNames(str, Enum):
     AUTH = "auth"
     EDITOR = "editor"
@@ -137,5 +142,7 @@ for group_name in config_detail_lines:
     with open(group_md_filename, "w") as new_md_file:
         print(f"[ ] updating {group_md_filename} with latest config settings")
         for new_line in new_lines:
+            for entity in ENTITY_SUBSTITUTIONS: 
+                new_line = new_line.replace(entity, ENTITY_SUBSTITUTIONS[entity])
             new_md_file.write(new_line) # already have newline ending
 
