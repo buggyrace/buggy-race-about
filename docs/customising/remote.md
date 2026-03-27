@@ -12,12 +12,14 @@ has_children: false
 {: .navigation}
 **Admin** → **Config** → Config:**Remote**
 
+
+{: .note}
+Most installations don't use these settings, so you can usually skip them!
+
 These are settings that only matter if you've set `EDITOR_DISTRIBUTION_METHOD`
-to `vsremote` in the "Projects" group.
+to `vsremote` in the [Project config group](project).
 
-_Most installations don't need these settings, so you can usually skip them!_
-
-The `vsremote` distribution is the most compex set-up we've tried, and uses
+The `vsremote` distribution is the most complex set-up we've tried, and uses
 an SSH tunnel between the students' VSCode workspace and a remote server. See
 more about [distributing the code](../buggy-editor/distributing-the-code).
 
