@@ -24,7 +24,7 @@ short names, but they can be the same.
 |----------|---------------|
 | `INSTITUTION_FULL_NAME` | Full name for your institution, college, or school.  <br/><br/> _Default value:_ `Acme School of Buggy Programming` |
 | `INSTITUTION_SHORT_NAME` | Short name or abbreviation for your institution, college, or school.  <br/><br/> _Default value:_ `ASBP` |
-| `INSTITUTION_HOME_URL` | Full URL for the home page of your institution: used as a link on the race server&#39;s home page.  <br/><br/> _Default value:_ `https://acme.example.com/` |
+| `INSTITUTION_HOME_URL` | Full URL for the home page of your institution: used as a link on the race server's home page.  <br/><br/> _Default value:_ `https://acme.example.com/` |
 
   
 ---
