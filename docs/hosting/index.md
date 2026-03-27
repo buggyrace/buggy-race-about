@@ -13,9 +13,10 @@ web site that is both the main source of information for students and
 staff, and also accepts the JSON data that is the output of the applications
 the students are developing (their "buggy editors").
 
-There are basically two ways to host this — either self-host (on your own
+There are basically two ways to host this — either self-host [with](docker) or
+[without Docker](without-docker) (on your own
 or your institution's infrastructure, or on a third-party hosting provider),
-or in the cloud, using Heroku.
+or using a cloud platform-as-a-service, such as [Heroku](heroku).
 
 The students do **not** do their programming work on the race server — that
 happens on their own machines (or in the cloud): see [Where to run the

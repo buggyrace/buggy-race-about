@@ -1,7 +1,7 @@
 ---
 title: Without Docker
 layout: home
-nav_order: 40
+nav_order: 20
 parent: Installation and Hosting
 ---
 

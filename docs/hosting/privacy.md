@@ -1,7 +1,7 @@
 ---
 title: Privacy considerations
 layout: home
-nav_order: 50
+nav_order: 60
 parent: Installation and Hosting
 ---
 

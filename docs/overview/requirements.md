@@ -18,7 +18,7 @@ If you want to run a Buggy Racing project, this is what you'll need:
   You need to run the race server (it's the website you and your students
   interact with throughout the project). If you have the technical resource to
   host it yourself, you can — otherwise use a hosting service in the cloud:
-  * See [more about self-hosting](../hosting/self-hosting).
+  * See [more about self-hosting](../hosting/docker).
   * For an example of cloud-based hosting, see [more about hosting on Heroku](../hosting/heroku).
 
 * **Familiarity with Python, Flask, and basic SQL (and optionally Git)**  

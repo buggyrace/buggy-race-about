@@ -1,11 +1,16 @@
 ---
 title: On Heroku
 layout: home
-nav_order: 10
+nav_order: 30
 parent: Installation and Hosting
 ---
 
 # Installing on Heroku
+
+{: .rhul}
+Heroku isn't the only cloud platform-as-a-service you could use! We're using it
+as the example here because it's the one we've got experience of running the
+race server on.
 
 The [race server repo](https://github.com/buggyrace/buggy-race-server) is
 suitable for running as an app on cloud-hosting server 
@@ -188,14 +193,15 @@ Our recent experience is that the current version of SQLAlchemy running on
 Heroku (hosting its PostgreSQL service on Amazon AWS) won't connect without the
 latter two.
 
-If you want to set a non-default authorisation code _before_ you set up, you
-can do so here by adding a value for `AUTHORISATION_CODE`. The very first step
-of your set-up on the site will be to change this again. So this is a temporary
-setting that prevents anyone accessing the set-up phase (for example, while
-you're waiting for a custom domain to propagate) with the default auth code
-("`CHANGEME`") before you set it to a secure one. This temporary one isn't as
-secure because it's in plain-text up on Heroku (albeit behind a secure login),
-which is why you should delete it once you've finished your set-up phase.
+If you want to set a non-default [authorisation code](../glossary#authorisation-code)
+ _before_ you set up, you can do so here by adding a value for
+`AUTHORISATION_CODE`. The very first step of your set-up on the site will be to
+change this again. So this is a temporary setting that prevents anyone
+accessing the set-up phase (for example, while you're waiting for a custom
+domain to propagate) with the default auth code ("`CHANGEME`") before you set
+it to a secure one. This temporary one isn't as secure because it's in
+plain-text up on Heroku (albeit behind a secure login), which is why you should
+delete it once you've finished your set-up phase.
 
 
 | Name                              | Value                         |
@@ -366,6 +372,9 @@ Under normal circumstances, you won't have to deploy the site again unless you
 need to upgrade if we release a newer version. But when you do, it's a much
 simpler process:
 
+* pull the most recent version of (our) buggy race server source code into your
+  fork (the GitHub web interface provides a **Sync fork** button to help with
+  this)
 * log into Heroku
 * go to your app (`buggy-race-server` unless you called it something else)
 * go to the **Deploy** tab
@@ -373,7 +382,7 @@ simpler process:
   you're normally running from), and click **Deploy branch**
 
 You don't need to do a Git pull because Heroku always gets the latest version
-of the branch you've specified (and we always make sure the head of the `main`
+of the branch you've specified (and we always make sure the head of our `main`
 branch is the latest working version).
 
 See also this information about [setting up nightly backups on Heroku](../running/database-backup#heroku-backups).

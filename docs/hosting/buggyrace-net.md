@@ -1,14 +1,14 @@
 ---
 title: buggyrace.net
 layout: home
-nav_order: 30
+nav_order: 50
 parent: Installation and Hosting
 ---
 
 
 # Using buggyrace.net
 
-We do not offer any hosting service — either [self host](self-hosting) or
+We do not offer any hosting service — either [docker](self-hosting) or
 [host in the cloud with Heroku](heroku). But if you have problems setting up a
 custom domain, we might be able to add your institution as a subdomain on
 `buggyrace.net`, and `CNAME`d it onto your installation.
