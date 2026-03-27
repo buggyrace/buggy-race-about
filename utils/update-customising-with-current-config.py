@@ -77,6 +77,8 @@ with open(input_fname) as input_file:
                 print(f"[ ] OK section is {section_name}")
                 config_detail_lines[section_name] = []
                 line = input_file.readline()
+                while not line.strip(): # skip empty preamble lines
+                    line = input_file.readline()
                 while line and not re.match(r"^\s*---+\s*$", line):
                     config_detail_lines[section_name].append(line)
                     line = input_file.readline()
