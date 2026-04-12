@@ -78,3 +78,15 @@ uses the URL without requiring redirection.
 
 See more about the [task config settings](../customising/tasks).
 
+### Task hint levels
+
+Task's hints may be quite verbose, so you can mark them with different hint
+levels which students must explicitly reveal. This feature is not enabled by
+default: you need to explicitly
+[enable and set hint levels](../customising/creating-tasks.html#setting-hint-levels).
+
+The show/hide hint task mechanism is implemented in JavaScript.
+
+
+
+

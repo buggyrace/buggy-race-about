@@ -145,6 +145,66 @@ published (not when they are uploaded into the database). This means that if
 you change config settings, you should re-publish the task list to reflect the
 latest values.
 
+
+## Setting hint levels
+
+You can choose to mark some of the task hints as being of different levels, so
+that they are only shown when a student chooses to reveal them. We introduced
+this as a way to not overwhelm students with suggestions that may be more
+complex than they need. (This is a consequence of encouraging students to decide
+for themselves how thoroughly they
+[implement specific tasks](../teaching/tasks-and-phases)).
+
+To enable this feature, set `IS_TASK_HINT_LEVELS_ENABLED` to `Yes`.
+
+{: .navigation}
+**Admin** → **Config** → Config:**Tasks**
+
+When task hint levels are enabled, you can indicate the level of a task hint
+in the (markdown or HTML) text when you edit a task. Three levels of hint are
+currently supported (in addition to the "zero-level" default). Add one of
+`<!>`, `<!!>` or `<!!!>` as the _very first_ item in a paragraph or list item.
+
+The following example of some hint text, in markdown, has one level-1 hint
+and two level-2 hints:
+
+```markdown
+Example markdown text demonstrating hint levels:
+
+* <!> This is a level-1 hint.
+
+* This hint has no explict level, so will always be displayed.
+
+* <!!> This is a level-2 hint. Hints of different levels can occur in any
+  order.
+
+<!!> Another level-2 hint. The hint tokens are all stripped when the task list
+is published.
+```
+
+When the task list containing this hint text is published, if hint levels are
+enabled, they will be hidden, with buttons for revealing them:
+
+{: .screenshot}
+![Screenshot of example task hint levels hidden](/docs/img/screenshots/task-hint-levels-hidden.png)
+
+This is the same example, after both buttons have been clicked:
+
+{: .screenshot}
+![Screenshot of example task hint levels shown](/docs/img/screenshots/task-hint-levels-shown.png)
+
+{: .note}
+The hide/show hint mechanism is implemented in Javascript, so if viewed in a
+browser without JavaScript enabled, no hints are hidden.
+
+Publishing the task list always strips any hint tokens (like `<!>`), whether or
+not `IS_TASK_HINT_LEVELS_ENABLED` is set.
+
+{: .note}
+Hint tokens are currently only supported for `<p>` or `<li>` elements (after
+the Markdown has been parsed), and _must_ be the first item in the element's
+content.
+
 ## Publish the task list
 
 {: .navigation}
