@@ -80,6 +80,14 @@ with open(input_fname) as input_file:
                 while not line.strip(): # skip empty preamble lines
                     line = input_file.readline()
                 while line and not re.match(r"^\s*---+\s*$", line):
+                    if "IS_TASK_HINT_LEVELS_ENABLED" in line and "!!" in line:
+                        print("*** FIXME: found !! in: --------------------------------\n", line)
+                        for i in range(1,4):
+                            hint_token = "&lt;" + ("!"*i) + "&gt;"
+                            new_hint_token = "<" + ("!"*i) + ">"
+                            line = line.replace(hint_token, new_hint_token)
+                            print(f"hint token '{hint_token}' replaced with '{new_hint_token}'")
+                        print("OK done:\n", line, "FIXME ---")
                     config_detail_lines[section_name].append(line)
                     line = input_file.readline()
                 print(f"[ ]   {section_name} has {len(config_detail_lines[section_name])} lines")
