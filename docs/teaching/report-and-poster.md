@@ -33,10 +33,10 @@ The race sever does **not** handle submission of this coursework:
 
 ## Standalone document, or page within the buggy editor
 
-Students already have to [submit their buggy editor app](submission) at the end
-of the project — so you can specify that the report or poster (or both) must
+You may already require students to [submit their buggy editor app](submission)
+at the end of the project. You can specify that the report or poster (or both) must
 be presented as a page within the buggy editor. Alternatively, you can choose
-for them to be standalone documents. 
+for either of them to be standalone documents. 
 
 If you choose them to be presented as pages in the editor, students must add
 a route (and template) for `/report` and `/poster` respectively (or just
@@ -64,12 +64,32 @@ on progress: see [more about task texts](progress#task-texts-for-the-report).
 
 The server provides buttons so a logged-in student can download their
 accumulated task texts as a single file suitable for dropping into the
-`report.html` template that they are presumably adding to their buggy editor.
-This can also do markdown to HTML conversion.
+`report.html` template (if they are adding it to their buggy editor), or
+to submit (possibly after editing) as a standalone report. This download
+can also do markdown to HTML conversion.
 
 The convenience to students of saving task texts as-you-go, and then generating
 the report from that effectively automatically, is the incentive for students
 to use this mechanism. In turn you get a reasonably good indicator of students'
 progress, as you see the texts increasing in both size and quantity over the
 duration of the project.
+
+### Turning task texts into a report
+
+If you require your students to submit a report as a standalone document, and
+you're encouraging them to save task texts as they go along, you can help students
+download the texts in a single document. Specifically, use these [Task group config settings](../customising/tasks):
+
+Set `IS_TASK_TEXT_HTML_DOWNLOAD_WHOLE_PAGE` to `Yes` to ensure students get a whole
+HTML page with doctype, head, and body — otherwise they just get an HTML fragment
+that's suitable for inserting into another HTML page.
+
+If you set the HTML download to be a whole page, you can also customise the
+heading with `TASK_TEXTS_HTML_DOWNLOAD_PREAMBLE`. There are three placeholders you
+can use in that string that will be replaced with the suitable value: `%USERNAME%`,
+`%PRETTY_USERNAME%` and `%PROJECT_CODE%`.
+
+
+
+
 
