@@ -85,6 +85,14 @@ with open(input_fname) as input_file:
                             hint_token = "&lt;" + ("!"*i) + "&gt;"
                             new_hint_token = "<" + ("!"*i) + ">"
                             line = line.replace(hint_token, new_hint_token)
+                    if line.startswith("| `TASK_TEXTS_HTML_DOWNLOAD_PREAMBLE`"):
+                        print("    *** Warning:")
+                        print("    ***   Default value for `TASK_TEXTS_HTML_DOWNLOAD_PREAMBLE` currently contains")
+                        print("    ***   newlines and needs HTML-unescaping... edit customising/tasks.md by hand")
+                        print("    ***   until this is fixed upstream (in the server's export mechanism):")
+                        print("    ***   The default value should appear in the markdown like this:")
+                        print("    ***   `<h1>%PROJECT_CODE% Buggy Editor Project</h1><h2>Task texts by %PRETTY_USERNAME%</h2>`")
+                        input("[>] press ENTER to continue ")
                     config_detail_lines[section_name].append(line)
                     line = input_file.readline()
                 print(f"[ ]   {section_name} has {len(config_detail_lines[section_name])} lines")
