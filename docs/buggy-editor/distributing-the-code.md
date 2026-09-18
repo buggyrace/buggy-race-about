@@ -100,14 +100,14 @@ below that apply generally to distributing the code.
       The race server provides the editor source code as a zip file.<br>
       When you "publish" the zip file, you customise the README online, and the
       Python is updated to include (hardcoded) the URL of your race server.<br>
-      Git or GitHub isn't used.
+      Git, GitLab, or GitHub isn't used.
     </p>
   </div>
   <div>
     <label>Pros</label>
     <ul class="pros">
        <li>This is what you get if you accept the
-        <strong>default config settings</strong> in the "GitHub" group.        
+        <strong>default config settings</strong> in the "VCS" group.        
       </li>
       <li>
         It is the simplest to set up!
@@ -135,7 +135,7 @@ below that apply generally to distributing the code.
     <div>
       <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>VCS</strong></p>
       <p>
-        Set <code>IS_USING_GITHUB</code> to <code>No</code>.
+        Set <code>IS_USING_VCS</code> to <code>No</code>.
       </p>
       <p>
         <code>IS_STUDENT_USING_GITHUB_REPO</code> should be <code>No</code> too.
@@ -208,7 +208,7 @@ below that apply generally to distributing the code.
     <div>
       <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>VCS</strong></p>
       <p>
-        Set <code>IS_USING_GITHUB</code> to <code>No</code> and
+        Set <code>IS_USING_VCS</code> to <code>No</code> and
         <code>BUGGY_EDITOR_DOWNLOAD_URL</code> to the URL of the page (maybe
         your own website, or a page on your educational management system like
         Moodle or Blackboard).
@@ -290,7 +290,7 @@ below that apply generally to distributing the code.
       </p>
       <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>VCS</strong></p>
       <p>
-        Set <code>IS_USING_GITHUB</code> to <code>Yes</code>.
+        Set <code>IS_USING_VCS</code> to <code>Yes</code>.
       </p>
       <p>
         Set <code>BUGGY_EDITOR_GITHUB_URL</code> to the URL of your repo on
@@ -396,7 +396,7 @@ below that apply generally to distributing the code.
     </p>
       <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>VCS</strong></p>
       <p>
-        Set <code>IS_USING_GITHUB</code> to <code>Yes</code>.
+        Set <code>IS_USING_VCS</code> to <code>Yes</code>.
       </p>
       <p>
         Set <code>BUGGY_EDITOR_GITHUB_URL</code> to the URL of your repo on
@@ -491,7 +491,7 @@ below that apply generally to distributing the code.
       </p>
       <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>VCS</strong></p>
       <p>
-        Set <code>IS_USING_GITHUB</code> to <code>Yes</code>.
+        Set <code>IS_USING_VCS</code> to <code>Yes</code>.
       </p>
       <p>
         Set <code>BUGGY_EDITOR_GITHUB_URL</code> to the URL of your repo on
@@ -586,7 +586,7 @@ below that apply generally to distributing the code.
       </p>
       <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>VCS</strong></p>
       <p>
-        Set <code>IS_USING_GITHUB</code> to <code>Yes</code>.
+        Set <code>IS_USING_VCS</code> to <code>Yes</code>.
       </p>
       <p>
         Set <code>BUGGY_EDITOR_GITHUB_URL</code> to the URL of your repo on
@@ -695,7 +695,7 @@ below that apply generally to distributing the code.
       </p>
       <p class="navigation full-width"><strong>Admin</strong> → <strong>Config</strong> → Config:<strong>VCS</strong></p>
       <p>
-        Set <code>IS_USING_GITHUB</code> to <code>Yes</code>.
+        Set <code>IS_USING_VCS</code> to <code>Yes</code>.
       </p>
       <p>
         Set <code>BUGGY_EDITOR_GITHUB_URL</code> to the URL of your repo on
