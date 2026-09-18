@@ -19,7 +19,25 @@ This is also where you specify the `EDITOR_DISTRIBUTION_METHOD`, which controls
 how your students get their copy of the buggy editor (the source code they are
 going to develop). This affects what settings you must choose in other groups,
 so is a critical setting. For more about this, see
-[distributing the editor code](../buggy-editor/distributing-the-code).
+[distributing the editor code](../buggy-editor/distributing-the-code). The
+possible distribution methods are:
+
+<ul>
+  <li><a href="../buggy-editor/distributing-the-code#method-zip"><strong>zip</strong>: Students download a zipfile from race server</a> (the default)</li>
+  <li><a href="../buggy-editor/distributing-the-code#method-page"><strong>page</strong>: Students get the source code from a custom page you set up elsewhere</a></li>
+  <li><a href="../buggy-editor/distributing-the-code#method-repo"><strong>repo</strong>: Students get the source code from your repo</a></li>
+  <li><a href="../buggy-editor/distributing-the-code#method-preload"><strong>preload</strong>: You preload the source code by forking repos into students’ accounts</a></li>
+  <li><a href="../buggy-editor/distributing-the-code#method-fork"><strong>fork</strong>: Students manually fork your repo into their own account</a></li>
+  <li><a href="../buggy-editor/distributing-the-code#method-autofork"><strong>autofork</strong>: Server forks your repo into students' GitHub accounts</a></li>
+  <li><a href="../buggy-editor/distributing-the-code#method-vsremote"><strong>vsremote</strong>: Server forks your repo into students' GitHub accounts and then clones via VSCode</a></li>
+</ul>
+
+The setting you choose will change the _suggested_ values for config settings
+in other groups. You _can_ change this setting later, but if you do so, you
+will need to manually change any values that depended on it. The server provides
+warnings where config settings don't match the suggested values for the current
+distribution method, although this can be disabled: see 
+`IS_SHOWING_CONFIG_WARNINGS` in the ["Server" group of config settings](customising/server).
 
 Config settings for the tasks — which are fundamental to how your project works
 — are in a separate group: see the [task config settings](tasks) instead.

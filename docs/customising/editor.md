@@ -16,7 +16,9 @@ Editor config settings control _how_ the Buggy Editor (which is the webapp that
 each student develops) is managed.
 
 The `EDITOR_DISTRIBUTION_METHOD` setting is critical to how your students start
-your project: see [more details about distributing the code](buggy-editor/distributing-the-code).
+your project: see [more details about distributing the code](buggy-editor/distributing-the-code). That setting is in the
+["Project" group of config settings](customising/project).
+
 
 ## Config settings ("Editor")
 
