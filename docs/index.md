@@ -65,10 +65,9 @@ See the demo race server at [demo.buggyrace.net]({{site.content.demo_url}}).
   <div class="item-card">
     <img class="decal" src="/docs/img/feature-github.png" />
     <p>
-      Can run with <strong>GitHub</strong>:
-      server forks repo into students' accounts and injects tasks as
-      issues (or use GitHub without automation, or just Git... or no
-      Git at all — download zip and go!)
+      Students' projects can be in <strong>GitLab</strong> or
+      <strong>GitHub</strong>, or any VCS... or no version control at all:
+      download zip and go!
     </p>
     <p class="item-footer">
       <a href="buggy-editor/distributing-the-code">&rarr;&nbsp;distributing&nbsp;the&nbsp;code</a>
